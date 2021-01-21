@@ -1,7 +1,26 @@
-# Techniques and Methods Ontology
-This is the developers repository for a techniques and methods ontology to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like. 
+[![Build Status](https://travis-ci.org/patrick-lloyd-ray/TMN.svg?branch=master)](https://travis-ci.org/patrick-lloyd-ray/TMN)
+[![DOI](https://zenodo.org/badge/13996/patrick-lloyd-ray/TMN.svg)](https://zenodo.org/badge/latestdoi/13996/patrick-lloyd-ray/TMN)
 
-# Editing
+# Techniques and Methods for Neuroscience Ontology
+This is the developers repository for a techniques and methods ontology to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like.
+
+More information can be found at http://obofoundry.org/ontology/TMN
+
+## Versions
+
+### Stable release versions
+
+The latest version of the ontology can always be found at:
+
+http://purl.obolibrary.org/obo/TMN.owl
+
+(note this will not show up until the request has been approved by obofoundry.org)
+
+### Editors' version
+
+Editors of this ontology should use the edit version, [src/ontology/TMN-edit.owl](src/ontology/TMN-edit.owl)
+
+## Editing
 The ontology is comprised of a few groups of terms. Generally speaking, there are three ways to edit or add to the ontology: 
 
 1. external terms (from other ontologies): Use [OntoFox](http://ontofox.hegroup.org) for importing terms from other ontologies. Edit the corresponding [file name] file. 
@@ -68,9 +87,10 @@ These are the steps with their CLI commands. When using a GUI application the st
 
 Your Pull Request will be automatically tested. If there are problems, we will update your branch. When all tests have passed, your PR can be merged into `master`. Rinse and repeat!
 
+## Contact
 
-## Clean Work
+Please use this GitHub repository's [Issue tracker](https://github.com/patrick-lloyd-ray/TMN/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
 
-The easiest way to edit `src/ontology/template/` files is with Excel. Unfortunately Excel has some idiosyncratic rules for quoting cell values, and on macOS [uses old line endings](http://developmentality.wordpress.com/2010/12/06/excel-2008-for-macs-csv-bug/). Both these things make our diffs messy and confusing.
+## Acknowledgements
 
-For clean diffs, we also like to keep out templates sorted by ID. The `make sort` command will fix line endings and sorting by running all the templates through a Python script.
+This ontology repository was created using the [ontology starter kit](https://github.com/INCATools/ontology-starter-kit)
