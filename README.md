@@ -68,7 +68,7 @@ We use git and GitHub to develop. There's a lot of good documentation on both:
 
 Changes should be made in manageable pieces, e.g. add one term or edit a few related terms. Most changes should correspond to a single issue on the tracker.
 
-Start from a local copy of the `master` branch of the repository. Make sure your local copy is up-to-date. Make your changes on a new branch. Please use the [TMO Term ID Reservations] sheet to manage new IDs.
+Start from a local copy of the `master` branch of the repository. Make sure your local copy is up-to-date. Make your changes on a new branch. Please use the [TMN Term ID Reservations] sheet to manage new IDs.
 
 When you're ready, push your branch to the repository and make a Pull Request (PR) on the GitHub website. Your PR is a request to merge your branch back into `master`. Your PR will be tested, discussed, adjusted if necessary, then merged. Then the cycle can repeat for the next change that you or another developer will make.
 
