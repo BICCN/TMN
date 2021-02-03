@@ -17,6 +17,7 @@ Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000002>))
 
 
 ############################
@@ -44,6 +45,17 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000001> "2021-02-03T21:04:00Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000001> "fluorescence in situ hybridization assay"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000001> <http://purl.obolibrary.org/obo/OBI_0600047>)
+
+# Class: <http://purl.obolibrary.org/obo/TMN_0000002> (fluorescence micro-optical sectioning tomography assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000002> "An imaging assay that uses micro-optical sectioning tomography technology combined with fluorescence molecular labeling of neuronal projections."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000002> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000002> "fMOST"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000002> "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC6701528/"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000002> "patrick-lloyd-ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000002> "2021-02-03T21:32:43Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000002> "fluorescence micro-optical sectioning tomography assay"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000002> <http://purl.obolibrary.org/obo/CHMO_0000087>)
 
 
 )
