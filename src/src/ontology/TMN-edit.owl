@@ -18,6 +18,7 @@ Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000003>))
 
 
 ############################
@@ -56,6 +57,17 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000002> "2021-02-03T21:32:43Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000002> "fluorescence micro-optical sectioning tomography assay"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000002> <http://purl.obolibrary.org/obo/CHMO_0000087>)
+
+# Class: <http://purl.obolibrary.org/obo/TMN_0000003> (multiplexed error-robust fluorescence in situ hybridization assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000003> "An imaging assay that measures the copy number and spatial distribution of hundreds to thousands of RNA species in single cells."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000003> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000003> "MERFISH"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000003> "DOI: 10.1126/science.aaa6090"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000003> "patrick-lloyd-ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000003> "2021-02-03T23:18:34Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000003> "multiplexed error-robust fluorescence in situ hybridization assay"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000003> <http://purl.obolibrary.org/obo/CHMO_0000087>)
 
 
 )
