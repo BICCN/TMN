@@ -16,6 +16,7 @@ Annotation(dce:title "Techniques and Methods for Neuroscience Ontology")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000001>))
 
 
 ############################
@@ -32,6 +33,17 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000000> "2021-02-03T20:04:39Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000000> "droplet-based single-cell RNA sequencing assay"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000000> <http://purl.obolibrary.org/obo/OBI_0001271>)
+
+# Class: <http://purl.obolibrary.org/obo/TMN_0000001> (fluorescence in situ hybridization assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000001> "A sequencing assay that uses fluorescent probes that bind to parts of a nucleic acid sequence that have a high degree of sequence complementarity. Fluorescence microscopy can be used to find out where the fluorescent probes are bound on the chromosomes."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000001> "PERSON: Patrick Ray"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000001> "FISH"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000001> "http://en.wikipedia.org/wiki/Fluorescence_in_situ_hybridization"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000001> "patrick-lloyd-ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000001> "2021-02-03T21:04:00Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000001> "fluorescence in situ hybridization assay"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000001> <http://purl.obolibrary.org/obo/OBI_0600047>)
 
 
 )
