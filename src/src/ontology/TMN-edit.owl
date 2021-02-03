@@ -15,5 +15,23 @@ Annotation(dce:description "None")
 Annotation(dce:title "Techniques and Methods for Neuroscience Ontology")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 
+Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000000>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/TMN_0000000> (droplet-based single-cell RNA sequencing assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000000> "A sequencing assay that analyzes mRNA transcripts from droplets of individual cells. The droplets are compartmentalized via a microfluidic device. After the cells are compartmentalized, cells in droplets are lysed and the released mRNA hybridizes to the oligo(dT) tract of the primer beads. Then the droplets are pooled and broken to release the beads which are then isolated and reverse-transcribed with template switching. The resulting cDNA strands are PCR-amplified and the sequencing adapters are added. The barcoded mRNA samples are then sequenced."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000000> "PERSON: Patrick Ray"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000000> "Dropseq"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000000> "https://doi.org/10.1016/j.cell.2015.05.002"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000000> "patrick-lloyd-ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000000> "2021-02-03T20:04:39Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000000> "droplet-based single-cell RNA sequencing assay"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000000> <http://purl.obolibrary.org/obo/OBI_0001271>)
+
 
 )
