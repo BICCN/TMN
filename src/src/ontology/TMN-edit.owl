@@ -19,6 +19,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000005>))
 
 
 ############################
@@ -68,6 +70,27 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000003> "2021-02-03T23:18:34Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000003> "multiplexed error-robust fluorescence in situ hybridization assay"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000003> <http://purl.obolibrary.org/obo/CHMO_0000087>)
+
+# Class: <http://purl.obolibrary.org/obo/TMN_0000004> (neuron morphology assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000004> "A 3D structure determination assay that determines the morphology of a neuron."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000004> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000004> "3D structure determination assay of neuron"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000004> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000004> "patrick-lloyd-ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000004> "2021-02-04T00:06:14Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000004> "neuron morphology assay"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000004> <http://purl.obolibrary.org/obo/OBI_0600045>)
+
+# Class: <http://purl.obolibrary.org/obo/TMN_0000005> (mosaicism with repeat frameshift genetic sparse labeling assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000005> "A neuron morphology assay that enables sparse and stochastic labeling of genetically-defined neurons. MORF-labeled neurons are digitally reconstructed using a program (G-Cut)."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000005> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000005> "https://biccn.org/teams/u01-yang"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000005> "patrick-lloyd-ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000005> "2021-02-04T00:10:17Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000005> "mosaicism with repeat frameshift genetic sparse labeling assay"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000005> <http://purl.obolibrary.org/obo/TMN_0000004>)
 
 
 )
