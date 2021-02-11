@@ -1,13 +1,206 @@
 format-version: 1.2
-data-version: TMN/releases/2021-01-21/TMN-base.owl
+data-version: TMN/releases/2021-02-11/TMN-base.owl
 ontology: TMN/TMN-base
 property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Techniques and Methods for Neuroscience Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
-property_value: owl:versionInfo "2021-01-21" xsd:string
+property_value: owl:versionInfo "2021-02-11" xsd:string
 
 [Term]
-id: TMN:00000000
-name: root node
+id: TMN:0000000
+name: droplet-based single-cell RNA sequencing assay
+def: "A sequencing assay that analyzes mRNA transcripts from droplets of individual cells. The droplets are compartmentalized via a microfluidic device. After the cells are compartmentalized, cells in droplets are lysed and the released mRNA hybridizes to the oligo(dT) tract of the primer beads. Then the droplets are pooled and broken to release the beads which are then isolated and reverse-transcribed with template switching. The resulting cDNA strands are PCR-amplified and the sequencing adapters are added. The barcoded mRNA samples are then sequenced." []
+is_a: OBI:0002631
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "Dropseq" xsd:string
+property_value: IAO:0000119 https://doi.org/10.1016/j.cell.2015.05.002 xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-03T20:04:39Z
+
+[Term]
+id: TMN:0000001
+name: fluorescence in situ hybridization assay
+def: "A sequencing assay that uses fluorescent probes that bind to parts of a nucleic acid sequence that have a high degree of sequence complementarity. Fluorescence microscopy can be used to find out where the fluorescent probes are bound on the chromosomes." []
+is_a: OBI:0600047
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "FISH" xsd:string
+property_value: IAO:0000119 http://en.wikipedia.org/wiki/Fluorescence_in_situ_hybridization xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-03T21:04:00Z
+
+[Term]
+id: TMN:0000002
+name: fluorescence micro-optical sectioning tomography assay
+def: "An imaging assay that uses micro-optical sectioning tomography technology combined with fluorescence molecular labeling of neuronal projections." []
+is_a: CHMO:0000087
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "fMOST" xsd:string
+property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pmc/articles/PMC6701528/ xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-03T21:32:43Z
+
+[Term]
+id: TMN:0000003
+name: multiplexed error-robust fluorescence in situ hybridization assay
+def: "An imaging assay that measures the copy number and spatial distribution of hundreds to thousands of RNA species in single cells." []
+is_a: CHMO:0000087
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "MERFISH" xsd:string
+property_value: IAO:0000119 "DOI: 10.1126/science.aaa6090" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-03T23:18:34Z
+
+[Term]
+id: TMN:0000004
+name: neuron morphology assay
+def: "A 3D structure determination assay that determines the morphology of a neuron." []
+is_a: OBI:0600045
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "3D structure determination assay of neuron" xsd:string
+property_value: IAO:0000119 "PERSON: Patrick Ray" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-04T00:06:14Z
+
+[Term]
+id: TMN:0000005
+name: mosaicism with repeat frameshift genetic sparse labeling assay
+def: "A neuron morphology assay that enables sparse and stochastic labeling of genetically-defined neurons. MORF-labeled neurons are digitally reconstructed using a program (G-Cut)." []
+is_a: TMN:0000004 ! neuron morphology assay
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000119 https://biccn.org/teams/u01-yang xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-04T00:10:17Z
+
+[Term]
+id: TMN:0000006
+name: serial two-photon tomography
+def: "A fluorescence microscopy that generates high-throughput flourescence imaging of mouse brains by integrating two-photon microscopy and tissue sectioning. Serial two-photon tomography generates high-resolution datasets." []
+is_a: CHMO:0000087
+relationship: OBI:0000299 IAO:0000100
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "STPT" xsd:string
+property_value: IAO:0000119 http://doi.org/10.1038/nmeth.1854 xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-04T00:30:35Z
+
+[Term]
+id: TMN:0000007
+name: mouselight
+def: "A serial two photon tomography assay that produces images of mouse brains with sufficient detail to represent axons of individual neurons." []
+is_a: TMN:0000006 ! serial two-photon tomography
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000119 http://www.janelia.org/project-team/mouselight/research xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-04T00:34:49Z
+
+[Term]
+id: TMN:0000008
+name: multi-electrode extracellular electrophysiology assay
+def: "An electrophysiology assay that employs many electrodes to record extracellular field potentials." []
+is_a: OBI:0002176
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000119 http://en.wikipedia.org/wiki/Microelectrode_array xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-10T23:56:39Z
+
+[Term]
+id: TMN:0000009
+name: neuron morphology reconstruction assay
+def: "A neuron morphology assay where the morphology or structure of a neuron is represented through through another medium. Often, this assay is a combination of different assays (sparse labeling, fluorescent labeling, fMOST)." []
+is_a: TMN:0000004 ! neuron morphology assay
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000119 http://doi.org/10.1101/675280 xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-11T00:15:55Z
+
+[Term]
+id: TMN:0000010
+name: patch clamp single-cell RNA sequencing assay
+def: "A single-cell RNA sequencing assay wherein a patch clamp recording is taken from a neuron and then scRNA sequencing is performed on the cell soma." []
+is_a: OBI:0002631
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "patch clamp sequencing assay" xsd:string
+property_value: IAO:0000118 "patch-seq" xsd:string
+property_value: IAO:0000119 http://doi.org/10.1038/nprot.2017.120 xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-11T00:26:12Z
+
+[Term]
+id: TMN:0000011
+name: retrograde tracing assay
+def: "An assay wherein a substance is taken up by an axon terminal and transported toward the soma to mark (or trace) some part of a cell." []
+is_a: OBI:0000070
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "retrograde tracing" xsd:string
+property_value: IAO:0000119 "PERSON: Patrick Ray" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-11T00:39:16Z
+
+[Term]
+id: TMN:0000012
+name: retrograde transsynaptic tracing assay
+def: "A retrograde tracing assay that traces the neural connections from a synapse to a soma allowing the mapping of connections between neurons in a structure and a target in the brain." []
+is_a: TMN:0000011 ! retrograde tracing assay
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000119 http://en.wikipedia.org/wiki/Retrograde_tracing xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-11T00:51:53Z
+
+[Term]
+id: TMN:0000013
+name: sequential fluorescence in situ hybridization assay
+def: "A fluorescence in situ hybridization assay where transcripts are labeled with fluorescent probes in sequential rounds of hybridization to read out the temporal barcode for each transcript. The temporal barcodes can then be decoded to uniquely identify the RNA transcripts present in the sample. RNA can be identified directly in a variety of samples from extracted RNA to tissues." []
+is_a: TMN:0000001 ! fluorescence in situ hybridization assay
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "seqFISH" xsd:string
+property_value: IAO:0000119 http://www.seqfish.com/technology xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-11T01:00:00Z
+
+[Term]
+id: TMN:0000014
+name: switching mechanism at the 5' end of RNA template sequencing assay
+def: "A single cell sequencing assay wherein the target cells are lysed, and the RNA is hybridized to an oligo(dT)-containing primer. The first strand of the cDNA is synthesized with the addition of a few untemplated C nucleotides. This poly(C) overhang is added exclusively to full-length transcripts. An oligonucleotide primer is hybridized to the poly(C) overhang and used to synthesize the second strand. Full-length cDNAs are PCR-amplified to obtain nanogram amounts of DNA. The PCR products are purified for sequencing." []
+is_a: OBI:0001271
+property_value: IAO:0000116 "Definition needs curation." xsd:string
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "SMART seq" xsd:string
+property_value: IAO:0000118 "SMARTseq" xsd:string
+property_value: IAO:0000119 http://www.enseqlopedia.com/wiki-entry/rna-sequencing-methods/low-level-rna-detection/smart-seq/ xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-11T01:10:58Z
+
+[Term]
+id: TMN:0000015
+name: switching mechanism at the 5' end of RNA template sequencing assay v4
+def: "A switching mechanism at the 5' end of RNA template sequencing assay that is the fourth version of such an assay." []
+is_a: TMN:0000014 ! switching mechanism at the 5' end of RNA template sequencing assay
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "SMARTseq v4" xsd:string
+property_value: IAO:0000119 "PERSON: Patrick Ray" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-11T01:21:33Z
+
+[Term]
+id: TMN:0000016
+name: tracing the relationship between input and output study design
+def: "A study design in which complementary viruses are to be injected into brain regions to monosynaptically label inputs to a specific projection neuron population." []
+is_a: OBI:0500000
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "TRIO tracing" xsd:string
+property_value: IAO:0000119 http://cic.ini.usc.edu/protocols/trio-tracing xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-11T01:43:24Z
+
+[Term]
+id: TMN:0000017
+name: light sheet fluorescence microscopy assay
+def: "A fluorescence microscopy assay that uses a laser light-sheet to illuminate a region of a sample that has been treated to excite fluorescently." []
+is_a: CHMO:0000087
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "light sheet microscopy" xsd:string
+property_value: IAO:0000119 http://en.wikipedia.org/wiki/Light_sheet_fluorescence_microscopy xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-11T01:59:49Z
 
