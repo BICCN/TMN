@@ -25,6 +25,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000010>))
 
 
 
@@ -41,7 +42,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000000> "patrick-lloyd-ray"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000000> "2021-02-03T20:04:39Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000000> "droplet-based single-cell RNA sequencing assay"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000000> <http://purl.obolibrary.org/obo/OBI_0001271>)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000000> <http://purl.obolibrary.org/obo/OBI_0002631>)
 
 # Class: <http://purl.obolibrary.org/obo/TMN_0000001> (fluorescence in situ hybridization assay)
 
@@ -138,6 +139,18 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000009> "2021-02-11T00:15:55Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000009> "neuron morphology reconstruction assay"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000009> <http://purl.obolibrary.org/obo/TMN_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/TMN_0000010> (patch clamp single-cell RNA sequencing assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000010> "A single-cell RNA sequencing assay wherein a patch clamp recording is taken from a neuron and then scRNA sequencing is performed on the cell soma."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000010> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000010> "patch clamp sequencing assay"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000010> "patch-seq"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000010> "http://doi.org/10.1038/nprot.2017.120"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000010> "patrick-lloyd-ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000010> "2021-02-11T00:26:12Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000010> "patch clamp single-cell RNA sequencing assay"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000010> <http://purl.obolibrary.org/obo/OBI_0002631>)
 
 
 )
