@@ -29,6 +29,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000014>))
 
 
 
@@ -186,6 +187,19 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000013> "2021-02-11T01:00:00Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000013> "sequential fluorescence in situ hybridization assay"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000013> <http://purl.obolibrary.org/obo/TMN_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/TMN_0000014> (switching mechanism at the 5' end of RNA template sequencing assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000014> "A single cell sequencing assay wherein the target cells are lysed, and the RNA is hybridized to an oligo(dT)-containing primer. The first strand of the cDNA is synthesized with the addition of a few untemplated C nucleotides. This poly(C) overhang is added exclusively to full-length transcripts. An oligonucleotide primer is hybridized to the poly(C) overhang and used to synthesize the second strand. Full-length cDNAs are PCR-amplified to obtain nanogram amounts of DNA. The PCR products are purified for sequencing."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/TMN_0000014> "Definition needs curation."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000014> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000014> "SMART seq"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000014> "SMARTseq"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000014> "http://www.enseqlopedia.com/wiki-entry/rna-sequencing-methods/low-level-rna-detection/smart-seq/"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000014> "patrick-lloyd-ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000014> "2021-02-11T01:10:58Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000014> "switching mechanism at the 5' end of RNA template sequencing assay"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000014> <http://purl.obolibrary.org/obo/OBI_0001271>)
 
 
 )
