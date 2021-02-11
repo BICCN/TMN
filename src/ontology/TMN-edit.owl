@@ -27,6 +27,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000009>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000012>))
 
 
 
@@ -155,6 +156,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000010> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/TMN_0000011> (retrograde tracing assay)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000011> "An assay wherein a substance is taken up by an axon terminal and transported toward the soma to mark (or trace) some part of a cell."^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000011> "PERSON: Patrick Ray"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000011> "retrograde tracing"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000011> "PERSON: Patrick Ray"^^xsd:string)
@@ -162,6 +164,16 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000011> "2021-02-11T00:39:16Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000011> "retrograde tracing assay"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000011> <http://purl.obolibrary.org/obo/OBI_0000070>)
+
+# Class: <http://purl.obolibrary.org/obo/TMN_0000012> (retrograde transsynaptic tracing assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000012> "A retrograde tracing assay that traces the neural connections from a synapse to a soma allowing the mapping of connections between neurons in a structure and a target in the brain."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000012> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000012> "http://en.wikipedia.org/wiki/Retrograde_tracing"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000012> "patrick-lloyd-ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000012> "2021-02-11T00:51:53Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000012> "retrograde transsynaptic tracing assay"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000012> <http://purl.obolibrary.org/obo/TMN_0000011>)
 
 
 )
