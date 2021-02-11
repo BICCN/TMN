@@ -32,6 +32,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000014>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000017>))
 
 
 
@@ -224,6 +225,17 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000016> "2021-02-11T01:43:24Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000016> "tracing the relationship between input and output study design"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000016> <http://purl.obolibrary.org/obo/OBI_0500000>)
+
+# Class: <http://purl.obolibrary.org/obo/TMN_0000017> (light sheet fluorescence microscopy assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000017> "A fluorescence microscopy assay that uses a laser light-sheet to illuminate a region of a sample that has been treated to excite fluorescently."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000017> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000017> "light sheet microscopy"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000017> "http://en.wikipedia.org/wiki/Light_sheet_fluorescence_microscopy"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000017> "patrick-lloyd-ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000017> "2021-02-11T01:59:49Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000017> "light sheet fluorescence microscopy assay"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000017> <http://purl.obolibrary.org/obo/CHMO_0000087>)
 
 
 )
