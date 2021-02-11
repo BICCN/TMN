@@ -24,6 +24,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000009>))
 
 
 
@@ -127,6 +128,16 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000008> "2021-02-10T23:56:39Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000008> "multi-electrode extracellular electrophysiology assay"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000008> <http://purl.obolibrary.org/obo/OBI_0002176>)
+
+# Class: <http://purl.obolibrary.org/obo/TMN_0000009> (neuron morphology reconstruction assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000009> "A neuron morphology assay where the morphology or structure of a neuron is represented through through another medium. Often, this assay is a combination of different assays (sparse labeling, fluorescent labeling, fMOST)."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000009> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000009> "http://doi.org/10.1101/675280"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000009> "patrick-lloyd-ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000009> "2021-02-11T00:15:55Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000009> "neuron morphology reconstruction assay"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000009> <http://purl.obolibrary.org/obo/TMN_0000004>)
 
 
 )
