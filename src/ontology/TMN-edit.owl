@@ -31,6 +31,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000014>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000016>))
 
 
 
@@ -212,6 +213,17 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000015> "2021-02-11T01:21:33Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000015> "switching mechanism at the 5' end of RNA template sequencing assay v4"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000015> <http://purl.obolibrary.org/obo/TMN_0000014>)
+
+# Class: <http://purl.obolibrary.org/obo/TMN_0000016> (tracing the relationship between input and output study design)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000016> "A study design in which complementary viruses are to be injected into brain regions to monosynaptically label inputs to a specific projection neuron population."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000016> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000016> "TRIO tracing"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000016> "http://cic.ini.usc.edu/protocols/trio-tracing"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000016> "patrick-lloyd-ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000016> "2021-02-11T01:43:24Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000016> "tracing the relationship between input and output study design"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000016> <http://purl.obolibrary.org/obo/OBI_0500000>)
 
 
 )
