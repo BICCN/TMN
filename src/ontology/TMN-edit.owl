@@ -28,6 +28,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000009>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000013>))
 
 
 
@@ -174,6 +175,17 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000012> "2021-02-11T00:51:53Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000012> "retrograde transsynaptic tracing assay"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000012> <http://purl.obolibrary.org/obo/TMN_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/TMN_0000013> (sequential fluorescence in situ hybridization assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000013> "A fluorescence in situ hybridization assay where transcripts are labeled with fluorescent probes in sequential rounds of hybridization to read out the temporal barcode for each transcript. The temporal barcodes can then be decoded to uniquely identify the RNA transcripts present in the sample. RNA can be identified directly in a variety of samples from extracted RNA to tissues."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000013> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000013> "seqFISH"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000013> "http://www.seqfish.com/technology"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000013> "patrick-lloyd-ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000013> "2021-02-11T01:00:00Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000013> "sequential fluorescence in situ hybridization assay"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000013> <http://purl.obolibrary.org/obo/TMN_0000001>)
 
 
 )
