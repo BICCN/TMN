@@ -6,6 +6,8 @@ This is the developers repository for a techniques and methods ontology to suppo
 
 More information can be found at http://obofoundry.org/ontology/TMN
 
+(note that this link will not work until the request is approved by obofoundry.org)
+
 ## Versions
 
 ### Stable release versions
