@@ -33,6 +33,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000014>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000018>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000019>))
 
 
 
@@ -236,6 +238,26 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000017> "2021-02-11T01:59:49Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000017> "light sheet fluorescence microscopy assay"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000017> <http://purl.obolibrary.org/obo/CHMO_0000087>)
+
+# Class: <http://purl.obolibrary.org/obo/TMN_0000018> (cre-dependent anterograde tracing assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000018> "A anterograde tracing assay that uses a Cre recombinase-dependent as a tracer."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000018> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000018> "http://doi.org/10.1016/j.neuron.2011.12.002"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000018> "patrick-lloyd-ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000018> "2021-02-15T18:11:42Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000018> "cre-dependent anterograde tracing assay"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000018> <http://purl.obolibrary.org/obo/TMN_0000019>)
+
+# Class: <http://purl.obolibrary.org/obo/TMN_0000019> (anterograde tracing assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000019> "An assay wherein axon projections are traced from their source (cell body or soma) to their point of termination (synapse)."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000019> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000019> "https://en.wikipedia.org/wiki/Anterograde_tracing"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000019> "patrick-lloyd-ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000019> "2021-02-15T18:13:29Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000019> "anterograde tracing assay"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000019> <http://purl.obolibrary.org/obo/OBI_0000070>)
 
 
 )
