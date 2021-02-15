@@ -6,8 +6,10 @@ http://purl.obolibrary.org/obo/IAO_0000117
 http://purl.obolibrary.org/obo/IAO_0000118
 http://purl.obolibrary.org/obo/IAO_0000119
 http://purl.obolibrary.org/obo/OBI_0000070
+http://purl.obolibrary.org/obo/OBI_0000185
 http://purl.obolibrary.org/obo/OBI_0000299
 http://purl.obolibrary.org/obo/OBI_0001271
+http://purl.obolibrary.org/obo/OBI_0002119
 http://purl.obolibrary.org/obo/OBI_0002176
 http://purl.obolibrary.org/obo/OBI_0002631
 http://purl.obolibrary.org/obo/OBI_0500000
@@ -32,6 +34,12 @@ http://purl.obolibrary.org/obo/TMN_0000014
 http://purl.obolibrary.org/obo/TMN_0000015
 http://purl.obolibrary.org/obo/TMN_0000016
 http://purl.obolibrary.org/obo/TMN_0000017
+http://purl.obolibrary.org/obo/TMN_0000018
+http://purl.obolibrary.org/obo/TMN_0000019
+http://purl.obolibrary.org/obo/TMN_0000020
+http://purl.obolibrary.org/obo/TMN_0000021
+http://purl.obolibrary.org/obo/TMN_0000022
+http://purl.obolibrary.org/obo/TMN_0000023
 http://www.geneontology.org/formats/oboInOwl#created_by
 http://www.geneontology.org/formats/oboInOwl#creation_date
 http://www.w3.org/2002/07/owl#AnnotationProperty

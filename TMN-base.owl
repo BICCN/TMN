@@ -11,12 +11,12 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/TMN/TMN-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/TMN/releases/2021-02-11/TMN-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/TMN/releases/2021-02-15/TMN-base.owl"/>
         <dc:description>None</dc:description>
         <dc:title>Techniques and Methods for Neuroscience Ontology</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-02-11</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-02-15</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -120,9 +120,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000185 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000185"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0001271 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001271"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002119"/>
     
 
 
@@ -426,6 +438,99 @@
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-11T01:59:49Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">light sheet fluorescence microscopy assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TMN_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A anterograde tracing assay that uses a Cre recombinase-dependent as a tracer.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Patrick Ray</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://doi.org/10.1016/j.neuron.2011.12.002</obo:IAO_0000119>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-15T18:11:42Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">cre-dependent anterograde tracing assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An assay wherein axon projections are traced from their source (cell body or soma) to their point of termination (synapse).</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Patrick Ray</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Anterograde_tracing</obo:IAO_0000119>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-15T18:13:29Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">anterograde tracing assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000185"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An imaging assay that has as an output label-free, cross-sectional imaging of biological tissue microstructure using tissue backscattering properties.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Patrick Ray</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCT</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID: 29214158</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doi: 10.1155/2017/3409327</obo:IAO_0000119>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-15T18:44:49Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">optical coherence tomography assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002119"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A light sheet microscopy assay that combines synchronized scanning illumination and oblique imaging over cleared, thick tissue sections in smooth motion that produces a 3D image of a brain.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Patrick Ray</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VISoR</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VISoR assay</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doi: 10.1093/nsr/nwz053</obo:IAO_0000119>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-15T19:01:49Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">volumetric imaging with synchronized on-the-fly oblique-scan and readout assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002631"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single-cell RNA sequencing assay that involves the isolation of single nuclei and open chromatin tagmentation in the isolated nuclei using a transposase. The tagmented nuclei are then encapsulated in a droplet including both an oligo-dT-containing barcoded bead and a splint oligonucleotide, which links the tagmented gDNA fragments to the bead, enabling the bead to capture both mRNAs and open chromatin fragments. After mRNAs and gDNA fragments are released from the bead by heating, RT and PCR amplification are performed to generate a library of cDNA and open chromatin gDNA fragments.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Patrick Ray</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNARE-seq</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNARE-seq assay</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNARE-seq2</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNARE-seq2 assay</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1038/s12276-020-0420-2</obo:IAO_0000119>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-15T19:09:43Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">single-nucleus chromatin accessibility and mRNA expression sequencing assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000087"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fluorescence microscopy assay wherein fluorescence in situ hybridization is leveraged with multiplexed analysis that uses each channel to measure the composite (sum) abundances of multiple genes in each channel and decompresses and determines individual gene level.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Patrick Ray</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CISI</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI: 10.1101/743039</obo:IAO_0000119>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-15T19:20:54Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">composite in situ imaging</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

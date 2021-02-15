@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: TMN/releases/2021-02-11/TMN-base.owl
+data-version: TMN/releases/2021-02-15/TMN-base.owl
 ontology: TMN/TMN-base
 property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Techniques and Methods for Neuroscience Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
-property_value: owl:versionInfo "2021-02-11" xsd:string
+property_value: owl:versionInfo "2021-02-15" xsd:string
 
 [Term]
 id: TMN:0000000
@@ -203,4 +203,73 @@ property_value: IAO:0000118 "light sheet microscopy" xsd:string
 property_value: IAO:0000119 http://en.wikipedia.org/wiki/Light_sheet_fluorescence_microscopy xsd:string
 created_by: patrick-lloyd-ray
 creation_date: 2021-02-11T01:59:49Z
+
+[Term]
+id: TMN:0000018
+name: cre-dependent anterograde tracing assay
+def: "A anterograde tracing assay that uses a Cre recombinase-dependent as a tracer." []
+is_a: TMN:0000019 ! anterograde tracing assay
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000119 http://doi.org/10.1016/j.neuron.2011.12.002 xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-15T18:11:42Z
+
+[Term]
+id: TMN:0000019
+name: anterograde tracing assay
+def: "An assay wherein axon projections are traced from their source (cell body or soma) to their point of termination (synapse)." []
+is_a: OBI:0000070
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000119 https://en.wikipedia.org/wiki/Anterograde_tracing xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-15T18:13:29Z
+
+[Term]
+id: TMN:0000020
+name: optical coherence tomography assay
+def: "An imaging assay that has as an output label-free, cross-sectional imaging of biological tissue microstructure using tissue backscattering properties." []
+is_a: OBI:0000185
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "OCT" xsd:string
+property_value: IAO:0000119 "doi: 10.1155/2017/3409327" xsd:string
+property_value: IAO:0000119 "PMID: 29214158" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-15T18:44:49Z
+
+[Term]
+id: TMN:0000021
+name: volumetric imaging with synchronized on-the-fly oblique-scan and readout assay
+def: "A light sheet microscopy assay that combines synchronized scanning illumination and oblique imaging over cleared, thick tissue sections in smooth motion that produces a 3D image of a brain." []
+is_a: OBI:0002119
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "VISoR" xsd:string
+property_value: IAO:0000118 "VISoR assay" xsd:string
+property_value: IAO:0000119 "doi: 10.1093/nsr/nwz053" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-15T19:01:49Z
+
+[Term]
+id: TMN:0000022
+name: single-nucleus chromatin accessibility and mRNA expression sequencing assay
+def: "A single-cell RNA sequencing assay that involves the isolation of single nuclei and open chromatin tagmentation in the isolated nuclei using a transposase. The tagmented nuclei are then encapsulated in a droplet including both an oligo-dT-containing barcoded bead and a splint oligonucleotide, which links the tagmented gDNA fragments to the bead, enabling the bead to capture both mRNAs and open chromatin fragments. After mRNAs and gDNA fragments are released from the bead by heating, RT and PCR amplification are performed to generate a library of cDNA and open chromatin gDNA fragments." []
+is_a: OBI:0002631
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "SNARE-seq" xsd:string
+property_value: IAO:0000118 "SNARE-seq assay" xsd:string
+property_value: IAO:0000118 "SNARE-seq2" xsd:string
+property_value: IAO:0000118 "SNARE-seq2 assay" xsd:string
+property_value: IAO:0000119 https://doi.org/10.1038/s12276-020-0420-2 xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-15T19:09:43Z
+
+[Term]
+id: TMN:0000023
+name: composite in situ imaging
+def: "A fluorescence microscopy assay wherein fluorescence in situ hybridization is leveraged with multiplexed analysis that uses each channel to measure the composite (sum) abundances of multiple genes in each channel and decompresses and determines individual gene level." []
+is_a: CHMO:0000087
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "CISI" xsd:string
+property_value: IAO:0000119 "DOI: 10.1101/743039" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-02-15T19:20:54Z
 
