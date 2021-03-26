@@ -30,7 +30,7 @@ The ontology is comprised of a few groups of terms. Generally speaking, there ar
 1. external terms (from other ontologies): Use [OntoFox](http://ontofox.hegroup.org) for importing terms from other ontologies. Edit the corresponding [TMN-edit.owl](https://github.com/patrick-lloyd-ray/TMN/blob/main/src/ontology/TMN-edit.owl) file. 
 2. template terms: Use [ROBOT](http://robot.obolibrary.org/template) to convert spreadsheets to OWL. Edit the relevant file:
   - [techniques](https://github.com/patrick-lloyd-ray/TMN/blob/main/templates/techniques_template.csv) for techniques.
-  - [modalities] for modalities.
+  - [modalities](https://github.com/patrick-lloyd-ray/TMN/blob/main/templates/modality_template.csv) for modalities.
   - [methods](https://github.com/patrick-lloyd-ray/TMN/blob/main/templates/methods_template.csv) for methods.
   - [assays](https://github.com/patrick-lloyd-ray/TMN/blob/main/templates/assay_template.csv) for assays. 
   - [devices](https://github.com/patrick-lloyd-ray/TMN/blob/main/templates/devices_template.csv) for devices.
