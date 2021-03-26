@@ -27,7 +27,7 @@ Editors of this ontology should use the edit version, [src/ontology/TMN-edit.owl
 ## Editing
 The ontology is comprised of a few groups of terms. Generally speaking, there are three ways to edit or add to the ontology: 
 
-1. external terms (from other ontologies): Use [OntoFox](http://ontofox.hegroup.org) for importing terms from other ontologies. Edit the corresponding [file name] file. 
+1. external terms (from other ontologies): Use [OntoFox](http://ontofox.hegroup.org) for importing terms from other ontologies. Edit the corresponding [TMN-edit.owl](https://github.com/patrick-lloyd-ray/TMN/blob/main/src/ontology/TMN-edit.owl) file. 
 2. template terms: Use [ROBOT](http://robot.obolibrary.org/template) to convert spreadsheets to OWL. Edit the relevant file:
   - [techniques](https://github.com/patrick-lloyd-ray/TMN/blob/main/templates/techniques_template.csv) for techniques.
   - [modalities] for modalities.
