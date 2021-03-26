@@ -38,7 +38,7 @@ The ontology is comprised of a few groups of terms. Generally speaking, there ar
 # Files
 - [`README.md`](README.md) the document you are currently reading. 
 - [.owl] the latest release of the ontology.
-- [Makefile] scripts for building the ontology.
+- [Makefile](https://github.com/patrick-lloyd-ray/TMN/blob/main/src/ontology/Makefile) scripts for building the ontology.
 - [views/] various specialized views of the ontology.
     - [.obo] the latest release of the ontology in .obo file format
     - [core.owl] the latest release of ontology core: ~100 key terms
