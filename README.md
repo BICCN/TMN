@@ -18,6 +18,8 @@ http://purl.obolibrary.org/obo/TMN.owl
 
 (note this will not show up until the request has been approved by obofoundry.org)
 
+In the meantime, you can find the latest version [here](https://github.com/patrick-lloyd-ray/TMN/blob/main/TMN.owl)
+
 ### Editors' version
 
 Editors of this ontology should use the edit version, [src/ontology/TMN-edit.owl](src/ontology/TMN-edit.owl)
@@ -37,7 +39,7 @@ The ontology is comprised of a few groups of terms. Generally speaking, there ar
 
 # Files
 - [`README.md`](README.md) the document you are currently reading. 
-- [.owl] the latest release of the ontology.
+- [.owl](https://github.com/patrick-lloyd-ray/TMN/blob/main/TMN.owl) the latest release of the ontology.
 - [Makefile](https://github.com/patrick-lloyd-ray/TMN/blob/main/src/ontology/Makefile) scripts for building the ontology.
 - [views/] various specialized views of the ontology.
     - [.obo] the latest release of the ontology in .obo file format
