@@ -34,7 +34,7 @@ The ontology is comprised of a few groups of terms. Generally speaking, there ar
   - [methods] for methods.
   - [assays](https://github.com/patrick-lloyd-ray/TMN/blob/main/templates/assay_template.csv) for assays. 
   - [devices](https://github.com/patrick-lloyd-ray/TMN/blob/main/templates/devices_template.csv) for devices.
-  - [tools] for tools.
+  - [tools](https://github.com/patrick-lloyd-ray/TMN/blob/main/templates/tools_template.csv) for tools.
 3. other terms: Edit [owlfile](https://github.com/patrick-lloyd-ray/TMN/blob/main/src/ontology/TMN-edit.owl) in Protege.
 
 # Files
