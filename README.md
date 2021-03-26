@@ -28,37 +28,33 @@ Editors of this ontology should use the edit version, [src/ontology/TMN-edit.owl
 The ontology is comprised of a few groups of terms. Generally speaking, there are three ways to edit or add to the ontology: 
 
 1. external terms (from other ontologies): Use [OntoFox](http://ontofox.hegroup.org) for importing terms from other ontologies. Edit the corresponding [file name] file. 
-2. template terms: Use [ROBOT](http://robot.obolibrary.org/template) to convert spreadsheets to OWL. Edit the relevant [file name] file:
+2. template terms: Use [ROBOT](http://robot.obolibrary.org/template) to convert spreadsheets to OWL. Edit the relevant file:
   - [techniques](https://github.com/patrick-lloyd-ray/TMN/blob/main/templates/techniques_template.csv) for techniques.
   - [modalities] for modalities.
   - [methods] for methods.
   - [assays](https://github.com/patrick-lloyd-ray/TMN/blob/main/templates/assay_template.csv) for assays. 
   - [devices] for devices.
   - [tools] for tools.
-3. other terms: Edit [owlfile] in Protege.
+3. other terms: Edit [owlfile](https://github.com/patrick-lloyd-ray/TMN/blob/main/src/ontology/TMN-edit.owl) in Protege.
 
 # Files
 - [`README.md`](README.md) the document you are currently reading. 
 - [.owl](https://github.com/patrick-lloyd-ray/TMN/blob/main/TMN.owl) the latest release of the ontology.
 - [Makefile](https://github.com/patrick-lloyd-ray/TMN/blob/main/src/ontology/Makefile) scripts for building the ontology.
-- [views/] various specialized views of the ontology.
-    - [.obo] the latest release of the ontology in .obo file format
-    - [core.owl] the latest release of ontology core: ~100 key terms
-- [src/]
-    - [ontology/] source files for the ontology.
-        - [.owl] the main OWL file
-        - [core.txt] the list of core terms
-        - [templates/] ROBOT template files for various branches of the ontology
-        - [modules/] the results of the ROBOT templates
-    - [sparql/] SPARQL queries for building and validating the ontology
-    - [scripts/] utility scripts
-    - [views/] configuration for views
+- [.obo](https://github.com/patrick-lloyd-ray/TMN/blob/main/TMN.obo) the latest release of the ontology in .obo file format
+- [base.owl](https://github.com/patrick-lloyd-ray/TMN/blob/main/TMN-base.owl) the latest release of ontology base: key terms
+- [src/](https://github.com/patrick-lloyd-ray/TMN/tree/main/src)
+    - [ontology/](https://github.com/patrick-lloyd-ray/TMN/tree/main/src/ontology) source files for the ontology.
+        - [.owl](https://github.com/patrick-lloyd-ray/TMN/blob/main/src/ontology/TMN-edit.owl) the main OWL file
+        - [idranges/](https://github.com/patrick-lloyd-ray/TMN/blob/main/src/ontology/TMN-idranges.owl) the list of id ranges
+        - [reports/](https://github.com/patrick-lloyd-ray/TMN/tree/main/src/ontology/reports) various reports from the latest build
+    - [sparql/](https://github.com/patrick-lloyd-ray/TMN/tree/main/src/sparql) SPARQL queries for building and validating the ontology
+    - [scripts/](https://github.com/patrick-lloyd-ray/TMN/tree/main/src/scripts) utility scripts
+    - [patterns/](https://github.com/patrick-lloyd-ray/TMN/tree/main/src/patterns) configuration for patterns
 
 # Building
 
-The [Makefile] contains scripts for building the ontology. On macOS or Linux, you should just be able to run `make` or one of the specific tasks below.
-
-[edit these]
+The [Makefile](https://github.com/patrick-lloyd-ray/TMN/blob/main/src/ontology/Makefile) contains scripts for building the ontology. On macOS or Linux, you should just be able to run `make`.
 
 # Development
 
@@ -72,14 +68,14 @@ We use git and GitHub to develop. There's a lot of good documentation on both:
 
 Changes should be made in manageable pieces, e.g. add one term or edit a few related terms. Most changes should correspond to a single issue on the tracker.
 
-Start from a local copy of the `master` branch of the repository. Make sure your local copy is up-to-date. Make your changes on a new branch. Please use the [TMN Term ID Reservations] sheet to manage new IDs.
+Start from a local copy of the `main` branch of the repository. Make sure your local copy is up-to-date. Make your changes on a new branch. Please use the [TMN Term ID Reservations] sheet to manage new IDs.
 
-When you're ready, push your branch to the repository and make a Pull Request (PR) on the GitHub website. Your PR is a request to merge your branch back into `master`. Your PR will be tested, discussed, adjusted if necessary, then merged. Then the cycle can repeat for the next change that you or another developer will make.
+When you're ready, push your branch to the repository and make a Pull Request (PR) on the GitHub website. Your PR is a request to merge your branch back into `main`. Your PR will be tested, discussed, adjusted if necessary, then merged. Then the cycle can repeat for the next change that you or another developer will make.
 
 These are the steps with their CLI commands. When using a GUI application the steps will be the same.
 
 1. `git fetch` make sure your local copy is up-to-date
-2. `git checkout master` start on the `master` branch
+2. `git checkout main` start on the `main` branch
 3. `git checkout -b your-branch-name` create a new branch named for the change you're making
 4. make your changes
 5. `make sort` sort and normalize tables, for cleaner diffs
