@@ -31,7 +31,7 @@ The ontology is comprised of a few groups of terms. Generally speaking, there ar
 2. template terms: Use [ROBOT](http://robot.obolibrary.org/template) to convert spreadsheets to OWL. Edit the relevant file:
   - [techniques](https://github.com/patrick-lloyd-ray/TMN/blob/main/templates/techniques_template.csv) for techniques.
   - [modalities] for modalities.
-  - [methods] for methods.
+  - [methods](https://github.com/patrick-lloyd-ray/TMN/blob/main/templates/methods_template.csv) for methods.
   - [assays](https://github.com/patrick-lloyd-ray/TMN/blob/main/templates/assay_template.csv) for assays. 
   - [devices](https://github.com/patrick-lloyd-ray/TMN/blob/main/templates/devices_template.csv) for devices.
   - [tools](https://github.com/patrick-lloyd-ray/TMN/blob/main/templates/tools_template.csv) for tools.
