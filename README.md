@@ -27,7 +27,7 @@ The ontology is comprised of a few groups of terms. Generally speaking, there ar
 
 1. external terms (from other ontologies): Use [OntoFox](http://ontofox.hegroup.org) for importing terms from other ontologies. Edit the corresponding [file name] file. 
 2. template terms: Use [ROBOT](http://robot.obolibrary.org/template) to convert spreadsheets to OWL. Edit the relevant [file name] file:
-  - [techniques] for techniques.
+  - [techniques](https://github.com/patrick-lloyd-ray/TMN/blob/main/templates/techniques_template.csv) for techniques.
   - [modalities] for modalities.
   - [methods] for methods.
   - [assays] for assays. 
