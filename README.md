@@ -30,7 +30,7 @@ The ontology is comprised of a few groups of terms. Generally speaking, there ar
   - [techniques](https://github.com/patrick-lloyd-ray/TMN/blob/main/templates/techniques_template.csv) for techniques.
   - [modalities] for modalities.
   - [methods] for methods.
-  - [assays] for assays. 
+  - [assays](https://github.com/patrick-lloyd-ray/TMN/blob/main/templates/assay_template.csv) for assays. 
   - [devices] for devices.
   - [tools] for tools.
 3. other terms: Edit [owlfile] in Protege.
