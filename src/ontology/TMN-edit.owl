@@ -313,4 +313,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000023> "com
 SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000023> <http://purl.obolibrary.org/obo/CHMO_0000087>)
 
 
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "doi: 10.1007/978-1-62703-056-4_2"^^xsd:string) Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://oni.bio/nanoimager/super-resolution-microscopy/epifluorescence-microscopy/"^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0002437> "Alternative definition: A fluorescence microscopy technique where a beam of light is passed through a specimen and both illuminated and emitted light travel through a common lens."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0002437> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0002437> "epifluorescence microscopy"^^xsd:string)
 )
