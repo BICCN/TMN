@@ -39,6 +39,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000021>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000022>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000024>))
 
 
 
@@ -216,10 +217,11 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000015> "PERSON: Patrick Ray"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000015> "SMARTseq v4"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000015> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/TMN_0000015> "This is the commercial version of SMARTseq2 that has as an instrument the Takara kit."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000015> "patrick-lloyd-ray"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000015> "2021-02-11T01:21:33Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000015> "switching mechanism at the 5' end of RNA template sequencing assay v4"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000015> <http://purl.obolibrary.org/obo/TMN_0000014>)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000015> <http://purl.obolibrary.org/obo/TMN_0000024>)
 
 # Class: <http://purl.obolibrary.org/obo/TMN_0000016> (tracing the relationship between input and output study design)
 
@@ -311,6 +313,18 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000023> "2021-02-15T19:20:54Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000023> "composite in situ imaging"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000023> <http://purl.obolibrary.org/obo/CHMO_0000087>)
+
+# Class: <http://purl.obolibrary.org/obo/TMN_0000024> (switching mechanism at the 5' end of RNA template sequencing assay 2)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000024> "A switching mechanism at the 5' end of RNA template sequencing assay that allows the generation of full-length cDNA and sequencing libraries by using standard reagents."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000024> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000024> "SMARTseq2"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000024> "https://doi.org/10.1038/nprot.2014.006"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/TMN_0000024> "See also: https://scicrunch.org/scicrunch/interlex/view/ilx_0739685"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000024> "patrick-lloyd-ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000024> "2021-04-22T19:49:20Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000024> "switching mechanism at the 5' end of RNA template sequencing assay 2"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000024> <http://purl.obolibrary.org/obo/TMN_0000014>)
 
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "doi: 10.1007/978-1-62703-056-4_2"^^xsd:string) Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://oni.bio/nanoimager/super-resolution-microscopy/epifluorescence-microscopy/"^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0002437> "Alternative definition: A fluorescence microscopy technique where a beam of light is passed through a specimen and both illuminated and emitted light travel through a common lens."^^xsd:string)
