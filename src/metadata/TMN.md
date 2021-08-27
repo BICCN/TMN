@@ -3,10 +3,10 @@ layout: ontology_detail
 id: TMN
 title: Techniques and Methods for Neuroscience Ontology
 jobs:
-  - id: https://travis-ci.org/patrick-lloyd-ray/TMN
+  - id: https://travis-ci.org/BICCN/TMN
     type: travis-ci
 build:
-  checkout: git clone https://github.com/patrick-lloyd-ray/TMN.git
+  checkout: git clone https://github.com/BICCN/TMN.git
   system: git
   path: "."
 contact:
@@ -14,8 +14,8 @@ contact:
   label: 
   github: 
 description: Techniques and Methods for Neuroscience Ontology is an ontology...
-domain: stuff
-homepage: https://github.com/patrick-lloyd-ray/TMN
+domain: Neuroscientific Techniques and Methods
+homepage: https://github.com/BICCN/TMN
 products:
   - id: TMN.owl
     name: "Techniques and Methods for Neuroscience Ontology main release in OWL format"
@@ -34,7 +34,7 @@ dependencies:
 - id: ro
 - id: pato
 
-tracker: https://github.com/patrick-lloyd-ray/TMN/issues
+tracker: https://github.com/BICCN/TMN/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
