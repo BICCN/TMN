@@ -1,2 +1,26 @@
 ?cls	?pred	?val	?synType
-<http://purl.obolibrary.org/obo/TMN_00000000>	<http://www.w3.org/2000/01/rdf-schema#label>	"root node"@en	
+<http://purl.obolibrary.org/obo/TMN_0000002>	<http://www.w3.org/2000/01/rdf-schema#label>	"fluorescence micro-optical sectioning tomography assay"@en	
+<http://purl.obolibrary.org/obo/TMN_0000021>	<http://www.w3.org/2000/01/rdf-schema#label>	"volumetric imaging with synchronized on-the-fly oblique-scan and readout assay"@en	
+<http://purl.obolibrary.org/obo/TMN_0000024>	<http://www.w3.org/2000/01/rdf-schema#label>	"switching mechanism at the 5' end of RNA template sequencing assay 2"@en	
+<http://purl.obolibrary.org/obo/TMN_0000007>	<http://www.w3.org/2000/01/rdf-schema#label>	"mouselight"@en	
+<http://purl.obolibrary.org/obo/TMN_0000000>	<http://www.w3.org/2000/01/rdf-schema#label>	"droplet-based single-cell RNA sequencing assay"@en	
+<http://purl.obolibrary.org/obo/TMN_0000019>	<http://www.w3.org/2000/01/rdf-schema#label>	"anterograde tracing assay"@en	
+<http://purl.obolibrary.org/obo/TMN_0000022>	<http://www.w3.org/2000/01/rdf-schema#label>	"single-nucleus chromatin accessibility and mRNA expression sequencing assay"@en	
+<http://purl.obolibrary.org/obo/TMN_0000004>	<http://www.w3.org/2000/01/rdf-schema#label>	"neuron morphology assay"@en	
+<http://purl.obolibrary.org/obo/TMN_0000001>	<http://www.w3.org/2000/01/rdf-schema#label>	"fluorescence in situ hybridization assay"@en	
+<http://purl.obolibrary.org/obo/TMN_0000023>	<http://www.w3.org/2000/01/rdf-schema#label>	"composite in situ imaging"@en	
+<http://purl.obolibrary.org/obo/TMN_0000013>	<http://www.w3.org/2000/01/rdf-schema#label>	"sequential fluorescence in situ hybridization assay"@en	
+<http://purl.obolibrary.org/obo/TMN_0000005>	<http://www.w3.org/2000/01/rdf-schema#label>	"mosaicism with repeat frameshift genetic sparse labeling assay"@en	
+<http://purl.obolibrary.org/obo/TMN_0000018>	<http://www.w3.org/2000/01/rdf-schema#label>	"cre-dependent anterograde tracing assay"@en	
+<http://purl.obolibrary.org/obo/TMN_0000017>	<http://www.w3.org/2000/01/rdf-schema#label>	"light sheet fluorescence microscopy assay"@en	
+<http://purl.obolibrary.org/obo/TMN_0000020>	<http://www.w3.org/2000/01/rdf-schema#label>	"optical coherence tomography assay"@en	
+<http://purl.obolibrary.org/obo/TMN_0000011>	<http://www.w3.org/2000/01/rdf-schema#label>	"retrograde tracing assay"@en	
+<http://purl.obolibrary.org/obo/TMN_0000003>	<http://www.w3.org/2000/01/rdf-schema#label>	"multiplexed error-robust fluorescence in situ hybridization assay"@en	
+<http://purl.obolibrary.org/obo/TMN_0000006>	<http://www.w3.org/2000/01/rdf-schema#label>	"serial two-photon tomography"@en	
+<http://purl.obolibrary.org/obo/TMN_0000015>	<http://www.w3.org/2000/01/rdf-schema#label>	"switching mechanism at the 5' end of RNA template sequencing assay v4"@en	
+<http://purl.obolibrary.org/obo/TMN_0000012>	<http://www.w3.org/2000/01/rdf-schema#label>	"retrograde transsynaptic tracing assay"@en	
+<http://purl.obolibrary.org/obo/TMN_0000016>	<http://www.w3.org/2000/01/rdf-schema#label>	"tracing the relationship between input and output study design"@en	
+<http://purl.obolibrary.org/obo/TMN_0000010>	<http://www.w3.org/2000/01/rdf-schema#label>	"patch clamp single-cell RNA sequencing assay"@en	
+<http://purl.obolibrary.org/obo/TMN_0000008>	<http://www.w3.org/2000/01/rdf-schema#label>	"multi-electrode extracellular electrophysiology assay"@en	
+<http://purl.obolibrary.org/obo/TMN_0000014>	<http://www.w3.org/2000/01/rdf-schema#label>	"switching mechanism at the 5' end of RNA template sequencing assay"@en	
+<http://purl.obolibrary.org/obo/TMN_0000009>	<http://www.w3.org/2000/01/rdf-schema#label>	"neuron morphology reconstruction assay"@en	
