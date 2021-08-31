@@ -1,9 +1,0 @@
-?x	?p	?y
-<http://purl.obolibrary.org/obo/TMN_0000005>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/TMN_0000004>
-<http://purl.obolibrary.org/obo/TMN_0000013>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/TMN_0000001>
-<http://purl.obolibrary.org/obo/TMN_0000012>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/TMN_0000011>
-<http://purl.obolibrary.org/obo/TMN_0000024>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/TMN_0000014>
-<http://purl.obolibrary.org/obo/TMN_0000015>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/TMN_0000024>
-<http://purl.obolibrary.org/obo/TMN_0000009>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/TMN_0000004>
-<http://purl.obolibrary.org/obo/TMN_0000018>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/TMN_0000019>
-<http://purl.obolibrary.org/obo/TMN_0000007>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/TMN_0000006>
