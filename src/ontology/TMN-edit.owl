@@ -9,8 +9,8 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/TMN.owl>
-Import(<http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl>)
-Import(<http://purl.obolibrary.org/obo/obi/2020-12-16/obi.owl>)
+Import(<http://github.com/BFO-ontology/BFO/blob/master/bfo_classes_only.owl>)
+Import(<http://github.com/obi-ontology/obi/blob/master/obi.owl>)
 Import(<http://github.com/BICCN/TMN/blob/main/src/ontology/imports/ro_import.owl>)
 Import(<http://github.com/BICCN/TMN/blob/main/src/ontology/imports/bfo_import.owl>)
 Import(<http://github.com/BICCN/TMN/blob/main/src/ontology/imports/efo_import.owl>)
