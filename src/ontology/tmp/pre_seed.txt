@@ -14,6 +14,7 @@ http://purl.obolibrary.org/obo/OBI_0002119
 http://purl.obolibrary.org/obo/OBI_0002176
 http://purl.obolibrary.org/obo/OBI_0002437
 http://purl.obolibrary.org/obo/OBI_0002631
+http://purl.obolibrary.org/obo/OBI_0002764
 http://purl.obolibrary.org/obo/OBI_0500000
 http://purl.obolibrary.org/obo/OBI_0600045
 http://purl.obolibrary.org/obo/OBI_0600047
@@ -43,6 +44,9 @@ http://purl.obolibrary.org/obo/TMN_0000021
 http://purl.obolibrary.org/obo/TMN_0000022
 http://purl.obolibrary.org/obo/TMN_0000023
 http://purl.obolibrary.org/obo/TMN_0000024
+http://purl.obolibrary.org/obo/TMN_0000025
+http://purl.obolibrary.org/obo/TMN_0000026
+http://purl.obolibrary.org/obo/TMN_0000027
 http://www.geneontology.org/formats/oboInOwl#created_by
 http://www.geneontology.org/formats/oboInOwl#creation_date
 http://www.w3.org/2002/07/owl#AnnotationProperty
