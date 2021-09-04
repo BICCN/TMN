@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/TMN.owl#"
+     xml:base="http://purl.obolibrary.org/obo/TMN.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/TMN.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An assay wherein a substance is taken up by an axon terminal and transported toward the soma to mark (or trace) some part of a cell.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Patrick Ray</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retrograde tracing</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Patrick Ray</obo:IAO_0000119>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-11T00:39:16Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">retrograde tracing assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TMN_0000011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A retrograde tracing assay that traces the neural connections from a synapse to a soma allowing the mapping of connections between neurons in a structure and a target in the brain.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Patrick Ray</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Retrograde_tracing</obo:IAO_0000119>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-11T00:51:53Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">retrograde transsynaptic tracing assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TMN_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A anterograde tracing assay that uses a Cre recombinase-dependent as a tracer.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Patrick Ray</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://doi.org/10.1016/j.neuron.2011.12.002</obo:IAO_0000119>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-15T18:11:42Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">cre-dependent anterograde tracing assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An assay wherein axon projections are traced from their source (cell body or soma) to their point of termination (synapse).</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Patrick Ray</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Anterograde_tracing</obo:IAO_0000119>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-15T18:13:29Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">anterograde tracing assay</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
