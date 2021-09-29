@@ -77,7 +77,7 @@ robot filter --input uberon_module.owl \
   --signature true \
   --output results/filter_class.owl
 
-Copy all of OBI except descendants of ‘assay’ (using remove on ‘assay’ is preferred):
+Copy all of OBI except descendants of ‘organ’ (using remove on ‘organ’ is preferred):
 
 robot filter --input uberon_module.owl \
   --term UBERON:0000062 \
@@ -114,3 +114,86 @@ robot filter --input template.owl \
   --include-term IAO:0000117 \
   --include-term IAO:0000119 \
   --output results/template-base-filter.owl
+
+### Export
+
+We can export details about an ontology entities as a table. The `export` command expects some input ontology (`--input`), a set of column headers (`--header`), and a file to write to (`--export`). 
+
+robot export --input assays.owl \
+  --header "LABEL|ALTERNATIVE TERMS|DEFINITION" \
+  --export assays.csv
+
+The export command is able to export an ontology in: tsv, csv, html, html-list, json, xlsx.
+
+#### Columns
+
+The `--header` option is a list of keywords or properties used in the ontology. The columns in the `--header` argument will exactly match the first line of the export file (i.e., the column headers). 
+
+The following are supported:
+  `IRI`: creates an “IRI” column based on the full unique identifier
+  `ID`: creates an “ID” column based on the short form of the unique identifier (CURIE) - please note that all IRIs must have defined prefixes, or the full IRI will be returned.
+  `LABEL`: creates a “Label” column based on rdfs:label (rdfs:label can also be used in place of this column)
+  `SYNONYMS`: creates a “SYNONYMS” column based on all synonyms (oboInOwl exact, broad, narrow, related, or IAO alternative term)
+  `SubClass Of`: creates a “SubClass Of” column based on rdfs:subClassOf
+  `SubClasses`: creates a “SubClasses” column based on direct children of a class
+  `Equivalent Class`: creates an “Equivalent Classes” column based on owl:equivalentClass
+  `SubProperty Of`: creates a “SubProperty Of” column based on rdfs:subPropertyOf
+  `Equivalent Property`: creates an “Equivalent Properties” column based on owl:equivalentProperty
+  `Disjoint With`: creates a “Disjoint With” column based on owl:disjointWith
+  `Type : creates an “Instance Of” column based on rdf:type for named individuals or the OWL EntityType for all others (e.g., Class)
+
+The first header in the `--header` list is used to sort the rows of the export. You can change the column that is sorted on by including `--sort <header>`. This can eitehr be one header, or a list of headers that will be sorted in order.
+
+#### Including and Excluding Entities
+
+By default, the export includes details on the classes and individuals in an ontology. Properties are excluded. You can configure which types of entities you wish to include with the `--include <entity types>` option. The `<entity types>` argument is a space-, comma-, or tab-separated list of one or more of the following entity types. 
+
+  `classes`
+  `individuals`
+  `properties`
+
+For example, to return the details of individuals only:
+
+robot --prefix "example: http://example.com/" \
+  export --input template.owl \
+  --header "ID|LABEL|Type" \
+  --include "individuals" \
+  --export results/individuals.csv
+
+To return details of classes and properties:
+
+robot export --input nucleus_part_of.owl \
+  --header "ID|LABEL|Type|SubClass Of|SubProperty Of" \
+  --include "classes properties" \
+  --export results/classes-properties.csv
+
+The --include option does not need to be specified if you are getting details on individuals and classes. If you do specify an --include, it cannot be an empty string, as no entities will be included in the export.
+
+#### Rendering Cell Values
+
+Entities used in cell values are rendered by one of four different strategies:
+
+`NAME` - render the entity by label (if label does not exist, entity is rendered by CURIE)
+`ID` - render the entity by short form ID/CURIE
+`IRI` - render the entity by full IRI
+`LABEL` - render the entity by label ONLY (if label does not exist, entity is rendered as an empty string)
+
+By default, values are rendered with the NAME strategy. To update the strategy globally, you can use the --entity-format option and provide one of the above values:
+
+robot export --input nucleus_part_of.owl \
+  --header "ID|SubClass Of" \
+  --entity-format ID \
+  --entity-select NAMED \
+  --export results/nucleus-ids.csv
+  
+In the above example, all the “subclass of” values will be rendered by their short form ID.
+
+You can also specify different rendering strategies for different columns by including the strategy name in a square-bracket-enclosed tag after the column name:
+
+robot export --input nucleus_part_of.owl \
+  --header "rdfs:label|SubClass Of [ID]|SubClass Of [IRI]" \
+  --entity-select NAMED \
+  --export results/nucleus-iris.csv
+These tags should not be used with the following default columns: LABEL, ID, or IRI as they will not change the rendered values.
+
+These tags can be used for object and annotation property columns as well. When using these tags with annotation properties, the value in the cell will only change if the annotation value is an IRI. For literals, the annotation value will always be rendered the same, no matter what the tag is.
