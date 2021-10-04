@@ -50,6 +50,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000024>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000025>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000026>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000028>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000029>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TMN_0000030>))
 
 
 
@@ -365,6 +368,45 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000027> "2021-09-02T02:18:54Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000027> "10x chromium ATAC-seq"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000027> <http://purl.obolibrary.org/obo/OBI_0002764>)
+
+# Class: <http://purl.obolibrary.org/obo/TMN_0000028> (slide-seq assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000028> "A RNA-seq assay for transferring RNA from tissue sections onto a surface covered in DNA-barcoded beads with known positions, allowing the locations of the RNA to be inferred by sequencing."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000028> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000028> "slide-seq"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000028> "slide-sequencing assay"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000028> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000028> "doi: 10.1126/science.aaw1219"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000028> "patrick-lloyd-ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000028> "2021-10-04T22:03:50Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000028> "slide-seq assay"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000028> <http://purl.obolibrary.org/obo/OBI_0001271>)
+
+# Class: <http://purl.obolibrary.org/obo/TMN_0000029> (SHARE-seq assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000029> "A RNA-seq assay that uses high-throughput ATAC and RNA expression with sequencing to measure chromatin accessibility and gene expression in the same single cell."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000029> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000029> "SHARE-seq"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000029> "SHARE-sequencing"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000029> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000029> "https://doi.org/10.1016/j.cell.2020.09.056"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000029> "patrick-lloyd-ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000029> "2021-10-04T22:09:37Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000029> "SHARE-seq assay"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000029> <http://purl.obolibrary.org/obo/OBI_0001271>)
+
+# Class: <http://purl.obolibrary.org/obo/TMN_0000030> (single cell multiome ATAC + gene expression assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TMN_0000030> "An ATAC-seq assay that provides information about both transcriptome and epigenome from a single cell."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TMN_0000030> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/TMN_0000030> "single cell multiome ATAC + gene expression"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000030> "PERSON: Patrick Ray"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000030> "https://www.10xgenomics.com/blog/introducing-chromium-single-cell-multiome-atac-gene-expression"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/TMN_0000030> "https://www.10xgenomics.com/products/single-cell-multiome-atac-plus-gene-expression"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/TMN_0000030> "patrick-lloyd-ray"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/TMN_0000030> "2021-10-04T22:12:23Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TMN_0000030> "single cell multiome ATAC + gene expression assay"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TMN_0000030> <http://purl.obolibrary.org/obo/OBI_0002764>)
 
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "doi: 10.1007/978-1-62703-056-4_2"^^xsd:string) Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://oni.bio/nanoimager/super-resolution-microscopy/epifluorescence-microscopy/"^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0002437> "Alternative definition: A fluorescence microscopy technique where a beam of light is passed through a specimen and both illuminated and emitted light travel through a common lens."^^xsd:string)
