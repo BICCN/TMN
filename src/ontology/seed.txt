@@ -47,6 +47,9 @@ http://purl.obolibrary.org/obo/TMN_0000024
 http://purl.obolibrary.org/obo/TMN_0000025
 http://purl.obolibrary.org/obo/TMN_0000026
 http://purl.obolibrary.org/obo/TMN_0000027
+http://purl.obolibrary.org/obo/TMN_0000028
+http://purl.obolibrary.org/obo/TMN_0000029
+http://purl.obolibrary.org/obo/TMN_0000030
 http://www.geneontology.org/formats/oboInOwl#created_by
 http://www.geneontology.org/formats/oboInOwl#creation_date
 http://www.w3.org/2002/07/owl#AnnotationProperty
