@@ -41,14 +41,14 @@ ERROR	multiple_definitions	generically dependent continuant	textual definition	A
 ERROR	multiple_definitions	generically dependent continuant	textual definition	<b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en>
 ERROR	multiple_definitions	BFO:0000134	elucidation	<To say that each spatiotemporal region s temporally_projects_onto some temporal region t is to say that t is the temporal extension of s. (axiom label in BFO2 Reference: [080-003])@en>
 ERROR	multiple_definitions	BFO:0000134	elucidation	<To say that spatiotemporal region s spatially_projects_onto spatial region r at t is to say that r is the spatial extent of s at t. (axiom label in BFO2 Reference: [081-003])@en>
-ERROR	multiple_definitions	细胞系细胞	textual definition	A cultured cell that is part of a cell line - a stable and homogeneous population of cells with a common biological origin and propagation history in culture@en
-ERROR	multiple_definitions	细胞系细胞	textual definition	"A cultured cell that is part of a cell line - a stable and homogeneous population of cells with a common biological origin and propagation history in culture
+ERROR	multiple_definitions	cell line cell	textual definition	A cultured cell that is part of a cell line - a stable and homogeneous population of cells with a common biological origin and propagation history in culture@en
+ERROR	multiple_definitions	cell line cell	textual definition	"A cultured cell that is part of a cell line - a stable and homogeneous population of cells with a common biological origin and propagation history in culture
 "
-ERROR	multiple_definitions	细胞系细胞	textual definition	一个培养细胞，它是一个细胞株（一个稳定的，同质的细胞群，具有共同的生物学起源和增殖史）的一部分
-ERROR	multiple_definitions	细胞系细胞	textual definition	"一个培养细胞，它是一个细胞株（一个稳定的，同质的细胞群，具有共同的生物学起源和增殖史）的一部分
+ERROR	multiple_definitions	cell line cell	textual definition	一个培养细胞，它是一个细胞株（一个稳定的，同质的细胞群，具有共同的生物学起源和增殖史）的一部分
+ERROR	multiple_definitions	cell line cell	textual definition	"一个培养细胞，它是一个细胞株（一个稳定的，同质的细胞群，具有共同的生物学起源和增殖史）的一部分
 "
-ERROR	multiple_definitions	非永生细胞系细胞	textual definition	A cell line cell that is capable of replicating a limited number of times in culture before undergoing senescence.
-ERROR	multiple_definitions	非永生细胞系细胞	textual definition	A cell line cell that is capable of replicating a limited number of times in culture before undergoing senescence.@en
+ERROR	multiple_definitions	mortal cell line cell	textual definition	A cell line cell that is capable of replicating a limited number of times in culture before undergoing senescence.
+ERROR	multiple_definitions	mortal cell line cell	textual definition	A cell line cell that is capable of replicating a limited number of times in culture before undergoing senescence.@en
 ERROR	multiple_definitions	immortal cell line cell	textual definition	A cell line cell that is expected to be capable of an unlimited number of divisions, and is thus able to support indefinite propagation in vitro as part of an immortal cell line.
 ERROR	multiple_definitions	immortal cell line cell	textual definition	A cell line cell that is expected to be capable of an unlimited number of divisions, and is thus able to support indefinite propagation in vitro as part of an immortal cell line.@en
 ERROR	multiple_definitions	immortal cell line cell	textual definition	预期能够进行无限次分裂的细胞系细胞，作为永生细胞系一部分，能够支持体外无限增殖。
@@ -64,12 +64,12 @@ ERROR	multiple_definitions	textual definition	textual definition	The official OB
 ERROR	multiple_definitions	textual definition	textual definition	The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
 ERROR	multiple_labels	fiat object part	label	fiat object@en
 ERROR	multiple_labels	fiat object part	label	fiat object part@en
-ERROR	multiple_labels	细胞系细胞	label	cell line cell
-ERROR	multiple_labels	细胞系细胞	label	cell line cell@en
-ERROR	multiple_labels	细胞系细胞	label	细胞系细胞@zh
-ERROR	multiple_labels	非永生细胞系细胞	label	mortal cell line cell
-ERROR	multiple_labels	非永生细胞系细胞	label	mortal cell line cell@en
-ERROR	multiple_labels	非永生细胞系细胞	label	非永生细胞系细胞@zh
+ERROR	multiple_labels	cell line cell	label	cell line cell
+ERROR	multiple_labels	cell line cell	label	cell line cell@en
+ERROR	multiple_labels	cell line cell	label	细胞系细胞@zh
+ERROR	multiple_labels	mortal cell line cell	label	mortal cell line cell
+ERROR	multiple_labels	mortal cell line cell	label	mortal cell line cell@en
+ERROR	multiple_labels	mortal cell line cell	label	非永生细胞系细胞@zh
 ERROR	multiple_labels	immortal cell line cell	label	immortal cell line cell
 ERROR	multiple_labels	immortal cell line cell	label	immortal cell line cell@en
 ERROR	multiple_labels	immortal cell line cell	label	永生细胞系细胞@zh
@@ -170,9 +170,9 @@ WARN	annotation_whitespace	relational quality	has associated axiom(fol)	<(iff (R
 WARN	annotation_whitespace	two-dimensional continuant fiat boundary	has associated axiom(fol)	<(iff (TwoDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (TwoDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [033-001] >
 WARN	annotation_whitespace	zero-dimensional continuant fiat boundary	has associated axiom(fol)	<(iff (ZeroDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (ZeroDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [031-001] >
 WARN	annotation_whitespace	zero-dimensional temporal region	has associated axiom(fol)	<(forall (x) (if (ZeroDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [102-001] >
-WARN	annotation_whitespace	细胞系细胞	textual definition	"A cultured cell that is part of a cell line - a stable and homogeneous population of cells with a common biological origin and propagation history in culture
+WARN	annotation_whitespace	cell line cell	textual definition	"A cultured cell that is part of a cell line - a stable and homogeneous population of cells with a common biological origin and propagation history in culture
 "
-WARN	annotation_whitespace	细胞系细胞	textual definition	"一个培养细胞，它是一个细胞株（一个稳定的，同质的细胞群，具有共同的生物学起源和增殖史）的一部分
+WARN	annotation_whitespace	cell line cell	textual definition	"一个培养细胞，它是一个细胞株（一个稳定的，同质的细胞群，具有共同的生物学起源和增殖史）的一部分
 "
 WARN	annotation_whitespace	cell line	textual definition	A cultured cell population that represents a genetically stable and homogenous population of cultured cells that shares a common propagation history (i.e. has been successively passaged together in culture). @en
 WARN	annotation_whitespace	cell line	textual definition	"A cultured cell population that represents a genetically stable and homogenous population of cultured cells that shares a common propagation history (i.e. has been successively passaged together in culture).  
@@ -656,8 +656,8 @@ INFO	lowercase_definition	two-dimensional continuant fiat boundary	elucidation	<
 INFO	lowercase_definition	zero-dimensional continuant fiat boundary	elucidation	<a zero-dimensional continuant fiat boundary is a fiat point whose location is defined in relation to some material entity. (axiom label in BFO2 Reference: [031-001])@en>
 INFO	lowercase_definition	phenol red	textual definition	3H-2,1-Benzoxathiole 1,1-dioxide in which both of the hydrogens at position 3 have been substituted by 4-hydroxyphenyl groups. A pH indicator changing colour from yellow below pH 6.8 to bright pink above pH 8.2, it is commonly used as an indicator in cell cultures and in home swimming pool test kits. It is also used in the (now infrequently performed) phenolsulfonphthalein (PSP) test for estimation of overall blood flow through the kidney.
 INFO	lowercase_definition	bromophenol blue	textual definition	3H-2,1-Benzoxathiole 1,1-dioxide in which both of the hydrogens at position 3 have been substituted by 3,5-dibromo-4-hydroxyphenyl groups. It is used as a laboratory indicator, changing from yellow below pH 3 to purple at pH 4.6, and as a size marker for monitoring the progress of agarose gel and polyacrylamide gel electrophoresis. It has also been used as an industrial dye.
-INFO	lowercase_definition	细胞系细胞	textual definition	一个培养细胞，它是一个细胞株（一个稳定的，同质的细胞群，具有共同的生物学起源和增殖史）的一部分
-INFO	lowercase_definition	细胞系细胞	textual definition	"一个培养细胞，它是一个细胞株（一个稳定的，同质的细胞群，具有共同的生物学起源和增殖史）的一部分
+INFO	lowercase_definition	cell line cell	textual definition	一个培养细胞，它是一个细胞株（一个稳定的，同质的细胞群，具有共同的生物学起源和增殖史）的一部分
+INFO	lowercase_definition	cell line cell	textual definition	"一个培养细胞，它是一个细胞株（一个稳定的，同质的细胞群，具有共同的生物学起源和增殖史）的一部分
 "
 INFO	lowercase_definition	immortal cell line cell	textual definition	预期能够进行无限次分裂的细胞系细胞，作为永生细胞系一部分，能够支持体外无限增殖。
 INFO	lowercase_definition	cell line	textual definition	一个培养细胞群体，其代表具有共同增殖历史（即已经在培养中一起连续传代）的遗传稳定且同质的培养细胞群体。@zh
