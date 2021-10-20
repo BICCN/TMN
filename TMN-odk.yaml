@@ -12,19 +12,21 @@ export_formats:
 - owl
 - obo
 git_user: ''
-github_org: patrick-lloyd-ray
+github_org: BICCN
 gzip_main: false
 id: TMN
 import_group:
   directory: imports/
   disabled: false
   ids:
-  - po
+  - bfo
   - ro
-  - pato
+  - efo
+  - obi
+  - ero
   products:
   - description: null
-    id: po
+    id: bfo
     mirror_from: null
     rebuild_if_source_changes: true
     robot_settings: null
@@ -34,11 +36,20 @@ import_group:
     rebuild_if_source_changes: true
     robot_settings: null
   - description: null
-    id: pato
+    id: efo
     mirror_from: null
     rebuild_if_source_changes: true
     robot_settings: null
-  rebuild_if_source_changes: true
+  - description: null
+    id: obi
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: ero
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
 import_pattern_ontology: false
 license: https://creativecommons.org/licenses/unspecified
 namespaces: null

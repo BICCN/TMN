@@ -1,3 +1,14 @@
 EFO:0009899 ## 10x chromium 3' v2 sequencing
 EFO:0009922 ## 10x chromium 3' v3 sequencing
 EFO:0007045 ## assay for transposase-accessible chromatin using sequencing
+EFO:0002693 ## DNA-seq
+EFO:0007045 ## ATAC-seq
+EFO:0010891 ## scATAC-seq
+EFO:0030007 ## 10x scATAC-seq
+EFO:0009918 ## smFISH
+EFO:0008992 ## MERFISH
+EFO:0008991 ## seqFISH
+EFO:0008722 ## Drop-seq
+EFO:0005066 ## collection of material
+EFO:0007559 ## screeing library
+EFO:0007569 ## compound library
