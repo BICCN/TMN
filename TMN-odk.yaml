@@ -1,0 +1,27 @@
+id: tmn
+title: "Techniques and Methods for Neuroscience Ontology"
+github_org: BICCN
+repo: TMN
+#report_fail_on: ERROR
+report_fail_on: None
+use_dosdps: TRUE
+export_formats:
+  - owl
+  - obo
+  - json
+release_artefacts: 
+  - base
+  - full
+  - simple
+  - basic
+  - non-classified
+import_group:
+  products:
+    - id: bfo
+    - id: efo
+    - id: ero 
+    - id: obi
+    - id: ro
+    - id: ncbitaxon
+      is_large: TRUE
+robot_java_args: '-Xmx16G'
