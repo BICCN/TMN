@@ -18,10 +18,7 @@ release_artefacts:
 import_group:
   products:
     - id: bfo
-    - id: efo
     - id: ero 
     - id: obi
     - id: ro
-    - id: ncbitaxon
-      is_large: TRUE
 robot_java_args: '-Xmx16G'
