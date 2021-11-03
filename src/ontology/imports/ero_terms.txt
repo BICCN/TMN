@@ -1,5 +1,36 @@
-ERO:0000007 ## technique
-ERO:0000401 ## cellular assay
-ERO:0001289 ## electrophysiological assay
-ERO:0000634 ## calcium imagaing assay
+ERO:0000378 ## surgery
+ERO:0000490 ## tissue embedding
+ERO:0000677 ## tissue fixation
+ERO:0001319 ## measurement method
+ERO:0001235 ## magnetic resonance imaging
+ERO:0000490 ## tissue embedding
+ERO:0000677 ## tissue fixation
+ERO:0000491 ## tissue slicing
+ERO:0001360 ## stereology
+ERO:0000201 ## microscopy
+ERO:0000214 ## immunohistochemistry assay
+ERO:0001240 ## immunohistochemistry
+ERO:0000716 ## autoradiography
+ERO:0000771 ## in situ hybridization
+ERO:0001168 ## fluorescent in situ hybridization
+ERO:0001075 ## real-time PCR
+ERO:0001298 ## electrophysiological assay
 ERO:0001685 ## patch clamp technique
+ERO:0000652 ## radioimmunoassay
+ERO:0001501 ## ion chromatography
+ERO:0001034 ## coimmunoprecipitation
+ERO:0000926 ## chromatin immunoprecipitation
+ERO:0001331 ## electrospray ionization
+ERO:0000907 ## electrophoretic gel mobility shift
+ERO:0000215 ## light microscopy
+ERO:0001636 ## phase contrast microscopy
+ERO:0001637 ## differential interference contrast microscopy
+ERO:0001356 ## fluorescent microscopy
+ERO:0000200 ## confocal microscopy
+ERO:0001640 ## multiphoton microscopy
+ERO:0000328 ## electron microscopy
+ERO:0000329 ## transmission electron microscopy
+ERO:0000330 ## scanning electron microscopy
+ERO:0000634 ## calcium imaging assay
+ERO:0001277 ## retrograde labeling
+ERO:0001235 ## magnetic resonance imaging
