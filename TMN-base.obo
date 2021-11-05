@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: TMN/releases/2021-09-02/TMN-base.owl
-ontology: TMN/TMN-base
+data-version: tmn/releases/2021-11-05/tmn-base.owl
+ontology: tmn/tmn-base
 property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Techniques and Methods for Neuroscience Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
-property_value: owl:versionInfo "2021-09-02" xsd:string
+property_value: owl:versionInfo "2021-11-05" xsd:string
 
 [Term]
 id: TMN:0000000
@@ -315,4 +315,43 @@ property_value: IAO:0000118 "10x chromium ATAC sequencing assay" xsd:string
 property_value: IAO:0000118 "10x chromium ATAC-seq assay" xsd:string
 created_by: patrick-lloyd-ray
 creation_date: 2021-09-02T02:18:54Z
+
+[Term]
+id: TMN:0000028
+name: slide-seq assay
+def: "A RNA-seq assay for transferring RNA from tissue sections onto a surface covered in DNA-barcoded beads with known positions, allowing the locations of the RNA to be inferred by sequencing." []
+is_a: OBI:0001271
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "slide-seq" xsd:string
+property_value: IAO:0000118 "slide-sequencing assay" xsd:string
+property_value: IAO:0000119 "doi: 10.1126/science.aaw1219" xsd:string
+property_value: IAO:0000119 "PERSON: Patrick Ray" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-10-04T22:03:50Z
+
+[Term]
+id: TMN:0000029
+name: SHARE-seq assay
+def: "A RNA-seq assay that uses high-throughput ATAC and RNA expression with sequencing to measure chromatin accessibility and gene expression in the same single cell." []
+is_a: OBI:0001271
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "SHARE-seq" xsd:string
+property_value: IAO:0000118 "SHARE-sequencing" xsd:string
+property_value: IAO:0000119 https://doi.org/10.1016/j.cell.2020.09.056 xsd:string
+property_value: IAO:0000119 "PERSON: Patrick Ray" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-10-04T22:09:37Z
+
+[Term]
+id: TMN:0000030
+name: single cell multiome ATAC + gene expression assay
+def: "An ATAC-seq assay that provides information about both transcriptome and epigenome from a single cell." []
+is_a: OBI:0002764
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "single cell multiome ATAC + gene expression" xsd:string
+property_value: IAO:0000119 https://www.10xgenomics.com/blog/introducing-chromium-single-cell-multiome-atac-gene-expression xsd:string
+property_value: IAO:0000119 https://www.10xgenomics.com/products/single-cell-multiome-atac-plus-gene-expression xsd:string
+property_value: IAO:0000119 "PERSON: Patrick Ray" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-10-04T22:12:23Z
 

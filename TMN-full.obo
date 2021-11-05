@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: TMN/releases/2021-09-02/TMN-full.owl
-ontology: TMN/TMN-full
+data-version: tmn/releases/2021-11-05/tmn-full.owl
+ontology: tmn/tmn-full
 property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Techniques and Methods for Neuroscience Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
-property_value: owl:versionInfo "2021-09-02" xsd:string
+property_value: owl:versionInfo "2021-11-05" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -1842,7 +1842,7 @@ id: CLO:0000018
 name: mortal cell line cell
 name: 非永生细胞系细胞
 def: "A cell line cell that is capable of replicating a limited number of times in culture before undergoing senescence." []
-is_a: CLO:0000001 ! cell line cell
+is_a: CLO:0000001 ! 细胞系细胞
 property_value: IAO:0000111 "mortal cell line cell" xsd:string
 property_value: IAO:0000111 "mortal cell line cell" xsd:string
 property_value: IAO:0000111 "非永生细胞系细胞" xsd:string
@@ -1854,7 +1854,7 @@ name: immortal cell line cell
 name: 永生细胞系细胞
 def: "A cell line cell that is expected to be capable of an unlimited number of divisions, and is thus able to support indefinite propagation in vitro as part of an immortal cell line." []
 def: "预期能够进行无限次分裂的细胞系细胞，作为永生细胞系一部分，能够支持体外无限增殖。" []
-is_a: CLO:0000001 ! cell line cell
+is_a: CLO:0000001 ! 细胞系细胞
 property_value: IAO:0000111 "immortal cell line cell" xsd:string
 property_value: IAO:0000111 "immortal cell line cell" xsd:string
 property_value: IAO:0000111 "永生细胞系细胞" xsd:string
@@ -1869,8 +1869,8 @@ def: "A cultured cell population that represents a genetically stable and homoge
 def: "一个培养细胞群体，其代表具有共同增殖历史（即已经在培养中一起连续传代）的遗传稳定且同质的培养细胞群体。" []
 def: "培养的细胞群体代表具有共同繁殖历史（即已经在培养中一起连续传代）的遗传稳定且同质的培养细胞群体。 \n" []
 is_a: OBI:0001905 ! secondary cultured cell population
-relationship: OBI:0000643 CLO:0000001 ! has grain cell line cell
-relationship: OBI:0000643 CLO:0000001 ! has grain cell line cell
+relationship: OBI:0000643 CLO:0000001 ! has grain 细胞系细胞
+relationship: OBI:0000643 CLO:0000001 ! has grain 细胞系细胞
 property_value: IAO:0000111 "cell line" xsd:string
 property_value: IAO:0000111 "细胞系" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/clo.owl
@@ -25272,7 +25272,7 @@ id: OBI:0001907
 name: immortalizing cell line transformation
 def: "a genetic transformation of a cell line cell with transgenic constructs intended to confer the capability for indefinite propagation in culture" []
 is_a: OBI:0600043 ! genetic transformation
-relationship: OBI:0000293 CLO:0000001 ! has_specified_input cell line cell
+relationship: OBI:0000293 CLO:0000001 ! has_specified_input 细胞系细胞
 property_value: IAO:0000111 "immortalizing cell line transformation" xsd:string
 property_value: IAO:0000114 IAO:0000428
 
@@ -25320,7 +25320,7 @@ name: cell line culture
 def: "A cell culture comprised of cell line cells and the media in which they are being actively propagated or quiescently stored." []
 comment: A cell line culture includes the cells in culture, as well as the media and all additives/reagents in which the cells are being grown or in which they are stored.
 is_a: OBI:0001876 ! cell culture
-relationship: BFO:0000051 CLO:0000001 ! has part cell line cell
+relationship: BFO:0000051 CLO:0000001 ! has part 细胞系细胞
 property_value: IAO:0000111 "cell line culture" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON:Matthew Brush" xsd:string
@@ -50375,6 +50375,45 @@ property_value: IAO:0000118 "10x chromium ATAC sequencing assay" xsd:string
 property_value: IAO:0000118 "10x chromium ATAC-seq assay" xsd:string
 created_by: patrick-lloyd-ray
 creation_date: 2021-09-02T02:18:54Z
+
+[Term]
+id: TMN:0000028
+name: slide-seq assay
+def: "A RNA-seq assay for transferring RNA from tissue sections onto a surface covered in DNA-barcoded beads with known positions, allowing the locations of the RNA to be inferred by sequencing." []
+is_a: OBI:0001271 ! RNA-seq assay
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "slide-seq" xsd:string
+property_value: IAO:0000118 "slide-sequencing assay" xsd:string
+property_value: IAO:0000119 "doi: 10.1126/science.aaw1219" xsd:string
+property_value: IAO:0000119 "PERSON: Patrick Ray" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-10-04T22:03:50Z
+
+[Term]
+id: TMN:0000029
+name: SHARE-seq assay
+def: "A RNA-seq assay that uses high-throughput ATAC and RNA expression with sequencing to measure chromatin accessibility and gene expression in the same single cell." []
+is_a: OBI:0001271 ! RNA-seq assay
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "SHARE-seq" xsd:string
+property_value: IAO:0000118 "SHARE-sequencing" xsd:string
+property_value: IAO:0000119 https://doi.org/10.1016/j.cell.2020.09.056 xsd:string
+property_value: IAO:0000119 "PERSON: Patrick Ray" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-10-04T22:09:37Z
+
+[Term]
+id: TMN:0000030
+name: single cell multiome ATAC + gene expression assay
+def: "An ATAC-seq assay that provides information about both transcriptome and epigenome from a single cell." []
+is_a: OBI:0002764 ! single-cell ATAC-seq
+property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
+property_value: IAO:0000118 "single cell multiome ATAC + gene expression" xsd:string
+property_value: IAO:0000119 https://www.10xgenomics.com/blog/introducing-chromium-single-cell-multiome-atac-gene-expression xsd:string
+property_value: IAO:0000119 https://www.10xgenomics.com/products/single-cell-multiome-atac-plus-gene-expression xsd:string
+property_value: IAO:0000119 "PERSON: Patrick Ray" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2021-10-04T22:12:23Z
 
 [Term]
 id: UBERON:0000002
