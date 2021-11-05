@@ -171,7 +171,7 @@
         "basicPropertyValues": [
           {
             "pred": "http://purl.org/dc/elements/1.1/description",
-            "val": "None"
+            "val": "This is the developers repository for a techniques and methods ontology to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like."
           },
           {
             "pred": "http://purl.org/dc/elements/1.1/title",
@@ -183,7 +183,7 @@
           },
           {
             "pred": "http://purl.org/dc/terms/license",
-            "val": "https://creativecommons.org/licenses/unspecified"
+            "val": "https://creativecommons.org/licenses/by/4.0/"
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",

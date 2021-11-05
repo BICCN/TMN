@@ -1,9 +1,9 @@
 format-version: 1.2
 data-version: tmn/releases/2021-11-05/tmn-basic.owl
 ontology: tmn/tmn-basic
-property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
+property_value: http://purl.org/dc/elements/1.1/description "This is the developers repository for a techniques and methods ontology to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Techniques and Methods for Neuroscience Ontology" xsd:string
-property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
 property_value: owl:versionInfo "2021-11-05" xsd:string
 
 [Term]

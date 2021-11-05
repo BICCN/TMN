@@ -1,9 +1,9 @@
 format-version: 1.2
 data-version: tmn/releases/2021-11-05/tmn-simple.owl
 ontology: tmn/tmn-simple
-property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
+property_value: http://purl.org/dc/elements/1.1/description "This is the developers repository for a techniques and methods ontology to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Techniques and Methods for Neuroscience Ontology" xsd:string
-property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
 property_value: owl:versionInfo "2021-11-05" xsd:string
 
 [Term]
@@ -329,17 +329,4 @@ property_value: IAO:0000119 https://www.10xgenomics.com/products/single-cell-mul
 property_value: IAO:0000119 "PERSON: Patrick Ray" xsd:string
 created_by: patrick-lloyd-ray
 creation_date: 2021-10-04T22:12:23Z
-
-[Typedef]
-id: OBI:0000299
-name: has_specified_output
-def: "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of." []
-property_value: IAO:0000111 "has_specified_output" xsd:string
-property_value: IAO:0000111 "has_specified_output" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
-property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
-property_value: IAO:0000117 "PERSON: Larry Hunter" xsd:string
-property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 

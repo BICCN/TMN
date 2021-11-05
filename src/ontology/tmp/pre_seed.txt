@@ -52,5 +52,5 @@ http://purl.obolibrary.org/obo/TMN_0000029
 http://purl.obolibrary.org/obo/TMN_0000030
 http://www.geneontology.org/formats/oboInOwl#created_by
 http://www.geneontology.org/formats/oboInOwl#creation_date
-https://creativecommons.org/licenses/unspecified
+https://creativecommons.org/licenses/by/4.0/
 term

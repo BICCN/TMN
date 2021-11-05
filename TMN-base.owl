@@ -12,10 +12,10 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/tmn/tmn-base.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/tmn/releases/2021-11-05/tmn-base.owl"/>
-        <dc:description>None</dc:description>
+        <dc:description>This is the developers repository for a techniques and methods ontology to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like.</dc:description>
         <dc:title>Techniques and Methods for Neuroscience Ontology</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-05</owl:versionInfo>
     </owl:Ontology>
     
@@ -685,8 +685,8 @@
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0002437">
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epifluorescence microscopy</obo:IAO_0000118>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alternative definition: A fluorescence microscopy technique where a beam of light is passed through a specimen and both illuminated and emitted light travel through a common lens.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Patrick Ray</obo:IAO_0000117>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alternative definition: A fluorescence microscopy technique where a beam of light is passed through a specimen and both illuminated and emitted light travel through a common lens.</obo:IAO_0000116>
     </rdf:Description>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0002437"/>
