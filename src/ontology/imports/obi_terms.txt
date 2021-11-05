@@ -1,1 +1,118 @@
 
+OBI:0302887 ## staining
+OBI:0000854 ## western blot assay
+OBI:0600022 ## excision
+OBI:0302899 ## decapitation
+OBI:0000182 ## NMR 3D molecular structure determination assay
+OBI:0000185 ## imaging assay
+OBI:0000201 ## radioactivity detection
+OBI:0000288 ## protein-protein interaction detection assay
+OBI:0000291 ## transcription factor binding site assay	
+OBI:0000366 ## metabolite profiling assay
+OBI:0000424 ## transcription profiling assay
+OBI:0000433 ## DNA sequence feature detection assay
+OBI:0000443 ## analyte assay
+OBI:0000445 ## mass measurement assay
+OBI:0000447 ## intra cellular electrophysiology recording assay
+OBI:0000454 ## extracellular electrophysiology recording assay	
+OBI:0000470 ## mass spectrometry assay	
+OBI:0000520 ## clinical chemistry assay
+OBI:0000615 ## protein expression profiling assay
+OBI:0000623 ## NMR spectroscopy assay
+OBI:0000626 ## DNA sequencing assay
+OBI:0000634 ## DNA methylation profiling assay
+OBI:0000812 ## measuring neural activity in the caudate nucleus assay
+OBI:0000893 ## real time polymerase chain reaction assay
+OBI:0000911 ## real time reverse-transcription polymerase chain reaction assay	
+OBI:0000912 ## X-ray crystallography 3D molecular structure determination assay
+OBI:0000913 ## promoter activity detection by reporter gene assay
+OBI:0000916 ## flow cytometry assay
+OBI:0000920 ## cytometric bead array assay	
+OBI:0000964 ## in live cell assay
+OBI:0000966 ## in live organism assay	
+OBI:0001146 ## binding assay
+OBI:0001170 ## reverse transcription polymerase chain reaction assay
+OBI:0001177 ## RNA sequencing assay
+OBI:0001247 ## genotyping by high throughput sequencing assay
+OBI:0001266 ## DNA methylation profiling by high throughput sequencing assay
+OBI:0001271 ## RNA-seq assay
+OBI:0001274 ## genotyping by array assay
+OBI:0001282 ## translation profiling assay	
+OBI:0001304 ## RNAi profiling by array assay
+OBI:0001318 ## proteomic profiling by array assay
+OBI:0001332 ## DNA methylation profiling by array assay
+OBI:0001335 ## microRNA profiling by array assay
+OBI:0001361 ## transcription profiling by RT-PCR assay
+OBI:0001463 ## transcription profiling by array assay
+OBI:0001491 ## radioactivity detection binding assay
+OBI:0001499 ## fluorescence detection binding assay
+OBI:0001501 ## fluorescence detection assay
+OBI:0001591 ## direct binding assay
+OBI:0001593 ## competitive inhibition of binding assay
+OBI:0001631 ## electron microscopy imaging assay	
+OBI:0001632 ## immuno staining assay
+OBI:0001672 ## gene knock-down assay
+OBI:0001683 ## chromosome organization assay by fluorescence in-situ hybridization
+OBI:0001684 ## methylation-specific polymerase chain reaction assay
+OBI:0001686 ## in-situ hybridization assay
+OBI:0001922 ## microRNA profiling by high throughput sequencing assay
+OBI:0001926 ## microRNA profiling assay
+OBI:0001954 ## ChIP assay
+OBI:0001977 ## cytometry assay
+OBI:0001985 ## microarray assay
+OBI:0001986 ## immunohistochemistry
+OBI:0002020 ## epigenetic modification assay
+OBI:0002036 ## array based nucleic acid structure mapping assay
+OBI:0002039 ## assay for transposase-accessible chromatin using sequencing	
+OBI:0002044 ## RNA Bind-n-Seq assay
+OBI:0002082 ## reporter gene assay
+OBI:0002112 ## small RNA sequencing assay
+OBI:0002117 ## whole genome sequencing assay
+OBI:0002118 ## exome sequencing assay
+OBI:0002119 ## microscopy assay
+OBI:0002141 ## volume measurement assay
+OBI:0002174 ## immunocytochemistry	
+OBI:0002176 ## electrophysiology assay	
+OBI:0002177 ## patch clamp assay
+OBI:0002178 ## whole-cell patch clamp assay
+OBI:0002179 ## cell-attached patch clamp assay
+OBI:0002180 ## inside-out patch clamp assay
+OBI:0002181 ## outside-out patch clamp assay
+OBI:0002182 ## voltage clamp assay	
+OBI:0002183 ## two electrode voltage clamp assay
+OBI:0002184 ## cut open oocyte voltage clamp assay
+OBI:0002185 ## current clamp assay	
+OBI:0002186 ## electroencephalography
+OBI:0002187 ## single-unit recording
+OBI:0002188 ## multi-unit recording
+OBI:0002189 ## local field potential recording	
+OBI:0002437 ## widefield microscopy
+OBI:0002457 ## precision nuclear run-on sequencing assay
+OBI:0002564 ## histopathology assay
+OBI:0002571 ## polyA-selected RNA sequencing assay	
+OBI:0002572 ## polyA-depleted RNA sequencing assay	
+OBI:0002575 ## isoform sequencing
+OBI:0002622 ## in vitro transcription reconstitution assay
+OBI:0002623 ## whole metagenome sequencing assay
+OBI:0002629 ## direct RNA sequencing assay	
+OBI:0002631 ## single-cell RNA sequencing assay
+OBI:0002692 ## polymerase chain reaction assay
+OBI:0002759 ## ribosomal RNA-depleted RNA sequencing assay	
+OBI:0002760 ## metatranscriptome sequencing assay
+OBI:0002762 ## single-nucleus ATAC-seq
+OBI:0002764 ## single-cell ATAC-seq
+OBI:0002951 ## fluorescence imaging-based cell morphology assay
+OBI:0002960 ## fluorescence imaging-based reporter gene assay
+OBI:0002985 ## magnetic resonance imaging assay
+OBI:0003117 ## 3D molecular structure determination assay
+OBI:0003118 ## electron-microscopy 3D molecular structure determination assay
+OBI:0003122 ## 3D cell structure determination assay
+OBI:0003123 ## 3D neural cell structure determination assay
+OBI:0003124 ## neuron morphology assay
+OBI:0003125 ## mosaicism with repeat frameshift genetic sparse labeling
+OBI:0003126 ## neuron morphology reconstruction assay
+OBI:0003240 ## cerebrospinal fluid microbiology assay
+OBI:0600017 ## assay detecting a molecular label
+OBI:0600020 ## histological assay
+OBI:0600045 ## 3D structure determination assay
+OBI:0600047 ## sequencing assay
