@@ -14,7 +14,7 @@ Import(<http://github.com/BICCN/TMN/blob/main/src/ontology/imports/bfo_import.ow
 Import(<http://github.com/BICCN/TMN/blob/main/src/ontology/imports/ero_import.owl>)
 Import(<http://github.com/BICCN/TMN/blob/main/src/ontology/imports/obi_import.owl>)
 Import(<http://github.com/BICCN/TMN/blob/main/src/ontology/imports/ro_import.owl>)
-Annotation(dce:description "This is the developers repository for a techniques and methods ontology to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like.")
+Annotation(dce:description "This is an ontology that captures techniques and methods in neuroscience to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like.")
 Annotation(dce:title "Techniques and Methods for Neuroscience Ontology")
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 
