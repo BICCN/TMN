@@ -1,0 +1,1264 @@
+{
+  "graphs": [
+    {
+      "domainRangeAxioms": [],
+      "edges": [
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHMO_0000087",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000002"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHMO_0000087",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000003"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHMO_0000087",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000006"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHMO_0000087",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000017"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHMO_0000087",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000023"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000100",
+          "pred": "http://purl.obolibrary.org/obo/OBI_0000299",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000006"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000070",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000011"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000070",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000019"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000185",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000020"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0001271",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000014"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0001271",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000028"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0001271",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000029"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0002119",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000021"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0002176",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000008"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0002631",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000000"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0002631",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000010"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0002631",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000022"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0002631",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000025"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0002764",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000026"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0002764",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000027"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0002764",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000030"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0500000",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000016"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0600045",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000004"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0600047",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000001"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/TMN_0000001",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000013"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/TMN_0000004",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000005"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/TMN_0000004",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000009"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/TMN_0000006",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000007"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/TMN_0000011",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000012"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/TMN_0000014",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000024"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/TMN_0000019",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000018"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/TMN_0000024",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000015"
+        }
+      ],
+      "equivalentNodesSets": [],
+      "id": "http://purl.obolibrary.org/obo/tmn/tmn-non-classified.json",
+      "logicalDefinitionAxioms": [],
+      "meta": {
+        "basicPropertyValues": [
+          {
+            "pred": "http://purl.org/dc/elements/1.1/description",
+            "val": "This is an ontology that captures techniques and methods in neuroscience to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like."
+          },
+          {
+            "pred": "http://purl.org/dc/elements/1.1/title",
+            "val": "Techniques and Methods for Neuroscience Ontology"
+          },
+          {
+            "pred": "http://purl.org/dc/terms/license",
+            "val": "https://creativecommons.org/licenses/by/4.0/"
+          },
+          {
+            "pred": "http://www.w3.org/2002/07/owl#versionInfo",
+            "val": "2021-11-09"
+          }
+        ],
+        "subsets": [],
+        "version": "http://purl.obolibrary.org/obo/tmn/releases/2021-11-09/tmn-non-classified.json",
+        "xrefs": []
+      },
+      "nodes": [
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000000",
+          "lbl": "droplet-based single-cell RNA sequencing assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "Dropseq"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://doi.org/10.1016/j.cell.2015.05.002"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-03T20:04:39Z"
+              }
+            ],
+            "definition": {
+              "val": "A sequencing assay that analyzes mRNA transcripts from droplets of individual cells. The droplets are compartmentalized via a microfluidic device. After the cells are compartmentalized, cells in droplets are lysed and the released mRNA hybridizes to the oligo(dT) tract of the primer beads. Then the droplets are pooled and broken to release the beads which are then isolated and reverse-transcribed with template switching. The resulting cDNA strands are PCR-amplified and the sequencing adapters are added. The barcoded mRNA samples are then sequenced.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000001",
+          "lbl": "fluorescence in situ hybridization assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "FISH"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://en.wikipedia.org/wiki/Fluorescence_in_situ_hybridization"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-03T21:04:00Z"
+              }
+            ],
+            "definition": {
+              "val": "A sequencing assay that uses fluorescent probes that bind to parts of a nucleic acid sequence that have a high degree of sequence complementarity. Fluorescence microscopy can be used to find out where the fluorescent probes are bound on the chromosomes.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000002",
+          "lbl": "fluorescence micro-optical sectioning tomography assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "fMOST"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC6701528/"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-03T21:32:43Z"
+              }
+            ],
+            "definition": {
+              "val": "An imaging assay that uses micro-optical sectioning tomography technology combined with fluorescence molecular labeling of neuronal projections.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000003",
+          "lbl": "multiplexed error-robust fluorescence in situ hybridization assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "MERFISH"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "DOI: 10.1126/science.aaa6090"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-03T23:18:34Z"
+              }
+            ],
+            "definition": {
+              "val": "An imaging assay that measures the copy number and spatial distribution of hundreds to thousands of RNA species in single cells.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000004",
+          "lbl": "neuron morphology assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "3D structure determination assay of neuron"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-04T00:06:14Z"
+              }
+            ],
+            "definition": {
+              "val": "A 3D structure determination assay that determines the morphology of a neuron.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000005",
+          "lbl": "mosaicism with repeat frameshift genetic sparse labeling assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://biccn.org/teams/u01-yang"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-04T00:10:17Z"
+              }
+            ],
+            "definition": {
+              "val": "A neuron morphology assay that enables sparse and stochastic labeling of genetically-defined neurons. MORF-labeled neurons are digitally reconstructed using a program (G-Cut).",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000006",
+          "lbl": "serial two-photon tomography",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "STPT"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://doi.org/10.1038/nmeth.1854"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-04T00:30:35Z"
+              }
+            ],
+            "definition": {
+              "val": "A fluorescence microscopy that generates high-throughput flourescence imaging of mouse brains by integrating two-photon microscopy and tissue sectioning. Serial two-photon tomography generates high-resolution datasets.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000007",
+          "lbl": "mouselight",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://www.janelia.org/project-team/mouselight/research"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-04T00:34:49Z"
+              }
+            ],
+            "definition": {
+              "val": "A serial two photon tomography assay that produces images of mouse brains with sufficient detail to represent axons of individual neurons.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000008",
+          "lbl": "multi-electrode extracellular electrophysiology assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://en.wikipedia.org/wiki/Microelectrode_array"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-10T23:56:39Z"
+              }
+            ],
+            "definition": {
+              "val": "An electrophysiology assay that employs many electrodes to record extracellular field potentials.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000009",
+          "lbl": "neuron morphology reconstruction assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://doi.org/10.1101/675280"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-11T00:15:55Z"
+              }
+            ],
+            "definition": {
+              "val": "A neuron morphology assay where the morphology or structure of a neuron is represented through through another medium. Often, this assay is a combination of different assays (sparse labeling, fluorescent labeling, fMOST).",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000010",
+          "lbl": "patch clamp single-cell RNA sequencing assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "patch clamp sequencing assay"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "patch-seq"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://doi.org/10.1038/nprot.2017.120"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-11T00:26:12Z"
+              }
+            ],
+            "definition": {
+              "val": "A single-cell RNA sequencing assay wherein a patch clamp recording is taken from a neuron and then scRNA sequencing is performed on the cell soma.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000011",
+          "lbl": "retrograde tracing assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "retrograde tracing"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-11T00:39:16Z"
+              }
+            ],
+            "definition": {
+              "val": "An assay wherein a substance is taken up by an axon terminal and transported toward the soma to mark (or trace) some part of a cell.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000012",
+          "lbl": "retrograde transsynaptic tracing assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://en.wikipedia.org/wiki/Retrograde_tracing"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-11T00:51:53Z"
+              }
+            ],
+            "definition": {
+              "val": "A retrograde tracing assay that traces the neural connections from a synapse to a soma allowing the mapping of connections between neurons in a structure and a target in the brain.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000013",
+          "lbl": "sequential fluorescence in situ hybridization assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "seqFISH"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://www.seqfish.com/technology"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-11T01:00:00Z"
+              }
+            ],
+            "definition": {
+              "val": "A fluorescence in situ hybridization assay where transcripts are labeled with fluorescent probes in sequential rounds of hybridization to read out the temporal barcode for each transcript. The temporal barcodes can then be decoded to uniquely identify the RNA transcripts present in the sample. RNA can be identified directly in a variety of samples from extracted RNA to tissues.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000014",
+          "lbl": "switching mechanism at the 5' end of RNA template sequencing assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "Definition needs curation."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "SMART seq"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "SMARTseq"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://www.enseqlopedia.com/wiki-entry/rna-sequencing-methods/low-level-rna-detection/smart-seq/"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-11T01:10:58Z"
+              }
+            ],
+            "definition": {
+              "val": "A single cell sequencing assay wherein the target cells are lysed, and the RNA is hybridized to an oligo(dT)-containing primer. The first strand of the cDNA is synthesized with the addition of a few untemplated C nucleotides. This poly(C) overhang is added exclusively to full-length transcripts. An oligonucleotide primer is hybridized to the poly(C) overhang and used to synthesize the second strand. Full-length cDNAs are PCR-amplified to obtain nanogram amounts of DNA. The PCR products are purified for sequencing.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000015",
+          "lbl": "switching mechanism at the 5' end of RNA template sequencing assay v4",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "SMARTseq v4"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "This is the commercial version of SMARTseq2 that has as an instrument the Takara kit."
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-11T01:21:33Z"
+              }
+            ],
+            "definition": {
+              "val": "A switching mechanism at the 5' end of RNA template sequencing assay that is the fourth version of such an assay.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000016",
+          "lbl": "tracing the relationship between input and output study design",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "TRIO tracing"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://cic.ini.usc.edu/protocols/trio-tracing"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-11T01:43:24Z"
+              }
+            ],
+            "definition": {
+              "val": "A study design in which complementary viruses are to be injected into brain regions to monosynaptically label inputs to a specific projection neuron population.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000017",
+          "lbl": "light sheet fluorescence microscopy assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "light sheet microscopy"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://en.wikipedia.org/wiki/Light_sheet_fluorescence_microscopy"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-11T01:59:49Z"
+              }
+            ],
+            "definition": {
+              "val": "A fluorescence microscopy assay that uses a laser light-sheet to illuminate a region of a sample that has been treated to excite fluorescently.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000018",
+          "lbl": "cre-dependent anterograde tracing assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://doi.org/10.1016/j.neuron.2011.12.002"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-15T18:11:42Z"
+              }
+            ],
+            "definition": {
+              "val": "A anterograde tracing assay that uses a Cre recombinase-dependent as a tracer.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000019",
+          "lbl": "anterograde tracing assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://en.wikipedia.org/wiki/Anterograde_tracing"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-15T18:13:29Z"
+              }
+            ],
+            "definition": {
+              "val": "An assay wherein axon projections are traced from their source (cell body or soma) to their point of termination (synapse).",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000020",
+          "lbl": "optical coherence tomography assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "OCT"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "PMID: 29214158"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "doi: 10.1155/2017/3409327"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-15T18:44:49Z"
+              }
+            ],
+            "definition": {
+              "val": "An imaging assay that has as an output label-free, cross-sectional imaging of biological tissue microstructure using tissue backscattering properties.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000021",
+          "lbl": "volumetric imaging with synchronized on-the-fly oblique-scan and readout assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "VISoR"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "VISoR assay"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "doi: 10.1093/nsr/nwz053"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-15T19:01:49Z"
+              }
+            ],
+            "definition": {
+              "val": "A light sheet microscopy assay that combines synchronized scanning illumination and oblique imaging over cleared, thick tissue sections in smooth motion that produces a 3D image of a brain.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000022",
+          "lbl": "single-nucleus chromatin accessibility and mRNA expression sequencing assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "SNARE-seq"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "SNARE-seq assay"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "SNARE-seq2"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "SNARE-seq2 assay"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://doi.org/10.1038/s12276-020-0420-2"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-15T19:09:43Z"
+              }
+            ],
+            "definition": {
+              "val": "A single-cell RNA sequencing assay that involves the isolation of single nuclei and open chromatin tagmentation in the isolated nuclei using a transposase. The tagmented nuclei are then encapsulated in a droplet including both an oligo-dT-containing barcoded bead and a splint oligonucleotide, which links the tagmented gDNA fragments to the bead, enabling the bead to capture both mRNAs and open chromatin fragments. After mRNAs and gDNA fragments are released from the bead by heating, RT and PCR amplification are performed to generate a library of cDNA and open chromatin gDNA fragments.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000023",
+          "lbl": "composite in situ imaging",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "CISI"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "DOI: 10.1101/743039"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-02-15T19:20:54Z"
+              }
+            ],
+            "definition": {
+              "val": "A fluorescence microscopy assay wherein fluorescence in situ hybridization is leveraged with multiplexed analysis that uses each channel to measure the composite (sum) abundances of multiple genes in each channel and decompresses and determines individual gene level.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000024",
+          "lbl": "switching mechanism at the 5' end of RNA template sequencing assay 2",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "SMARTseq2"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://doi.org/10.1038/nprot.2014.006"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "See also: https://scicrunch.org/scicrunch/interlex/view/ilx_0739685"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-04-22T19:49:20Z"
+              }
+            ],
+            "definition": {
+              "val": "A switching mechanism at the 5' end of RNA template sequencing assay that allows the generation of full-length cDNA and sequencing libraries by using standard reagents.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000025",
+          "lbl": "sci-RNA-seq3",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "3-level sci-RNA-seq"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "3-level single-cell combinatorial indexing RNA sequencing assay"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-09-02T02:12:07Z"
+              }
+            ],
+            "definition": {
+              "val": "A RNA sequencing assay that involves three levels of indexing.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000026",
+          "lbl": "sci-ATAC-seq3",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "3-level sci-ATAC-seq"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "3-level single-cell combinatorial indexing ATAC sequencing assay"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-09-02T02:16:18Z"
+              }
+            ],
+            "definition": {
+              "val": "An ATAC-seq assay that involves single-cell combinatorial indexing at three levels.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000027",
+          "lbl": "10x chromium ATAC-seq",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "10x chromium ATAC sequencing assay"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "10x chromium ATAC-seq assay"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-09-02T02:18:54Z"
+              }
+            ],
+            "definition": {
+              "val": "An ATAC-seq assay that involves use of the 10x sequencing technology assay for transposase-accessible chromatin using sequencing (ATAC-seq).",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000028",
+          "lbl": "slide-seq assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "slide-seq"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "slide-sequencing assay"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "doi: 10.1126/science.aaw1219"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-10-04T22:03:50Z"
+              }
+            ],
+            "definition": {
+              "val": "A RNA-seq assay for transferring RNA from tissue sections onto a surface covered in DNA-barcoded beads with known positions, allowing the locations of the RNA to be inferred by sequencing.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000029",
+          "lbl": "SHARE-seq assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "SHARE-seq"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "SHARE-sequencing"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://doi.org/10.1016/j.cell.2020.09.056"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-10-04T22:09:37Z"
+              }
+            ],
+            "definition": {
+              "val": "A RNA-seq assay that uses high-throughput ATAC and RNA expression with sequencing to measure chromatin accessibility and gene expression in the same single cell.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000030",
+          "lbl": "single cell multiome ATAC + gene expression assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "single cell multiome ATAC + gene expression"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://www.10xgenomics.com/blog/introducing-chromium-single-cell-multiome-atac-gene-expression"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://www.10xgenomics.com/products/single-cell-multiome-atac-plus-gene-expression"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-10-04T22:12:23Z"
+              }
+            ],
+            "definition": {
+              "val": "An ATAC-seq assay that provides information about both transcriptome and epigenome from a single cell.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OBI_0002437",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "Alternative definition: A fluorescence microscopy technique where a beam of light is passed through a specimen and both illuminated and emitted light travel through a common lens."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "epifluorescence microscopy"
+              }
+            ]
+          }
+        }
+      ],
+      "propertyChainAxioms": []
+    }
+  ]
+}
