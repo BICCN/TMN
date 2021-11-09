@@ -1,12 +1,12 @@
 format-version: 1.2
-data-version: tmn/releases/2021-11-09/tmn-full.owl
+data-version: tmn/releases/2021-11-09/tmn-non-classified.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
 subsetdef: ro-eco ""
 subsetdef: RO:0002259 ""
-ontology: tmn/tmn-full
+ontology: tmn/tmn-non-classified
 property_value: http://purl.org/dc/elements/1.1/description "This is an ontology that captures techniques and methods in neuroscience to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Techniques and Methods for Neuroscience Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
@@ -29,7 +29,6 @@ def: "A planned process that has a data set as its specified output." []
 is_a: OBI:0000011 ! planned process
 intersection_of: OBI:0000011 ! planned process
 intersection_of: OBI:0000299 IAO:0000100 ! has_specified_output data set
-relationship: OBI:0000299 IAO:0000100 ! has_specified_output data set
 property_value: IAO:0000111 "creating a data set" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "data set creation" xsd:string
@@ -468,6 +467,7 @@ name: experimentally modified cell in vitro
 def: "A cell in vitro that has undergone physical changes as a consequence of a deliberate and specific experimental procedure." []
 is_a: CL:0000000 ! cell
 is_a: OBI:0000047 ! processed material
+relationship: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
 property_value: IAO:0000111 "experimentally modified cell in vitro" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
 
@@ -484,10 +484,8 @@ id: ERO:0000006
 name: reagent
 def: "Processed material that is used in a chemical reaction or other experimental process to detect, measure, examine, or produce other  substances." []
 comment: Placeholder for class to be imported from the Reagent Ontology (ReO).
-is_a: OBI:0000047 ! processed material
 intersection_of: BFO:0000040 ! material_entity
 intersection_of: OBI:0000316 OBI:0000086 {all_some="true"} ! has_role reagent role
-relationship: OBI:0000316 OBI:0000086 ! has_role reagent role
 property_value: IAO:0000111 "reagent" xsd:string
 property_value: IAO:0000112 "A plasmid can be used as a reagent." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -510,7 +508,9 @@ id: ERO:0000008
 name: antibody reagent
 def: "A reagent that is comprised of immunoglobulins produced by B cells in response to an antigen. Antibody reagents can be engineered to have specificity for specific antigens." []
 comment: Placeholder for class to be imported from the Reagent Ontology (ReO).
-is_a: ERO:0000006 ! reagent
+is_a: BFO:0000040 ! material_entity
+relationship: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
+relationship: OBI:0000316 OBI:0000086 ! has_role reagent role
 relationship: OBI:0000643 ERO:0000322 ! has grain antibody isotype
 property_value: IAO:0000112 "An antibody is used to detect proteins in a Western blot assay." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -560,7 +560,6 @@ id: ERO:0000214
 name: immunohistochemistry assay
 def: "A tissue/organ assay that is used to detect antigens (e.g., proteins) in cells of a tissue section by exploiting the principle of antibodies binding specifically to antigens in biological tissues." []
 is_a: ERO:0001282 ! tissue/organ assay
-is_a: ERO:0001362 ! immunoassay
 property_value: IAO:0000112 "Used to detect protein expression in a tissue." xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Nicole Vasilevsky" xsd:string
@@ -673,8 +672,9 @@ property_value: IAO:0000119 "PERSON: Melissa Haendel" xsd:string
 id: ERO:0000490
 name: tissue embedding
 def: "A sample preparation technique where cells or tissue are placed in a supporting medium. The medium can be paraffin wax (paraffin embedding) or plastics (plastic embedding) such as epoxy resins." []
-is_a: ERO:0001707 ! biospecimen preparation
 is_a: OBI:0000073 ! sample preparation for assay
+relationship: OBI:0000308 ERO:0001706 ! realizes biospecimen to be prepared role
+relationship: RO:0000057 ERO:0000020 ! has_participant biological specimen
 property_value: IAO:0000112 "A technique performed prior to tissue sectioning and histology." xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Nicole Vasilevsky" xsd:string
@@ -708,7 +708,6 @@ property_value: IAO:0000119 http://en.wikipedia.org/wiki/Calcium_imaging xsd:str
 id: ERO:0000652
 name: radioimmunoassay
 def: "A radioactivity detection technique that uses the binding of a radioactively labeled substances to an antibody in order to analyze minute amounts of proteins in a sample." []
-is_a: ERO:0001362 ! immunoassay
 is_a: OBI:0000201 ! radioactivity detection
 property_value: IAO:0000112 "A RAST test (radioallergosorbent test) is an example of radioimmunoassay. " xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -720,10 +719,8 @@ property_value: IAO:0000119 http://en.wiktionary.org/wiki/radioimmunoassay xsd:s
 id: ERO:0000677
 name: tissue fixation
 def: "Fixation of biological tissues to preserve them from decay, either through autolysis or putrefaction. Fixation terminates any ongoing biochemical reactions, and may also increase the mechanical strength or stability of the treated tissues. Fixation is usually the first stage in a multistep process to prepare a sample of biological material for microscopy or other analysis" []
-is_a: ERO:0001300 ! fixation
 intersection_of: ERO:0001300 ! fixation
 intersection_of: RO:0000057 UBERON:0000479 ! has_participant tissue
-relationship: RO:0000057 UBERON:0000479 ! has_participant tissue
 property_value: IAO:0000112 "Fixing tissue prior to immunohistochemistry staining." xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Nicole Vasilevsky" xsd:string
@@ -839,7 +836,6 @@ id: ERO:0001240
 name: immunocytochemistry
 def: "A cellular assay that uses antibodies that target specific peptides or protein antigens in the cell via specific epitopes. These bound antibodies can then be detected using several different methods." []
 is_a: ERO:0000401 ! cellular assay
-is_a: ERO:0001362 ! immunoassay
 property_value: IAO:0000112 "Using antibodies to identify proteins in a cell." xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Nicole Vasilevsky" xsd:string
@@ -999,8 +995,6 @@ property_value: IAO:0000119 http://www.mbfbioscience.com/solutions/stereology xs
 id: ERO:0001362
 name: immunoassay
 def: "An assay that enables the presence or the concentration of a substance in a material to be measured by exploiting the specific binding between an analyte and the corresponding detection antibody. " []
-is_a: ERO:0001523 ! immunotechnique
-is_a: OBI:0000070 ! assay
 property_value: IAO:0000112 "Immunohistochemistry." xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Nicole Vasilevsky" xsd:string
@@ -1021,7 +1015,6 @@ property_value: IAO:0000119 http://en.wikipedia.org/wiki/Ion_chromatography xsd:
 id: ERO:0001523
 name: immunotechnique
 def: "A technique that uses an antibody reagent." []
-is_a: ERO:0000007 ! technique
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "PERSON: Nicole Vasilevsky" xsd:string
 property_value: IAO:0000118 "Antibody technique" xsd:string
@@ -1097,8 +1090,6 @@ is_a: ERO:0000007 ! technique
 intersection_of: ERO:0000007 ! technique
 intersection_of: OBI:0000308 ERO:0001706 ! realizes biospecimen to be prepared role
 intersection_of: RO:0000057 ERO:0000020 ! has_participant biological specimen
-relationship: OBI:0000308 ERO:0001706 ! realizes biospecimen to be prepared role
-relationship: RO:0000057 ERO:0000020 ! has_participant biological specimen
 property_value: IAO:0000112 "Formalin fixation of a zebrafish embryo for immunostaining assays." xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON:Melissa Haendel" xsd:string
@@ -1428,7 +1419,6 @@ def: "A quality of an information bearer that imparts the information content" [
 is_a: BFO:0000019 ! quality
 intersection_of: BFO:0000019 ! quality
 intersection_of: RO:0000059 IAO:0000030 ! concretizes information content entity
-relationship: RO:0000059 IAO:0000030 ! concretizes information content entity
 property_value: IAO:0000111 "information carrier" xsd:string
 property_value: IAO:0000112 "In the case of a printed paperback novel the physicality of the ink and of the paper form part of the information bearer. The qualities of appearing black and having a certain pattern for the ink and appearing white for the paper form part of the information carrier in this case." xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -1953,7 +1943,6 @@ id: OBI:0000023
 name: classified data set
 def: "A data set that is produced as the output of a class prediction data transformation and consists of a data set with assigned class labels." []
 is_a: IAO:0000100 ! data set
-relationship: OBI:0000312 OBI:0000663 ! is_specified_output_of class prediction data transformation
 property_value: IAO:0000111 "classified data set" xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "PERSON: James Malone" xsd:string
@@ -1980,7 +1969,6 @@ def: "Is a material entity that is created or changed during material processing
 is_a: BFO:0000040 ! material_entity
 intersection_of: BFO:0000040 ! material_entity
 intersection_of: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
-relationship: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
 property_value: IAO:0000111 "processed material" xsd:string
 property_value: IAO:0000112 "Examples include gel matrices, filter paper, parafilm and buffer solutions, mass spectrometer, tissue samples" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1995,6 +1983,7 @@ is_a: OBI:0000832 ! measurement device
 relationship: BFO:0000051 OBI:0000345 ! has_part mass analyzer
 relationship: BFO:0000051 OBI:0000361 ! has_part ion source
 relationship: BFO:0000051 OBI:0000364 ! has_part ion detector
+relationship: RO:0000085 OBI:0000453 ! has function measure function
 property_value: IAO:0000111 "mass spectrometer" xsd:string
 property_value: IAO:0000112 "LCQ Fleet Ion Trap MSn manufactured by thermo fisher scientific" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2035,9 +2024,9 @@ name: assay
 def: "A planned process with the objective to produce information about some evaluant" []
 def: "A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies." []
 is_a: ERO:0000007 ! technique
+is_a: OBI:0000011 ! planned process
 disjoint_from: OBI:0200000 ! data transformation
 relationship: BFO:0000055 OBI:0000067 ! realizes evaluant role
-relationship: OBI:0000417 OBI:0000441 ! achieves_planned_objective assay objective
 property_value: IAO:0000111 "assay" xsd:string
 property_value: IAO:0000112 "Assay the wavelength of light emitted by excited Neon atoms. Count of geese flying over a house." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2098,11 +2087,11 @@ id: OBI:0000094
 name: material processing
 def: "A planned process which results in physical changes in a specified input material" []
 is_a: ERO:0000007 ! technique
+is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 BFO:0000040 ! has_specified_input material_entity
 relationship: OBI:0000293 BFO:0000040 ! has_specified_input material_entity
 relationship: OBI:0000299 BFO:0000040 ! has_specified_output material_entity
 relationship: OBI:0000299 OBI:0000047 ! has_specified_output processed material
-relationship: OBI:0000417 OBI:0000456 ! achieves_planned_objective material transformation objective
 property_value: IAO:0000111 "material processing" xsd:string
 property_value: IAO:0000112 "A cell lysis, production of a cloning vector, creating a buffer." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2164,6 +2153,7 @@ id: OBI:0000164
 name: clonal cDNA library
 def: "Mixed population of cDNAs (complementaryDNA) made from mRNA from a defined source, usually a specific cell type. This term should be associated only to nucleic acid interactors not to their proteins product. For instance in 2h screening use living cells (MI:0349) as sample process.\n\nALT DEF (PRS):: a cDNA library is a collection of host cells, typically E.Coli cells but not exclusively. modified by transfer of plasmid DNA molecule used as vector containing a fragment or totality of cDNA molecule (the insert) .  cDNA library may have an array of role and applications." []
 is_a: OBI:0000731 ! recombinant vector
+relationship: OBI:0000312 OBI:0600064 ! is_specified_output_of recombinant vector cloning
 relationship: OBI:0000643 OBI:0000731 ! has grain recombinant vector
 property_value: IAO:0000111 "cDNA library" xsd:string
 property_value: IAO:0000112 "PMID:6110205. collection of cDNA derived from mouse splenocytes." xsd:string
@@ -2181,7 +2171,6 @@ is_a: OBI:0600045 ! 3D structure determination assay
 intersection_of: OBI:0600045 ! 3D structure determination assay
 intersection_of: OBI:0000293 OBI:0000566 {all_some="true"} ! has_specified_input NMR instrument
 intersection_of: OBI:0000299 OBI:0001155 ! has_specified_output 3D structural organization datum
-relationship: OBI:0000293 OBI:0000566 ! has_specified_input NMR instrument
 property_value: IAO:0000111 "nuclear magnetic resonance 3D structure determination assay" xsd:string
 property_value: IAO:0000112 "Determining the binding of epitope-specific nanobody cAb-HuL5 to wild type human lysozyme by chemical shift perturbations in NMR spectra (Erwin De Genst, J Phys Chem B 2013)." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -2281,7 +2270,6 @@ def: "is a process with the objective to place a material entity bearing the 'ma
 is_a: OBI:0000652 ! material combination
 relationship: BFO:0000055 OBI:0000319 ! realizes material to be added role
 relationship: BFO:0000055 OBI:0000444 ! realizes target of material addition role
-relationship: OBI:0000417 OBI:0000434 ! achieves_planned_objective adding material objective
 property_value: IAO:0000111 "adding a material entity into a target" xsd:string
 property_value: IAO:0000112 "Injecting a drug into a mouse. Adding IL-2 to a cell culture. Adding NaCl into water." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2317,6 +2305,7 @@ id: OBI:0000291
 name: transcription factor binding site assay
 def: "An assay tthat determines DNA regions specifically recognized by proteins that function as transcription factors" []
 is_a: OBI:0001146 ! binding assay
+relationship: OBI:0000299 IAO:0000030 ! has_specified_output information content entity
 property_value: IAO:0000111 "transcription factor binding site assay" xsd:string
 property_value: IAO:0000112 "Transcription factor binding site identification in yeast: a comparison of high-density oligonucleotide and PCR-based microarray platforms." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -2341,10 +2330,14 @@ property_value: IAO:0000232 "9 March 09 from discussion with PA branch" xsd:stri
 id: OBI:0000341
 name: histological sample preparation
 def: "histological sample preparation is the preparation of an input tissue via slicing and labeling to make tissue microstructure of interest visible in a future histology assay" []
-is_a: ERO:0001707 ! biospecimen preparation
 is_a: OBI:0000073 ! sample preparation for assay
+is_a: OBI:0000094 ! material processing
 is_a: OBI:0000659 ! specimen collection process
 relationship: OBI:0000293 OBI:0100066 ! has_specified_input organ section
+relationship: OBI:0000308 ERO:0001706 ! realizes biospecimen to be prepared role
+relationship: OBI:0000417 OBI:0000456 ! achieves_planned_objective material transformation objective
+relationship: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen collection objective
+relationship: RO:0000057 ERO:0000020 ! has_participant biological specimen
 relationship: RO:0000057 OBI:0400168 ! has_participant microtome
 property_value: IAO:0000111 "histological sample preparation" xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -2358,6 +2351,8 @@ name: mass analyzer
 def: "A Mass analyzer is a device that separates ions according to their mass-to-charge ratio. All mass spectrometers are based on dynamics of charged particles in electric and magnetic fields in vacuum where the two laws of Lorentz force law and Newton's second law of motion apply." []
 is_a: OBI:0000832 ! measurement device
 is_a: OBI:0000932 ! material separation device
+relationship: RO:0000085 OBI:0000372 ! has function material separation function
+relationship: RO:0000085 OBI:0000453 ! has function measure function
 property_value: IAO:0000111 "mass analyzer" xsd:string
 property_value: IAO:0000112 "The mass analyzer of the Voyager-DE(tm) STR Biospectrometry Workstation" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -2382,6 +2377,7 @@ id: OBI:0000364
 name: ion detector
 def: "An ion detector is a device that measures and records the charge induced or current produced when an ion passes by or hits a surface.  Example: In a scanning instrument the signal produced in the detector during the course of the scan versus where the instrument is in the scan (at what m/Q) will produce a mass spectrum, a record of ions as a function of m/Q." []
 is_a: OBI:0000832 ! measurement device
+relationship: RO:0000085 OBI:0000453 ! has function measure function
 property_value: IAO:0000111 "ion detector" xsd:string
 property_value: IAO:0000112 "The ion detector of the Voyager-DE(tm) STR Biospectrometry Workstation" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2574,7 +2570,6 @@ def: "An image creation device is a device which captures a digitized image of a
 is_a: OBI:0000832 ! measurement device
 intersection_of: OBI:0000968 ! device
 intersection_of: RO:0000085 OBI:0000397 ! has function image acquisition function
-relationship: RO:0000085 OBI:0000397 ! has function image acquisition function
 property_value: IAO:0000111 "image acquisition device" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "Frank Gibson" xsd:string
@@ -2624,7 +2619,6 @@ is_a: CHEBI:4705 ! double-stranded DNA
 is_a: OBI:0000809 ! amplified DNA
 intersection_of: CHEBI:4705 ! double-stranded DNA
 intersection_of: OBI:0000312 OBI:0000415 ! is_specified_output_of polymerase chain reaction
-relationship: OBI:0000312 OBI:0000415 ! is_specified_output_of polymerase chain reaction
 property_value: IAO:0000111 "PCR product" xsd:string
 property_value: IAO:0000112 "PCR products are the results of amplifcation process. Detection of a PCR products is used to detect DNA and RNA." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2663,6 +2657,7 @@ def: "PCR is the process in which a DNA polymerase is used to amplify a piece of
 is_a: OBI:0600058 ! enzymatic amplification
 relationship: OBI:0000293 CHEBI:16991 ! has_specified_input deoxyribonucleic acid
 relationship: OBI:0000299 OBI:0000406 ! has_specified_output PCR product
+relationship: OBI:0000417 OBI:0000456 ! achieves_planned_objective material transformation objective
 property_value: IAO:0000111 "polymerase chain reaction" xsd:string
 property_value: IAO:0000112 "Opisthorchis viverrini: Detection by polymerase chain reaction (PCR) in human stool samples. Exp Parasitol. 2008 Sep 9.  PMID: 18805413" xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -2710,9 +2705,6 @@ id: OBI:0000424
 name: transcription profiling assay
 def: "An assay that determines gene expression and transcription activity using ribonucleic acids collected from a material entity." []
 is_a: OBI:0000070 ! assay
-relationship: OBI:0000293 CHEBI:33697 ! has_specified_input ribonucleic acid
-relationship: OBI:0000299 IAO:0000109 ! has_specified_output measurement datum
-relationship: OBI:0000417 OBI:0001331 ! achieves_planned_objective transcription profiling identification objective
 property_value: IAO:0000111 "transcription profiling assay" xsd:string
 property_value: IAO:0000112 "Whole genome transcription profiling of Anaplasma phagocytophilum in human and tick host cells by tiling array analysis. BMC Genomics. 2008 Jul 31;9:364. PMID: 18671858" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -2883,7 +2875,6 @@ def: "A regulatory agency is a organization that has responsibility over or for 
 is_a: OBI:0000245 ! organization
 intersection_of: OBI:0000245 ! organization
 intersection_of: RO:0000087 OBI:0000014 ! has role regulator role
-relationship: RO:0000087 OBI:0000014 ! has role regulator role
 property_value: IAO:0000111 "regulatory agency" xsd:string
 property_value: IAO:0000112 "The US Environmental Protection Agency" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2939,7 +2930,8 @@ id: OBI:0000457
 name: manufacturing
 def: "Manufacturing is a process with the intent to produce a processed material which will have a function for future use. A person or organization (having manufacturer role) is a participant in this process" []
 is_a: OBI:0000094 ! material processing
-relationship: OBI:0000417 OBI:0000458 ! achieves_planned_objective manufacturing objective
+relationship: OBI:0000293 BFO:0000040 ! has_specified_input material_entity
+relationship: OBI:0000299 OBI:0000047 ! has_specified_output processed material
 property_value: IAO:0000111 "manufacturing" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000116 "Manufacturing implies reproducibility and responsibility AR" xsd:string
@@ -2971,6 +2963,7 @@ name: mass spectrometry assay
 def: "An assay that identifies the amount and type of material entities present in a sample by fragmenting the sample and measuring the mass-to-charge ratio of the resulting particles." []
 def: "This is a measuring method consisting of turning elements in a sample into ions, isolating them according to the ratio between the mass and charge numbers and detecting it electrically." []
 is_a: ERO:0000833 ! molecular assay
+is_a: OBI:0000070 ! assay
 property_value: IAO:0000111 "mass spectrometry assay" xsd:string
 property_value: IAO:0000112 "Identification of a proteins cut out from a 2D gel by cleaving it into peptides using trypsin digestion using electrospray ionizatino to ensure the peptides are charged, and accelerating them with an electro magnetic field in which the flight path is determined by the mass / charge ratio of the peptides. Comparing the mass/charge ratio of peptides in the proteins with databases of protein sequences allows to identify which protein gave rise to the peptides." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -3027,6 +3020,7 @@ id: OBI:0000566
 name: NMR instrument
 def: "An Instrument which is used to carry out a NMR analysis of some sample." []
 is_a: OBI:0000832 ! measurement device
+relationship: RO:0000085 OBI:0000453 ! has function measure function
 property_value: IAO:0000111 "NMR instrument" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON:Daniel Schober" xsd:string
@@ -3092,8 +3086,6 @@ id: OBI:0000626
 name: DNA sequencing assay
 def: "A sequencing assay which determines information on the sequence of a DNA molecule." []
 is_a: OBI:0600047 ! sequencing assay
-relationship: OBI:0000293 OBI:0400103 ! has_specified_input DNA sequencer
-relationship: OBI:0000299 OBI:0001573 ! has_specified_output DNA sequence data
 property_value: IAO:0000111 "DNA sequencing assay" xsd:string
 property_value: IAO:0000112 "Illumina (Solexa) sequencing is an example of DNA sequencing" xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -3106,6 +3098,8 @@ id: OBI:0000634
 name: DNA methylation profiling assay
 def: "An assay that measures the state of methylation of DNA molecules using genomic DNA collected from a material entity using a range of techniques and instrument such as DNA sequencers and often relying on treatment with bisulfites to ensure cytosine conversion." []
 is_a: OBI:0002020 ! epigenetic modification assay
+relationship: OBI:0000299 IAO:0000027 ! has_specified_output data item
+relationship: OBI:0000417 OBI:0001234 ! achieves_planned_objective epigenetic modification identification objective
 property_value: IAO:0000111 "DNA methylation profiling assay" xsd:string
 property_value: IAO:0000112 "Genome-wide, high-resolution DNA methylation profiling using bisulfite-mediated cytosine conversion. Reinders J, Delucinge Vivier C, Theiler G, Chollet D, Descombes P, Paszkowski J._PMID:18218979" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -3131,7 +3125,6 @@ id: OBI:0000648
 name: clustered data set
 def: "A data set that is produced as the output of a class discovery data transformation and consists of a data set with assigned discovered class labels." []
 is_a: IAO:0000100 ! data set
-relationship: OBI:0000312 OBI:0200175 ! is_specified_output_of class discovery data transformation
 property_value: IAO:0000111 "clustered data set" xsd:string
 property_value: IAO:0000112 "A clustered data set is the output of a K means clustering data transformation" xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -3145,7 +3138,8 @@ id: OBI:0000652
 name: material combination
 def: "is a material processing with the objective to combine two or more material entities as input into a single material entity as output." []
 is_a: OBI:0000094 ! material processing
-relationship: OBI:0000417 OBI:0000686 ! achieves_planned_objective material combination objective
+relationship: OBI:0000293 BFO:0000040 ! has_specified_input material_entity
+relationship: OBI:0000299 BFO:0000040 ! has_specified_output material_entity
 property_value: IAO:0000111 "material combination" xsd:string
 property_value: IAO:0000112 "Mixing two fluids. Adding salt into water. Injecting a mouse with PBS." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -3162,7 +3156,6 @@ intersection_of: OBI:0000011 ! planned process
 intersection_of: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen collection objective
 relationship: OBI:0000293 BFO:0000040 ! has_specified_input material_entity
 relationship: OBI:0000299 OBI:0100051 ! has_specified_output specimen
-relationship: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen collection objective
 property_value: IAO:0000111 "specimen collection process" xsd:string
 property_value: IAO:0000112 "drawing blood from a patient for analysis, collecting a piece of a plant for depositing in a herbarium, buying meat from a butcher in order to measure its protein content in an investigation" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -3194,7 +3187,6 @@ is_a: OBI:0000747 ! material sample
 is_a: OBI:0001479 ! specimen from organism
 intersection_of: OBI:0000312 OBI:0600005 ! is_specified_output_of collecting specimen from organism
 intersection_of: RO:0000087 OBI:0000740 ! has role material sample role
-relationship: OBI:0000312 OBI:0600005 ! is_specified_output_of collecting specimen from organism
 relationship: RO:0001000 UBERON:0000465 ! derives from (ro) material anatomical entity
 property_value: IAO:0000111 "sample from organism" xsd:string
 property_value: IAO:0000114 IAO:0000002
@@ -3246,9 +3238,9 @@ property_value: IAO:0000119 "bp" xsd:string
 id: OBI:0000690
 name: immunoprecipitation
 def: "is a process which realizes a material separation objective by relying on antibodies to specifically binding to material entity" []
-is_a: ERO:0001523 ! immunotechnique
 is_a: OBI:0600014 ! material component separation
 relationship: OBI:0000293 GO:0042571 ! has_specified_input immunoglobulin complex, circulating
+relationship: OBI:0000417 OBI:0000639 ! achieves_planned_objective material separation objective
 property_value: IAO:0000111 "immunoprecipitation" xsd:string
 property_value: IAO:0000112 "PMID: 19419533. Arabidopsis RNA immunoprecipitation. Terzi LC, Simpson GG. Plant J. 2009 Jul;59(1):163-8." xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -3283,7 +3275,6 @@ id: OBI:0000707
 name: decision tree building data transformation
 def: "A decision tree building data transformation is a data transformation that has objective decision tree induction." []
 is_a: OBI:0200000 ! data transformation
-relationship: OBI:0000417 OBI:0000704 ! achieves_planned_objective decision tree induction objective
 property_value: IAO:0000111 "decision tree building data transformation" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "James Malone" xsd:string
@@ -3294,6 +3285,7 @@ id: OBI:0000711
 name: library preparation
 def: "is a process which results in the creation of a library from fragments of DNA using cloning vectors or oligonucleotides with the role of adaptors." []
 is_a: OBI:0000094 ! material processing
+relationship: OBI:0000417 OBI:0000456 ! achieves_planned_objective material transformation objective
 property_value: IAO:0000111 "library preparation" xsd:string
 property_value: IAO:0000112 "PMID: 19570239. Construction and analysis of cotton (Gossypium arboreum L.) drought-related cDNA library. Zhang L, Li FG, Liu CL, Zhang CJ, Zhang XY. BMC Res Notes. 2009 Jul 2;2:120." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -3319,8 +3311,6 @@ is_a: OBI:0001954 ! ChIP assay
 intersection_of: OBI:0001954 ! ChIP assay
 intersection_of: BFO:0000051 OBI:0000626 ! has_part DNA sequencing assay
 intersection_of: OBI:0000293 OBI:0400103 {all_some="true"} ! has_specified_input DNA sequencer
-relationship: BFO:0000051 OBI:0000626 ! has_part DNA sequencing assay
-relationship: OBI:0000293 OBI:0400103 ! has_specified_input DNA sequencer
 property_value: IAO:0000111 "ChIP-seq assay" xsd:string
 property_value: IAO:0000112 "PMID: 19275939" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -3361,6 +3351,7 @@ is_a: APOLLO_SV:00000796 ! dataset creating
 is_a: OBI:0200171 ! partitioning data transformation
 is_a: OBI:0200175 ! class discovery data transformation
 relationship: OBI:0000299 OBI:0000648 ! has_specified_output clustered data set
+relationship: OBI:0000417 OBI:0200172 ! achieves_planned_objective partitioning objective
 relationship: OBI:0000417 OBI:0200178 ! achieves_planned_objective class discovery objective
 property_value: IAO:0000111 "k-nearest neighbors" xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -3375,7 +3366,6 @@ def: "A recombinant vector is created by a recombinant vector cloning process, a
 is_a: OBI:0000047 ! processed material
 intersection_of: BFO:0000040 ! material_entity
 intersection_of: OBI:0000312 OBI:0600064 ! is_specified_output_of recombinant vector cloning
-relationship: OBI:0000312 OBI:0600064 ! is_specified_output_of recombinant vector cloning
 property_value: IAO:0000111 "recombinant vector" xsd:string
 property_value: IAO:0000114 IAO:0000123
 
@@ -3397,7 +3387,7 @@ is_a: OBI:0000047 ! processed material
 is_a: OBI:1110108 ! material to be added
 intersection_of: BFO:0000040 ! material_entity
 intersection_of: RO:0000087 OBI:0000411 ! has role cloning vector role
-relationship: RO:0000087 OBI:0000411 ! has role cloning vector role
+relationship: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
 property_value: IAO:0000111 "cloning vector" xsd:string
 property_value: IAO:0000114 IAO:0000123
 
@@ -3419,7 +3409,6 @@ is_a: OBI:0000659 ! specimen collection process
 intersection_of: OBI:0000659 ! specimen collection process
 intersection_of: OBI:0000293 BFO:0000040 ! has_specified_input material_entity
 intersection_of: OBI:0000299 OBI:0000747 ! has_specified_output material sample
-relationship: OBI:0000299 OBI:0000747 ! has_specified_output material sample
 property_value: IAO:0000111 "material sampling process" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000118 "sample collection" xsd:string
@@ -3433,7 +3422,6 @@ def: "A material entity that has the material sample role" []
 is_a: OBI:0100051 ! specimen
 intersection_of: BFO:0000040 ! material_entity
 intersection_of: RO:0000087 OBI:0000740 ! has role material sample role
-relationship: RO:0000087 OBI:0000740 ! has role material sample role
 property_value: IAO:0000111 "material sample" xsd:string
 property_value: IAO:0000112 "blood drawn from patient to measure his systemic glucose level. A population of humans with HIV enrolled in a study taken to represent patients with HIV in general." xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -3446,6 +3434,7 @@ id: OBI:0000749
 name: CART
 def: "A CART (classification and regression trees) is a data transformation method for producing a classification or regression model with a tree-based structure." []
 is_a: OBI:0000707 ! decision tree building data transformation
+relationship: OBI:0000417 OBI:0000704 ! achieves_planned_objective decision tree induction objective
 property_value: IAO:0000111 "CART" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "James Malone" xsd:string
@@ -3457,7 +3446,6 @@ id: OBI:0000792
 name: statistical model validation
 def: "A data transformation which assesses how the results of a statistical analysis will generalize to an independent data set." []
 is_a: OBI:0200171 ! partitioning data transformation
-relationship: OBI:0000417 OBI:0200188 ! achieves_planned_objective cross validation objective
 property_value: IAO:0000111 "statistical model validation" xsd:string
 property_value: IAO:0000112 "Using the expression levels of 20 proteins to predict whether a cancer patient will respond to a drug. A practical goal would be to determine which subset of the 20 features should be used to produce the best predictive model. - wikipedia" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -3491,7 +3479,6 @@ is_a: CHEBI:16991 ! deoxyribonucleic acid
 is_a: OBI:0000047 ! processed material
 intersection_of: CHEBI:16991 ! deoxyribonucleic acid
 intersection_of: OBI:0000312 OBI:0600058 ! is_specified_output_of enzymatic amplification
-relationship: OBI:0000312 OBI:0600058 ! is_specified_output_of enzymatic amplification
 property_value: IAO:0000111 "amplified DNA" xsd:string
 property_value: IAO:0000112 "Amplied DNA  created by PCR" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -3525,6 +3512,7 @@ id: OBI:0000816
 name: micro electrode
 def: "An electrode of very fine caliber consisting usually of a fine wire or a glass tube of capillary diameter drawn to a fine point and filled with saline or a metal used in physiological experiments to stimulate or record action currents of extracellular or intracellular origin in the nervous system." []
 is_a: OBI:0000832 ! measurement device
+relationship: RO:0000085 OBI:0000453 ! has function measure function
 property_value: IAO:0000111 "micro electrode" xsd:string
 property_value: IAO:0000112 "A micro-electrode recording device used to record extracellular action potentialsin monkey caudate nucleus" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -3539,7 +3527,6 @@ def: "A device in which a measure function inheres." []
 is_a: OBI:0000968 ! device
 intersection_of: OBI:0000968 ! device
 intersection_of: RO:0000085 OBI:0000453 ! has function measure function
-relationship: RO:0000085 OBI:0000453 ! has function measure function
 property_value: IAO:0000111 "measurement device" xsd:string
 property_value: IAO:0000112 "A ruler, a microarray scanner, a Geiger counter." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -3551,7 +3538,6 @@ id: OBI:0000835
 name: manufacturer
 def: "A person or organization that has a manufacturer role" []
 is_a: BFO:0000040 ! material_entity
-relationship: RO:0000087 OBI:0000571 ! has role manufacturer role
 property_value: IAO:0000111 "manufacturer" xsd:string
 property_value: IAO:0000114 IAO:0000123
 
@@ -3560,7 +3546,6 @@ id: OBI:0000838
 name: material maintenance
 def: "a process with that achieves the objective to maintain some or all of the characteristics of an input material over time" []
 is_a: OBI:0000011 ! planned process
-relationship: OBI:0000417 OBI:0000806 ! achieves_planned_objective material maintenance objective
 property_value: IAO:0000111 "material maintenance" xsd:string
 property_value: IAO:0000114 IAO:0000123
 
@@ -3640,6 +3625,7 @@ id: OBI:0000893
 name: real time polymerase chain reaction assay
 def: "An assay, based on the PCR, that amplifies and simultaneously quantifies a specific DNA molecule based on the use of complementary probes/primers. It enables both detection and quantification (as absolute number of copies or relative amount when normalized to DNA input or additional normalizing genes) of one or more specific sequences in a DNA sample." []
 is_a: OBI:0002692 ! polymerase chain reaction assay
+relationship: BFO:0000051 OBI:0000415 ! has_part polymerase chain reaction
 property_value: IAO:0000111 "real time polymerase chain reaction assay" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "Bjoern Peters" xsd:string
@@ -3679,6 +3665,7 @@ def: "An assay that uses a reverse transcription step (an RNA strand is reverse 
 is_a: OBI:0002692 ! polymerase chain reaction assay
 relationship: BFO:0000051 OBI:0000893 ! has_part real time polymerase chain reaction assay
 relationship: BFO:0000051 OBI:0600028 ! has_part artificially induced reverse transcription
+relationship: OBI:0000299 IAO:0000030 ! has_specified_output information content entity
 property_value: IAO:0000111 "real time reverse-transcription polymerase chain reaction assay" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "Bjoern Peters" xsd:string
@@ -3718,8 +3705,6 @@ is_a: OBI:0001977 ! cytometry assay
 intersection_of: OBI:0001977 ! cytometry assay
 intersection_of: BFO:0000051 OBI:0001501 ! has_part fluorescence detection assay
 intersection_of: OBI:0000293 OBI:0400044 {all_some="true"} ! has_specified_input flow cytometer
-relationship: BFO:0000051 OBI:0001501 ! has_part fluorescence detection assay
-relationship: OBI:0000293 OBI:0400044 ! has_specified_input flow cytometer
 property_value: IAO:0000111 "flow cytometry assay" xsd:string
 property_value: IAO:0000112 "Using a flow cytometer to quantitate the percent of CD3 positive cells in a population by labeling them with a FITC tagged anti-CD3 antibody." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -3748,8 +3733,6 @@ is_a: OBI:0000443 ! analyte assay
 intersection_of: OBI:0000443 ! analyte assay
 intersection_of: BFO:0000051 OBI:0001501 ! has_part fluorescence detection assay
 intersection_of: OBI:0000293 OBI:1000207 {all_some="true"} ! has_specified_input assay bead
-relationship: BFO:0000051 OBI:0001501 ! has_part fluorescence detection assay
-relationship: OBI:0000293 OBI:1000207 ! has_specified_input assay bead
 property_value: IAO:0000111 "cytometric bead array assay" xsd:string
 property_value: IAO:0000112 "Using a Luminex machine to detect IFN-gamma and IL-10 in the supernatant of a cell culture." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -3778,7 +3761,6 @@ def: "A device with a separation function realized in a planed process" []
 is_a: OBI:0000968 ! device
 intersection_of: OBI:0000968 ! device
 intersection_of: RO:0000085 OBI:0000372 ! has function material separation function
-relationship: RO:0000085 OBI:0000372 ! has function material separation function
 property_value: IAO:0000111 "material separation device" xsd:string
 property_value: IAO:0000112 "flow cytometer" xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -3846,7 +3828,6 @@ def: "A device that can be used to restrict the location of material entities ov
 is_a: OBI:0000968 ! device
 intersection_of: OBI:0000968 ! device
 intersection_of: RO:0000085 OBI:0000370 ! has function contain function
-relationship: RO:0000085 OBI:0000370 ! has function contain function
 property_value: IAO:0000111 "container" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000116 "03/21/2010: Added to allow classification of children (similar to what we want to do for 'measurement device'. Lookint at what classifies here, we may want to reconsider a contain function assigned to a part of an entity is necessarily also a function of the whole (e.g. is a centrifuge a container because it has test tubes as parts?)" xsd:string
@@ -3857,6 +3838,7 @@ id: OBI:0000968
 name: device
 def: "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent." []
 is_a: OBI:0000047 ! processed material
+relationship: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
 relationship: RO:0000085 BFO:0000034 ! has function function
 property_value: IAO:0000111 "device" xsd:string
 property_value: IAO:0000112 "A voltmeter is a measurement device which is intended to perform some measure function." xsd:string
@@ -3871,6 +3853,7 @@ property_value: IAO:0000119 "OBI development call 2012-12-17." xsd:string
 id: OBI:0000973
 name: sequence data
 def: "A measurement datum that representing the primary structure of a macromolecule(it's sequence) sometimes associated with an indicator of confidence of that measurement.\n" []
+is_a: IAO:0000109 ! measurement datum
 property_value: IAO:0000111 "sequence data" xsd:string
 property_value: IAO:0000112 "example of usage: the representation of a nucleotide sequence in FASTA format used for a sequence similarity search." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -3882,7 +3865,6 @@ id: OBI:0000975
 name: cell-cell binding detection by flow cytometry assay
 def: "A binding assay which uses a flow cytometer to detect pairs of cells that are bound to each other by staining them with different fluorescent labels." []
 is_a: OBI:0001977 ! cytometry assay
-relationship: BFO:0000051 OBI:0000916 ! has_part flow cytometry assay
 property_value: IAO:0000111 "cell-cell binding detection by flow cytometry assay" xsd:string
 property_value: IAO:0000112 "Staining a B cell with PE and staining a T cell with FITC, incubating them together with a peptide, and counting the number of co-stained conjugates." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -3952,7 +3934,6 @@ def: "A device which has a function to emit light." []
 is_a: OBI:0000968 ! device
 intersection_of: OBI:0000968 ! device
 intersection_of: RO:0000085 OBI:0000367 ! has function light emission function
-relationship: RO:0000085 OBI:0000367 ! has function light emission function
 property_value: IAO:0000111 "light emission device" xsd:string
 property_value: IAO:0000112 "A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics)" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -3987,6 +3968,7 @@ id: OBI:0001053
 name: electrophoresis system
 def: "A device that moves charged particles through a medium by using an electric field induced by electrodes." []
 is_a: OBI:0000932 ! material separation device
+relationship: RO:0000085 OBI:0000372 ! has function material separation function
 property_value: IAO:0000111 "electrophoresis system" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Erik Segerdell" xsd:string
@@ -3997,6 +3979,7 @@ id: OBI:0001080
 name: patch clamp device
 def: "A device used in electrophysiology that allows the study of single or multiple ion channels in cells." []
 is_a: OBI:0000832 ! measurement device
+relationship: RO:0000085 OBI:0000453 ! has function measure function
 property_value: IAO:0000111 "patch clamp device" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Erik Segerdell" xsd:string
@@ -4007,6 +3990,7 @@ id: OBI:0001108
 name: nucleic acid sequencer
 def: "An device that is used to determine the order of nucleotides in nucleic acid sequences." []
 is_a: OBI:0000832 ! measurement device
+relationship: RO:0000085 OBI:0000453 ! has function measure function
 property_value: IAO:0000111 "nucleic acid sequencer" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Erik Segerdell" xsd:string
@@ -4028,6 +4012,7 @@ id: OBI:0001129
 name: voltage clamp device
 def: "A device that is used to measure the ion currents across the membrane of excitable cells, such as neurons, while holding the membrane voltage at a set level." []
 is_a: OBI:0000832 ! measurement device
+relationship: RO:0000085 OBI:0000453 ! has function measure function
 property_value: IAO:0000111 "voltage clamp device" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Erik Segerdell" xsd:string
@@ -4038,6 +4023,7 @@ id: OBI:0001137
 name: protein sequencer
 def: "An device that is used to determine the order of amino acids in protein sequences." []
 is_a: OBI:0000832 ! measurement device
+relationship: RO:0000085 OBI:0000453 ! has function measure function
 property_value: IAO:0000111 "protein sequencer" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Erik Segerdell" xsd:string
@@ -4130,6 +4116,8 @@ name: reverse transcription polymerase chain reaction assay
 def: "An assay that determines the concentration of RNA in a sample in which an RNA strand is first reverse transcribed into its DNA complement (complementary DNA, or cDNA) using the enzyme reverse transcriptase, and the resulting cDNA is amplified using traditional or real-time PCR." []
 is_a: OBI:0002692 ! polymerase chain reaction assay
 relationship: BFO:0000051 OBI:0000552 ! has_part reverse transcribed polymerase chain reaction
+relationship: OBI:0000293 OBI:0000880 ! has_specified_input RNA extract
+relationship: OBI:0000299 IAO:0000030 ! has_specified_output information content entity
 property_value: IAO:0000111 "reverse transcription polymerase chain reaction assay" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "Chris Stoeckert" xsd:string
@@ -4141,8 +4129,6 @@ id: OBI:0001177
 name: RNA sequencing assay
 def: "An assay that determines the sequence of an RNA molecule." []
 is_a: OBI:0600047 ! sequencing assay
-relationship: BFO:0000051 OBI:0600028 ! has_part artificially induced reverse transcription
-relationship: OBI:0000293 OBI:0400103 ! has_specified_input DNA sequencer
 property_value: IAO:0000111 "RNA sequencing assay" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "Bjoern Peters" xsd:string
@@ -4155,7 +4141,6 @@ def: "A data item that states if two or more material entities have the disposit
 is_a: IAO:0000027 ! data item
 intersection_of: IAO:0000027 ! data item
 intersection_of: IAO:0000136 OBI:0001588 ! is about binding
-relationship: IAO:0000136 OBI:0001588 ! is about binding
 property_value: IAO:0000111 "binding datum" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "Bjoern Peters; Randi Vita" xsd:string
@@ -4201,8 +4186,6 @@ is_a: OBI:0001954 ! ChIP assay
 intersection_of: OBI:0001954 ! ChIP assay
 intersection_of: BFO:0000051 OBI:0001985 ! has_part microarray assay
 intersection_of: OBI:0000293 OBI:0400148 {all_some="true"} ! has_specified_input DNA microarray
-relationship: BFO:0000051 OBI:0001985 ! has_part microarray assay
-relationship: OBI:0000293 OBI:0400148 ! has_specified_input DNA microarray
 property_value: IAO:0000111 "ChIP-chip assay" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "Bjoern Petesr" xsd:string
@@ -4336,6 +4319,8 @@ id: OBI:0001335
 name: microRNA profiling by array assay
 def: "An assay that analyses the microRNA component of the transcriptome using a microRNA array." []
 is_a: OBI:0001926 ! microRNA profiling assay
+relationship: OBI:0000299 OBI:0000101 ! has_specified_output measured expression level
+relationship: OBI:0000417 OBI:0001331 ! achieves_planned_objective transcription profiling identification objective
 property_value: IAO:0000111 "microRNA profiling by array assay" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "James Malone" xsd:string
@@ -4390,7 +4375,6 @@ id: OBI:0001425
 name: protein binding site identification design
 def: "A study design that investigates protein binding sites on nucleic acids." []
 is_a: OBI:0500000 ! study design
-relationship: BFO:0000051 OBI:0001398 ! has_part protein and DNA interaction identification objective
 property_value: IAO:0000111 "protein binding site identification design" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "Person: Chris Stoeckert, Jie Zheng" xsd:string
@@ -4520,7 +4504,6 @@ def: "An imaging assay in which an electrons are used to probe the density, shap
 is_a: OBI:0002119 ! microscopy assay
 intersection_of: OBI:0000185 ! imaging assay
 intersection_of: OBI:0000293 OBI:0000990 {all_some="true"} ! has_specified_input electron microscope
-relationship: OBI:0000293 OBI:0000990 ! has_specified_input electron microscope
 property_value: IAO:0000111 "electron microscopy imaging assay" xsd:string
 property_value: IAO:0000112 "Using gold labeled antibodies to stain a mouse brain slice and use electron microscopy to generate an image that shows the location of the antibodies within the tissue structure." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -4557,6 +4540,8 @@ name: chromosome organization assay by fluorescence in-situ hybridization
 def: "An in-situ hybridization assay that uses fluorescence to detect chromosomal integrity" []
 is_a: OBI:0001686 ! in-situ hybridization assay
 relationship: OBI:0000293 OBI:0002744 ! has_specified_input molecular label
+relationship: OBI:0000299 IAO:0000027 ! has_specified_output data item
+relationship: OBI:0000417 OBI:0000015 ! achieves_planned_objective biological feature identification objective
 property_value: IAO:0000111 "chromosome organization assay by fluorescence in-situ hybridization" xsd:string
 property_value: IAO:0000112 "Duplication of intrachromosomal insertion segments 4q32__�q35 confirmed by comparative genomic hybridization and fluorescent in situ hybridization. PMID:22384449" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -4570,6 +4555,7 @@ id: OBI:0001684
 name: methylation-specific polymerase chain reaction assay
 def: "An assay that uses initial modification of DNA by sodium bisulfite, converting all unmethylated, but not methylated, cytosines to uracil, and subsequent amplification with primers specific for methylated versus unmethylated DNA." []
 is_a: OBI:0000070 ! assay
+relationship: OBI:0000299 IAO:0000027 ! has_specified_output data item
 property_value: IAO:0000111 "methylation-specific polymerase chain reaction assay" xsd:string
 property_value: IAO:0000112 "Methylation status of breast cancer resistance protein detected by methylation-specific polymerase chain reaction analysis is correlated inversely with its expression in drug-resistant lung cancer cells. PMID:18219662" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -4585,6 +4571,7 @@ def: "An assay that localizes a specific DNA or RNA sequence within a portion or
 is_a: OBI:0000070 ! assay
 relationship: BFO:0000051 OBI:0302903 ! has_part nucleic acid hybridization
 relationship: OBI:0000293 OBI:0001143 ! has_specified_input labeled nucleic acid extract
+relationship: OBI:0000299 IAO:0000027 ! has_specified_output data item
 relationship: OBI:0000417 OBI:0000015 ! achieves_planned_objective biological feature identification objective
 property_value: IAO:0000111 "in-situ hybridization assay" xsd:string
 property_value: IAO:0000112 "Use of in situ hybridization to examine gene expression in the embryonic, neonatal, and adult urogenital system. PMID:22639265" xsd:string
@@ -4603,8 +4590,6 @@ is_a: OBI:0000443 ! analyte assay
 intersection_of: OBI:0000443 ! analyte assay
 intersection_of: BFO:0000051 OBI:0000690 ! has_part immunoprecipitation
 intersection_of: OBI:0000293 GO:0042571 {all_some="true"} ! has_specified_input immunoglobulin complex, circulating
-relationship: BFO:0000051 OBI:0000690 ! has_part immunoprecipitation
-relationship: OBI:0000293 GO:0042571 ! has_specified_input immunoglobulin complex, circulating
 property_value: IAO:0000111 "immunoprecipitation assay" xsd:string
 property_value: IAO:0000112 "Determining if a cell is producing a protein using a protein specific antibody to immunoprecipitate the cell lysate. Determining if the serum of a patient contains antibodies against HBV core protein by immunoprecipitating purified HBV core protein with the patients serum." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -4618,7 +4603,6 @@ def: "A library preparation that results in the creation of a library of the 5' 
 is_a: OBI:0000711 ! library preparation
 intersection_of: OBI:0000711 ! library preparation
 intersection_of: OBI:0000299 OBI:0000722 ! has_specified_output paired-end library
-relationship: OBI:0000299 OBI:0000722 ! has_specified_output paired-end library
 property_value: http://purl.org/dc/elements/1.1/source "ENCODE project" xsd:string
 property_value: IAO:0000111 "paired-end library preparation" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -4644,7 +4628,7 @@ comment: (copied from ReO)\nReagents are distinguished from devices/instruments 
 is_a: OBI:0000047 ! processed material
 intersection_of: BFO:0000040 ! material_entity
 intersection_of: RO:0000087 OBI:0000086 ! has role reagent role
-relationship: RO:0000087 OBI:0000086 ! has role reagent role
+relationship: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
 property_value: IAO:0000111 "reagent" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000116 "2013-6-5 MHB: Clarifications regarding the distinction between reagetns and devices were made at the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions.  Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear.  For examples, see editor note on OBI:device." xsd:string
@@ -4667,6 +4651,7 @@ def: "A microRNA profiling assay that analyzes the microRNA component of the tra
 is_a: OBI:0001926 ! microRNA profiling assay
 relationship: BFO:0000051 OBI:0000711 ! has_part library preparation
 relationship: BFO:0000051 OBI:0600047 ! has_part sequencing assay
+relationship: OBI:0000299 OBI:0000101 ! has_specified_output measured expression level
 property_value: IAO:0000111 "microRNA profiling by high throughput sequencing assay" xsd:string
 property_value: IAO:0000112 "Juhlia et al. MicroRNA expression profiling reveals miRNA families regulating_specific biological pathways in mouse frontal cortex and hippocampus. PLoS One. 2011;6(6). PMID: 21731767" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -4731,8 +4716,6 @@ is_a: OBI:0000047 ! processed material
 intersection_of: BFO:0000040 ! material_entity
 intersection_of: BFO:0000051 OBI:0002744 ! has_part molecular label
 intersection_of: OBI:0000312 OBI:0600038 ! is_specified_output_of addition of molecular label
-relationship: BFO:0000051 OBI:0002744 ! has_part molecular label
-relationship: OBI:0000312 OBI:0600038 ! is_specified_output_of addition of molecular label
 property_value: IAO:0000111 "molecular-labeled material" xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "PERSON:Matthew Brush" xsd:string
@@ -4743,7 +4726,6 @@ id: OBI:0001954
 name: ChIP assay
 def: "An assay in which portions of chromatin, the ordered and organized complex of DNA and its interaction partners that make up a chormosome, is extracted and purified by immunoprecipitation with antibodies or tags, and subsequently analyzed" []
 is_a: OBI:0000070 ! assay
-relationship: BFO:0000051 OBI:00001975 ! has_part chromatin immunoprecipitation
 property_value: IAO:0000111 "ChIP assay" xsd:string
 property_value: IAO:0000112 "PMID: 6379641" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -4792,7 +4774,6 @@ def: "An analyte assay where binding of the analyte to immobilized matrix is mea
 is_a: OBI:0000443 ! analyte assay
 intersection_of: OBI:0000443 ! analyte assay
 intersection_of: OBI:0000293 OBI:0400147 {all_some="true"} ! has_specified_input microarray
-relationship: OBI:0000293 OBI:0400147 ! has_specified_input microarray
 property_value: IAO:0000111 "microarray assay" xsd:string
 property_value: IAO:0000112 "Measuring if sera from an influenza A virus immunizedmouse binds to Hemagglutinin protein that is immobilized on a microarray." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -4817,7 +4798,6 @@ def: "An assay that identifies epigenetic modifications including histone modifi
 is_a: OBI:0000070 ! assay
 intersection_of: OBI:0000070 ! assay
 intersection_of: OBI:0000417 OBI:0001234 ! achieves_planned_objective epigenetic modification identification objective
-relationship: OBI:0000417 OBI:0001234 ! achieves_planned_objective epigenetic modification identification objective
 property_value: IAO:0000111 "epigenetic modification assay" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "Chris Stoeckert" xsd:string
@@ -4903,7 +4883,6 @@ is_a: OBI:0000967 ! container
 is_a: OBI:0001034 ! environmental control device
 intersection_of: OBI:0000967 ! container
 intersection_of: RO:0000085 OBI:0000401 ! has function environment control function
-relationship: RO:0000085 OBI:0000401 ! has function environment control function
 property_value: IAO:0000111 "physical store" xsd:string
 property_value: IAO:0000112 "a freezer. a humidity controlled box." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -4960,7 +4939,6 @@ def: "An imaging assay that utilizes a microscope to magnify features of the vis
 is_a: OBI:0000185 ! imaging assay
 intersection_of: OBI:0000185 ! imaging assay
 intersection_of: OBI:0000293 OBI:0400169 {all_some="true"} ! has_specified_input microscope
-relationship: OBI:0000293 OBI:0400169 ! has_specified_input microscope
 property_value: IAO:0000111 "microscopy assay" xsd:string
 property_value: IAO:0000112 "Lung, liver, and spleen tissue samples were collected from female BALB/c mice and fixed in 100% formalin solution, embedded in paraffin, sectioned, and stained with hematoxylin and eosin. The stained samples were examined for signs of pathological changes under light microscopy." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -5470,8 +5448,6 @@ id: OBI:0002516
 name: brain specimen
 def: "A specimen that is derived from brain." []
 is_a: OBI:0001479 ! specimen from organism
-relationship: OBI:0000312 OBI:0600005 ! is_specified_output_of collecting specimen from organism
-relationship: RO:0001000 UBERON:0000955 ! derives from (ro) brain
 property_value: IAO:0000111 "brain specimen" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "Chris Stoeckert" xsd:string
@@ -5657,7 +5633,6 @@ def: "An assay that uses polymerase chain reaction technique to amplify DNA." []
 is_a: OBI:0000070 ! assay
 intersection_of: OBI:0000070 ! assay
 intersection_of: BFO:0000051 OBI:0000415 ! has_part polymerase chain reaction
-relationship: BFO:0000051 OBI:0000415 ! has_part polymerase chain reaction
 property_value: IAO:0000111 "polymerase chain reaction assay" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "VEuPathDB" xsd:string
@@ -5686,7 +5661,6 @@ is_a: CHEBI:23367 ! molecular entity
 is_a: OBI:0001879 ! reagent
 intersection_of: CHEBI:23367 ! molecular entity
 intersection_of: RO:0000087 OBI:0002743 ! has role molecular label role
-relationship: RO:0000087 OBI:0002743 ! has role molecular label role
 property_value: IAO:0000111 "molecular label" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000116 "JZ (3-30-20): discussed on the OBI call. Since the REO was never actually registered, we decided to adopt the term into OBI and replaced OBI:0002744 by newly assigned ID: OBI:0002744." xsd:string
@@ -5805,7 +5779,6 @@ id: OBI:0002989
 name: material supplier
 def: "A person or organization that provides material supplies to other people or organizations." []
 is_a: BFO:0000040 ! material_entity
-relationship: RO:0000087 OBI:0000018 ! has role material supplier role
 property_value: IAO:0000111 "material supplier" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "Rebecca Jackson" xsd:string
@@ -5861,7 +5834,6 @@ def: "A material entity that has the specimen role." []
 is_a: BFO:0000040 ! material_entity
 intersection_of: BFO:0000040 ! material_entity
 intersection_of: RO:0000087 OBI:0000112 ! has role specimen role
-relationship: RO:0000087 OBI:0000112 ! has role specimen role
 property_value: IAO:0000111 "specimen" xsd:string
 property_value: IAO:0000112 "Biobanking of blood taken and stored in a freezer for potential future investigations stores specimen." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -5907,7 +5879,6 @@ name: data transformation
 def: "A planned process that produces output data from input data." []
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 IAO:0000027 ! has_specified_input data item
-relationship: OBI:0000417 OBI:0200166 ! achieves_planned_objective data transformation objective
 property_value: IAO:0000111 "data transformation" xsd:string
 property_value: IAO:0000112 "The application of a clustering protocol to microarray data or the application of a statistical testing method on a primary data set to determine a p-value." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -5929,6 +5900,7 @@ id: OBI:0200033
 name: leave one out cross validation method
 def: "is a data transformation :  leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data" []
 is_a: OBI:0000792 ! statistical model validation
+relationship: OBI:0000417 OBI:0200188 ! achieves_planned_objective cross validation objective
 property_value: IAO:0000111 "leave one out cross validation method" xsd:string
 property_value: IAO:0000112 "The authors conducted  leave-one-out cross validation to estimate the strength and accuracy of the differentially expressed filtered genes. http://bioinformatics.oxfordjournals.org/cgi/content/abstract/19/3/368" xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -5943,6 +5915,7 @@ is_a: APOLLO_SV:00000796 ! dataset creating
 is_a: OBI:0200171 ! partitioning data transformation
 is_a: OBI:0200175 ! class discovery data transformation
 relationship: OBI:0000299 OBI:0000648 ! has_specified_output clustered data set
+relationship: OBI:0000417 OBI:0200172 ! achieves_planned_objective partitioning objective
 relationship: OBI:0000417 OBI:0200178 ! achieves_planned_objective class discovery objective
 property_value: IAO:0000111 "k-means clustering" xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -6038,7 +6011,6 @@ id: OBI:0200171
 name: partitioning data transformation
 def: "A partitioning data transformation is a data transformation that has objective partitioning." []
 is_a: OBI:0200000 ! data transformation
-relationship: OBI:0000417 OBI:0200172 ! achieves_planned_objective partitioning objective
 property_value: IAO:0000111 "partitioning data transformation" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "James Malone" xsd:string
@@ -6134,7 +6106,6 @@ def: "decapitated organism is an organism which has had it's head removed" []
 is_a: OBI:0000047 ! processed material
 intersection_of: BFO:0000040 ! material_entity
 intersection_of: OBI:0000312 OBI:0302899 ! is_specified_output_of decapitation
-relationship: OBI:0000312 OBI:0302899 ! is_specified_output_of decapitation
 property_value: IAO:0000111 "decapitated organism" xsd:string
 property_value: IAO:0000112 "Ovarian development induced in decapitated female Culex pipiens pallens mosquitoes by infusion of physiological quantities of 20-hydroxyecdysone together with amino acids.\nJ Insect Physiol. 1998 May;44(5-6):525-528. PMID: 12770172" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -6149,7 +6120,6 @@ is_a: OBI:0001151 ! genetically modified material
 is_a: OBI:0100026 ! organism
 intersection_of: OBI:0100026 ! organism
 intersection_of: OBI:0000312 OBI:0600043 ! is_specified_output_of genetic transformation
-relationship: OBI:0000312 OBI:0600043 ! is_specified_output_of genetic transformation
 property_value: IAO:0000111 "genetically modified organism" xsd:string
 property_value: IAO:0000112 "A protocol for removal of antibiotic resistance cassettes from human embryonic stem cells genetically modified by homologous recombination or transgenesis.\nNat Protoc. 2008;3(10):1550-8. PMID: 18802436" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -6174,6 +6144,7 @@ id: OBI:0302887
 name: staining
 def: "Staining is a process which results in the addition a class-specific (DNA, proteins, lipids, carbohydrates) dye to a substrate to qualify or quantify the presence of a specific compound." []
 is_a: OBI:0000094 ! material processing
+relationship: OBI:0000417 OBI:0000456 ! achieves_planned_objective material transformation objective
 property_value: IAO:0000111 "staining" xsd:string
 property_value: IAO:0000112 "PMID: 18540298. Role of modified bleach method in staining of acid-fast bacilli in lymph node aspirates. Acta Cytol. 2008 May-Jun;52(3):325-8." xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -6187,6 +6158,7 @@ def: "polymerization is process by which molecular entity of small mass are aggr
 is_a: OBI:0000094 ! material processing
 relationship: OBI:0000293 CHEBI:23367 ! has_specified_input molecular entity
 relationship: OBI:0000299 CHEBI:33839 ! has_specified_output macromolecule
+relationship: OBI:0000417 OBI:0000456 ! achieves_planned_objective material transformation objective
 property_value: IAO:0000111 "polymerization" xsd:string
 property_value: IAO:0000112 "PMID: 18517209. The electronic role of DNA-functionalized carbon nanotubes: efficacy for in situ polymerization of conducting polymer nanocomposites. J Am Chem Soc. 2008 Jun 25;130(25):7921-8. Epub 2008 Jun 3." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -6222,6 +6194,7 @@ id: OBI:0400043
 name: flow cell
 def: "Aparatus in the fluidic subsystem where the sheath and sample meet. Can be one of several types; jet-in-air, quartz cuvette, or a hybrid of the two. The sample flows through the center of a fluid column of sheath fluid in the flow cell." []
 is_a: OBI:0000967 ! container
+relationship: RO:0000085 OBI:0000370 ! has function contain function
 property_value: IAO:0000111 "flow cell" xsd:string
 property_value: IAO:0000112 "Biofilm Flow Cell" xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -6235,7 +6208,10 @@ name: flow cytometer
 def: "A flow_cytometer is an instrument for counting, examining and sorting microscopic particles in suspension. It allows simultaneous multiparametric analysis of the physical and/or chemical characteristics of single cells flowing through an optical and/or electronic detection apparatus. A flow cytometer is an instrument that can be used to quantitatively measure the properties of individual cells in a flowing medium." []
 is_a: OBI:0400137 ! cytometer
 relationship: BFO:0000051 OBI:0400043 ! has_part flow cell
+relationship: BFO:0000051 OBI:0400065 ! has_part light source
 relationship: BFO:0000051 OBI:0400078 ! has_part obscuration bar
+relationship: BFO:0000051 OBI:0400079 ! has_part optical filter
+relationship: BFO:0000051 OBI:0400082 ! has_part photodetector
 relationship: BFO:0000051 OBI:0400153 ! has_part droplet sorter
 property_value: IAO:0000111 "flow cytometer" xsd:string
 property_value: IAO:0000112 "FACS Calibur" xsd:string
@@ -6248,6 +6224,7 @@ id: OBI:0400065
 name: light source
 def: "A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics). Light sources may include one of a variety of lamps (e.g., xenon, halogen, mercury). Most light sources are operated from line power, but some may be powered from batteries. They are mostly used in endoscopic, microscopic, and other examination and/or in surgical procedures. The light source is part of the optical subsystem. In a flow cytometer the light source directs high intensity light at particles at the interrogation point. The light source in a flow cytometer is usually a laser." []
 is_a: OBI:0001032 ! light emission device
+relationship: RO:0000085 OBI:0000367 ! has function light emission function
 property_value: IAO:0000111 "light source" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "Elizabeth M. Goralczyk" xsd:string
@@ -6285,6 +6262,7 @@ id: OBI:0400082
 name: photodetector
 def: "A photodetector is a device used to detect and measure the intensity of radiant energy through photoelectric action. In a cytometer, photodetectors measure either the number of photons of laser light scattered on impact with a cell (for example), or the flourescence emitted by excitation of a fluorescent dye." []
 is_a: OBI:0000832 ! measurement device
+relationship: RO:0000085 OBI:0000453 ! has function measure function
 property_value: IAO:0000111 "photodetector" xsd:string
 property_value: IAO:0000112 "A photomultiplier tube, a photo diode" xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -6296,6 +6274,7 @@ id: OBI:0400103
 name: DNA sequencer
 def: "A DNA sequencer is an instrument that determines the order of deoxynucleotides in deoxyribonucleic acid sequences." []
 is_a: OBI:0000832 ! measurement device
+relationship: RO:0000085 OBI:0000453 ! has function measure function
 property_value: IAO:0000111 "DNA sequencer" xsd:string
 property_value: IAO:0000112 "ABI 377 DNA Sequencer, ABI 310 DNA Sequencer" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -6307,6 +6286,8 @@ id: OBI:0400110
 name: hybridization chamber
 def: "A device which is used to maintain constant contact of a liquid on an array.  This can be either a glass vial or slide." []
 is_a: OBI:0002089 ! physical store
+relationship: RO:0000085 OBI:0000370 ! has function contain function
+relationship: RO:0000085 OBI:0000401 ! has function environment control function
 property_value: IAO:0000111 "hybridization chamber" xsd:string
 property_value: IAO:0000112 "Glass Array Hybridization Cassette" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -6318,6 +6299,8 @@ id: OBI:0400116
 name: thermal cycler
 def: "An instrument that is capable of repeatedly altering and maintaining specific temperatures for defined periods of time." []
 is_a: OBI:0002089 ! physical store
+relationship: RO:0000085 OBI:0000370 ! has function contain function
+relationship: RO:0000085 OBI:0000401 ! has function environment control function
 property_value: IAO:0000111 "thermal cycler" xsd:string
 property_value: IAO:0000112 "Piko(tm) 96-well Thermal Cycler" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -6337,6 +6320,7 @@ is_a: OBI:0000832 ! measurement device
 relationship: BFO:0000051 OBI:0400065 ! has_part light source
 relationship: BFO:0000051 OBI:0400079 ! has_part optical filter
 relationship: BFO:0000051 OBI:0400082 ! has_part photodetector
+relationship: RO:0000085 OBI:0000453 ! has function measure function
 property_value: IAO:0000111 "cytometer" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "Melanie Courtot" xsd:string
@@ -6347,6 +6331,8 @@ id: OBI:0400140
 name: gel tank
 def: "A device which holds a gel and running buffers to allow electrophoresis to be performed. A gel tank has the function to contain and to control the contained environment and transfer energy from an energy supply through the running buffers to the gel matrix and the material with charged molecules in an electric field across a porous matrix or medium with the objective to separate the charged molecules." []
 is_a: OBI:0002089 ! physical store
+relationship: RO:0000085 OBI:0000370 ! has function contain function
+relationship: RO:0000085 OBI:0000401 ! has function environment control function
 property_value: IAO:0000111 "gel tank" xsd:string
 property_value: IAO:0000112 "CHEF gel box, slab gel box, capillary electrophoresis" xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -6427,6 +6413,7 @@ id: OBI:0400168
 name: microtome
 def: "A microtome is a mechanical instrument used to cut biological specimens into very thin segments for further treatment (e.g. ISH) and ultimately microscopic or histologic examination. Most microtomes provide cooling facilities (cryo-microtome) and use a steel blade to cut a slice of defined thickness. Some are automatic, and some are driven by hand." []
 is_a: OBI:0000932 ! material separation device
+relationship: RO:0000085 OBI:0000372 ! has function material separation function
 relationship: RO:0000085 OBI:0000379 ! has function mechanical function
 property_value: IAO:0000111 "microtome" xsd:string
 property_value: IAO:0000112 "PMID: 9974145.Serial sectioning of thick tissue with a novel vibrating blade microtome. Brain Res Brain Res Protoc. 1999 Jan;3(3):302-7." xsd:string
@@ -6440,6 +6427,7 @@ name: microscope
 def: "A microscope is an instrument which magnifies the view on objects (too small to be viewed by the naked eye) under increased resolution. A microscope can be an optical instrument but also and electronic instrument. There are various kind of optical microscopes, e.g confocal microscope, epifluoresence microscope)" []
 is_a: OBI:0000398 ! image creation device
 relationship: RO:0000085 OBI:0000369 ! has function magnify function
+relationship: RO:0000085 OBI:0000397 ! has function image acquisition function
 property_value: IAO:0000111 "microscope" xsd:string
 property_value: IAO:0000112 "PMID:18466942. A light and transmission electron microscope study of hepatic portal tracts in the rhesus monkey (Macacus rhesus). Tissue Cell. 2008 May 6" xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -6470,6 +6458,7 @@ def: "is process in which a material substance is added to a cell culture" []
 is_a: OBI:0000274 ! adding a material entity into a target
 relationship: OBI:0000293 OBI:0100060 ! has_specified_input cultured cell population
 relationship: OBI:0000299 OBI:0100060 ! has_specified_output cultured cell population
+relationship: OBI:0000417 OBI:0000434 ! achieves_planned_objective adding material objective
 property_value: IAO:0000111 "adding substance to cell culture" xsd:string
 property_value: IAO:0000112 "adding fetal calf serum to a 96 well plate containing a cell culture derived from a blood sample of a patient" xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -6483,6 +6472,8 @@ name: collecting specimen from organism
 def: "a process with the objective to obtain a material entity that was part of an organism for potential future use in an investigation" []
 is_a: OBI:0000659 ! specimen collection process
 relationship: OBI:0000293 OBI:0100026 ! has_specified_input organism
+relationship: OBI:0000299 OBI:0100051 ! has_specified_output specimen
+relationship: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen collection objective
 property_value: IAO:0000111 "collecting specimen from organism" xsd:string
 property_value: IAO:0000112 "taking a sputum sample from a cancer patient, taking the spleen from a killed mouse, collecting a urine sample from a patient" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -6494,6 +6485,7 @@ id: OBI:0600006
 name: killing
 def: "A protocol application in which an organism is intentionally put to death" []
 is_a: OBI:0000094 ! material processing
+relationship: OBI:0000417 OBI:0000456 ! achieves_planned_objective material transformation objective
 property_value: IAO:0000111 "killing" xsd:string
 property_value: IAO:0000112 "Terminal sacrifice of animals by cervical dislocation at the end of an investigation." xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -6513,6 +6505,7 @@ def: "A process by which a substance is intentionally given to an organism resul
 is_a: OBI:0000274 ! adding a material entity into a target
 relationship: OBI:0000293 OBI:0100026 ! has_specified_input organism
 relationship: OBI:0000299 OBI:0100026 ! has_specified_output organism
+relationship: OBI:0000417 OBI:0000434 ! achieves_planned_objective adding material objective
 property_value: IAO:0000111 "administering substance in vivo" xsd:string
 property_value: IAO:0000112 "Balb/c mice received an intracameral or subconjunctival injection of trinitrophenylated spleen cells" xsd:string
 property_value: IAO:0000112 "injecting mice with 10 ug morphine intranasally, a patient taking two pills of 1 mg aspirin orally" xsd:string
@@ -6530,7 +6523,8 @@ id: OBI:0600014
 name: material component separation
 def: "a material processing in which components of an input material become segregated in space" []
 is_a: OBI:0000094 ! material processing
-relationship: OBI:0000417 OBI:0000639 ! achieves_planned_objective material separation objective
+relationship: OBI:0000293 BFO:0000040 ! has_specified_input material_entity
+relationship: OBI:0000299 BFO:0000040 ! has_specified_output material_entity
 property_value: IAO:0000111 "material component separation" xsd:string
 property_value: IAO:0000112 "Using a cell sorter to separate a mixture of T cells into two fractions; one with surface receptor CD8 and the other lacking the receptor, or purification" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -6586,6 +6580,7 @@ def: "a protocol application in which cells are kept alive in a defined environm
 is_a: OBI:0000838 ! material maintenance
 relationship: OBI:0000293 OBI:0100060 ! has_specified_input cultured cell population
 relationship: OBI:0000299 OBI:0100060 ! has_specified_output cultured cell population
+relationship: OBI:0000417 OBI:0000806 ! achieves_planned_objective material maintenance objective
 property_value: IAO:0000111 "maintaining cell culture" xsd:string
 property_value: IAO:0000112 "When harvesting blood from a human, isolating T cells, and then limited dilution cloning of the cells, the maintaining_cell_culture step comprises all steps after the initial dilution and plating of the cells into culture, e.g. placing the culture into an incubator, changing or adding media, and splitting a cell culture" xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -6600,6 +6595,7 @@ is_a: OBI:0000094 ! material processing
 relationship: OBI:0000293 CHEBI:33697 ! has_specified_input ribonucleic acid
 relationship: OBI:0000293 OBI:0000419 ! has_specified_input reverse transcriptase
 relationship: OBI:0000299 CHEBI:16991 ! has_specified_output deoxyribonucleic acid
+relationship: OBI:0000417 OBI:0000456 ! achieves_planned_objective material transformation objective
 property_value: IAO:0000111 "artificially induced reverse transcription" xsd:string
 property_value: IAO:0000112 "The use of M-MLV reverse transcriptase from the Moloney murine leukemia virus to transcribe an RNA sample into cDNA" xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -6617,6 +6613,7 @@ is_a: OBI:0000094 ! material processing
 relationship: OBI:0000293 CL:0000000 ! has_specified_input cell
 relationship: OBI:0000293 OBI:0000079 ! has_specified_input culture medium
 relationship: OBI:0000299 OBI:0100060 ! has_specified_output cultured cell population
+relationship: OBI:0000417 OBI:0000456 ! achieves_planned_objective material transformation objective
 property_value: IAO:0000111 "'establishing cell culture'" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON:Matthew Brush" xsd:string
@@ -6630,6 +6627,7 @@ is_a: OBI:0000094 ! material processing
 relationship: OBI:0000293 OBI:0002744 ! has_specified_input molecular label
 relationship: OBI:0000293 OBI:1110109 ! has_specified_input target of material addition
 relationship: OBI:0000299 OBI:0001936 ! has_specified_output molecular-labeled material
+relationship: OBI:0000417 OBI:0000456 ! achieves_planned_objective material transformation objective
 property_value: IAO:0000111 "addition of molecular label" xsd:string
 property_value: IAO:0000112 "The addition of phycoerytherin label to an anti-CD8 antibody, to label all antibodies. The addition of anti-CD8-PE to a population of cells, to label the subpopulation cells that are CD8+." xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -6658,7 +6656,6 @@ def: "An assay that determines the 3-dimensional configuration of an input mater
 is_a: OBI:0000070 ! assay
 intersection_of: OBI:0000070 ! assay
 intersection_of: OBI:0000299 OBI:0001155 ! has_specified_output 3D structural organization datum
-relationship: OBI:0000299 OBI:0001155 ! has_specified_output 3D structural organization datum
 property_value: IAO:0000111 "3D structure determination assay" xsd:string
 property_value: IAO:0000112 "The use of X-ray crystallography to determine the 3D coordinates of atoms in a protein." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -6683,7 +6680,7 @@ name: sequencing assay
 def: "An assay the uses chemical or biochemical means to infer the sequence of a biomaterial" []
 def: "the use of a chemical or biochemical means to infer the sequence of a biomaterial" []
 is_a: ERO:0000833 ! molecular assay
-relationship: OBI:0000299 OBI:0000973 ! has_specified_output sequence data
+is_a: OBI:0000070 ! assay
 property_value: IAO:0000111 "sequencing assay" xsd:string
 property_value: IAO:0000111 "sequencing assay" xsd:string
 property_value: IAO:0000112 "The use of the Sanger method of DNA sequencing to determine the order of the nucleotides in a DNA template" xsd:string
@@ -6716,6 +6713,8 @@ id: OBI:0600058
 name: enzymatic amplification
 def: "the use of enzymes to increase the number of molecules of a biomaterial" []
 is_a: ERO:0001299 ! biomolecule synthesis
+is_a: OBI:0000094 ! material processing
+relationship: OBI:0000417 OBI:0000456 ! achieves_planned_objective material transformation objective
 property_value: IAO:0000111 "enzymatic amplification" xsd:string
 property_value: IAO:0000112 "the use of a polymerase chain reaction to amplify a fragment of DNA" xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -6731,6 +6730,7 @@ is_a: OBI:0000094 ! material processing
 relationship: BFO:0000055 OBI:0000411 ! realizes cloning vector role
 relationship: OBI:0000293 OBI:0000737 ! has_specified_input cloning vector
 relationship: OBI:0000299 OBI:0000731 ! has_specified_output recombinant vector
+relationship: OBI:0000417 OBI:0000456 ! achieves_planned_objective material transformation objective
 property_value: IAO:0000111 "recombinant vector cloning" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "pa_branch (Alan, Randi, Kevin, Jay, Bjoern)" xsd:string
@@ -6767,6 +6767,7 @@ id: OBI:1000029
 name: phage display library
 def: "a phage display library is a collection of materials in which a mixture of genes or gene fragments is expressed and can be individually selected and amplified." []
 is_a: OBI:0000731 ! recombinant vector
+relationship: OBI:0000312 OBI:0600064 ! is_specified_output_of recombinant vector cloning
 relationship: OBI:0000643 OBI:0000731 ! has grain recombinant vector
 property_value: IAO:0000111 "phage display library" xsd:string
 property_value: IAO:0000112 "PMID: 15905471.Nucleic Acids Res. 2005 May 19;33(9):e81.Oligonucleotide-assisted cleavage and ligation: a novel directional DNA cloning technology to capture cDNAs. Application in the construction of a human immune antibody phage-display library. [Phage display library encoding fragments of human antibodies. m-rna library encoding for 9-mer peptides]" xsd:string
@@ -6807,7 +6808,6 @@ id: OBI:1110108
 name: material to be added
 def: "a material that is added to another one in a material combination process" []
 is_a: BFO:0000040 ! material_entity
-relationship: RO:0000087 OBI:0000319 ! has role material to be added role
 property_value: IAO:0000111 "material to be added" xsd:string
 property_value: IAO:0000112 "A mixture of peptides that is being added into a cell culture." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -6820,7 +6820,6 @@ id: OBI:1110109
 name: target of material addition
 def: "A material entity into which another is being added in a material combinatino process" []
 is_a: BFO:0000040 ! material_entity
-relationship: RO:0000087 OBI:0000444 ! has role target of material addition role
 property_value: IAO:0000111 "target of material addition" xsd:string
 property_value: IAO:0000112 "A cell culture into which a mixture of peptides is being added." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -6832,8 +6831,6 @@ id: OBI:2000009
 name: bodily fluid specimen
 def: "A specimen that is derived from some bodily fluid" []
 is_a: OBI:0001479 ! specimen from organism
-relationship: OBI:0000312 OBI:0600005 ! is_specified_output_of collecting specimen from organism
-relationship: RO:0001000 UBERON:0006314 ! derives from (ro) bodily fluid
 property_value: IAO:0000111 "bodily fluid specimen" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "Christian Stoeckert ORCID:0000-0002-5714-991X" xsd:string
@@ -6848,7 +6845,6 @@ def: "An analyte assay that measures the abundance of protein" []
 is_a: OBI:0000443 ! analyte assay
 intersection_of: OBI:0000443 ! analyte assay
 intersection_of: OBI:0000293 PR:000000001 {all_some="true"} ! has_specified_input protein
-relationship: OBI:0000293 PR:000000001 ! has_specified_input protein
 property_value: IAO:0000111 "protein assay" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "Mark A. Miller, ORCID:0000-0001-9076-6066 & Chris Stoeckert, ORCID ORCID:0000-0002-5714-991X" xsd:string
@@ -7099,8 +7095,8 @@ creation_date: 2021-02-04T00:10:17Z
 id: TMN:0000006
 name: serial two-photon tomography
 def: "A fluorescence microscopy that generates high-throughput flourescence imaging of mouse brains by integrating two-photon microscopy and tissue sectioning. Serial two-photon tomography generates high-resolution datasets." []
-is_a: APOLLO_SV:00000796 ! dataset creating
 is_a: CHMO:0000087 ! fluorescence microscopy
+relationship: OBI:0000299 IAO:0000100 ! has_specified_output data set
 property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
 property_value: IAO:0000118 "STPT" xsd:string
 property_value: IAO:0000119 http://doi.org/10.1038/nmeth.1854 xsd:string
@@ -7417,6 +7413,7 @@ def: "Anatomical structure, that consists of similar cells and intercellular mat
 def: "Multicellular anatomical structure that consists of many cells of one or a few types, arranged in an extracellular matrix such that their long-range organisation is at least partly a repetition of their short-range organisation." []
 comment: This class was sourced from CARO, which was initially sourced from FMA. Nomenclature changes have been made. Note also AEO introduces a class AEO:0000013 'single-cell tissue'
 is_a: UBERON:0000061 ! anatomical structure
+is_a: UBERON:0000465 ! material anatomical entity
 property_value: IAO:0000111 "tissue" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000118 "portion of tissue" xsd:string

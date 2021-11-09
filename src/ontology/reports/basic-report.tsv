@@ -1,26 +1,44 @@
 ?cls	?def	?xrefs
+<http://purl.obolibrary.org/obo/TMN_0000028>	"A RNA-seq assay for transferring RNA from tissue sections onto a surface covered in DNA-barcoded beads with known positions, allowing the locations of the RNA to be inferred by sequencing."	
 <http://purl.obolibrary.org/obo/TMN_0000013>	"A fluorescence in situ hybridization assay where transcripts are labeled with fluorescent probes in sequential rounds of hybridization to read out the temporal barcode for each transcript. The temporal barcodes can then be decoded to uniquely identify the RNA transcripts present in the sample. RNA can be identified directly in a variety of samples from extracted RNA to tissues."	
 <http://purl.obolibrary.org/obo/TMN_0000008>	"An electrophysiology assay that employs many electrodes to record extracellular field potentials."	
 <http://purl.obolibrary.org/obo/TMN_0000009>	"A neuron morphology assay where the morphology or structure of a neuron is represented through through another medium. Often, this assay is a combination of different assays (sparse labeling, fluorescent labeling, fMOST)."	
+<http://purl.obolibrary.org/obo/TMN_0000027>	"An ATAC-seq assay that involves use of the 10x sequencing technology assay for transposase-accessible chromatin using sequencing (ATAC-seq)."@en	
+<http://purl.obolibrary.org/obo/OBI_0002119>		
 <http://purl.obolibrary.org/obo/TMN_0000022>	"A single-cell RNA sequencing assay that involves the isolation of single nuclei and open chromatin tagmentation in the isolated nuclei using a transposase. The tagmented nuclei are then encapsulated in a droplet including both an oligo-dT-containing barcoded bead and a splint oligonucleotide, which links the tagmented gDNA fragments to the bead, enabling the bead to capture both mRNAs and open chromatin fragments. After mRNAs and gDNA fragments are released from the bead by heating, RT and PCR amplification are performed to generate a library of cDNA and open chromatin gDNA fragments."	
 <http://purl.obolibrary.org/obo/TMN_0000016>	"A study design in which complementary viruses are to be injected into brain regions to monosynaptically label inputs to a specific projection neuron population."	
-<http://purl.obolibrary.org/obo/TMN_0000024>	"A switching mechanism at the 5' end of RNA template sequencing assay that allows the generation of full-length cDNA and sequencing libraries by using standard reagents."	
 <http://purl.obolibrary.org/obo/TMN_0000011>	"An assay wherein a substance is taken up by an axon terminal and transported toward the soma to mark (or trace) some part of a cell."	
+<http://purl.obolibrary.org/obo/TMN_0000024>	"A switching mechanism at the 5' end of RNA template sequencing assay that allows the generation of full-length cDNA and sequencing libraries by using standard reagents."	
 <http://purl.obolibrary.org/obo/TMN_0000010>	"A single-cell RNA sequencing assay wherein a patch clamp recording is taken from a neuron and then scRNA sequencing is performed on the cell soma."	
 <http://purl.obolibrary.org/obo/TMN_0000000>	"A sequencing assay that analyzes mRNA transcripts from droplets of individual cells. The droplets are compartmentalized via a microfluidic device. After the cells are compartmentalized, cells in droplets are lysed and the released mRNA hybridizes to the oligo(dT) tract of the primer beads. Then the droplets are pooled and broken to release the beads which are then isolated and reverse-transcribed with template switching. The resulting cDNA strands are PCR-amplified and the sequencing adapters are added. The barcoded mRNA samples are then sequenced."@en	
 <http://purl.obolibrary.org/obo/TMN_0000018>	"A anterograde tracing assay that uses a Cre recombinase-dependent as a tracer."	
 <http://purl.obolibrary.org/obo/TMN_0000014>	"A single cell sequencing assay wherein the target cells are lysed, and the RNA is hybridized to an oligo(dT)-containing primer. The first strand of the cDNA is synthesized with the addition of a few untemplated C nucleotides. This poly(C) overhang is added exclusively to full-length transcripts. An oligonucleotide primer is hybridized to the poly(C) overhang and used to synthesize the second strand. Full-length cDNAs are PCR-amplified to obtain nanogram amounts of DNA. The PCR products are purified for sequencing."	
+<http://purl.obolibrary.org/obo/CHMO_0000087>		
+<http://purl.obolibrary.org/obo/TMN_0000029>	"A RNA-seq assay that uses high-throughput ATAC and RNA expression with sequencing to measure chromatin accessibility and gene expression in the same single cell."	
 <http://purl.obolibrary.org/obo/TMN_0000015>	"A switching mechanism at the 5' end of RNA template sequencing assay that is the fourth version of such an assay."	
 <http://purl.obolibrary.org/obo/TMN_0000002>	"An imaging assay that uses micro-optical sectioning tomography technology combined with fluorescence molecular labeling of neuronal projections."	
+<http://purl.obolibrary.org/obo/IAO_0000100>		
 <http://purl.obolibrary.org/obo/TMN_0000004>	"A 3D structure determination assay that determines the morphology of a neuron."	
 <http://purl.obolibrary.org/obo/TMN_0000001>	"A sequencing assay that uses fluorescent probes that bind to parts of a nucleic acid sequence that have a high degree of sequence complementarity. Fluorescence microscopy can be used to find out where the fluorescent probes are bound on the chromosomes."@en	
+<http://purl.obolibrary.org/obo/OBI_0002176>		
 <http://purl.obolibrary.org/obo/TMN_0000023>	"A fluorescence microscopy assay wherein fluorescence in situ hybridization is leveraged with multiplexed analysis that uses each channel to measure the composite (sum) abundances of multiple genes in each channel and decompresses and determines individual gene level."	
 <http://purl.obolibrary.org/obo/TMN_0000005>	"A neuron morphology assay that enables sparse and stochastic labeling of genetically-defined neurons. MORF-labeled neurons are digitally reconstructed using a program (G-Cut)."	
+<http://purl.obolibrary.org/obo/OBI_0500000>		
+<http://purl.obolibrary.org/obo/OBI_0000185>		
+<http://purl.obolibrary.org/obo/TMN_0000030>	"An ATAC-seq assay that provides information about both transcriptome and epigenome from a single cell."	
 <http://purl.obolibrary.org/obo/TMN_0000019>	"An assay wherein axon projections are traced from their source (cell body or soma) to their point of termination (synapse)."	
+<http://purl.obolibrary.org/obo/OBI_0002764>		
 <http://purl.obolibrary.org/obo/TMN_0000020>	"An imaging assay that has as an output label-free, cross-sectional imaging of biological tissue microstructure using tissue backscattering properties."	
+<http://purl.obolibrary.org/obo/OBI_0600045>		
+<http://purl.obolibrary.org/obo/OBI_0002631>		
 <http://purl.obolibrary.org/obo/TMN_0000012>	"A retrograde tracing assay that traces the neural connections from a synapse to a soma allowing the mapping of connections between neurons in a structure and a target in the brain."	
+<http://purl.obolibrary.org/obo/OBI_0600047>		
 <http://purl.obolibrary.org/obo/TMN_0000003>	"An imaging assay that measures the copy number and spatial distribution of hundreds to thousands of RNA species in single cells."	
+<http://purl.obolibrary.org/obo/TMN_0000025>	"A RNA sequencing assay that involves three levels of indexing."@en	
 <http://purl.obolibrary.org/obo/TMN_0000021>	"A light sheet microscopy assay that combines synchronized scanning illumination and oblique imaging over cleared, thick tissue sections in smooth motion that produces a 3D image of a brain."	
+<http://purl.obolibrary.org/obo/OBI_0001271>		
 <http://purl.obolibrary.org/obo/TMN_0000017>	"A fluorescence microscopy assay that uses a laser light-sheet to illuminate a region of a sample that has been treated to excite fluorescently."	
+<http://purl.obolibrary.org/obo/OBI_0000070>		
 <http://purl.obolibrary.org/obo/TMN_0000006>	"A fluorescence microscopy that generates high-throughput flourescence imaging of mouse brains by integrating two-photon microscopy and tissue sectioning. Serial two-photon tomography generates high-resolution datasets."	
+<http://purl.obolibrary.org/obo/TMN_0000026>	"An ATAC-seq assay that involves single-cell combinatorial indexing at three levels."@en	
 <http://purl.obolibrary.org/obo/TMN_0000007>	"A serial two photon tomography assay that produces images of mouse brains with sufficient detail to represent axons of individual neurons."	
