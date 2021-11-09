@@ -34,3 +34,7 @@ ERO:0000330 ## scanning electron microscopy
 ERO:0000634 ## calcium imaging assay
 ERO:0001277 ## retrograde labeling
 ERO:0001235 ## magnetic resonance imaging
+ERO:0000007 ## technique
+ERO:0000401 ## cellular assay
+ERO:0001289 ## electrophysiological assay
+ERO:0000634 ## calcium imagaing assay
