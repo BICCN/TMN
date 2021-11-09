@@ -7,6 +7,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/tmn/imports/ero_import.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/tmn/releases/2021-11-09/imports/ero_import.owl"/>
@@ -28,19 +29,40 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <obo:IAO_0000111 xml:lang="en">example</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000281</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -126,13 +148,114 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000424 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000424">
+        <obo:IAO_0000111 xml:lang="en">expand expression to</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">ObjectProperty: RO_0002104
+Label: has plasma membrane part
+Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.org/obo/owl/GO#GO_0005886 and http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)&quot;
+</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A macro expansion tag applied to an object property (or possibly a data property)  which can be used by a macro-expansion engine to generate more complex expressions from simpler ones</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">expand expression to</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000589 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000589">
+        <obo:IAO_0000111 xml:lang="en">OBO foundry unique label</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which is unique across the OBO Foundry.</obo:IAO_0000115>
+        <obo:IAO_0000116>The intended usage of that property is as follow: OBO foundry unique labels are automatically generated based on regular expressions provided by each ontology, so that SO could specify unique label = &apos;sequence &apos; + [label], etc. , MA could specify &apos;mouse + [label]&apos; etc. Upon importing terms, ontology developers can choose to use the &apos;OBO foundry unique label&apos; for an imported term or not. The same applies to tools .</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBO Foundry &lt;http://obofoundry.org/&gt;</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">OBO foundry unique label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label>database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label>has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label>has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label>in_subset</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
     
 
 
@@ -165,6 +288,47 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
         <rdfs:label xml:lang="en">has_part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000062 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000062">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <rdfs:comment>An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other.</rdfs:comment>
+        <rdfs:label xml:lang="en">preceded_by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000063 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000063">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <rdfs:label xml:lang="en">precedes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001908 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001908">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0200166"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ERO_0100287"/>
+        <obo:IAO_0000115>a relation between a software objective (data transformation objective) and an operation whose execution in a software tool achieves the objective</obo:IAO_0000115>
+        <obo:IAO_0000116>software relation expanding to something like: 
+
+objective_achieved_by some (&apos;software/algorithm execution&apos; and (specified_by some &apos;data processing operation&apos;))</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119>PERSON:Matthew Brush</obo:IAO_0000119>
+        <rdfs:comment>Links an objective to a software operation whise execution achieves the objective. Is different from OBI:objective_achieved_by which links an objective to the process that achieves it.</rdfs:comment>
+        <rdfs:label>objective_achieved_by_operation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -220,6 +384,23 @@
         <obo:IAO_0000118>has_realization</obo:IAO_0000118>
         <obo:IAO_0000118>is_realized_as</obo:IAO_0000118>
         <rdfs:label xml:lang="en">is_realized_by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000306 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000306">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <obo:IAO_0000111>has_function</obo:IAO_0000111>
+        <obo:IAO_0000112>heart has_function to-pump-blood</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>Relation between an independent continuant and a function.</obo:IAO_0000115>
+        <obo:IAO_0000117>GROUP:OBI:&lt;http://obi.sourceforge.net&gt;</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Chris Mungall</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has_function</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -399,6 +580,32 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0001015 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001015">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <rdfs:label xml:lang="en">location of</rdfs:label>
+        <rdfs:label xml:lang="en">location_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <rdfs:comment>Location as a relation between instances: The primitive instance-level relation c located_in r at t reflects the fact that each continuant is at any given time associated with exactly one spatial region, namely its exact location. Following we can use this relation to define a further instance-level location relation - not between a continuant and the region which it exactly occupies, but rather between one continuant and another. c is located in c1, in this sense, whenever the spatial region occupied by c is part_of the spatial region occupied by c1.    Note that this relation comprehends both the relation of exact location between one continuant and another which obtains when r and r1 are identical (for example, when a portion of fluid exactly fills a cavity), as well as those sorts of inexact location relations which obtain, for example, between brain and head or between ovum and uterus</rdfs:comment>
+        <rdfs:label xml:lang="en">located in</rdfs:label>
+        <rdfs:label xml:lang="en">located_in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002233 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233">
@@ -411,6 +618,22 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002234">
         <rdfs:label xml:lang="en">has output</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002350 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000112>An organism that is a member of a population of organisms</obo:IAO_0000112>
+        <obo:IAO_0000115>is member of is a mereological relation between a item and a collection.</obo:IAO_0000115>
+        <obo:IAO_0000118>is member of</obo:IAO_0000118>
+        <obo:IAO_0000118>member part of</obo:IAO_0000118>
+        <obo:IAO_0000119>SIO</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <rdfs:label xml:lang="en">member of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -436,6 +659,12 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
         <rdfs:label>role_of</rdfs:label>
         <rdfs:label xml:lang="en">role_of</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     
 
 
@@ -494,11 +723,29 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:label>disposition (bfo)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:label xml:lang="en">realizable_entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:label>quality</rdfs:label>
     </owl:Class>
     
 
@@ -530,11 +777,42 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label>function</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:label xml:lang="en">material_entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>instrument</obo:IAO_0000111>
+        <obo:IAO_0000112>A flow cytometer.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>Material entity that is designed to have a function and play a role in scientific investigation.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Melissa Haendel</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Scientific_instrument</obo:IAO_0000119>
+        <rdfs:comment>See OBI listserv discussion for considerations in defining instrument. http://sourceforge.net/tracker/index.php?func=detail&amp;aid=2894801&amp;group_id=177891&amp;atid=886178</rdfs:comment>
+        <rdfs:label>instrument</rdfs:label>
     </owl:Class>
     
 
@@ -887,6 +1165,141 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0000581 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000581">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000985"/>
+        <obo:IAO_0000111>Prokaryota</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>The prokaryotes (pronounced /pro?&apos;k�ri.o?ts/ or /pro?&apos;k�ri?ts/) are a group of organisms that lack a cell nucleus (= karyon), or any other membrane-bound organelles.</obo:IAO_0000115>
+        <obo:IAO_0000115>The prokaryotes (pronounced /proʊˈkæri.oʊts/ or /proʊˈkæriəts/) are a group of organisms that lack a cell nucleus (= karyon), or any other membrane-bound organelles.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Prokaryote</obo:IAO_0000119>
+        <rdfs:label>Prokaryota</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000614 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000614">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000112>A pH meter is used to measure the pH of a sample.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An instrument that has measure function. Measure function is a function that is borne by a processed material  and realized in a process in which information about some entity is expressed relative to some reference.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <rdfs:label>measurement instrument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000615 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000615">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000112>A microscope.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An instrument that has image acquisition function. An image acquisition function is a function to acquire an image of a material.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <rdfs:label>image acquisition instrument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000624 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000624">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000112>A chromatography column.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An instrument that has material separation function. A material separation function is a function that increases the resolution between two or more material entities. The distinction between the entities is usually based on some associated physical quality.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <rdfs:label>material separation instrument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000626 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000626">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000112>A drill is a mechanical instrument.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An instrument that has mechanical function. A mechanical function is a function that is realised via mechanical work (through an certain amount of energy transferred by some force).</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <rdfs:label>mechanical instrument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000627 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000627">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000401"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000112>A laminar flow hood.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An instrument that has environment control function. An environmental control function is a function that regulates a contained environment within specified parameter ranges. For example the control of light exposure, humidity and temperature.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <rdfs:label>environment control instrument</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0000634 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000634">
@@ -975,6 +1388,21 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0000751 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000751">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001284"/>
+        <obo:IAO_0000112>Co-immunoprecipitation is used to detect protein-protein interaction.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A protein assay used to detect protein-molecule interactions, a biological process of proteins binding to cellular molecules, such as DNA, often to carry out their biological function such as gene expression.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000118>Protein binding assay</obo:IAO_0000118>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Protein%E2%80%93protein_interaction</obo:IAO_0000119>
+        <rdfs:label>protein interaction detection</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0000771 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000771">
@@ -1038,6 +1466,70 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0000985 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000985">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>A unicellular or multicellular individual living system that is capable of replicating or reproducing and growth and maintenance in the right environment. Examples: animal, plant, bacteria, fungus.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Melissa Haendel</obo:IAO_0000117>
+        <obo:IAO_0000119>PERSON: Melissa Haendel</obo:IAO_0000119>
+        <rdfs:label>non viral organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000988 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000988">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000112>A tumor derived from a human.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>Primate biological specimen that was derived from a human.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000118>human biospecimen</obo:IAO_0000118>
+        <obo:IAO_0000119>PERSON: Nicole Vasilevsky</obo:IAO_0000119>
+        <rdfs:label>human biological specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000990 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000990">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9443"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000020"/>
+        <obo:IAO_0000112>Heart tissue procured from a monkey.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>Biological specimen that was derived from a primate.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000118>primate biospecimen</obo:IAO_0000118>
+        <obo:IAO_0000119>PERSON: Nicole Vasilevsky</obo:IAO_0000119>
+        <rdfs:label>primate biological specimen</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0001034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001034">
@@ -1067,6 +1559,19 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
         <obo:IAO_0000118>qPCR</obo:IAO_0000118>
         <obo:IAO_0000119>http://www.ambion.com/techlib/basics/rtpcr/index.html#1</obo:IAO_0000119>
         <rdfs:label>real-time PCR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001286"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>A nucleic acid assay used to measure changes in gene expression levels, to detect single nucleotide polymorphisms (SNPs), or to genotype or resequence mutant genomes. It consists of an arrayed series of thousands of microscopic spots of DNA oligonucleotides, called features, each containing picomoles (10−12 moles) of a specific DNA sequence, known as probes (or reporters). These can be a short section of a gene or other DNA element that are used to hybridize a cDNA or cRNA sample (called target) under high-stringency conditions. Probe-target hybridization is usually detected and quantified by detection of fluorophore-, silver-, or chemiluminescence-labeled targets to determine relative abundance of nucleic acid sequences in the target. Since an array can contain tens of thousands of probes, a microarray experiment can accomplish many genetic tests in parallel.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/DNA_microarray</obo:IAO_0000119>
+        <rdfs:label>Nucleic acid microarray assay</rdfs:label>
     </owl:Class>
     
 
@@ -1161,6 +1666,35 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0001283 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001283">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <obo:IAO_0000112>Culture of cell lines.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A material processing technique used to create and maintain conditions suitable for growth of a living entity such as tissue cells, or bacteria.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000118>In vitro culture and propagation</obo:IAO_0000118>
+        <obo:IAO_0000119>http://oxforddictionaries.com/definition/culture?region=us</obo:IAO_0000119>
+        <rdfs:label>culture and propagation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001284 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001284">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000833"/>
+        <obo:IAO_0000112>Mass spectrometry.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A molecular assay that generates data about the presence, abundance, structure, function, or activity of proteins.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119>PERSON: Matthew Brush</obo:IAO_0000119>
+        <rdfs:label>protein assay</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0001285 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001285">
@@ -1217,6 +1751,21 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0001297 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001297">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <obo:IAO_0000112>Gene therapy.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A material processing technique that involves the direct human manipulation of an organism&apos;s genome using modern DNA technology in an experimental setting.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000118>Experimental genetic engineering</obo:IAO_0000118>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Genetic_engineering</obo:IAO_0000119>
+        <rdfs:label>experimental genetic modification</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0001298 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001298">
@@ -1256,6 +1805,34 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON: Nicole Vasilevsky</obo:IAO_0000117>
         <obo:IAO_0000119>http://www.udel.edu/biology/Wags/b617/temprep/temprep1.htm</obo:IAO_0000119>
         <rdfs:label>fixation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001303 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001303">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001313"/>
+        <obo:IAO_0000112>Preparation of a cDNA library.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>Material production of a library or reagents, for use in a chemical reaction or other experimental processes, to detect, measure, examine, or produce other substances.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.yourdictionary.com/reagent</obo:IAO_0000119>
+        <rdfs:label>reagent library preparation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001309 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001309">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <obo:IAO_0000112>Data analysis of flow cytometry data.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A data transformation technique used to analyze and interpret data to gain a better understanding of it.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Analysis</obo:IAO_0000119>
+        <rdfs:label>data analysis</rdfs:label>
     </owl:Class>
     
 
@@ -1539,6 +2116,57 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0100036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100036">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100288"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200166"/>
+        <obo:IAO_0000115>objective to perform and/or support data analysis, whereby data is input and processed to achieve a better understanding of it.  This will involve generation &quot;new&quot; information through algorithmic processing and/or statistical calculations.</obo:IAO_0000115>
+        <obo:IAO_0000118>analysis objective</obo:IAO_0000118>
+        <rdfs:comment>analysis generates &quot;new&quot; information about some biomedical entity, as opposed to data transformation objectives which aim to process data in a way that no analysis is performed and no new information is generated.</rdfs:comment>
+        <rdfs:label>data analysis objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100036"/>
+        <obo:IAO_0000115>objective of using a particular type of process/operation to process and analyze data.  This hierarchy classifies software objectives based on the type of operation that is specified to be performed </obo:IAO_0000115>
+        <obo:IAO_0000118>operation-based data analysis objectives</obo:IAO_0000118>
+        <rdfs:label>process-based data analysis objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100287 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100287">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000118>operation</obo:IAO_0000118>
+        <rdfs:comment>Placeholder for EDAM operation class.</rdfs:comment>
+        <rdfs:label>data processing operation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100288 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100288">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100287"/>
+        <rdfs:comment>Placeholder for EDAM operation class.</rdfs:comment>
+        <rdfs:label>data analysis operation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0100354 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100354">
@@ -1560,6 +2188,46 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0100362 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100362">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100354"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <rdfs:label>sequence data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end.</obo:IAO_0000115>
+        <obo:IAO_0000118>biological process</obo:IAO_0000118>
+        <obo:IAO_0000118>physiological process</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>biological_process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
+        <obo:IAO_0000111 xml:lang="en">measurement unit label</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Examples of measurement unit labels are liters, inches, weight per volume.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: review of this term done during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">measurement unit label</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
@@ -1577,6 +2245,36 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">OBI_0000217</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">objective specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000112 xml:lang="en">Pour the contents of flask 1 into flask 2</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">a directive information entity that describes an action the bearer will take</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">action specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">label</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">http://www.golovchenko.org/cgi-bin/wnsearch?q=label#4n</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">GROUP: IAO</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">label</rdfs:label>
     </owl:Class>
     
 
@@ -1618,6 +2316,23 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000112 xml:lang="en">10 feet. 3 ml.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">a scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: we decided to keep datum singular in scalar measurement datum, as in
+this case we explicitly refer to the singular form</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Would write this as: has_part some &apos;measurement unit label&apos; and has_part some numeral and has_part exactly 2, except for the fact that this won&apos;t let us take advantage of OWL reasoning over the numbers. Instead use has measurment value property to represent the same. Use has measurement unit label (subproperty of has_part) so we can easily say that there is only one of them.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">scalar measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
@@ -1630,6 +2345,24 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">directive information entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">algorithm</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID: 18378114.Genomics. 2008 Mar 28. LINKGEN: A new algorithm to process data in genetic linkage studies.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A plan specification which describes inputs, output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000270</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">adapted from discussion on OBI list (Matthew Pocock, Christian Cocos, Alan Ruttenberg)</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">algorithm</rdfs:label>
     </owl:Class>
     
 
@@ -1665,6 +2398,22 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">data format specification</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000187</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">data format specification</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000102 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000102">
@@ -1695,6 +2444,23 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000111 xml:lang="en">measurement datum</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Examples of measurement data are the recoding of the weight of a mouse as {40,mass,&quot;grams&quot;}, the recording of an observation of the behavior of the mouse {,process,&quot;agitated&quot;}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2/2/2009 is_specified_output of some assay?</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000305</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000225 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000225">
@@ -1721,6 +2487,21 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">document</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">A journal article, patent application, laboratory notebook, or a book</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A collection of information content entities intended to be understood together as a whole</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">document</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000409 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000409">
@@ -1743,6 +2524,117 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10239 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10239">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <obo:IAO_0000118>Vira</obo:IAO_0000118>
+        <obo:IAO_0000118>Viridae</obo:IAO_0000118>
+        <obo:IAO_0000118>viruses</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <rdfs:label>Viruses</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000581"/>
+        <obo:IAO_0000118>Monera</obo:IAO_0000118>
+        <obo:IAO_0000118>Procaryotae</obo:IAO_0000118>
+        <obo:IAO_0000118>Prokaryota</obo:IAO_0000118>
+        <obo:IAO_0000118>Prokaryotae</obo:IAO_0000118>
+        <obo:IAO_0000118>bacteria</obo:IAO_0000118>
+        <obo:IAO_0000118>eubacteria</obo:IAO_0000118>
+        <obo:IAO_0000118>not Bacteria Haeckel 1894</obo:IAO_0000118>
+        <obo:IAO_0000118>prokaryote</obo:IAO_0000118>
+        <obo:IAO_0000118>prokaryotes</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <rdfs:label>Bacteria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2157 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2157">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000581"/>
+        <obo:IAO_0000118>Archaebacteria</obo:IAO_0000118>
+        <obo:IAO_0000118>Mendosicutes</obo:IAO_0000118>
+        <obo:IAO_0000118>Metabacteria</obo:IAO_0000118>
+        <obo:IAO_0000118>Monera</obo:IAO_0000118>
+        <obo:IAO_0000118>Procaryotae</obo:IAO_0000118>
+        <obo:IAO_0000118>Prokaryota</obo:IAO_0000118>
+        <obo:IAO_0000118>Prokaryotae</obo:IAO_0000118>
+        <obo:IAO_0000118>archaea</obo:IAO_0000118>
+        <obo:IAO_0000118>prokaryote</obo:IAO_0000118>
+        <obo:IAO_0000118>prokaryotes</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <rdfs:label>Archaea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_40674 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_40674">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7742"/>
+        <obo:IAO_0000118>mammals</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <rdfs:label>Mammalia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7711 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7711">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000985"/>
+        <obo:IAO_0000118>chordates</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <rdfs:label>Chordata</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7742 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7742">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7711"/>
+        <obo:IAO_0000118>Vertebrata</obo:IAO_0000118>
+        <obo:IAO_0000118>vertebrates</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <rdfs:label>Vertebrata &lt;Metazoa&gt;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9443 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9443">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_40674"/>
+        <obo:IAO_0000118>Primata</obo:IAO_0000118>
+        <obo:IAO_0000118>primate</obo:IAO_0000118>
+        <obo:IAO_0000118>primates</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <rdfs:label>Primates</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9443"/>
+        <obo:IAO_0000118>human</obo:IAO_0000118>
+        <obo:IAO_0000118>man</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <rdfs:label>Homo sapiens</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
@@ -1758,6 +2650,24 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
         <obo:IAO_0000232 xml:lang="en">This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label xml:lang="en">planned process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
+        <obo:IAO_0000111 xml:lang="en">regulatory role</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Regulatory agency, Ethics committee, Approval letter; example:  Browse these EPA Regulatory Role subtopics  http://www.epa.gov/ebtpages/enviregulatoryrole.html  Feb 29, 2008</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">a role which inheres in material entities and is realized in the processes of making, enforcing or being defined by legislation or orders issued by a governmental body.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">GROUP:  Role branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI, CDISC</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">govt agents responsible for creating regulations; proxies for enforcing regulations.  CDISC definition:  regulatory authorities. Bodies having the power to regulate. NOTE: In the ICH GCP guideline the term includes the authorities that review submitted clinical data and those that conduct inspections. These bodies are sometimes referred to as competent</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">regulatory role</rdfs:label>
     </owl:Class>
     
 
@@ -1784,6 +2694,22 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label xml:lang="en">processed material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111 xml:lang="en">mass spectrometer</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">LCQ Fleet Ion Trap MSn manufactured by thermo fisher scientific</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A mass spectrometer is an instrument which is used to measure the mass to charge ratio of ions. All mass spectrometers consist of three basic parts: an ion source, a mass analyzer, and a detector system. The stages within the mass spectrometer are: 1. Production of ions from the sample 2. Separation of ions with different masses 3. Detection of the number of ions of each mass produced 4.Collection of data to generate the mass spectrum</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Mass_spectrometry</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">mass spectrometer</rdfs:label>
     </owl:Class>
     
 
@@ -1891,6 +2817,20 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000182 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000182">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000833"/>
+        <obo:IAO_0000111 xml:lang="en">nuclear magnetic resonance assay</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">an assay used to identify the chemical structure of a compound or biological macromolecule using an NMR instrument. </obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">nuclear magnetic resonance assay</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000185 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000185">
@@ -1918,6 +2858,68 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label xml:lang="en">radioactivity detection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000257 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000257">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0666667"/>
+        <obo:IAO_0000111 xml:lang="en">DNA extraction</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A DNA extraction is a nucleic acid extraction where the desired output material is DNA.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
+        <obo:IAO_0000118>DNA preparation</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">DNA extraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <obo:IAO_0000111 xml:lang="en">Protocol</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">protocol</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID: 18388943.Nat Protoc. 2008;3(4):612-8.Protocol for the induction of arthritis in C57BL/6 mice.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">a protocol is a plan specification which has sufficient level of detail and quantitative information to communicate it between domain experts, so that different domain experts will reliably be able to independently reproduce the process.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived + wikipedia (http://en.wikipedia.org/wiki/Protocol_%28natural_sciences%29)</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000288 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000288">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000751"/>
+        <obo:IAO_0000111>protein-protein interaction detection</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>An assay with the objective to determine interactions between proteins, such as protein-protein binding.</obo:IAO_0000115>
+        <obo:IAO_0000116>20091101, Bjoern Peters: This class may be overly broad. Lot&apos;s of assays would seem to classify under it, and I have the feeling that the intend would be to limit this to determining protein-protein interactions as they occur within an organism, rather than e.g. peptide:MHC binding assays.</obo:IAO_0000116>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">protein-protein interaction detection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000291 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000291">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000751"/>
+        <obo:IAO_0000111>transcription factor binding site  identification</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">a planned process with objective to find DNA region specifically recognized by proteins that function as transcription factors</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">transcription factor binding site  identification</rdfs:label>
     </owl:Class>
     
 
@@ -1951,6 +2953,238 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000345 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000345">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111 xml:lang="en">mass analyzer</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">The mass analyzer of the Voyager-DE(tm) STR Biospectrometry Workstation</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A Mass analyzer is a device that separates ions according to their mass-to-charge ratio. All mass spectrometers are based on dynamics of charged particles in electric and magnetic fields in vacuum where the two laws of Lorentz force law and Newton&apos;s second law of motion apply.</obo:IAO_0000115>
+        <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Mass_spectrometry#Mass_analyzer</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">mass analyzer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000361 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000361">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111 xml:lang="en">ion source</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">The ion source of a Voyager-DE‚Ñ¢ STR Biospectrometry Workstation</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Mass_spectrometry#Ion_source</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">ion source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000364 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000364">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111 xml:lang="en">ion detector</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">The ion detector of the Voyager-DE(tm) STR Biospectrometry Workstation</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Mass_spectrometry#Detector</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">ion detector</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000366 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000366">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000833"/>
+        <obo:IAO_0000111>metabolite profiling</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Metabolite profiling of human colon carcinoma - deregulation of TCA cycle and amino acid turnover. Mol Cancer. 2008 Sep 18;7(1):72. PMID: 18799019</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">metabolite profiling is a process which aims at detecting and identifying chemical entities resulting from biochemical and cellular metabolism</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>metabolite assay</obo:IAO_0000118>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">metabolite profiling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000369 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000369">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <obo:IAO_0000111 xml:lang="en">magnify function</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A magnify function is a function to increase the size of a transmitted object image through the precise arrangement of energy diffraction elements along an imaging path.</obo:IAO_0000115>
+        <obo:IAO_0000117>Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117>Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117>Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">magnify function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000370 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000370">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <obo:IAO_0000111 xml:lang="en">contain function</obo:IAO_0000111>
+        <obo:IAO_0000112>A syringe, a beaker</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A contain function is a function to constrain a material entities location in space</obo:IAO_0000115>
+        <obo:IAO_0000117>Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117>Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117>Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">contain function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000371 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000371">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <obo:IAO_0000111 xml:lang="en">heat function</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A heat function is a function that increases the internal kinetic energy of a material</obo:IAO_0000115>
+        <obo:IAO_0000117>Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117>Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117>Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">heat function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000372 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000372">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <obo:IAO_0000111 xml:lang="en">material separation function</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A material separation function is a function that increases the resolution between two or more material entities. The  to distinction between the entities is usually based on some associated physical quality.</obo:IAO_0000115>
+        <obo:IAO_0000117>Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117>Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117>Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">material separation function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000374 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000374">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <obo:IAO_0000111 xml:lang="en">excitation function</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A excitation function is a function  to inject energy by bombarding a material with energetic particles (e.g., photons) thereby imbuing internal material components such as electrons with additional energy.  These internal, &apos;excited&apos; particles may lead to the rupturing of covalent chemical bonds or may quickly relax back to there unexcited state with an exponential time course thereby locally emitting energy in the form of photons.</obo:IAO_0000115>
+        <obo:IAO_0000117>Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117>Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117>Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">excitation function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000376 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000376">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <obo:IAO_0000111 xml:lang="en">synthesizing function</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>A synthesizing function is a function to assemble new output materials from distinct input materials.  The output materials typically consist of chemically distinct monomeric objects or object aggregate polymers.</obo:IAO_0000115>
+        <obo:IAO_0000117>Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117>Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117>Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">synthesizing function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000379 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000379">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <obo:IAO_0000111 xml:lang="en">mechanical function</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A mechanical function is a function that is realised via mechanical work (through an certain amount of energy transferred by some force).</obo:IAO_0000115>
+        <obo:IAO_0000117>Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117>Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117>Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Mechanical_work</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">mechanical function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000387 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000387">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <obo:IAO_0000111 xml:lang="en">cool function</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A cool function is a function to decrease the internal kinetic energy of a material below the initial kinetic energy of that type of material.</obo:IAO_0000115>
+        <obo:IAO_0000117>Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117>Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">cool function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000397 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000397">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <obo:IAO_0000111 xml:lang="en">image acquisition function</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">An image acquisition function is a function to acquire an image of a material</obo:IAO_0000115>
+        <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">image acquisition function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000401 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000401">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <obo:IAO_0000111 xml:lang="en">environment control function</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">An environmental control function is a function that regulates a contained environment within specified parameter ranges. For example the control of light exposure, humidity and temperature.</obo:IAO_0000115>
+        <obo:IAO_0000117>Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117>Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117>Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">environment control function</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000415 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000415">
@@ -1964,6 +3198,147 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
         <obo:IAO_0000119>adapted from wikipedai</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label xml:lang="en">polymerase chain reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000424 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000424">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000833"/>
+        <obo:IAO_0000111>transcription profiling assay</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Whole genome transcription profiling of Anaplasma phagocytophilum in human and tick host cells by tiling array analysis. BMC Genomics. 2008 Jul 31;9:364. PMID: 18671858</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">An assay which aims to provide information about gene expression and transcription activity using ribonucleic acids collected from a material entity using a range of techniques and instrument such as DNA sequencers, DNA microarrays, Northern Blot</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">gene expression profiling</obo:IAO_0000118>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">transcription profiling assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000433 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000433">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001286"/>
+        <obo:IAO_0000111>DNA sequence feature detection</obo:IAO_0000111>
+        <obo:IAO_0000112>genotyping using an Affymetrix chip</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>An assay with the objective to determine a sequence feature of DNA</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">should be a defined class where interpretation of data generated by assay qualifies a DNA sequence</obo:IAO_0000116>
+        <obo:IAO_0000117>Person:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">DNA sequence feature detection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000435 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000435">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001305"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001286"/>
+        <obo:IAO_0000111>genotyping assay</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">High-throughput genotyping of oncogenic human papilloma viruses with MALDI-TOF mass spectrometry. Clin Chem. 2008 Jan;54(1):86-92. Epub 2007 Nov 2.PMID: 17981923</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>an assay which generates data about a genotype from a specimen of genomic DNA. A variety of techniques and instruments can be used to produce information about sequence variation at particular genomic positions.</obo:IAO_0000115>
+        <obo:IAO_0000116>Genotype infomation is about the genetic material of an organism and minimally includes information about the genetic background and can in addition contain information about specific alleles, genetic modifications, etc. (from OBI:genotype information, 2014-04-21)</obo:IAO_0000116>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">genotype profiling, SNP genotyping</obo:IAO_0000118>
+        <obo:IAO_0000119>OBI Biomaterial</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">genotyping assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000443 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000443">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000111>analyte assay</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">example of usage: In lab test for blood glucose, the test is the assay, the blood bears evaluant_role and glucose bears the analyte role. The evaluant is considered an input to the assay and the information entity that records the measurement of glucose concentration the output</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">An assay with the objective to capture information about the presence, concentration, or amount of an analyte in an evaluant.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Note: is_realization of some analyte role isn&apos;t always true, for example when there is none of the analyte in the evaluant. For the moment we are writing it this way, but when the information ontology is further worked out this will be replaced with a condition discussing the measurement.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON:Bjoern Peters, Helen Parkinson, Philippe Rocca-Serra, Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">analyte assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000445 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000445">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001285"/>
+        <obo:IAO_0000111>mass measurement assay</obo:IAO_0000111>
+        <obo:IAO_0000112>The patients was weighed and mass was determined to be 47 kilograms</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">a process to determine the mass of an evaluant</obo:IAO_0000115>
+        <obo:IAO_0000117>Helen Parkinson</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:comment>Philippe Rocca-Serra</rdfs:comment>
+        <rdfs:label xml:lang="en">mass measurement assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000447 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000447">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001289"/>
+        <obo:IAO_0000111>intra cellular electrophysiology recording</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>An intracellular electrophysiology recording is a process where the recording location of the electrode is intracellular</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000119>PERSON: Frank Gibson</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>intra cellular electrophysiology recording</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000453 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000453">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <obo:IAO_0000111 xml:lang="en">measure function</obo:IAO_0000111>
+        <obo:IAO_0000112>A glucometer measures blood glucose concentration, the glucometer has a measure function.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">Measure function is a function that is borne by a processed material  and realized in a process in which information about some entity is expressed relative to some reference.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Helen Parkinson</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON:Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">measure function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000454 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000454">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001289"/>
+        <obo:IAO_0000111>extracellular electrophysiology recording</obo:IAO_0000111>
+        <obo:IAO_0000112>The recording of a spike train in the caudate nucleus of a monkey where the electrodes are extra cellular, i.e. not in the neuron</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An extracellular electrophysiology recording is process where the recording location of the electrode is extracellular and data</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Frank Gibson, Helen Parkinson</obo:IAO_0000117>
+        <obo:IAO_0000119>PERSON: Frank Gibson</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>extracellular electrophysiology recording</rdfs:label>
     </owl:Class>
     
 
@@ -1989,6 +3364,27 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000457 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000457">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001313"/>
+        <obo:IAO_0000111>manufacturing</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">Manufacturing is a process with the intent to produce a processed material which will have a function for future use. A person or organization (having manufacturer role) is a participant in this process</obo:IAO_0000115>
+        <obo:IAO_0000116>Manufacturing implies reproducibility and responsibility AR</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">This includes a single scientist making a processed material for personal use.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Jennifer Fostel</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>GROUP: OBI PlanAndPlannedProcess Branch</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">manufacturing</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000470 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000470">
@@ -2001,6 +3397,175 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
         <obo:IAO_0000119>PRIDE: PRIDE:0000027</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label>mass spectrometry assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000471 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000471">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000111>study design execution</obo:IAO_0000111>
+        <obo:IAO_0000112>injecting a mouse with PBS solution, weighing it, and recording the weight according to a study design.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>a planned process that realizes the concretization of a study design</obo:IAO_0000115>
+        <obo:IAO_0000116>removed axiom has_part some (assay or &apos;data transformation&apos;) per discussion on protocol application mailing list to improve reasoner performance. The axiom is still desired.</obo:IAO_0000116>
+        <obo:IAO_0000119>branch derived</obo:IAO_0000119>
+        <obo:IAO_0000232>6/11/9: edited at workshop. Used to be: study design execution is a process with the objective to generate data according to a concretized study design. The execution of a study design is part of an investigation, and minimally consists of an assay or data transformation.</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>study design execution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000520 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000520">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000833"/>
+        <obo:IAO_0000111>clinical chemistry assay</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>a process which uses analytical methods to produce measurements and data on the concentration of a chemical parameters (analytes) present in a bodily fluid collected from an organism.</obo:IAO_0000115>
+        <obo:IAO_0000116>3/26/09: There needs to be a restriction set that specifies which type of evaluants are used in the assay, somewhere along the lines of &apos;sample derived of bodily fluid&apos;</obo:IAO_0000116>
+        <obo:IAO_0000117>Person: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>chemical pathology</obo:IAO_0000118>
+        <obo:IAO_0000118>detection of analyte in blood sample</obo:IAO_0000118>
+        <obo:IAO_0000119>adapted from Wikipedia</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>clinical chemistry assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000552 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000552">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600058"/>
+        <obo:IAO_0000111>reverse transcribed polymerase chain reaction</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>reverse transcribe pcr is a process which allow amplification of cDNA during a pcr reaction while the cDNA results from a retrotranscription of messenger RNA isolated from a material entity.</obo:IAO_0000115>
+        <obo:IAO_0000116>3/21/10,  BP:Modified definition to clarify that this is not the assay, but the material transformation</obo:IAO_0000116>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>RT-PCR</obo:IAO_0000118>
+        <obo:IAO_0000118>reverse transcription polymerase chain reaction</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>reverse transcribed polymerase chain reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000566 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000566">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111 xml:lang="en">NMR instrument</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">An Instrument which is used to carry out a NMR analysis of some sample.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">NMR instrument</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">GROUP:&lt;http://msi-ontology.sourceforge.net&gt;</obo:IAO_0000119>
+        <obo:IAO_0000119>http://msi-ontology.sourceforge.net/ontology/NMR.owl#msi_400059</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">NMR instrument</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">NMR instrument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000571 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000571">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000300"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000457"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>manufacturer role</obo:IAO_0000111>
+        <obo:IAO_0000112>With respect to The Accuri C6 Flow Cytometer System, the organization Accuri bears the role manufacturer role.  With respect to a transformed line of tissue culture cells derived by a specific lab, the lab whose personnel isolated the cll line bears the role manufacturer role.  With respect to a specific antibody produced by an individual scientist, the scientist who purifies, characterizes and distributes the anitbody bears the role manufacturer role.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process.</obo:IAO_0000115>
+        <obo:IAO_0000117>GROUP:  Role Branch</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>manufacturer role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000615 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000615">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000833"/>
+        <obo:IAO_0000111>protein expression profiling</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>a planned process which aims to provide information about protein expression and translation activity using protein extracts collected from a material entity using a range of techniques and instrument such as Mass spectrometers, Gel electrophoresis, Western Blots, Protein microarrays</obo:IAO_0000115>
+        <obo:IAO_0000117>Phlippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>proteomic analysis</obo:IAO_0000118>
+        <obo:IAO_0000119>OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>protein expression profiling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000626 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000626">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001286"/>
+        <obo:IAO_0000111>DNA sequencing</obo:IAO_0000111>
+        <obo:IAO_0000112>Genomic deletions of OFD1 account for 23% of oral-facial-digital type 1 syndrome after negative DNA sequencing. Thauvin-Robinet C, Franco B, Saugier-Veber P, Aral B, Gigot N, Donzel A, Van Maldergem L, Bieth E, Layet V, Mathieu M, Teebi A, Lespinasse J, Callier P, Mugneret F, Masurel-Paulet A, Gautier E, Huet F, Teyssier JR, Tosi M, Frébourg T, Faivre L.  Hum Mutat. 2008 Nov 19. PMID: 19023858</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>DNA sequencing is a sequencing process which uses deoxyribonucleic acid as input and results in a the creation of DNA sequence information artifact using a DNA sequencer instrument.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI Branch derived</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>DNA sequencing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000634 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000634">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001286"/>
+        <obo:IAO_0000111>DNA methylation profiling assay</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>an assay which aims to provide information about state of methylation of DNA molecules using genomic DNA collected from a material entity using a range of techniques and instrument such as DNA sequencers and often relying on treatment with bisulfites to ensure cytosine conversion.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>DNA methylation profiling assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000659 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000659">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <obo:IAO_0000111>specimen creation</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>a planned process with the objective of obtaining specimen.</obo:IAO_0000115>
+        <obo:IAO_0000116>Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation.</obo:IAO_0000116>
+        <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000232>5/31/2012: This process is not necessarily an acquisition, as specimens may be collected from materials already in posession</obo:IAO_0000232>
+        <obo:IAO_0000232>6/9/09: used at workshop</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>specimen collection</rdfs:label>
     </owl:Class>
     
 
@@ -2037,6 +3602,367 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000704 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000704">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100084"/>
+        <obo:IAO_0000111>decision tree induction objective</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>A decision tree induction objective is a data transformation objective in which a tree-like graph of edges and nodes is created and from which the selection of each branch requires that some type of logical decision is made.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>decision tree induction objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000711 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000711">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001303"/>
+        <obo:IAO_0000111>library preparation</obo:IAO_0000111>
+        <obo:IAO_0000112>PMID: 19570239. Construction and analysis of cotton (Gossypium arboreum L.) drought-related cDNA library. Zhang L, Li FG, Liu CL, Zhang CJ, Zhang XY. BMC Res Notes. 2009 Jul 2;2:120.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>is a process which results in the creation of a library from fragments of DNA using cloning vectors or oligonucleotides with the role of adaptors.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>library construction</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>library preparation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000716 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000716">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000626"/>
+        <obo:IAO_0000111>ChIP-seq assay</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>an assay which aims at identifying protein binding sites in genomic DNA and determining how protein may regulate gene transcription by relying on immunoprecipitation of DNA bound protein, creation of a library of corresponding DNA fragments  (either single or paired-end fragments) and subsequent sequencing using parallelized sequencing methods.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>chromatin immunoprecipitation sequencing assay</obo:IAO_0000118>
+        <obo:IAO_0000119>adapted from Wikipedia</obo:IAO_0000119>
+        <obo:IAO_0000232>made some modification based on the discussion on 2011/4/4 obi dev call, using DNA sequencing instead of union of some specific DNA sequencing processes</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>ChIP-seq assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000744 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000744">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
+        <obo:IAO_0000111>material sampling process</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>A specimen gathering process with the objective to obtain a specimen that is representative of the input material entity</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>material sampling process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000816 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000816">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>micro electrode</obo:IAO_0000111>
+        <obo:IAO_0000112>A micro-electrode recording device used to record extracellular action potentialsin monkey caudate nucleus</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An electrode of very fine caliber consisting usually of a fine wire or a glass tube of capillary diameter drawn to a fine point and filled with saline or a metal used in physiological experiments to stimulate or record action currents of extracellular or intracellular origin in the nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000117>Helen Parkinson, Jessica Turner, Dirk Derom</obo:IAO_0000117>
+        <obo:IAO_0000118>micro electrode measuring device</obo:IAO_0000118>
+        <obo:IAO_0000119>Jessica Turner, Dirk Derom</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>micro electrode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000835 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000835">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
+        <obo:IAO_0000115>A person or organization that has a manufacturer role</obo:IAO_0000115>
+        <rdfs:label>manufacturer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000854 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000854">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001284"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>western blot analysis</obo:IAO_0000111>
+        <obo:IAO_0000112>PMID: 6266278. &quot;Western blotting&quot;: electrophoretic transfer of proteins from sodium dodecyl sulfate--polyacrylamide gels to unmodified nitrocellulose and radiographic detection with antibody and radioiodinated protein A. Anal Biochem. 1981 Apr;112(2):195-203</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>a western blot analysis is an assay which allows detection of protein present in a extract resolved on polyacrylamide gel by electrophoresis, transfered to a membrane made of nitrocellulose or polyvinylidene difluoride and immobilized using formaldehyde based cross linking. Specific proteins are probed using specific antibodies. detection is carried by staining with secondary antibody usually linked to biotin or to a reporter enzyme such as alkaline phosphatase or horseradish peroxidase. This means that several secondary antibodies will bind to one primary antibody and enhance the signal. Most commonly, a horseradish peroxidase-linked secondary is used to cleave a chemiluminescent agent, and the reaction product produces luminescence in proportion to the amount of protein.  Detection can only be achieved by radio marking antibodies and using Phosphor imagers.</obo:IAO_0000115>
+        <obo:IAO_0000117>person: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>protein immunoblotting</obo:IAO_0000118>
+        <obo:IAO_0000119>wikipedia</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>western blot analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000916 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000916">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000401"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>flow cytometry assay</obo:IAO_0000111>
+        <obo:IAO_0000112>Using a flow cytometer to quantitate the percent of CD3 positive cells in a population by labeling them with a FITC tagged anti-CD3 antibody.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>An assay that uses a flow cytometer to detect fluorescence in individual particles that flow by a laser in solution.</obo:IAO_0000115>
+        <obo:IAO_0000116></obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON:Randi Vita, Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119></obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>flow cytometry assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000919 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000919">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <obo:IAO_0000111>animal euthanization</obo:IAO_0000111>
+        <obo:IAO_0000112>Rats were euthanized with CO2</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A process in which is the end of life of animal is brought about in accordance with local regulations on treatment of animal subjects and using a method which causes minimal pain and distress to the animal subject</obo:IAO_0000115>
+        <obo:IAO_0000117>Helen Parkinson and Melissa Haendel</obo:IAO_0000117>
+        <obo:IAO_0000118>animal sacrifice</obo:IAO_0000118>
+        <obo:IAO_0000119>Melissa Haendel</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:comment>may later be refined with more specific list of organisms</rdfs:comment>
+        <rdfs:label>animal euthanization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000989 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000989">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400116"/>
+        <obo:IAO_0000111>PCR instrument</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>A device that is used to amplify a single or few copies of a piece of DNA across several orders of magnitude, generating thousands to millions of copies of a particular DNA sequence.</obo:IAO_0000115>
+        <obo:IAO_0000116>03/21/2010: Added because it is unclear if the thermal cycler definition is intentionally broader than PCR instrument. Contacted Melanie and Trish about this. Definitions and use of alternative terms need to be made consistent.</obo:IAO_0000116>
+        <obo:IAO_0000117></obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>PCR instrument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000990 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000990">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400169"/>
+        <obo:IAO_0000111>electron microscope</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>A microscope that produces an image of an object by targeting it with an electron beam</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>electron microscope</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>electrophoresis system</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A device that moves charged particles through a medium by using an electric field induced by electrodes.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Category:Electrophoresis</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>electrophoresis system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>patch clamp device</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A device used in electrophysiology that allows the study of single or multiple ion channels in cells.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Patch_clamp</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>patch clamp device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001053"/>
+        <obo:IAO_0000111>gel electrophoresis system</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A device that moves charged particles through a medium by using an electric field induced by electrodes.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000118>electrophoresis system</obo:IAO_0000118>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Category:Electrophoresis</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>gel electrophoresis system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>voltage clamp device</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A device that is used to measure the ion currents across the membrane of excitable cells, such as neurons, while holding the membrane voltage at a set level.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Voltage_clamp</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>voltage clamp device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>protein sequencer</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An device that is used to determine the order of amino acids in protein sequences.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119>PERSON: Erik Segerdell</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>protein sequencer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000374"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>X-ray source</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A device that is used to generate X-rays.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000118>x-ray generator</obo:IAO_0000118>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/X-ray_generator</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>X-ray source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001248 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001248">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001080"/>
+        <obo:IAO_0000111 xml:lang="en">ChIP-chip assay</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>an assay that aims to investigate the interactions between protein and DNA relying on chromatin immunoprecipitation (&apos;ChIP&apos;) combined with microarray technology (&apos;chip&apos;). Specially, it allows the identification of protein binding sites on a genome-wide basis.</obo:IAO_0000115>
+        <obo:IAO_0000117>Person: James Malone</obo:IAO_0000117>
+        <obo:IAO_0000118>ChIP-on-chip assay</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/ChIP-on-chip</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:comment>Philippe Rocca-Serra</rdfs:comment>
+        <rdfs:label xml:lang="en">ChIP-chip assay</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0001271 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001271">
@@ -2056,6 +3982,40 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
         <obo:IAO_0000232>JZ: should be inferred as &apos;DNA sequencing&apos;. Will check in the future.</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label xml:lang="en">RNA-seq assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001305 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001305">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000111 xml:lang="en">genotype information</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Genotype information can be: Mus musculus wild type (in this case the genetic population background information is Mus musculus), C57BL/6J  Hnf1a+/- (in this case, C57BL/6J is the genetic population background information and Hnf1a+/- is the allele information</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">a genetic characteristics information that is about the genetic material of an organism and minimally includes information about the genetic background and can in addition contain information about specific alleles, genetic modifications, etc.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">discussed on San Diego OBI workshop, March 2011</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Group: OBI group</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Group: OBI group</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">genotype information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001573 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001573">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100362"/>
+        <obo:IAO_0000111>DNA sequence data</obo:IAO_0000111>
+        <obo:IAO_0000112>The part of a FASTA file that contains the letters ACTGGGAA </obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A sequence data item that is about the primary structure of DNA</obo:IAO_0000115>
+        <obo:IAO_0000117>OBI call; Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI call; Melanie Courtout</obo:IAO_0000119>
+        <obo:IAO_0000232>8/29/11 call: This is added after a request from Melanie and Yu. They should review it further. This should be a child of &apos;sequence data&apos;, and as of the current definition will infer there.  </obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>DNA sequence data</rdfs:label>
     </owl:Class>
     
 
@@ -2080,6 +4040,455 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000007"/>
+        <obo:IAO_0000111 xml:lang="en">data transformation</obo:IAO_0000111>
+        <obo:IAO_0000112>The application of a clustering protocol to microarray data or the application of a statistical testing method on a primary data set to determine a p-value.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A data transformation is a process which produces output data from input data</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Elisabetta Manduchi</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Helen Parkinson</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Richard Scheuermann</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Ryan Brinkman</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Tina Hernandez-Boussard</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">data analysis</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">data processing</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">Branch editors</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">data transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001309"/>
+        <obo:IAO_0000111>data visualization</obo:IAO_0000111>
+        <obo:IAO_0000112>Generation of a heatmap from a microarray dataset</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">An planned process that creates images, diagrams or animations from the input data.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Elisabetta Manduchi</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Tina Boussard</obo:IAO_0000117>
+        <obo:IAO_0000118>data encoding as image</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">visualization</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">PERSON: Elisabetta Manduchi</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">PERSON: James Malone</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">PERSON: Tina Boussard</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">data visualization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200166 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200166">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <obo:IAO_0000111 xml:lang="en">data transformation objective</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">normalize objective</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A data transformation objective is an objective specification that a data transformation may have towards which the realization of that transformation is directed.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">James Malone</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">PERSON: James Malone</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">data transformation objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302884 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302884">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600014"/>
+        <obo:IAO_0000111>extraction</obo:IAO_0000111>
+        <obo:IAO_0000112>nucleic acid extraction using phenol chloroform</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>A material separation in which a desired component of an input material is separated from the remainder</obo:IAO_0000115>
+        <obo:IAO_0000117>Person:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">extraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302887 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302887">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <obo:IAO_0000111>staining</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID: 18540298. Role of modified bleach method in staining of acid-fast bacilli in lymph node aspirates. Acta Cytol. 2008 May-Jun;52(3):325-8.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">Staining is a process which results in the addition a class-specific (DNA, proteins, lipids, carbohydrates) dye to a substrate to qualify or quantify the presence of a specific compound.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>adapted from Wikipedia: http://en.wikipedia.org/wiki/Staining</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">staining</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302890 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302890">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <obo:IAO_0000111>polymerization</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID: 18517209. The electronic role of DNA-functionalized carbon nanotubes: efficacy for in situ polymerization of conducting polymer nanocomposites. J Am Chem Soc. 2008 Jun 25;130(25):7921-8. Epub 2008 Jun 3.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">polymerization is process by which molecular entity of small mass are aggregated in motifs over the course of a chemical reaction catalyzed by enzymes or other molecular entities acting as catalyst. polymerization results in molecular entity of high molecular weight</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">PRS:22102008: need to import catalyst from CHEBI 35223</obo:IAO_0000116>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI-Branch</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">polymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302899 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302899">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000919"/>
+        <obo:IAO_0000111>decapitation</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID: 18246869. Loss of cortical function in mice after decapitation, cervical dislocation, potassium chloride injection, and CO2 inhalation. Comp Med. 2007 Dec;57(6):570-</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">decapitation is a process by which the head of a living organism is physically removed from the body, usually resulting in rapid death (in the case of Rhodnius prolixus, it might take a bit longer..)</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI-Branch</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">decapitation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111>flow cell</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Biofilm Flow Cell</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">Aparatus in the fluidic subsystem where the sheath and sample meet. Can be one of several types; jet-in-air, quartz cuvette, or a hybrid of the two. The sample flows through the center of a fluid column of sheath fluid in the flow cell.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person:John Quinn</obo:IAO_0000117>
+        <obo:IAO_0000118>flow_cell</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">http://www.flocyte.com/FRTP/Resources/flow_cytometry_glossary.htm</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">flow cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400137"/>
+        <obo:IAO_0000111 xml:lang="en">flow cytometer</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">FACS Calibur</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A flow_cytometer is an instrument for counting, examining and sorting microscopic particles in suspension. It allows simultaneous multiparametric analysis of the physical and/or chemical characteristics of single cells flowing through an optical and/or electronic detection apparatus. A flow cytometer is an instrument that can be used to quantitatively measure the properties of individual cells in a flowing medium.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">John Quinn</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Flow_cytometer</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">flow cytometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111 xml:lang="en">light source</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics). Light sources may include one of a variety of lamps (e.g., xenon, halogen, mercury). Most light sources are operated from line power, but some may be powered from batteries. They are mostly used in endoscopic, microscopic, and other examination and/or in surgical procedures. The light source is part of the optical subsystem. In a flow cytometer the light source directs high intensity light at particles at the interrogation point. The light source in a flow cytometer is usually a laser.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Elizabeth M. Goralczyk</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">John Quinn</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Olga Tchuvatkina</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Practical Flow Cytometry 4th Edition, Howard Shapiro, ISBN-10: 0471411256, ISBN-13: 978-0471411253</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">light source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111 xml:lang="en">obscuration bar</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">obscuration bar in a flow cytometer</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">An obscuration bar is a an optical subsystem which is a strip of metal or other material that serves to block out direct light from the illuminating beam. The obscuration bar prevents the bright light scattered in the forward directions from burning out the collection device.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119>Flow Cytometry: First Principles, by Alice Longobardi Givan, ISBN-10: 0471382248, ISBN-13: 978-0471382249</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">John Quinn</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">obscuration bar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111 xml:lang="en">optical filter</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">720 LP filter, 580/30 BP filter</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">An optical filter is an optical subsystem that selectively transmits light having certain properties (often, a particular range of wavelengths, that is, range of colours of light), while blocking the remainder. They are commonly used in photography, in many optical instruments, and to colour stage lighting Optical filters can be arranged to segregate and collect light by wave length.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">John Quinn</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Optical_filter</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">optical filter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111 xml:lang="en">photodetector</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">A photomultiplier tube, a photo diode</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A photodetector is a device used to detect and measure the intensity of radiant energy through photoelectric action. In a cytometer, photodetectors measure either the number of photons of laser light scattered on impact with a cell (for example), or the flourescence emitted by excitation of a fluorescent dye.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">John Quinn</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://einstein.stanford.edu/content/glossary/glossary.html</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">photodetector</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111 xml:lang="en">DNA sequencer</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">ABI 377 DNA Sequencer, ABI 310 DNA Sequencer</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A DNA sequencer is an instrument that determines the order of deoxynucleotides in deoxyribonucleic acid sequences.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Trish Whetzel</obo:IAO_0000117>
+        <obo:IAO_0000118>genome sequencer</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">MO</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">DNA sequencer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111 xml:lang="en">hybridization chamber</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Glass Array Hybridization Cassette</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A device which is used to maintain constant contact of a liquid on an array.  This can be either a glass vial or slide.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Trish Whetzel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">MO_563 hybridization_chamber</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">hybridization chamber</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111 xml:lang="en">thermal cycler</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Piko(tm) 96-well Thermal Cycler</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">An instrument that is capable of repeatedly altering and maintaining specific temperatures for defined periods of time.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Trish Whetzel</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">DNA_amplifier</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">PCR_machine</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">Polymerase_Chain_Reaction_ machine</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">thermocycler</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">MO</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">thermal cycler</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111 xml:lang="en">cytometer</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A cytometer is an instrument for counting and measuring cells.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://medical.merriam-webster.com/medical/cytometer</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">cytometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400140">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111 xml:lang="en">gel tank</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">CHEF gel box, slab gel box, capillary electrophoresis</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">a device which holds a gel and running buffers to allow electrophoresis to be performed. A gel tank has the function to contain and to control the contained environment and transfer energy from an energy supply through the running buffers to the gel matrix and the material with charged molecules in an electric field across a porous matrix or medium with the objective to separate the charged molecules.</obo:IAO_0000115>
+        <obo:IAO_0000117>Person:Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Person:Kevin Clancy</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">electrophoresis box</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">electrophoresis unit</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">sep:00095</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">gel tank</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400142 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400142">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111 xml:lang="en">power supply</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">A AC/DC transformer that generates the reqired power for an electrophoresis apparatus</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A power supply is an device or part of a device that permits the required application of a defined electrical charge to an instrument. The power supply may permit the defined application of a given amount of current for a defined length of time.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">PSU</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">electrical power supply</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">power pack</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">power supply unit</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">PERSON: Daniel Schober</obo:IAO_0000119>
+        <obo:IAO_0000119>sep:00093</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">was power_pack, maps to SEP electrical_power_supply</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">power supply</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400147">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">microarray</obo:IAO_0000111>
+        <obo:IAO_0000112>An affymetrix U133 array is a microarray. Microarrays include 1 and 2-color arrays, custom and commercial arrays (e.g, Affymetrix, Agilent, Nimblegen, Illumina, etc.) for expression profiling, DNA variant detection, protein binding, and other genomic and functional genomic assays.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A processed material that is made to be used in an analyte assay. It consists of a physical immobilisation matrix in which substances that bind the analyte are placed in regular spatial position.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119>PERSON: Chris Stoeckert</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">microarray</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400148 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400148">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400147"/>
+        <obo:IAO_0000111 xml:lang="en">DNA microarray</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Moran G, Stokes C, Thewes S, Hube B, Coleman DC, Sullivan D (2004). &quot;Comparative genomics using Candida albicans DNA microarrays reveals absence and divergence of virulence-associated genes in Candida dubliniensis&quot;. Microbiology 150: 3363-3382. doi:10.1099/mic.0.27221-0. PMID 15470115</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A DNA-microarray is a microarray that is used as a physical 2D immobilisation matrix for DNA sequences. DNA microarray-bound DNA fragments are used as targets for a hybridising probed sample.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">DNA Chip</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">DNA-array</obo:IAO_0000118>
+        <obo:IAO_0000119>Web:&lt;http://en.wikipedia.org/wiki/DNA_microarray&gt;@2008/03/03</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">DNA microarray</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400147"/>
+        <obo:IAO_0000111 xml:lang="en">protein microarray</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">The most common protein microarray is the antibody microarray, where antibodies are spotted onto the protein chip and are used as capture molecules to detect proteins from cell lysate solutions.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A protein-microarray is a microarray, ususlly a piece of glass, on which different molecules of protein have been affixed at separate locations in an ordered manner. These are used to identify protein-protein or protein-small molecule interactions.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119>PERSON: Daniel Schober</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">protein microarray</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400153 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400153">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111 xml:lang="en">droplet sorter</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000117>OBI Instrument branch</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI Instrument branch</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">droplet sorter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400168 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400168">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111 xml:lang="en">microtome</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID: 9974145.Serial sectioning of thick tissue with a novel vibrating blade microtome. Brain Res Brain Res Protoc. 1999 Jan;3(3):302-7.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A microtome is a mechanical instrument used to cut biological specimens into very thin segments for further treatment (e.g. ISH) and ultimately microscopic or histologic examination. Most microtomes provide cooling facilities (cryo-microtome) and use a steel blade to cut a slice of defined thickness. Some are automatic, and some are driven by hand.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Phillippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>PERSON: Daniel Schober</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">microtome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400169 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400169">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111 xml:lang="en">microscope</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID:18466942. A light and transmission electron microscope study of hepatic portal tracts in the rhesus monkey (Macacus rhesus). Tissue Cell. 2008 May 6</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A microscope is an instrument which magnifies the view on objects (too small to be viewed by the naked eye) under increased resolution. A microscope can be an optical instrument but also and electronic instrument. There are various kind of optical microscopes, e.g confocal microscope, epifluoresence microscope)</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Phillippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>wikipedia</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">microscope</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
@@ -2098,6 +4507,22 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0600005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
+        <obo:IAO_0000111 xml:lang="en">collecting specimen from organism</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">taking a sputum sample from a cancer patient, taking the spleen from a killed mouse, collecting a urine sample from a patient</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">a process with the objective to obtain a material entity that was part of an organism for potential future use in an investigation</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">IEDB</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">collecting specimen from organism</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0600014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600014">
@@ -2110,6 +4535,141 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">IEDB</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label xml:lang="en">material component separation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000833"/>
+        <obo:IAO_0000111 xml:lang="en">detection of label</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Determination of the amount of phycoerytherin label present in a cell population stained with anti-CD8-PE in order to determine the percentage of CD8+ T cells present</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">the detection of the amount of a label which is a proxy for the detection of the labeled biomaterial</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">detection of label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001282"/>
+        <obo:IAO_0000111 xml:lang="en">histology</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">the counting of the number of cells with fluorescent label at their surface to determine the percentage of the population which was activated</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">the visual examination of cells or tissue (or images of them) with an assessment regarding a quality of the cells or tissue. Parts are: staining, imaging, judgement</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Compiled by Helen Parkinson for Transcriptomics thanks to Adam Witney</obo:IAO_0000117>
+        <obo:IAO_0000118>histopathology</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000232>PRS:20090901: addition of alternative term = histopathology</obo:IAO_0000232>
+        <obo:IAO_0000232 xml:lang="en">need to incorporate parts\n---\nThis is a very vague term, it should be in the same place as transcriptomics, proteomics metaboloimcs. It is the &apos;study&apos; of tissues, not the process of studying tissues\n</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">histology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600014"/>
+        <obo:IAO_0000111 xml:lang="en">excision</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Cutting out the portion of a gel which contains a DNA fragment</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">the use physical means to remove a portion of a substance from the rest</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg, Kevin Clancy</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">www.crohnsresource.com/glossary.jsp (via google define:resection)</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">excision</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001283"/>
+        <obo:IAO_0000111 xml:lang="en">maintaining cell culture</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">When harvesting blood from a human, isolating T cells, and then limited dilution cloning of the cells, the maintaining_cell_culture step comprises all steps after the initial dilution and plating of the cells into culture, e.g. placing the culture into an incubator, changing or adding media, and splitting a cell culture</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">a protocol application in which cells are kept alive in a defined environment outside of an organism.  part of cell_culturing</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:comment>This is a renamed of the manaintainig cell culture</rdfs:comment>
+        <rdfs:label xml:lang="en">maintaining cell culture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <obo:IAO_0000111 xml:lang="en">artificially induced reverse transcription</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">The use of M-MLV reverse transcriptase from the Moloney murine leukemia virus to transcribe an RNA sample into cDNA</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">a protocol with the objective to transcribe single-stranded RNA into complementary DNA (cDNA)</obo:IAO_0000115>
+        <obo:IAO_0000116>It could also be added that the reverse transcriptase is bearer of a GO:0003964 RNA-directed DNA polymerase activity, which is realized in this process.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">We need to indicate the relationship between the cDNA generated and the RNA that was used as a template. This may be outside of the OBI scope</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Kevin Clancy</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">artificially induced reverse transcription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600024"/>
+        <obo:IAO_0000111 xml:lang="en">establishing cell culture</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">establishing a cell culture is a process which results in creating an in vitro environment in which cells are sustained from input material containing cells. input: cell-containing material, output cell culture, part of cell culturing. Cells are originally plated at a certain concentration referred to as seeding density.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">establishing cell culture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001298"/>
+        <obo:IAO_0000111 xml:lang="en">labeling</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">The addition of phycoerytherin label to an anti-CD8 antibody, to label all antibodies. The addition of anti-CD8-PE to a population of cells, to label the subpopulation cells that are CD8+.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">the addition of a labeling reagent to an input biomaterial in order to detect the labeled material in the future</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Kevin Clancy</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">definition blessed by Allyson, Bjoern, Jay &amp; Randi</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">labeling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001297"/>
+        <obo:IAO_0000111 xml:lang="en">genetic transformation</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">The transduction of E. coli through the introduction of a plasmid encoding for M. avium p35</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">the introduction. alteration or integration of genetic material into a cell or organism</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Kevin Clancy</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">genetic modification</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">genetic transformation</rdfs:label>
     </owl:Class>
     
 
@@ -2147,6 +4707,23 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0600053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600014"/>
+        <obo:IAO_0000111 xml:lang="en">electrophoresis</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Loading a mixture of proteins into a polyacrylamide gel and the application of an electrical current to the gel to separate the proteins by size and change.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">a protocol application that uses an electrical potential to move material through a defined matrix in order to separate it by its resistance to movement and its charge</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Kevin Clancy</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">Need to define more terms like gel_separation, matrix,centrifugation, and the connection between the force used to separate materials and the medium or barriers.</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">electrophoresis</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0600058 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600058">
@@ -2160,6 +4737,79 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label xml:lang="en">enzymatic amplification</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001313"/>
+        <obo:IAO_0000111 xml:lang="en">recombinant vector cloning</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">a planned process with the objective to insert genetic material into a cloning vector for future replication of the inserted material</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">pa_branch (Alan, Randi, Kevin, Jay, Bjoern)</obo:IAO_0000117>
+        <obo:IAO_0000118>molecular cloning</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">recombinant vector cloning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0666666 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0666666">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0666667"/>
+        <obo:IAO_0000111 xml:lang="en">RNA extraction</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A RNA extraction is a nucleic acid extraction where the desired output material is RNA</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">requested by Helen Parkinson for MO</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">RNA extraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0666667 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0666667">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0302884"/>
+        <obo:IAO_0000111 xml:lang="en">nucleic acid extraction</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Phenol / chlorophorm extraction disolvation of protein content folllowed by ethanol precipitation of the nucleic acid fraction over night in the fridge followed by centrifugation to obtain a nucleic acid pellet.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">a material separation to recover the nucleic acid fraction of an input material</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">requested by Helen Parkinson for MO. Could be defined class</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">nucleic acid extraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000169 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000169"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001421 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001421"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001422 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001422"/>
     
 
 
@@ -2201,6 +4851,15 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UO_0000280 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000280">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:label xml:lang="en">rate unit</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#Subset -->
 
     <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#Subset">
@@ -2212,6 +4871,59 @@ instance level relation [GOC:cjm]</obo:IAO_0000115>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000111>agent</obo:IAO_0000111>
+        <obo:IAO_0000112>see: http://xmlns.com/foaf/spec/#term_Agent</obo:IAO_0000112>
+        <obo:IAO_0000115>Agents are things that do stuff</obo:IAO_0000115>
+        <obo:IAO_0000115>Things that do stuff.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Scott Hoffmann</obo:IAO_0000117>
+        <obo:IAO_0000118></obo:IAO_0000118>
+        <rdfs:comment>An agent</rdfs:comment>
+        <rdfs:label>agent</rdfs:label>
+        <rdfs:label xml:lang="en">agent</rdfs:label>
+        <skos:scopeNote xml:lang="en">Used to describe any &quot;agent&quot; related to bibliographic items. Such agents can be persons, organizations or groups of any kind.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <obo:IAO_0000111>organization</obo:IAO_0000111>
+        <obo:IAO_0000112>Only use if no specific subclasses of foaf:organization desribe the organization.</obo:IAO_0000112>
+        <obo:IAO_0000112>This class will display all the instances in the subclasses below it, as well as any organizations that were added as part of this generic class because there wasn&apos;t a specific class available.</obo:IAO_0000112>
+        <obo:IAO_0000115>A generic class encompassing several types of organizations.</obo:IAO_0000115>
+        <obo:IAO_0000115>A kind of Agent corresponding to social instititutions such as companies, societies etc.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Scott Hoffmann</obo:IAO_0000117>
+        <obo:IAO_0000118></obo:IAO_0000118>
+        <rdfs:comment>An organization</rdfs:comment>
+        <rdfs:label>organization</rdfs:label>
+        <rdfs:label xml:lang="en">organization</rdfs:label>
+        <skos:scopeNote xml:lang="en">Ued to describe an organization related to bibliographic items such as a publishing company, etc.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <obo:IAO_0000111>person</obo:IAO_0000111>
+        <obo:IAO_0000115>An instance of a human being (Homo sapiens)</obo:IAO_0000115>
+        <obo:IAO_0000115>The most general classification of a person</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Melissa Haendel</obo:IAO_0000117>
+        <obo:IAO_0000118></obo:IAO_0000118>
+        <rdfs:comment>A person</rdfs:comment>
+        <rdfs:label>person</rdfs:label>
+        <rdfs:label xml:lang="en">person</rdfs:label>
     </owl:Class>
     
 
