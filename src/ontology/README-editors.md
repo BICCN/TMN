@@ -65,12 +65,9 @@ There are two ways to include new classes in an import module
 
 After doing this, you can run
 
-`./run.sh make all_imports`
+`sh run.sh make all_imports`
 
 to regenerate imports.
-
-Note: the TMN_terms.txt file may include 'starter' classes seeded from
-the ontology starter kit. It is safe to remove these.
 
 ## Design patterns
 
@@ -88,7 +85,7 @@ specified on a per-term basis in the TSV file.
 Design pattern docs are checked for validity via Travis, but can be
 tested locally using
 
-`./run.sh make patterns`
+`sh run.sh make patterns`
 
 In addition to running standard tests, this command generates an owl
 file (`src/patterns/pattern.owl`), which demonstrates the relationships
@@ -100,7 +97,7 @@ added to `src/patterns/pattern.owl` for all imports generated in
 
 To compile design patterns to terms run:
 
-`./run.sh make ../patterns/definitions.owl`
+`sh run.sh make ../patterns/definitions.owl`
 
 This generates a file (`src/patterns/definitions.owl`).  You then need
 to add an import statement to the editor's file to import the
