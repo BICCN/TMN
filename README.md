@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/patrick-lloyd-ray/TMN.svg?branch=master)](https://travis-ci.org/BICCN/TMN)
-[![DOI](https://zenodo.org/badge/13996/patrick-lloyd-ray/TMN.svg)](https://zenodo.org/badge/latestdoi/13996/BICCN/TMN)
+[![Build Status](https://travis-ci.org/BICCN/TMN.svg?branch=master)](https://travis-ci.org/BICCN/TMN)
+[![DOI](https://zenodo.org/badge/13996/BICCN/TMN.svg)](https://zenodo.org/badge/latestdoi/13996/BICCN/TMN)
 
 # Techniques and Methods for Neuroscience Ontology
 This is the developers repository for a techniques and methods ontology to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like.
@@ -13,6 +13,10 @@ This is the developers repository for a techniques and methods ontology to suppo
 ### Stable release versions
 
 The latest version of the ontology can be found [here](TMN.owl)
+
+### Browsing
+
+The best way to browse TMN is to use Protege and open [the current release](TMN.owl) directly.
 
 ### Editors' version
 
