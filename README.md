@@ -87,7 +87,7 @@ Your Pull Request will be automatically tested. If there are problems, we will u
 
 ## Contact
 
-Please use this GitHub repository's [Issue tracker](issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+Please use this GitHub repository's [Issue tracker](http://github.com/BICCN/TMN/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
 
 ## Acknowledgements
 
