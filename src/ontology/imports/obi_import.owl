@@ -405,7 +405,15 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
+        <dc:description xml:lang="en-us">Description may include but is not limited to: an abstract,
+         table of contents, reference to a graphical representation
+         of content or a free-text account of the content.</dc:description>
+        <rdfs:comment xml:lang="en-us">An account of the content of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label>Description</rdfs:label>
+        <rdfs:label xml:lang="en-us">Description</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -421,6 +429,30 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
         <rdfs:label>Source</rdfs:label>
         <rdfs:label xml:lang="en-us">Source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <dc:description xml:lang="en-us">
+        Typically, a Title will be a name by which the resource is
+         formally known.
+    </dc:description>
+        <rdfs:comment xml:lang="en-us">A name given to the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label>Title</rdfs:label>
+        <rdfs:label xml:lang="en-us">Title</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+        <obo:IAO_0000117>Mark Miller</obo:IAO_0000117>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-11T13:47:29Z</dc:date>
     </owl:AnnotationProperty>
     
 

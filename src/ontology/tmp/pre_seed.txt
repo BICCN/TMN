@@ -1137,8 +1137,11 @@ http://purl.obolibrary.org/obo/valid_for_go_gp2term
 http://purl.obolibrary.org/obo/valid_for_go_ontology
 http://purl.obolibrary.org/obo/valid_for_gocam
 http://purl.org/dc/elements/1.1/date
+http://purl.org/dc/elements/1.1/description
 http://purl.org/dc/elements/1.1/source
+http://purl.org/dc/elements/1.1/title
 http://purl.org/dc/terms/creator
+http://purl.org/dc/terms/license
 http://purl.org/dc/terms/source
 http://purl.org/dc/terms/title
 http://purl.org/obo/owl/OBO_REL#role_of
