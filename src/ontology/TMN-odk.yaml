@@ -18,7 +18,6 @@ release_artefacts:
 import_group:
   products:
     - id: bfo
-    - id: ero 
     - id: obi
     - id: ro
 robot_java_args: '-Xmx16G'
