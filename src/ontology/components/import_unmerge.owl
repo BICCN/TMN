@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/tmn/imports/merged_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/tmn/imports/merged_import.owl"
+     xmlns:cl="http://purl.obolibrary.org/obo/cl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:go="http://purl.obolibrary.org/obo/go#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:obo1="http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/"
+     xmlns:pato="http://purl.obolibrary.org/obo/pato#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:chebi4="http://purl.obolibrary.org/obo/chebi#2"
+     xmlns:chebi5="http://purl.obolibrary.org/obo/chebi#3"
+     xmlns:chebi6="http://purl.obolibrary.org/obo/chebi#1"
+     xmlns:terms3="http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/"
+     xmlns:ubprop="http://purl.obolibrary.org/obo/ubprop#"
+     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
+     xmlns:oboInOwl2="oboInOwl:">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/tmn/components/import_unmerge.owl">
+    </owl:Ontology>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000273">
+    <owl:equivalentClass>
+        <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+                <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_1000175"/>
+                <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_prefix"/>
+                    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0000297"/>
+                </owl:Restriction>
+            </owl:intersectionOf>
+        </owl:Class>
+    </owl:equivalentClass>
+</owl:Class>
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000176">
+    <owl:equivalentClass>
+        <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+                <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_1000175"/>
+                <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_prefix"/>
+                    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0000297"/>
+                </owl:Restriction>
+            </owl:intersectionOf>
+        </owl:Class>
+    </owl:equivalentClass>
+</owl:Class>
+
+<!-- http://purl.obolibrary.org/obo/UO_0010048 -->
+
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0010048">
+    <owl:equivalentClass>
+        <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+                <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_1000013"/>
+                <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_prefix"/>
+                    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0000299"/>
+                </owl:Restriction>
+            </owl:intersectionOf>
+        </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000006"/>
+    <rdfs:comment>&quot;A substance unit which is equal to one millionth of a mole.&quot; [UOB:LTS]</rdfs:comment>
+    <rdfs:label>micromole</rdfs:label>
+    <oboInOwl2:hasExactSynonym>mmol</oboInOwl2:hasExactSynonym>
+</owl:Class>
+
+</rdf:RDF>
