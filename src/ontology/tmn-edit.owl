@@ -1,15 +1,33 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/TMN.owl#"
      xml:base="http://purl.obolibrary.org/obo/TMN.owl"
+     xmlns:cl="http://purl.obolibrary.org/obo/cl#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:go="http://purl.obolibrary.org/obo/go#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:obo1="http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/"
+     xmlns:pato="http://purl.obolibrary.org/obo/pato#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:chebi4="http://purl.obolibrary.org/obo/chebi#2"
+     xmlns:chebi5="http://purl.obolibrary.org/obo/chebi#3"
+     xmlns:chebi6="http://purl.obolibrary.org/obo/chebi#1"
+     xmlns:terms3="http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/"
+     xmlns:ubprop="http://purl.obolibrary.org/obo/ubprop#"
+     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
+     xmlns:oboInOwl2="oboInOwl:">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/TMN.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/tmn/imports/merged_import.owl"/>
         <dc:description>This is an ontology that captures techniques and methods in neuroscience to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like.</dc:description>
@@ -63,6 +81,24 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -521,8 +557,6 @@
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Patrick Ray</obo:IAO_0000117>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNARE-seq</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNARE-seq assay</obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNARE-seq2</obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNARE-seq2 assay</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1038/s12276-020-0420-2</obo:IAO_0000119>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-15T19:09:43Z</oboInOwl:creation_date>
@@ -670,9 +704,110 @@
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-10-04T22:12:23Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">single cell multiome ATAC + gene expression assay</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002631"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single-cell RNA sequencing assay wherein sparse fluorescently labeled single neurons are collected manually from freshly dissociated mouse brain tissue. Then single-labeled neurons with high purity are integrated with an in vitro transcription-based amplification protocol that preserves endogenous transcript ratios. Subsequently a double linear amplification method that uses unique molecule identifiers (UMIs) is used to generate individual mRNA counts. Two rounds of amplification follow.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIVA-seq</obo:IAO_0000118>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-05T20:19:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">double in vitro transcription with absoluted counts sequencing assay</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TMN_0000031"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single-cell RNA sequencing assay wherein sparse fluorescently labeled single neurons are collected manually from freshly dissociated mouse brain tissue. Then single-labeled neurons with high purity are integrated with an in vitro transcription-based amplification protocol that preserves endogenous transcript ratios. Subsequently a double linear amplification method that uses unique molecule identifiers (UMIs) is used to generate individual mRNA counts. Two rounds of amplification follow.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://doi.org/10.3791/58690</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TMN_0000017"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A light sheet tomography assay wherein the sample is imaged from the top using oblique light sheet fluorescence microscopy illumination and detection strategy and the imaged top portion of the tissue is removed by vibratome sectioning.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OLST</obo:IAO_0000118>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-05T20:22:10Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">oblique light sheet tomography assay</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TMN_0000032"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A light sheet tomography assay wherein the sample is imaged from the top using oblique light sheet fluorescence microscopy illumination and detection strategy and the imaged top portion of the tissue is removed by vibratome sectioning.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://doi.org/10.1101/132423</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://doi.org/10.17504/protocols.io.smwec7e</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TMN_0000001"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cyclic single molecule fluorescent in situ hybridization assay used to quantify the expression level of specific transcripts in tissue sections by direct labeling of individual RNA molecules.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osmFISH</obo:IAO_0000118>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-05T20:26:01Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">cyclic single-molecule fluorescence in situ hybridization assay</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TMN_0000033"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cyclic single molecule fluorescent in situ hybridization assay used to quantify the expression level of specific transcripts in tissue sections by direct labeling of individual RNA molecules.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://doi.org/10.1038/s41592-018-0175-z</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://doi.org/10.17504/protocols.io.psednbe</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TMN_0000022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single-cell RNA sequencing assay that involves the isolation of single nuclei and open chromatin tagmentation in the isolated nuclei using a transposase. The tagmented nuclei are then encapsulated in a droplet including both an oligo-dT-containing barcoded bead and a splint oligonucleotide, which links the tagmented gDNA fragments to the bead, enabling the bead to capture both mRNAs and open chromatin fragments. After mRNAs and gDNA fragments are released from the bead by heating, RT and PCR amplification are performed to generate a library of cDNA and open chromatin gDNA fragments.
+
+This is the second version of SNARE-seq.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNARE-seq2</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNARE-seq2 assay</obo:IAO_0000118>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-05T20:36:54Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">single-nucleus chromatin accessibility and mRNA expression sequencing assay version 2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TMN_0000034"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A SNARE-seq v2 assay that utilizes ATAC-seq as a part.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNARE-seq2 (ATAC-seq)</obo:IAO_0000118>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-05T20:43:10Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">single-nucleus chromatin accessibility and mRNA expression sequencing assay version 2 with assay for transposase-accessible chromatin using sequencing assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TMN_0000034"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A SNARE-seq v2 assay that utilizes RNA-seq as a part.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNARE-seq2 (RNA-seq)</obo:IAO_0000118>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-05T20:44:55Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">single-nucleus chromatin accessibility and mRNA expression sequencing assay version 2 with RNA sequencing assay</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
