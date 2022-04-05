@@ -629,7 +629,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TMN_0000025"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">A RNA sequencing assay that involves three levels of indexing.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://www.protocols.io/view/sci-rna-seq3-9yih7ue</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.protocols.io/view/sci-rna-seq3-9yih7ue</obo:IAO_0000119>
     </owl:Axiom>
     
 
@@ -648,7 +648,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TMN_0000026"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">An ATAC-seq assay that involves single-cell combinatorial indexing at three levels.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://www.protocols.io/view/sci-atac-seq3-be8mjhu6</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.protocols.io/view/sci-atac-seq3-be8mjhu6</obo:IAO_0000119>
     </owl:Axiom>
     
 
@@ -667,7 +667,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TMN_0000027"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">An ATAC-seq assay that involves use of the 10x sequencing technology assay for transposase-accessible chromatin using sequencing (ATAC-seq).</owl:annotatedTarget>
-        <obo:IAO_0000119>PERSON: Patrick Ray</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Patrick Ray</obo:IAO_0000119>
     </owl:Axiom>
     
 
