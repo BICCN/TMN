@@ -1,1 +1,481 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	duplicate_definition	eBioscience	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Cytopeia	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Exalpha Biological	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Apogee Flow Systems	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Exbio Antibodies	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Becton Dickinson (BD Biosciences)	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Dako Cytomation	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Millipore	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Antigenix	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Partec	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Beckman Coulter	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Advanced Instruments Inc. (AI Companies)	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Miltenyi Biotec	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	AES Chemunex	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Bentley Instruments	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Invitrogen	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Luminex	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	CytoBuoy	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	has_specified_output	textual definition	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.@en
+ERROR	duplicate_definition	is_specified_output_of	textual definition	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.@en
+ERROR	duplicate_definition	has_specified_input	textual definition	A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.@en
+ERROR	duplicate_definition	is_specified_input_of	textual definition	A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.@en
+ERROR	duplicate_definition	electrophoresis system	textual definition	A device that moves charged particles through a medium by using an electric field induced by electrodes.
+ERROR	duplicate_definition	gel electrophoresis system	textual definition	A device that moves charged particles through a medium by using an electric field induced by electrodes.
+ERROR	missing_label	oboInOwl:Subset	rdfs:label	
+ERROR	duplicate_label	realizes	rdfs:label	realizes@en
+ERROR	duplicate_label	realizes	rdfs:label	realizes@en
+ERROR	duplicate_label	immunocytochemistry	rdfs:label	immunocytochemistry
+ERROR	duplicate_label	immunocytochemistry	rdfs:label	immunocytochemistry
+ERROR	duplicate_label	electrophysiology assay	rdfs:label	electrophysiology assay
+ERROR	duplicate_label	electrophysiology assay	rdfs:label	electrophysiology assay
+ERROR	multiple_definitions	independent_continuant	textual definition	A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.@en
+ERROR	multiple_definitions	independent_continuant	textual definition	<b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en>
+ERROR	multiple_definitions	process	textual definition	An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.@en
+ERROR	multiple_definitions	process	textual definition	<p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en>
+ERROR	multiple_definitions	specifically_dependent_continuant	textual definition	A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.@en
+ERROR	multiple_definitions	specifically_dependent_continuant	textual definition	<b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1 i &lt; j n, ci and cj share no common parts, are such that for each 1 i n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en>
+ERROR	multiple_definitions	specifically_dependent_continuant	textual definition	<b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en>
+ERROR	multiple_definitions	generically dependent continuant	textual definition	A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.@en
+ERROR	multiple_definitions	generically dependent continuant	textual definition	<b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en>
+ERROR	multiple_definitions	B cell	textual definition	A lymphocyte of B lineage that is capable of B cell mediated immunity.
+ERROR	multiple_definitions	B cell	textual definition	A lymphocyte of B lineage with the phenotype CD19-positive, CD20-positive, and capable of B cell mediated immunity.
+ERROR	multiple_definitions	objective specification	textual definition	A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.@en
+ERROR	multiple_definitions	objective specification	textual definition	a directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.@en
+ERROR	multiple_definitions	data item	textual definition	An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.@en
+ERROR	multiple_definitions	data item	textual definition	a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.@en
+ERROR	multiple_definitions	information content entity	textual definition	A generically dependent continuant that is about some thing.@en
+ERROR	multiple_definitions	information content entity	textual definition	an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity@en
+ERROR	multiple_definitions	data about an ontology part	textual definition	Data about an ontology part is a data item about a part of an ontology, for example a term@en
+ERROR	multiple_definitions	data about an ontology part	textual definition	data about an ontology part is a data item about a part of an ontology, for example a term@en
+ERROR	multiple_definitions	failed exploratory term	textual definition	The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job@en
+ERROR	multiple_definitions	failed exploratory term	textual definition	The term was used used in an attempt to structure part of the ontology but in retrospect failed to do a good job@en
+ERROR	multiple_definitions	plan specification	textual definition	A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.@en
+ERROR	multiple_definitions	plan specification	textual definition	a directive information entity that when concretized it is realized in a process in which the bearer tries to achieve the objectives, in part by taking the actions specified. Plan specifications includes parts such as objective specification, action specifications and conditional specifications.@en
+ERROR	multiple_definitions	textual definition	textual definition	The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
+ERROR	multiple_definitions	textual definition	textual definition	The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
+ERROR	multiple_definitions	definition source	textual definition	<Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007@en>
+ERROR	multiple_definitions	definition source	textual definition	<formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007@en>
+ERROR	multiple_definitions	organizational term	textual definition	Term created to ease viewing/sort terms for development purpose, and will not be included in a release@en
+ERROR	multiple_definitions	organizational term	textual definition	term created to ease viewing/sort terms for development purpose, and will not be included in a release@en
+ERROR	multiple_definitions	denotator type	textual definition	A denotator type indicates how a term should be interpreted from an ontological perspective.
+ERROR	multiple_definitions	denotator type	textual definition	A denotator type indicates how a term should be interpreted from an ontological perspective.@en
+ERROR	multiple_definitions	named class expression	textual definition	A named class expression is a logical expression that is given a name. The name can be used in place of the expression.
+ERROR	multiple_definitions	named class expression	textual definition	A named class expression is a logical expression that is given a name. The name can be used in place of the expression.@en
+ERROR	multiple_definitions	planned process	textual definition	A process that realizes a plan which is the concretization of a plan specification.@en
+ERROR	multiple_definitions	planned process	textual definition	A processual entity that realizes a plan which is the concretization of a plan specification.@en
+ERROR	multiple_definitions	assay	textual definition	A planned process with the objective to produce information about some evaluant@en
+ERROR	multiple_definitions	assay	textual definition	A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.@en
+ERROR	multiple_definitions	reagent role	textual definition	A role inhering in a biological or chemical entity that is intended to be applied in a scientific technique to participate (or have molecular components that participate) in a chemical reaction that facilitates the generation of data about some entity distinct from the bearer, or the generation of some specified material output distinct from the bearer.@en
+ERROR	multiple_definitions	reagent role	textual definition	a role played by a molecular entity used to produce a chemical reaction to detect, measure, or produce other substances@en
+ERROR	multiple_definitions	imaging assay	textual definition	An assay that produces a picture of an entity.
+ERROR	multiple_definitions	imaging assay	textual definition	<An imaging assay is an assay to produce a picture of an entity. definition_source: OBI.@en>
+ERROR	multiple_definitions	radioactivity detection	textual definition	An assay in which a material's radioactivity is measured.@en
+ERROR	multiple_definitions	radioactivity detection	textual definition	An assay that measures the amount of radiation in the radioactive spectrum (alpha, beta or gamma rays) emitted from an input material.
+ERROR	multiple_definitions	mass spectrometry assay	textual definition	An assay that identifies the amount and type of material entities present in a sample by fragmenting the sample and measuring the mass-to-charge ratio of the resulting particles.
+ERROR	multiple_definitions	mass spectrometry assay	textual definition	This is a measuring method consisting of turning elements in a sample into ions, isolating them according to the ratio between the mass and charge numbers and detecting it electrically.
+ERROR	multiple_definitions	objective_achieved_by	textual definition	This relation obtains between a a objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.
+ERROR	multiple_definitions	objective_achieved_by	textual definition	This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.
+ERROR	multiple_definitions	RNA-seq assay	textual definition	An RNA sequencing assay that determines an RNA sequence by analyzing the transcibed regions of the genome and or to quantitate transcript abundance.
+ERROR	multiple_definitions	RNA-seq assay	textual definition	An assay in which sequencing technology (e.g. Solexa/454) is used to generate RNA sequence, analyse the transcibed regions of the genome, and or to quantitate transcript abundance@en
+ERROR	multiple_definitions	study design	textual definition	A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.
+ERROR	multiple_definitions	study design	textual definition	A study design is a plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.
+ERROR	multiple_definitions	sequencing assay	textual definition	An assay the uses chemical or biochemical means to infer the sequence of a biomaterial
+ERROR	multiple_definitions	sequencing assay	textual definition	the use of a chemical or biochemical means to infer the sequence of a biomaterial@en
+ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
+ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
+ERROR	multiple_definitions	bearer of	textual definition	Inverse of characteristic_of@en
+ERROR	multiple_definitions	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
+ERROR	multiple_definitions	tissue	textual definition	Anatomical structure, that consists of similar cells and intercellular matrix, aggregated according to genetically determined spatial relationships.
+ERROR	multiple_definitions	tissue	textual definition	Multicellular anatomical structure that consists of many cells of one or a few types, arranged in an extracellular matrix such that their long-range organisation is at least partly a repetition of their short-range organisation.
+ERROR	multiple_labels	entity	rdfs:label	entity
+ERROR	multiple_labels	entity	rdfs:label	entity@en
+ERROR	multiple_labels	continuant	rdfs:label	continuant
+ERROR	multiple_labels	continuant	rdfs:label	continuant@en
+ERROR	multiple_labels	occurrent	rdfs:label	occurrent
+ERROR	multiple_labels	occurrent	rdfs:label	occurrent@en
+ERROR	multiple_labels	independent_continuant	rdfs:label	independent continuant@en
+ERROR	multiple_labels	independent_continuant	rdfs:label	independent_continuant@en
+ERROR	multiple_labels	realizable entity	rdfs:label	realizable entity@en
+ERROR	multiple_labels	realizable entity	rdfs:label	realizable_entity@en
+ERROR	multiple_labels	specifically_dependent_continuant	rdfs:label	specifically dependent continuant@en
+ERROR	multiple_labels	specifically_dependent_continuant	rdfs:label	specifically_dependent_continuant@en
+ERROR	multiple_labels	role (bfo)	rdfs:label	role@en
+ERROR	multiple_labels	role (bfo)	rdfs:label	role (bfo)@en
+ERROR	multiple_labels	material_entity	rdfs:label	material entity@en
+ERROR	multiple_labels	material_entity	rdfs:label	material_entity@en
+ERROR	multiple_labels	part_of	rdfs:label	part of@en
+ERROR	multiple_labels	part_of	rdfs:label	part_of@en
+ERROR	multiple_labels	has_part	rdfs:label	has part@en
+ERROR	multiple_labels	has_part	rdfs:label	has_part@en
+ERROR	multiple_labels	cell	rdfs:label	cell
+ERROR	multiple_labels	cell	rdfs:label	cell@en
+ERROR	multiple_labels	neuron	rdfs:label	neuron
+ERROR	multiple_labels	neuron	rdfs:label	neuron@en
+ERROR	multiple_labels	textual definition	rdfs:label	definition
+ERROR	multiple_labels	textual definition	rdfs:label	definition@en
+ERROR	multiple_labels	textual definition	rdfs:label	textual definition
+ERROR	multiple_labels	denotator type	rdfs:label	denotator type
+ERROR	multiple_labels	denotator type	rdfs:label	denotator type@en
+ERROR	multiple_labels	universal	rdfs:label	universal
+ERROR	multiple_labels	universal	rdfs:label	universal@en
+ERROR	multiple_labels	defined class	rdfs:label	defined class
+ERROR	multiple_labels	defined class	rdfs:label	defined class@en
+ERROR	multiple_labels	named class expression	rdfs:label	named class expression
+ERROR	multiple_labels	named class expression	rdfs:label	named class expression@en
+ERROR	multiple_labels	imaging assay	rdfs:label	imaging assay
+ERROR	multiple_labels	imaging assay	rdfs:label	imaging assay@en
+ERROR	multiple_labels	radioactivity detection	rdfs:label	radioactivity detection
+ERROR	multiple_labels	radioactivity detection	rdfs:label	radioactivity detection@en
+ERROR	multiple_labels	RNA-seq assay	rdfs:label	RNA-seq assay
+ERROR	multiple_labels	RNA-seq assay	rdfs:label	RNA-seq assay@en
+ERROR	multiple_labels	sequencing assay	rdfs:label	sequencing assay
+ERROR	multiple_labels	sequencing assay	rdfs:label	sequencing assay@en
+ERROR	multiple_labels	inheres in	rdfs:label	characteristic of@en
+ERROR	multiple_labels	inheres in	rdfs:label	inheres in
+ERROR	multiple_labels	inheres in	rdfs:label	inheres in@en
+ERROR	multiple_labels	bearer of	rdfs:label	bearer of@en
+ERROR	multiple_labels	bearer of	rdfs:label	bearer_of@en
+ERROR	multiple_labels	bearer of	rdfs:label	has characteristic@en
+ERROR	multiple_labels	participates_in	rdfs:label	participates in@en
+ERROR	multiple_labels	participates_in	rdfs:label	participates_in@en
+ERROR	multiple_labels	has_participant	rdfs:label	has participant@en
+ERROR	multiple_labels	has_participant	rdfs:label	has_participant@en
+ERROR	multiple_labels	derives from (ro)	rdfs:label	derives from@en
+ERROR	multiple_labels	derives from (ro)	rdfs:label	derives from (ro)@en
+ERROR	multiple_labels	derives from (ro)	rdfs:label	derives_from@en
+ERROR	multiple_labels	derives into	rdfs:label	derived_into@en
+ERROR	multiple_labels	derives into	rdfs:label	derives into@en
+ERROR	multiple_labels	temporal relation	rdfs:label	temporal relation@en
+ERROR	multiple_labels	temporal relation	rdfs:label	temporally related to@en
+ERROR	multiple_labels	role_of	rdfs:label	role_of
+ERROR	multiple_labels	role_of	rdfs:label	role_of@en
+ERROR	label_whitespace	fluorescent in situ hybridization 	rdfs:label	fluorescent in situ hybridization 
+ERROR	label_whitespace	ion chromatography 	rdfs:label	ion chromatography 
+WARN	annotation_whitespace	continuant	IAO:0000602	<(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] >
+WARN	annotation_whitespace	continuant	IAO:0000602	<(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] >
+WARN	annotation_whitespace	continuant	IAO:0000602	<(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] >
+WARN	annotation_whitespace	continuant	IAO:0000602	<(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] >
+WARN	annotation_whitespace	occurrent	IAO:0000602	<(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] >
+WARN	annotation_whitespace	occurrent	IAO:0000602	<(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] >
+WARN	annotation_whitespace	independent_continuant	IAO:0000602	<(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] >
+WARN	annotation_whitespace	independent_continuant	IAO:0000602	<(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] >
+WARN	annotation_whitespace	independent_continuant	IAO:0000602	<(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] >
+WARN	annotation_whitespace	spatial region	IAO:0000602	<(forall (x y t) (if (and (SpatialRegion x) (continuantPartOfAt y x t)) (SpatialRegion y))) // axiom label in BFO2 CLIF: [036-001] >
+WARN	annotation_whitespace	spatial region	IAO:0000602	<(forall (x) (if (SpatialRegion x) (Continuant x))) // axiom label in BFO2 CLIF: [035-001] >
+WARN	annotation_whitespace	process	IAO:0000602	<(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] >
+WARN	annotation_whitespace	disposition	IAO:0000602	<(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] >
+WARN	annotation_whitespace	disposition	IAO:0000602	<(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] >
+WARN	annotation_whitespace	realizable entity	IAO:0000602	<(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] >
+WARN	annotation_whitespace	realizable entity	IAO:0000602	<(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] >
+WARN	annotation_whitespace	quality	IAO:0000602	<(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] >
+WARN	annotation_whitespace	quality	IAO:0000602	<(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] >
+WARN	annotation_whitespace	specifically_dependent_continuant	IAO:0000602	<(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] >
+WARN	annotation_whitespace	specifically_dependent_continuant	IAO:0000602	<(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] >
+WARN	annotation_whitespace	role (bfo)	IAO:0000602	<(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] >
+WARN	annotation_whitespace	generically dependent continuant	IAO:0000602	<(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] >
+WARN	annotation_whitespace	function	IAO:0000602	<(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] >
+WARN	annotation_whitespace	material_entity	IAO:0000602	<(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] >
+WARN	annotation_whitespace	material_entity	IAO:0000602	<(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] >
+WARN	annotation_whitespace	material_entity	IAO:0000602	<(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] >
+WARN	annotation_whitespace	calcium imaging assay	alternative term	 Ca imaging
+WARN	annotation_whitespace	calcium imaging assay	alternative term	 Ca2+ imaging assay
+WARN	annotation_whitespace	radioimmunoassay	IAO:0000112	A RAST test (radioallergosorbent test) is an example of radioimmunoassay. 
+WARN	annotation_whitespace	fluorescent in situ hybridization 	rdfs:label	fluorescent in situ hybridization 
+WARN	annotation_whitespace	retrograde labeling	IAO:0000112	Use of viral strains as markers of a cellâ€™s connectivity to the injection site. 
+WARN	annotation_whitespace	retrograde labeling	IAO:0000112	Use of viral strains as markers of a cell�s connectivity to the injection site. 
+WARN	annotation_whitespace	electrospray ionization	definition source	<http://en.wikipedia.org/wiki/Electrospray_ionization >
+WARN	annotation_whitespace	immunoassay	textual definition	An assay that enables the presence or the concentration of a substance in a material to be measured by exploiting the specific binding between an analyte and the corresponding detection antibody. 
+WARN	annotation_whitespace	ion chromatography 	rdfs:label	ion chromatography 
+WARN	annotation_whitespace	data	rdfs:comment	Most of the data subclasses canbe defined as output of a specific assay. 
+WARN	annotation_whitespace	phase contrast microscopy	textual definition	A microscopy technique that converts phase shifts in light passing through a transparent specimen to brightness changes in the image. 
+WARN	annotation_whitespace	multiphoton microscopy	textual definition	A microscopy technique that images samples by illuminating them with pulsed, long-wavelength light to excite fluorophores within the specimen being observed. 
+WARN	annotation_whitespace	datum label	curator note	<9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. >
+WARN	annotation_whitespace	textual definition	editor note	<2012-04-05: Barry SmithThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions' is terrible.Can you fix to something like:A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.Alan RuttenbergYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. On the specifics of the proposed definition:We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with. @en>
+WARN	annotation_whitespace	assay	editor note	<12/3/12: BP: the reference to the 'physical examination' is included to point out that a prediction is not an assay, as that does not require physical examiniation. >
+WARN	annotation_whitespace	reagent role	curator note	"Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.
+
+May 28 2013. Updated definition taken from ReO based on discussions initiated in Philly 2011 workshop.  Former defnition described a narrower view of reagents in chemistry that restricts bearers of the role to be chemical entities (\""a role played by a molecular entity used to produce a chemical reaction to detect, measure, or produce other substances\"").  Updated definition allows for broader view of reagents in the domain of biomedical research to include larger materials that have parts that participate chemically in a molecular reaction or interaction.
+"
+WARN	annotation_whitespace	categorical label	IAO:0000112	The labels 'positive' vs. 'negative', or 'left handed', 'right handed', 'ambidexterous', or 'strongly binding', 'weakly binding' , 'not binding', or '+++', '++', '+', '-' etc. form scales of categorical labels. 
+WARN	annotation_whitespace	device	editor note	"<2012-12-17 JAO: In common lab usage, there is a distinction made between devices and reagents that is difficult to model. Therefore we have chosen to specifically exclude reagents from the definition of \""device\"", and are enumerating the types of roles that a reagent can perform.2013-6-5 MHB: The following clarifications are outcomes of the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions. Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear. For example:(1) An HPLC machine is considered a device, but has a column that holds a stationary phase resin as an operational component. This resin qualifies as a device if it participates purely in size exclusion, but bears a reagent role that is realized in the running of a column if it interacts electrostatically or chemically with the evaluant. The container the resin is in (“the column”) considered alone is a device. So the entire column as well as the entire HPLC machine are devices that have a reagent as an operating part.(2) A pH meter is a device, but its electrode component bears a reagent role in virtue of its interacting directly with the evaluant in execution of an assay.(3) A gel running box is a device that has a metallic lead as a component that participates in a chemical reaction with the running buffer when a charge is passed through it. This metallic lead is considered to have a reagent role as a component of this device realized in the running of a gel.In the examples above, a reagent is an operational component of a device, but the device itself does not realize a reagent role (as bearing a reagent role is not transitive across the part_of relation). In this way, the asserted disjointness between a reagent and device holds, as both roles are never realized in the same bearer during execution of an assay. >"
+WARN	annotation_whitespace	sequence data	textual definition	"A measurement datum that representing the primary structure of a macromolecule(it's sequence) sometimes associated with an indicator of confidence of that measurement.
+"
+WARN	annotation_whitespace	questionnaire	editor note	<JT: It plays a role in collecting data that could be fleshed out more; but I'm thinking it is, in itself, an edited document. JZ: based on textual definition of edited document, it can be defined as N&S. I prefer to leave questionnaire as a document now. We can add more restrictions in the future and use that to determine it is an edited document or not. @en>
+WARN	annotation_whitespace	Edingburgh handedness inventory	textual definition	The Edinburgh Handedness Inventory is a set of questions used to assess the dominance of a person's right or left hand in everyday activities. @en
+WARN	annotation_whitespace	genetically modified material	textual definition	a material entity, organism or cell,  that is the output of a genetic transformation process. @en
+WARN	annotation_whitespace	3D structural organization datum	IAO:0000112	The atom coordinates found in a PDB (Protein Data Bank) file, generated by X Ray crystallography or NMR. 
+WARN	annotation_whitespace	3D structural organization datum	textual definition	A measurement datum that describes the structural orientation of a material entity in 3D space. 
+WARN	annotation_whitespace	binding datum	textual definition	A data item that states if two or more material entities have the disposition to form a complex, and if so, how strong that disposition is. 
+WARN	annotation_whitespace	genetic characteristics information	curator note	<MO definition:The genotype of the individual organism from which the biomaterial was derived. Individual genetic characteristics include polymorphisms, disease alleles, and haplotypes.examples in ArrayExpresswild_typeMutaMouse (CD2F1 mice with lambda-gt10LacZ integration)AlfpCre; SNF5 flox/knockoutp53 knock outC57Bl/6 gp130lox/lox MLC2vCRE/+fer-15; fem-1df/dfpat1-114/pat1-114 ade6-M210/ade6-M216 h+/h+ (cells are diploid)@en>
+WARN	annotation_whitespace	DNA sequence data	IAO:0000112	The part of a FASTA file that contains the letters ACTGGGAA 
+WARN	annotation_whitespace	DNA sequence data	curator note	<8/29/11 call: This is added after a request from Melanie and Yu. They should review it further. This should be a child of 'sequence data', and as of the current definition will infer there. >
+WARN	annotation_whitespace	binding	IAO:0000112	A peptide binding to an MHC molecule to form a complex. 
+WARN	annotation_whitespace	binding	textual definition	The process of material entities forming complexes. 
+WARN	annotation_whitespace	binding	editor note	<9/28/11 BP: The disposition referenced is the one of the ligand to bind the molecule. This along with binding as a function / process needs to be figured out with GO which is inconsistent at this point. >
+WARN	annotation_whitespace	paired-end library preparation	textual definition	A library preparation that results in the creation of a library of the 5' and 3' ends of DNA or cDNA fragments using adaptors and endonucleases. The preparation may or may not include cloning process. 
+WARN	annotation_whitespace	cell freezing medium	textual definition	A processed material that serves as a liquid vehicle for freezing cells for long term quiescent stroage, which contains chemicls needed to sustain cell viability across freeze-thaw cycles. 
+WARN	annotation_whitespace	histologic grade according to AJCC 7th edition	IAO:0000112	< G4: Undifferentiated>
+WARN	annotation_whitespace	histologic grade according to AJCC 7th edition	IAO:0000112	<G1:Well differentiated >
+WARN	annotation_whitespace	histologic grade for ovarian tumor according to a two-tier grading system	textual definition	A histologic grade for ovarian tumor that is from a two-tier histological classification of tumors. 
+WARN	annotation_whitespace	Stage 0 (AJCC 7th)	textual definition	A clinical tumor stage group according to AJCC 7th edition indicating a carcinoma in situ (or melanoma in situ for melanoma of the skin or germ cell neoplasia in situ for testicular germ cell tumors) and generally is considered to have no metastatic potential. 
+WARN	annotation_whitespace	Stage IIA (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion. 
+WARN	annotation_whitespace	Stage IIA1 (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion <4.0 cm in greatest dimension. 
+WARN	annotation_whitespace	Stage IIA2 (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion >4.0 cm in greatest dimension. 
+WARN	annotation_whitespace	Stage IIB (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina with obvious parametrial invasion. 
+WARN	annotation_whitespace	brain specimen	definition source	Chris Stoeckert, NCI BBRB 
+WARN	annotation_whitespace	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
+WARN	duplicate_exact_synonym	Stage IVB (AJCC 7th)	alternative term	Stage IVB
+WARN	duplicate_exact_synonym	Stage IVB (FIGO)	alternative term	Stage IVB
+WARN	duplicate_exact_synonym	Stage IVA (AJCC 7th)	alternative term	Stage IVA
+WARN	duplicate_exact_synonym	Stage IVA (FIGO)	alternative term	Stage IVA
+WARN	duplicate_exact_synonym	Stage IIIB (AJCC 7th)	alternative term	Stage IIIB
+WARN	duplicate_exact_synonym	Stage IIIB (FIGO)	alternative term	Stage IIIB
+WARN	duplicate_exact_synonym	Stage IIIA (AJCC 7th)	alternative term	Stage IIIA
+WARN	duplicate_exact_synonym	Stage IIIA (FIGO)	alternative term	Stage IIIA
+WARN	duplicate_exact_synonym	Stage IIB (AJCC 7th)	alternative term	Stage IIB
+WARN	duplicate_exact_synonym	Stage IIB (FIGO)	alternative term	Stage IIB
+WARN	duplicate_exact_synonym	Stage IIA (AJCC 7th)	alternative term	Stage IIA
+WARN	duplicate_exact_synonym	Stage IIA (FIGO)	alternative term	Stage IIA
+WARN	duplicate_exact_synonym	real-time PCR	alternative term	RT-PCR
+WARN	duplicate_exact_synonym	reverse transcribed polymerase chain reaction	alternative term	RT-PCR
+WARN	duplicate_exact_synonym	real-time PCR	alternative term	qPCR
+WARN	duplicate_exact_synonym	real time polymerase chain reaction assay	alternative term	qPCR
+WARN	duplicate_exact_synonym	pathologic lymph node stage for colon and rectum according to AJCC 7th edition	alternative term	<pN: Pathologic spread colon lymph nodes (AJCC 7th Edition)>
+WARN	duplicate_exact_synonym	pathologic lymph node stage for lung according to AJCC 7th edition	alternative term	<pN: Pathologic spread colon lymph nodes (AJCC 7th Edition)>
+WARN	duplicate_exact_synonym	mass volume percentage	alternative term	percent vol per vol
+WARN	duplicate_exact_synonym	volume percentage	alternative term	percent vol per vol
+WARN	duplicate_exact_synonym	magnetic resonance imaging	alternative term	MRI
+WARN	duplicate_exact_synonym	magnetic resonance imaging assay	alternative term	MRI
+WARN	duplicate_exact_synonym	in situ hybridization	alternative term	ISH
+WARN	duplicate_exact_synonym	in-situ hybridization assay	alternative term	ISH
+WARN	duplicate_exact_synonym	G4: Undifferentiated	alternative term	G4
+WARN	duplicate_exact_synonym	G4 (WHO)	alternative term	G4
+WARN	duplicate_exact_synonym	G3: Poorly differentiated	alternative term	G3
+WARN	duplicate_exact_synonym	G3 (WHO)	alternative term	G3
+WARN	duplicate_exact_synonym	G2: Moderately differentiated	alternative term	G2
+WARN	duplicate_exact_synonym	G2 (WHO)	alternative term	G2
+WARN	duplicate_exact_synonym	G1: Well differentiated	alternative term	G1
+WARN	duplicate_exact_synonym	G1 (WHO)	alternative term	G1
+WARN	duplicate_exact_synonym	fluorescent in situ hybridization 	alternative term	FISH
+WARN	duplicate_exact_synonym	chromosome organization assay by fluorescence in-situ hybridization	alternative term	FISH
+WARN	duplicate_exact_synonym	realizes	alternative term	executes
+WARN	duplicate_exact_synonym	enables	alternative term	executes
+WARN	duplicate_label_synonym	part_of	alternative term	part_of@en
+WARN	duplicate_label_synonym	has_part	alternative term	has_part@en
+WARN	duplicate_label_synonym	NMR instrument	alternative term	NMR instrument
+WARN	duplicate_label_synonym	bearer of	alternative term	bearer_of@en
+WARN	duplicate_label_synonym	participates_in	alternative term	participates_in@en
+WARN	duplicate_label_synonym	has_participant	alternative term	has_participant@en
+WARN	duplicate_label_synonym	derives from (ro)	alternative term	derives_from@en
+WARN	missing_definition	immaterial entity	textual definition	
+WARN	missing_definition	double-stranded DNA	textual definition	
+WARN	missing_definition	gene expression data	textual definition	
+WARN	missing_definition	kinase activity	textual definition	
+WARN	missing_definition	transferase activity	textual definition	
+WARN	missing_definition	transferase activity, transferring phosphorus-containing groups	textual definition	
+WARN	missing_definition	has measurement value	textual definition	
+WARN	missing_definition	has measurement unit label	textual definition	
+WARN	missing_definition	Viruses	textual definition	
+WARN	missing_definition	Euteleostomi	textual definition	
+WARN	missing_definition	Bacteria	textual definition	
+WARN	missing_definition	Archaea	textual definition	
+WARN	missing_definition	Eukaryota	textual definition	
+WARN	missing_definition	Euarchontoglires	textual definition	
+WARN	missing_definition	Tetrapoda	textual definition	
+WARN	missing_definition	Amniota	textual definition	
+WARN	missing_definition	Opisthokonta	textual definition	
+WARN	missing_definition	Bilateria	textual definition	
+WARN	missing_definition	Mammalia	textual definition	
+WARN	missing_definition	Vertebrata <vertebrates>	textual definition	
+WARN	missing_definition	Homo sapiens	textual definition	
+WARN	missing_definition	transcription factor binding site	textual definition	
+WARN	missing_definition	has component activity	textual definition	
+WARN	missing_definition	directly regulated by	textual definition	
+WARN	missing_definition	ends after	textual definition	
+WARN	missing_definition	immediately preceded by	textual definition	
+WARN	missing_definition	immediately precedes	textual definition	
+WARN	missing_definition	temporal relation	textual definition	
+WARN	missing_definition	has output	textual definition	
+WARN	missing_definition	causally upstream of, positive effect	textual definition	
+WARN	missing_definition	causally upstream of, negative effect	textual definition	
+WARN	missing_definition	enables	textual definition	
+WARN	missing_definition	output_of	textual definition	
+WARN	missing_definition	immediately causally downstream of	textual definition	
+WARN	missing_definition	phosphorylates	textual definition	
+WARN	missing_definition	helper property (not for use in curation)	textual definition	
+WARN	missing_definition	is kinase activity	textual definition	
+WARN	missing_definition	depends on	textual definition	
+WARN	missing_definition	causal relation between entities	textual definition	
+WARN	missing_definition	causally influenced by	textual definition	
+WARN	missing_definition	interaction relation helper property	textual definition	
+WARN	missing_definition	molecular interaction relation helper property	textual definition	
+WARN	missing_definition	acts upstream of or within, positive effect	textual definition	
+WARN	missing_definition	acts upstream of or within, negative effect	textual definition	
+WARN	missing_definition	causally upstream of or within, negative effect	textual definition	
+WARN	missing_definition	causally upstream of or within, positive effect	textual definition	
+WARN	missing_definition	temperature unit	textual definition	
+WARN	missing_definition	substance unit	textual definition	
+WARN	missing_definition	concentration unit	textual definition	
+WARN	missing_definition	volume unit	textual definition	
+WARN	missing_definition	frequency unit	textual definition	
+WARN	missing_definition	volumetric flow rate unit	textual definition	
+WARN	missing_definition	rate unit	textual definition	
+WARN	missing_definition	oboInOwl:Subset	textual definition	
+INFO	lowercase_definition	independent_continuant	textual definition	<b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en>
+INFO	lowercase_definition	process	textual definition	<p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en>
+INFO	lowercase_definition	disposition	IAO:0000600	<b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])@en>
+INFO	lowercase_definition	quality	IAO:0000600	<a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])@en>
+INFO	lowercase_definition	specifically_dependent_continuant	textual definition	<b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1 i &lt; j n, ci and cj share no common parts, are such that for each 1 i n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en>
+INFO	lowercase_definition	specifically_dependent_continuant	textual definition	<b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en>
+INFO	lowercase_definition	role (bfo)	IAO:0000600	<b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])@en>
+INFO	lowercase_definition	generically dependent continuant	textual definition	<b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en>
+INFO	lowercase_definition	part_of	textual definition	a core relation that holds between a part and its whole@en
+INFO	lowercase_definition	has_part	textual definition	a core relation that holds between a whole and its part@en
+INFO	lowercase_definition	realized in	IAO:0000600	<[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en>
+INFO	lowercase_definition	realizes	IAO:0000600	<to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en>
+INFO	lowercase_definition	preceded by	textual definition	<x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en>
+INFO	lowercase_definition	precedes	textual definition	<x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en>
+INFO	lowercase_definition	molecular data	textual definition	data that is about molecules or phenomena occurring at a molecular level (e.g. processes such as molecular interactions, chemical reactions, gene expression etc).
+INFO	lowercase_definition	objective specification	textual definition	a directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.@en
+INFO	lowercase_definition	data item	textual definition	a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.@en
+INFO	lowercase_definition	information content entity	textual definition	an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity@en
+INFO	lowercase_definition	data about an ontology part	textual definition	data about an ontology part is a data item about a part of an ontology, for example a term@en
+INFO	lowercase_definition	plan specification	textual definition	a directive information entity that when concretized it is realized in a process in which the bearer tries to achieve the objectives, in part by taking the actions specified. Plan specifications includes parts such as objective specification, action specifications and conditional specifications.@en
+INFO	lowercase_definition	definition source	textual definition	<formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007@en>
+INFO	lowercase_definition	organizational term	textual definition	term created to ease viewing/sort terms for development purpose, and will not be included in a release@en
+INFO	lowercase_definition	is quality measurement of	textual definition	m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q@en
+INFO	lowercase_definition	is quality measured as	textual definition	inverse of the relation of is quality measurement of@en
+INFO	lowercase_definition	regulator role	textual definition	a regulatory role involved with making and/or enforcing relevant legislation and governmental orders@en
+INFO	lowercase_definition	regulatory role	textual definition	a role which inheres in material entities and is realized in the processes of making, enforcing or being defined by legislation or orders issued by a governmental body.@en
+INFO	lowercase_definition	material supplier role	textual definition	a role realized through the process of supplying materials such as animal subjects, reagents or other materials used in an investigation.@en
+INFO	lowercase_definition	reference substance role	textual definition	a role inhering in a material entity that is realized when  characteristics or responses elicited by the substance are used for comparison or reference.@en
+INFO	lowercase_definition	positive reference substance role	textual definition	"a reference role in which the characteristics or responses elicited by the substance playing the reference substance role are used to establish a \""100%\"" response"
+INFO	lowercase_definition	evaluant role	textual definition	a role that inheres in a material entity that is realized in an assay in which data is generated about the bearer of the evaluant role@en
+INFO	lowercase_definition	culture medium	textual definition	a processed material that provides the needed nourishment for microorganisms or cells grown in vitro.
+INFO	lowercase_definition	reagent role	textual definition	a role played by a molecular entity used to produce a chemical reaction to detect, measure, or produce other substances@en
+INFO	lowercase_definition	specimen role	textual definition	a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation@en
+INFO	lowercase_definition	adding a material entity into a target	textual definition	is a process with the objective to place a material entity bearing the 'material to be added role' into a material bearing the 'target of material addition role'.@en
+INFO	lowercase_definition	material to be added role	textual definition	material to be added role is a protocol participant role realized by a material which is added into a material bearing the target of material addition role in a material addition process@en
+INFO	lowercase_definition	zip	textual definition	<zip is a format standard of a digital entity that is conformant with the PKWARE .ZIP file format specification (http://www.pkware.com/index.php?option=com_content&task=view&id=59&Itemid=103/)@en>
+INFO	lowercase_definition	tar	textual definition	<tar is a format standard of a digital entity that is conformant with the tape archive file format as standardized by POSIX.1-1998, POSIX.1-2001, or any other tar format compliant with the GNU tar specification. (http://www.gnu.org/software/tar/manual/)@en>
+INFO	lowercase_definition	histological sample preparation	textual definition	histological sample preparation is the preparation of an input tissue via slicing and labeling to make tissue microstructure of interest visible in a future histology assay@en
+INFO	lowercase_definition	PCR product	textual definition	is double stranded DNA that is the specified output of a polymerase chain reaction@en
+INFO	lowercase_definition	nucleic acid template role	textual definition	a reference substance role which inheres in nucleic acid material entity and is realized in the process of using the nucleic acid bearing the template role as a reference during synthesis of a reverse copy.
+INFO	lowercase_definition	cloning insert role	textual definition	cloning insert role is a role which inheres in DNA or RNA and is realized by the process of being inserted into a cloning vector in a cloning process.@en
+INFO	lowercase_definition	reverse transcriptase	textual definition	<enzyme and has_function some GO:0003964 (RNA-directed DNA polymeraseactivity)@en>
+INFO	lowercase_definition	extract	textual definition	an extract is a material entity which results from an extraction process@en
+INFO	lowercase_definition	enzyme	textual definition	<(protein or rna) or has_part (protein or rna) andhas_function some GO:0003824 (catalytic activity)@en>
+INFO	lowercase_definition	polyacrylamide gel	textual definition	a material entity resulting from the polymerization of acrylamide with TEMED in some buffer solution@en
+INFO	lowercase_definition	adding material objective	textual definition	is the specification of an objective to add a material into a target material. The adding is asymmetric in the sense that the target material largely retains its identity@en
+INFO	lowercase_definition	analyte measurement objective	textual definition	an assay objective to determine the presence or concentration of an analyte in the evaluant@en
+INFO	lowercase_definition	agarose gel	textual definition	a material entity resulting from the polymerization of agarose after heating agarose suspended in some buffer solution@en
+INFO	lowercase_definition	assay objective	textual definition	an objective specification to determine a specified type of information about an evaluated entity (the material entity bearing evaluant role)@en
+INFO	lowercase_definition	target of material addition role	textual definition	target of material addition role is a role realized by an entity into which a material is added in a material addition process
+INFO	lowercase_definition	material transformation objective	textual definition	an objective specifiction that creates an specific output object from input materials.@en
+INFO	lowercase_definition	manufacturing objective	textual definition	is the objective to manufacture a material of a certain function (device)@en
+INFO	lowercase_definition	study design execution	textual definition	a planned process that carries out a study design
+INFO	lowercase_definition	reverse transcribed polymerase chain reaction	textual definition	reverse transcribe pcr is a process which allow amplification of cDNA during a pcr reaction while the cDNA results from a retrotranscription of messenger RNA isolated from a material entity.
+INFO	lowercase_definition	scattered molecular aggregate	textual definition	a material entity that consists of all the molecules of a specific type that are located in some bounded region and which is part of a more massive material entity that has parts that are other such aggregates@en
+INFO	lowercase_definition	material separation objective	textual definition	is an objective to transform a material entity into spatially separated components.
+INFO	lowercase_definition	has grain	textual definition	the relation of the cells in the finger of the skin to the finger, in which an indeterminate number of grains are parts of the whole by virtue of being grains in a collective that is part of the whole, and in which removing one granular part does not nec- essarily damage or diminish the whole. Ontological Whether there is a fixed, or nearly fixed number of parts - e.g. fingers of the hand, chambers of the heart, or wheels of a car - such that there can be a notion of a single one being missing, or whether, by contrast, the number of parts is indeterminate - e.g., cells in the skin of the hand, red cells in blood, or rubber molecules in the tread of the tire of the wheel of the car.
+INFO	lowercase_definition	material combination	textual definition	is a material processing with the objective to combine two or more material entities as input into a single material entity as output.
+INFO	lowercase_definition	sample from organism	textual definition	a material obtained from an organism in order to be a representative of the whole
+INFO	lowercase_definition	material combination objective	textual definition	is an objective to obtain an output material that contains several input materials.
+INFO	lowercase_definition	immunoprecipitation	textual definition	is a process which realizes a material separation objective by relying on antibodies to specifically binding to material entity
+INFO	lowercase_definition	library preparation	textual definition	is a process which results in the creation of a library from fragments of DNA using cloning vectors or oligonucleotides with the role of adaptors.
+INFO	lowercase_definition	GenePattern software	textual definition	a software that provides access to more than 100 tools for gene expression analysis, proteomics, SNP analysis and common data processing tasks.
+INFO	lowercase_definition	paired-end library	textual definition	is a collection of short paired tags from the two ends of DNA fragments are extracted and covalently linked as ditag constructs
+INFO	lowercase_definition	single fragment library	textual definition	is a collection of short tags from DNA fragments, are extracted and covalently linked as single tag constructs
+INFO	lowercase_definition	primary structure of DNA macromolecule	textual definition	a quality of a DNA molecule that inheres in its bearer due to the order of its DNA nucleotide residues.
+INFO	lowercase_definition	material maintenance	textual definition	a process with that achieves the objective to maintain some or all of the characteristics of an input material over time
+INFO	lowercase_definition	pre-mortem specimen	textual definition	a specimen that was taken from a live organism
+INFO	lowercase_definition	RNA extract	textual definition	an extract which is the output of an extraction process in which RNA molecules are isolated from a specimen.
+INFO	lowercase_definition	post mortem specimen	textual definition	a specimen that was taken from a dead organism
+INFO	lowercase_definition	service provider role	textual definition	is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person
+INFO	lowercase_definition	labeled nucleic acid extract	textual definition	a labeled specimen that is the output of a labeling process and has grain labeled nucleic acid for detection of the nucleic acid in future experiments.
+INFO	lowercase_definition	genetically modified material	textual definition	a material entity, organism or cell,  that is the output of a genetic transformation process. @en
+INFO	lowercase_definition	genetic transformation objective	textual definition	a material transformation objective aims to create genetically modified organism or cell@en
+INFO	lowercase_definition	genetic population background information	textual definition	a genetic characteristics information which is a part of genotype information that identifies the population of organisms@en
+INFO	lowercase_definition	genotype information	textual definition	a genetic characteristics information that is about the genetic material of an organism and minimally includes information about the genetic background and can in addition contain information about specific alleles, genetic modifications, etc.@en
+INFO	lowercase_definition	genetic alteration information	textual definition	a genetic characteristics information that is about known changes or the lack thereof from the genetic background, including allele information, duplication, insertion, deletion, etc.@en
+INFO	lowercase_definition	genetic characteristics information	textual definition	a data item that is about genetic material including polymorphisms, disease alleles, and haplotypes.@en
+INFO	lowercase_definition	molecular-labeled material	textual definition	a material entity that is the specified output of an addition of molecular label process that aims to label some molecular target to allow for its detection in a detection of molecular label assay
+INFO	lowercase_definition	leave one out cross validation method	textual definition	<is a data transformation : leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data>
+INFO	lowercase_definition	decapitated organism	textual definition	decapitated organism is an organism which has had it's head removed@en
+INFO	lowercase_definition	genetically modified organism	textual definition	an organism that is the output of a genetic transformation process@en
+INFO	lowercase_definition	polymerization	textual definition	polymerization is process by which molecular entity of small mass are aggregated in motifs over the course of a chemical reaction catalyzed by enzymes or other molecular entities acting as catalyst. polymerization results in molecular entity of high molecular weight@en
+INFO	lowercase_definition	decapitation	textual definition	decapitation is a process by which the head of a living organism is physically removed from the body, usually resulting in rapid death (in the case of Rhodnius prolixus, it might take a bit longer..)@en
+INFO	lowercase_definition	nucleic acid hybridization	textual definition	a planned process by which totally or partially complementary, single-stranded nucleic acids are  combined into a single molecule called heteroduplex or homoduplex to an extent depending on the amount of complementarity.@en
+INFO	lowercase_definition	adding substance to cell culture	textual definition	is process in which a material substance is added to a cell culture@en
+INFO	lowercase_definition	collecting specimen from organism	textual definition	a process with the objective to obtain a material entity that was part of an organism for potential future use in an investigation@en
+INFO	lowercase_definition	material component separation	textual definition	a material processing in which components of an input material become segregated in space@en
+INFO	lowercase_definition	excision	textual definition	the use physical means to remove a portion of a substance from the rest@en
+INFO	lowercase_definition	maintaining cell culture	textual definition	a protocol application in which cells are kept alive in a defined environment outside of an organism.  part of cell_culturing@en
+INFO	lowercase_definition	artificially induced reverse transcription	textual definition	a protocol with the objective to transcribe single-stranded RNA into complementary DNA (cDNA)@en
+INFO	lowercase_definition	establishing cell culture	textual definition	a process through which a new type of cell culture or cell line is created, either through the isolation and culture of one or more cells from a fresh source, or the deliberate experimental modification of an existing cell culture (e.g passaging a primary culture to become a secondary culture or line, or the immortalization or stable genetic modification of an existing culture or line).
+INFO	lowercase_definition	addition of molecular label	textual definition	a material processing technique intended to add a molecular label to some input material entity, to allow detection of the molecular target of this label in a detection of molecular label assay@en
+INFO	lowercase_definition	genetic transformation	textual definition	the introduction. alteration or integration of genetic material into a cell or organism@en
+INFO	lowercase_definition	preparative chromatography	textual definition	the use of a biomaterial's preferential affinity for either the mobile phase or the stationary phase to separate it from other materials of differing affinity@en
+INFO	lowercase_definition	sequencing assay	textual definition	the use of a chemical or biochemical means to infer the sequence of a biomaterial@en
+INFO	lowercase_definition	electrophoresis	textual definition	a protocol application that uses an electrical potential to move material through a defined matrix in order to separate it by its resistance to movement and its charge@en
+INFO	lowercase_definition	enzymatic amplification	textual definition	the use of enzymes to increase the number of molecules of a biomaterial@en
+INFO	lowercase_definition	recombinant vector cloning	textual definition	a planned process with the objective to insert genetic material into a cloning vector for future replication of the inserted material@en
+INFO	lowercase_definition	nucleic acid extraction	textual definition	a material separation to recover the nucleic acid fraction of an input material@en
+INFO	lowercase_definition	phage display library	textual definition	a phage display library is a collection of materials in which a mixture of genes or gene fragments is expressed and can be individually selected and amplified.@en
+INFO	lowercase_definition	adaptive immune receptor	textual definition	is a receptor produced by cells of the adaptive immune system with the purpose of binding epitopes.@en
+INFO	lowercase_definition	material to be added	textual definition	a material that is added to another one in a material combination process
+INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
+INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	participates_in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
+INFO	lowercase_definition	has_participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
+INFO	lowercase_definition	function of	textual definition	a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	quality of	textual definition	a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	role of	textual definition	a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	has function	textual definition	a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	has quality	textual definition	a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	has role	textual definition	a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	has disposition	textual definition	a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	disposition of	textual definition	inverse of has disposition
+INFO	lowercase_definition	derives from (ro)	textual definition	a relation between two distinct material entities, the new entity and the old entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity@en
+INFO	lowercase_definition	derives into	textual definition	a relation between two distinct material entities, the old entity and the new entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity@en
+INFO	lowercase_definition	location of	textual definition	a relation between two independent continuants, the location and the target, in which the target is entirely within the location@en
+INFO	lowercase_definition	located in	textual definition	a relation between two independent continuants, the target and the location, in which the target is entirely within the location@en
+INFO	lowercase_definition	has component process	textual definition	w 'has process component' p if p and w are processes,  w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
+INFO	lowercase_definition	overlaps	textual definition	x overlaps y if and only if there exists some z such that x has part z and z part of y
+INFO	lowercase_definition	has component	textual definition	w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
+INFO	lowercase_definition	regulates	textual definition	<process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2.>
+INFO	lowercase_definition	capable of part of	textual definition	c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p.
+INFO	lowercase_definition	has input	textual definition	<p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.>
+INFO	lowercase_definition	acts upstream of	textual definition	c acts upstream of p if and only if c enables some f that is involved in p' and p' occurs chronologically before p, is not part of p, and affects the execution of p. c is a material entity and f, p, p' are processes.
+INFO	lowercase_definition	acts upstream of or within	textual definition	c acts upstream of or within p if c is enables f, and f is causally upstream of or within p. c is a material entity and p is an process.
+INFO	lowercase_definition	characteristic of part of	textual definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
+INFO	lowercase_definition	part of structure that is capable of	textual definition	this relation holds between c and p when c is part of some c', and c' is capable of p.
+INFO	lowercase_definition	involved in	textual definition	c involved_in p if and only if c enables some process p', and p' is part of p
+INFO	lowercase_definition	enabled by	textual definition	inverse of enables
+INFO	lowercase_definition	regulated by	textual definition	inverse of regulates
+INFO	lowercase_definition	negatively regulated by	textual definition	inverse of negatively regulates
+INFO	lowercase_definition	positively regulated by	textual definition	inverse of positively regulates
+INFO	lowercase_definition	member of	textual definition	is member of is a mereological relation between a item and a collection.
+INFO	lowercase_definition	has member	textual definition	has member is a mereological relation between a collection and an item.
+INFO	lowercase_definition	input of	textual definition	inverse of has input
+INFO	lowercase_definition	causally downstream of	textual definition	inverse of upstream of
+INFO	lowercase_definition	causally upstream of	textual definition	p is causally upstream of q if and only if p precedes q and p and q are linked in a causal chain
+INFO	lowercase_definition	immediately causally upstream of	textual definition	p is immediately causally upstream of q iff both (a) p immediately precedes q and (b) p is causally upstream of q. In addition, the output of p  must be an input of q.
+INFO	lowercase_definition	causally upstream of or within	textual definition	p 'causally upstream or within' q iff (1) the end of p is before the end of q and (2) the execution of p exerts some causal influence over the outputs of q; i.e. if p was abolished or the outputs of p were to be modified, this would necessarily affect q.
+INFO	lowercase_definition	causally downstream of or within	textual definition	inverse of causally upstream of or within
+INFO	lowercase_definition	involved in regulation of	textual definition	c involved in regulation of p if c is involved in some p' and p' regulates some p
+INFO	lowercase_definition	involved in positive regulation of	textual definition	c involved in regulation of p if c is involved in some p' and p' positively regulates some p
+INFO	lowercase_definition	involved in negative regulation of	textual definition	c involved in regulation of p if c is involved in some p' and p' negatively regulates some p
+INFO	lowercase_definition	involved in or involved in regulation of	textual definition	c involved in or regulates p if and only if either (i) c is involved in p or (ii) c is involved in regulation of p
+INFO	lowercase_definition	causal relation between processes	textual definition	p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one of direct activation or direct inhibition. p may be upstream, downstream, part of or a container of q.
+INFO	lowercase_definition	has part structure that is capable of	textual definition	s 'has part structure that is capable of' p if and only if there exists some part x such that s 'has part' x and x 'capable of' p
+INFO	lowercase_definition	acts upstream of, positive effect	textual definition	c 'acts upstream of, positive effect' p if c is enables f, and f is causally upstream of p, and the direction of f is positive
+INFO	lowercase_definition	acts upstream of, negative effect	textual definition	c 'acts upstream of, negative effect' p if c is enables f, and f is causally upstream of p, and the direction of f is negative
+INFO	missing_superclass	entity	rdfs:subClassOf	
+INFO	missing_superclass	reagent	rdfs:subClassOf	
+INFO	missing_superclass	tissue fixation	rdfs:subClassOf	
+INFO	missing_superclass	immunoassay	rdfs:subClassOf	
+INFO	missing_superclass	immunotechnique	rdfs:subClassOf	
