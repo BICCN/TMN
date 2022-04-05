@@ -104,6 +104,7 @@ OBI:0002764 ## single-cell ATAC-seq
 OBI:0002951 ## fluorescence imaging-based cell morphology assay
 OBI:0002960 ## fluorescence imaging-based reporter gene assay
 OBI:0002985 ## magnetic resonance imaging assay
+OBI:0003095 ## decoding amplified targeted transcripts with fluorescence in situ hybridization assay
 OBI:0003117 ## 3D molecular structure determination assay
 OBI:0003118 ## electron-microscopy 3D molecular structure determination assay
 OBI:0003122 ## 3D cell structure determination assay
