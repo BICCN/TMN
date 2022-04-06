@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: tmn/releases/2022-04-05/tmn-base.owl
+data-version: tmn/releases/2022-04-06/tmn-base.owl
 ontology: tmn/tmn-base
 property_value: http://purl.org/dc/elements/1.1/description "This is an ontology that captures techniques and methods in neuroscience to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Techniques and Methods for Neuroscience Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-04-05" xsd:string
+property_value: owl:versionInfo "2022-04-06" xsd:string
 
 [Term]
 id: TMN:0000000
@@ -257,8 +257,6 @@ is_a: OBI:0002631
 property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
 property_value: IAO:0000118 "SNARE-seq" xsd:string
 property_value: IAO:0000118 "SNARE-seq assay" xsd:string
-property_value: IAO:0000118 "SNARE-seq2" xsd:string
-property_value: IAO:0000118 "SNARE-seq2 assay" xsd:string
 property_value: IAO:0000119 https://doi.org/10.1038/s12276-020-0420-2 xsd:string
 created_by: patrick-lloyd-ray
 creation_date: 2021-02-15T19:09:43Z
@@ -354,4 +352,59 @@ property_value: IAO:0000119 https://www.10xgenomics.com/products/single-cell-mul
 property_value: IAO:0000119 "PERSON: Patrick Ray" xsd:string
 created_by: patrick-lloyd-ray
 creation_date: 2021-10-04T22:12:23Z
+
+[Term]
+id: TMN:0000031
+name: double in vitro transcription with absoluted counts sequencing assay
+def: "A single-cell RNA sequencing assay wherein sparse fluorescently labeled single neurons are collected manually from freshly dissociated mouse brain tissue. Then single-labeled neurons with high purity are integrated with an in vitro transcription-based amplification protocol that preserves endogenous transcript ratios. Subsequently a double linear amplification method that uses unique molecule identifiers (UMIs) is used to generate individual mRNA counts. Two rounds of amplification follow." [] {http://purl.obolibrary.org/obo/IAO_0000119="http://doi.org/10.3791/58690"}
+is_a: OBI:0002631
+property_value: IAO:0000118 "DIVA-seq" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2022-04-05T20:19:26Z
+
+[Term]
+id: TMN:0000032
+name: oblique light sheet tomography assay
+def: "A light sheet tomography assay wherein the sample is imaged from the top using oblique light sheet fluorescence microscopy illumination and detection strategy and the imaged top portion of the tissue is removed by vibratome sectioning." [] {http://purl.obolibrary.org/obo/IAO_0000119="http://doi.org/10.1101/132423", http://purl.obolibrary.org/obo/IAO_0000119="http://doi.org/10.17504/protocols.io.smwec7e"}
+is_a: TMN:0000017 ! light sheet fluorescence microscopy assay
+property_value: IAO:0000118 "OLST" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2022-04-05T20:22:10Z
+
+[Term]
+id: TMN:0000033
+name: cyclic single-molecule fluorescence in situ hybridization assay
+def: "A cyclic single molecule fluorescent in situ hybridization assay used to quantify the expression level of specific transcripts in tissue sections by direct labeling of individual RNA molecules." [] {http://purl.obolibrary.org/obo/IAO_0000119="http://doi.org/10.1038/s41592-018-0175-z", http://purl.obolibrary.org/obo/IAO_0000119="http://doi.org/10.17504/protocols.io.psednbe"}
+is_a: TMN:0000001 ! fluorescence in situ hybridization assay
+property_value: IAO:0000118 "osmFISH" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2022-04-05T20:26:01Z
+
+[Term]
+id: TMN:0000034
+name: single-nucleus chromatin accessibility and mRNA expression sequencing assay version 2
+def: "A single-cell RNA sequencing assay that involves the isolation of single nuclei and open chromatin tagmentation in the isolated nuclei using a transposase. The tagmented nuclei are then encapsulated in a droplet including both an oligo-dT-containing barcoded bead and a splint oligonucleotide, which links the tagmented gDNA fragments to the bead, enabling the bead to capture both mRNAs and open chromatin fragments. After mRNAs and gDNA fragments are released from the bead by heating, RT and PCR amplification are performed to generate a library of cDNA and open chromatin gDNA fragments.\n\nThis is the second version of SNARE-seq." []
+is_a: TMN:0000022 ! single-nucleus chromatin accessibility and mRNA expression sequencing assay
+property_value: IAO:0000118 "SNARE-seq2" xsd:string
+property_value: IAO:0000118 "SNARE-seq2 assay" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2022-04-05T20:36:54Z
+
+[Term]
+id: TMN:0000035
+name: single-nucleus chromatin accessibility and mRNA expression sequencing assay version 2 with assay for transposase-accessible chromatin using sequencing assay
+def: "A SNARE-seq v2 assay that utilizes ATAC-seq as a part." []
+is_a: TMN:0000034 ! single-nucleus chromatin accessibility and mRNA expression sequencing assay version 2
+property_value: IAO:0000118 "SNARE-seq2 (ATAC-seq)" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2022-04-05T20:43:10Z
+
+[Term]
+id: TMN:0000036
+name: single-nucleus chromatin accessibility and mRNA expression sequencing assay version 2 with RNA sequencing assay
+def: "A SNARE-seq v2 assay that utilizes RNA-seq as a part." []
+is_a: TMN:0000034 ! single-nucleus chromatin accessibility and mRNA expression sequencing assay version 2
+property_value: IAO:0000118 "SNARE-seq2 (RNA-seq)" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2022-04-05T20:44:55Z
 
