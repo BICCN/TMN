@@ -9,6 +9,11 @@
           "sub": "http://purl.obolibrary.org/obo/TMN_0000013"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/TMN_0000001",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000033"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/TMN_0000004",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/TMN_0000005"
@@ -34,14 +39,34 @@
           "sub": "http://purl.obolibrary.org/obo/TMN_0000024"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/TMN_0000017",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000032"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/TMN_0000019",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/TMN_0000018"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/TMN_0000022",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000034"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/TMN_0000024",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/TMN_0000015"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/TMN_0000034",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000035"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/TMN_0000034",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000036"
         }
       ],
       "equivalentNodesSets": [],
@@ -63,11 +88,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-04-05"
+            "val": "2022-04-06"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/tmn/releases/2022-04-05/tmn-simple.json",
+        "version": "http://purl.obolibrary.org/obo/tmn/releases/2022-04-06/tmn-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -1096,14 +1121,6 @@
                 "val": "SNARE-seq assay"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "SNARE-seq2"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "SNARE-seq2 assay"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "https://doi.org/10.1038/s12276-020-0420-2"
               },
@@ -1402,6 +1419,238 @@
             }
           },
           "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000031",
+          "lbl": "double in vitro transcription with absoluted counts sequencing assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "DIVA-seq"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-04-05T20:19:26Z"
+              }
+            ],
+            "definition": {
+              "val": "A single-cell RNA sequencing assay wherein sparse fluorescently labeled single neurons are collected manually from freshly dissociated mouse brain tissue. Then single-labeled neurons with high purity are integrated with an in vitro transcription-based amplification protocol that preserves endogenous transcript ratios. Subsequently a double linear amplification method that uses unique molecule identifiers (UMIs) is used to generate individual mRNA counts. Two rounds of amplification follow.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000032",
+          "lbl": "oblique light sheet tomography assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "OLST"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-04-05T20:22:10Z"
+              }
+            ],
+            "definition": {
+              "val": "A light sheet tomography assay wherein the sample is imaged from the top using oblique light sheet fluorescence microscopy illumination and detection strategy and the imaged top portion of the tissue is removed by vibratome sectioning.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000033",
+          "lbl": "cyclic single-molecule fluorescence in situ hybridization assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "osmFISH"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-04-05T20:26:01Z"
+              }
+            ],
+            "definition": {
+              "val": "A cyclic single molecule fluorescent in situ hybridization assay used to quantify the expression level of specific transcripts in tissue sections by direct labeling of individual RNA molecules.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000034",
+          "lbl": "single-nucleus chromatin accessibility and mRNA expression sequencing assay version 2",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "SNARE-seq2"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "SNARE-seq2 assay"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-04-05T20:36:54Z"
+              }
+            ],
+            "definition": {
+              "val": "A single-cell RNA sequencing assay that involves the isolation of single nuclei and open chromatin tagmentation in the isolated nuclei using a transposase. The tagmented nuclei are then encapsulated in a droplet including both an oligo-dT-containing barcoded bead and a splint oligonucleotide, which links the tagmented gDNA fragments to the bead, enabling the bead to capture both mRNAs and open chromatin fragments. After mRNAs and gDNA fragments are released from the bead by heating, RT and PCR amplification are performed to generate a library of cDNA and open chromatin gDNA fragments.\n\nThis is the second version of SNARE-seq.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000035",
+          "lbl": "single-nucleus chromatin accessibility and mRNA expression sequencing assay version 2 with assay for transposase-accessible chromatin using sequencing assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "SNARE-seq2 (ATAC-seq)"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-04-05T20:43:10Z"
+              }
+            ],
+            "definition": {
+              "val": "A SNARE-seq v2 assay that utilizes ATAC-seq as a part.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000036",
+          "lbl": "single-nucleus chromatin accessibility and mRNA expression sequencing assay version 2 with RNA sequencing assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "SNARE-seq2 (RNA-seq)"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-04-05T20:44:55Z"
+              }
+            ],
+            "definition": {
+              "val": "A SNARE-seq v2 assay that utilizes RNA-seq as a part.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.org/dc/elements/1.1/description",
+          "lbl": "description",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+                "val": "true"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "dc-description"
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "http://purl.org/dc/elements/1.1/description"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/elements/1.1/title",
+          "lbl": "title",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+                "val": "true"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "dc-title"
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "http://purl.org/dc/elements/1.1/title"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/license",
+          "lbl": "license",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+                "val": "true"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "dcterms-license"
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "http://purl.org/dc/terms/license"
+              }
+            ]
+          },
+          "type": "PROPERTY"
         }
       ],
       "propertyChainAxioms": []
