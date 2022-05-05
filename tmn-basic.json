@@ -67,6 +67,11 @@
           "obj": "http://purl.obolibrary.org/obo/TMN_0000034",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/TMN_0000036"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/TMN_0000040",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000041"
         }
       ],
       "equivalentNodesSets": [],
@@ -88,11 +93,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-04-06"
+            "val": "2022-05-05"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/tmn/releases/2022-04-06/tmn-basic.json",
+        "version": "http://purl.obolibrary.org/obo/tmn/releases/2022-05-05/tmn-basic.json",
         "xrefs": []
       },
       "nodes": [
@@ -1524,6 +1529,161 @@
             ],
             "definition": {
               "val": "A SNARE-seq v2 assay that utilizes RNA-seq as a part.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000037",
+          "lbl": "nanopore DNA sequencing assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-05-05T17:35:14Z"
+              }
+            ],
+            "definition": {
+              "val": "A DNA sequencing assay that provides direct, real-time analysis of long DNA or RNA fragments by monitoring changes to an electrical current as nucleic acids are passed through a protein nanopore. The resulting signal is decoded to provide the specific DNA or RNA sequence.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000038",
+          "lbl": "single cell isoform RNA sequencing assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "ScISOr-seq"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-05-05T17:59:23Z"
+              }
+            ],
+            "definition": {
+              "val": "An isoform sequencing assay that begins with bulk tissue and identifies single-cell types and their full-length RNA isoforms without fluorescence-activated cell sorting.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000039",
+          "lbl": "single-nucleus methyl-3C sequencing assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "sn-m3C-seq"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-05-05T19:17:37Z"
+              }
+            ],
+            "definition": {
+              "val": "A single-cell RNA sequencing assay that jointly profiles chromatin conformation and DNA methylation information from the same cell.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000040",
+          "lbl": "single-nucleus methyl-C sequencing assay version 2",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "snmC-seq2"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-05-05T20:16:03Z"
+              }
+            ],
+            "definition": {
+              "val": "A library preparation method for single-nucleus methylome library preparation that provides significant improvements in read mapping, amount of artifactual reads, throughput, library complexity, and coverage uniformity over snmC-seq.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000041",
+          "lbl": "mC-seq3",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-05-05T21:09:57Z"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000042",
+          "lbl": "single-cell combinatorial indexing with WGBS methylation analysis version 2",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-05-05T21:34:40Z"
+              }
+            ],
+            "definition": {
+              "val": "The second version of the single-cell combinatorial indexing with WGBS methylation analysis.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000043",
+          "lbl": "multiplex immunoassay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "patrick-lloyd-ray"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-05-05T22:19:17Z"
+              }
+            ],
+            "definition": {
+              "val": "An immunoassay that uses magnetic beads to measure multiple analytes in a single assay.",
               "xrefs": []
             }
           },

@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: tmn/releases/2022-04-06/tmn-simple.owl
+data-version: tmn/releases/2022-05-05/tmn-simple.owl
 ontology: tmn/tmn-simple
 property_value: dc-description "This is an ontology that captures techniques and methods in neuroscience to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like." xsd:string
 property_value: dc-title "Techniques and Methods for Neuroscience Ontology" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-04-06" xsd:string
+property_value: owl:versionInfo "2022-05-05" xsd:string
 
 [Term]
 id: TMN:0000000
@@ -381,6 +381,58 @@ is_a: TMN:0000034 ! single-nucleus chromatin accessibility and mRNA expression s
 property_value: IAO:0000118 "SNARE-seq2 (RNA-seq)" xsd:string
 created_by: patrick-lloyd-ray
 creation_date: 2022-04-05T20:44:55Z
+
+[Term]
+id: TMN:0000037
+name: nanopore DNA sequencing assay
+def: "A DNA sequencing assay that provides direct, real-time analysis of long DNA or RNA fragments by monitoring changes to an electrical current as nucleic acids are passed through a protein nanopore. The resulting signal is decoded to provide the specific DNA or RNA sequence." [] {http://purl.obolibrary.org/obo/IAO_0000119="https://nanoporetech.com/applications/dna-nanopore-sequencing"}
+created_by: patrick-lloyd-ray
+creation_date: 2022-05-05T17:35:14Z
+
+[Term]
+id: TMN:0000038
+name: single cell isoform RNA sequencing assay
+def: "An isoform sequencing assay that begins with bulk tissue and identifies single-cell types and their full-length RNA isoforms without fluorescence-activated cell sorting." [] {http://purl.obolibrary.org/obo/IAO_0000119="PMID:30320766", http://purl.obolibrary.org/obo/IAO_0000119="https://doi.org/10.1038/nbt.4259"}
+property_value: IAO:0000118 "ScISOr-seq" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2022-05-05T17:59:23Z
+
+[Term]
+id: TMN:0000039
+name: single-nucleus methyl-3C sequencing assay
+def: "A single-cell RNA sequencing assay that jointly profiles chromatin conformation and DNA methylation information from the same cell." [] {http://purl.obolibrary.org/obo/IAO_0000119="https://doi.org/10.1038/s41592-019-0547-z"}
+property_value: IAO:0000118 "sn-m3C-seq" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2022-05-05T19:17:37Z
+
+[Term]
+id: TMN:0000040
+name: single-nucleus methyl-C sequencing assay version 2
+def: "A library preparation method for single-nucleus methylome library preparation that provides significant improvements in read mapping, amount of artifactual reads, throughput, library complexity, and coverage uniformity over snmC-seq." [] {http://purl.obolibrary.org/obo/IAO_0000119="http://doi.org/10.1038/s41467-018-06355-2"}
+property_value: IAO:0000118 "snmC-seq2" xsd:string
+created_by: patrick-lloyd-ray
+creation_date: 2022-05-05T20:16:03Z
+
+[Term]
+id: TMN:0000041
+name: mC-seq3
+is_a: TMN:0000040 ! single-nucleus methyl-C sequencing assay version 2
+created_by: patrick-lloyd-ray
+creation_date: 2022-05-05T21:09:57Z
+
+[Term]
+id: TMN:0000042
+name: single-cell combinatorial indexing with WGBS methylation analysis version 2
+def: "The second version of the single-cell combinatorial indexing with WGBS methylation analysis." []
+created_by: patrick-lloyd-ray
+creation_date: 2022-05-05T21:34:40Z
+
+[Term]
+id: TMN:0000043
+name: multiplex immunoassay
+def: "An immunoassay that uses magnetic beads to measure multiple analytes in a single assay." []
+created_by: patrick-lloyd-ray
+creation_date: 2022-05-05T22:19:17Z
 
 [Typedef]
 id: OBI:0000299
