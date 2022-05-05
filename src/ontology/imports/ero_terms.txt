@@ -38,3 +38,4 @@ ERO:0000007 ## technique
 ERO:0000401 ## cellular assay
 ERO:0001289 ## electrophysiological assay
 ERO:0000634 ## calcium imagaing assay
+ERO:0001362 ## immunoassay

@@ -11,12 +11,12 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/tmn/tmn-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/tmn/releases/2022-04-06/tmn-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/tmn/releases/2022-05-05/tmn-base.owl"/>
         <dc:description>This is an ontology that captures techniques and methods in neuroscience to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like.</dc:description>
         <dc:title>Techniques and Methods for Neuroscience Ontology</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-06</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -150,6 +150,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000626 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000626"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0001271 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001271"/>
@@ -165,6 +171,12 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0002176 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002176"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002575 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002575"/>
     
 
 
@@ -788,6 +800,118 @@ This is the second version of SNARE-seq.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-05T20:44:55Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">single-nucleus chromatin accessibility and mRNA expression sequencing assay version 2 with RNA sequencing assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000626"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DNA sequencing assay that provides direct, real-time analysis of long DNA or RNA fragments by monitoring changes to an electrical current as nucleic acids are passed through a protein nanopore. The resulting signal is decoded to provide the specific DNA or RNA sequence.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-05T17:35:14Z</oboInOwl:creation_date>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nanopore DNA sequencing assay</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TMN_0000037"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DNA sequencing assay that provides direct, real-time analysis of long DNA or RNA fragments by monitoring changes to an electrical current as nucleic acids are passed through a protein nanopore. The resulting signal is decoded to provide the specific DNA or RNA sequence.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://nanoporetech.com/applications/dna-nanopore-sequencing</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002575"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002631"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An isoform sequencing assay that begins with bulk tissue and identifies single-cell types and their full-length RNA isoforms without fluorescence-activated cell sorting.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ScISOr-seq</obo:IAO_0000118>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-05T17:59:23Z</oboInOwl:creation_date>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single cell isoform RNA sequencing assay</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TMN_0000038"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An isoform sequencing assay that begins with bulk tissue and identifies single-cell types and their full-length RNA isoforms without fluorescence-activated cell sorting.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:30320766</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1038/nbt.4259</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002631"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single-cell RNA sequencing assay that jointly profiles chromatin conformation and DNA methylation information from the same cell.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sn-m3C-seq</obo:IAO_0000118>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-05T19:17:37Z</oboInOwl:creation_date>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single-nucleus methyl-3C sequencing assay</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TMN_0000039"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single-cell RNA sequencing assay that jointly profiles chromatin conformation and DNA methylation information from the same cell.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1038/s41592-019-0547-z</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002631"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A library preparation method for single-nucleus methylome library preparation that provides significant improvements in read mapping, amount of artifactual reads, throughput, library complexity, and coverage uniformity over snmC-seq.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snmC-seq2</obo:IAO_0000118>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-05T20:16:03Z</oboInOwl:creation_date>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single-nucleus methyl-C sequencing assay version 2</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TMN_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A library preparation method for single-nucleus methylome library preparation that provides significant improvements in read mapping, amount of artifactual reads, throughput, library complexity, and coverage uniformity over snmC-seq.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://doi.org/10.1038/s41467-018-06355-2</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TMN_0000040"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-05T21:09:57Z</oboInOwl:creation_date>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mC-seq3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600047"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The second version of the single-cell combinatorial indexing with WGBS methylation analysis.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-05T21:34:40Z</oboInOwl:creation_date>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single-cell combinatorial indexing with WGBS methylation analysis version 2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An immunoassay that uses magnetic beads to measure multiple analytes in a single assay.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-05T22:19:17Z</oboInOwl:creation_date>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multiplex immunoassay</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
