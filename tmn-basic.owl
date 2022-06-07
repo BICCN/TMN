@@ -11,11 +11,11 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/tmn/tmn-basic.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/tmn/releases/2022-05-05/tmn-basic.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/tmn/releases/2022-06-07/tmn-basic.owl"/>
         <dc:description>This is an ontology that captures techniques and methods in neuroscience to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like.</dc:description>
         <dc:title>Techniques and Methods for Neuroscience Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-05</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-07</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -33,7 +33,15 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -68,7 +76,7 @@ We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; 
 
 Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
 
-We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  </obo:IAO_0000116>
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -200,6 +208,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
@@ -218,9 +232,33 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
+        <rdfs:label>has_alternative_id</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <rdfs:label>has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label>has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -422,6 +460,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Patrick Ray</obo:IAO_0000119>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-11T00:39:16Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym xml:lang="en">retrograde labeling</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">retrograde tracing assay</rdfs:label>
     </owl:Class>
     
@@ -920,10 +959,56 @@ This is the second version of SNARE-seq.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/TMN_0000043 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TMN_0000044"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An immunoassay that uses magnetic beads to measure multiple analytes in a single assay.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrick-lloyd-ray</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-05T22:19:17Z</oboInOwl:creation_date>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multiplex immunoassay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000044">
+        <obo:IAO_0000115 xml:lang="en">An assay that enables the presence or the concentration of a substance in a material to be measured by exploiting the specific binding between an analyte and the corresponding detection antibody.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0002-5260-9315"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-07T16:53:51Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">immunoassay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000045">
+        <obo:IAO_0000115 xml:lang="en">An imaging assay that is designed to show the calcium (Ca2+) levels of a tissue or medium.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0002-5260-9315"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-07T16:56:02Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym xml:lang="en">Ca imaging</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">Ca imaging assay</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">Ca2+ imaging</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">Ca2+ imaging assay</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">calcium imaging assay</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TMN_0000045"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">An imaging assay that is designed to show the calcium (Ca2+) levels of a tissue or medium.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Calcium_imaging</obo:IAO_0000119>
+        <terms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERO:0000634</terms:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000046">
+        <obo:IAO_0000115 xml:lang="en">An assay that generates data about the presence, quantity, structure, function, behavior, or activity of cells, or a process that occurs at a cellular level of anatomical granularity (includes subcellular structures and organelles).</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0002-5260-9315"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-07T16:59:58Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym xml:lang="en">cell analysis</oboInOwl:hasBroadSynonym>
+        <rdfs:label xml:lang="en">cellular assay</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

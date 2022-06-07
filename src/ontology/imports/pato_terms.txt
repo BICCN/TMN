@@ -1,18 +1,18 @@
-PATO:0000018
-PATO:0000051
-PATO:0000117
-PATO:0000125
-PATO:0000169
-PATO:0000918
-PATO:0001018
-PATO:0001241
-PATO:0001291
-PATO:0001296
-PATO:0001300
-PATO:0001421
-PATO:0001422
-PATO:0001710
-PATO:0001739
-PATO:0001740
-PATO:0001741
-PATO:0001995
+PATO:0000018 ## fluorescence
+PATO:0000051 ## morphology
+PATO:0000117 ## size
+PATO:0000125 ## mass
+PATO:0000169 ## viability
+PATO:0000918 ## volume
+PATO:0001018 ## physical quality
+PATO:0001241 ## physical object quality
+PATO:0001291 ## electromagnetic (EM) radiation quality
+PATO:0001296 ## luminous flux
+PATO:0001300 ## optical quality
+PATO:0001421 ## alive
+PATO:0001422 ## dead
+PATO:0001710 ## 3-D extent
+PATO:0001739 ## radiation quality
+PATO:0001740 ## activity (of a radionuclide)
+PATO:0001741 ## radioactive
+PATO:0001995 ## organismal quality

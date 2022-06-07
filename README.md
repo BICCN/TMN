@@ -28,14 +28,7 @@ Editors of this ontology should use the edit version, [src/ontology/TMN-edit.owl
 Following best practices for ontology development, we attempt to reuse as many terms as we are able and attempt a rather modular approach to development. Although there are many ways to add to or edit the ontology, we try to stick to three main methods: 
 
 1. When adding external terms (from other ontologies): Use [ODK import](src/ontology/imports/) functionality for importing terms. Simply create a branch, add the terms you would like to the .txt file of the source ontology of the term you wish to add, and make a pull request. If you are not comfortable with this process, simply provide a term request through our [issue tracker](http://github.com/BICCN/TMN/issues). 
-2. When adding new terms, you may avail yourself to our templates: Use [ROBOT](http://robot.obolibrary.org/template) to convert spreadsheets to OWL. Edit the relevant file:
-  - [techniques](templates/techniques_template.csv) for techniques.
-  - [modalities](templates/modality_template.csv) for modalities.
-  - [methods](templates/methods_template.csv) for methods.
-  - [assays](templates/assay_template.csv) for assays. 
-  - [devices](templates/devices_template.csv) for devices.
-  - [tools](templates/tools_template.csv) for tools.
-3. other terms: Edit [owlfile](src/ontology/TMN-edit.owl) in Protege.
+2. When adding new terms: Edit [owlfile](src/ontology/TMN-edit.owl) in Protege.
 
 # Files
 - [`README.md`](README.md) the document you are currently reading. 
@@ -78,8 +71,7 @@ These are the steps with their CLI commands. When using a GUI application the st
 2. `git checkout main` start on the `main` branch
 3. `git checkout -b your-branch-name` create a new branch named for the change you're making
 4. make your changes
-5. `make sort` sort and normalize tables, for cleaner diffs
-6. `git status` and `git diff` inspect your changes
+5. `git status` and `git diff` inspect your changes
 7. `git add --update src/` add all updated files in the `src/` directory to staging
 8. `git commit --message "Description, issue #123"` commit staged changes with a message; it's good to include an issue number
 9. `git push --set-upstream origin your-branch-name` push your commit to GitHub
