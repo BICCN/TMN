@@ -1,7 +1,7 @@
-CL:0000000
-CL:0000010
-CL:0000236
-CL:0000540
-CL:0000542
-CL:0000578
-CL:0000842
+CL:0000000 ## cell
+CL:0000010 ## cultured cell
+CL:0000236 ## B cell
+CL:0000540 ## neuron
+CL:0000542 ## lymphocyte
+CL:0000578 ## experimentally modified cell in vitro
+CL:0000842 ## mononuclear cell

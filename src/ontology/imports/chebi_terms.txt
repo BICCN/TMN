@@ -1,9 +1,9 @@
-CHEBI:16670
-CHEBI:16991
-CHEBI:23367
-CHEBI:28619
-CHEBI:33250
-CHEBI:33696
-CHEBI:33697
-CHEBI:33839
-CHEBI:4705
+CHEBI:16670 ## peptide
+CHEBI:16991 ## deoxyribonucleic acid
+CHEBI:23367 ## molecular entity
+CHEBI:28619 ## acrylamide
+CHEBI:33250 ## atom
+CHEBI:33696 ## nucleic acid
+CHEBI:33697 ## ribonucleic acid
+CHEBI:33839 ## macromolecule
+CHEBI:4705 ## double-stranded DNA

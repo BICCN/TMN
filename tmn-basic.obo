@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: tmn/releases/2022-05-05/tmn-basic.owl
+data-version: tmn/releases/2022-06-07/tmn-basic.owl
 ontology: tmn/tmn-basic
 property_value: dc-description "This is an ontology that captures techniques and methods in neuroscience to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like." xsd:string
 property_value: dc-title "Techniques and Methods for Neuroscience Ontology" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-05-05" xsd:string
+property_value: owl:versionInfo "2022-06-07" xsd:string
 
 [Term]
 id: TMN:0000000
@@ -120,6 +120,7 @@ creation_date: 2021-02-11T00:26:12Z
 id: TMN:0000011
 name: retrograde tracing assay
 def: "An assay wherein a substance is taken up by an axon terminal and transported toward the soma to mark (or trace) some part of a cell." []
+synonym: "retrograde labeling" EXACT []
 property_value: IAO:0000117 "PERSON: Patrick Ray" xsd:string
 property_value: IAO:0000118 "retrograde tracing" xsd:string
 property_value: IAO:0000119 "PERSON: Patrick Ray" xsd:string
@@ -431,8 +432,35 @@ creation_date: 2022-05-05T21:34:40Z
 id: TMN:0000043
 name: multiplex immunoassay
 def: "An immunoassay that uses magnetic beads to measure multiple analytes in a single assay." []
+is_a: TMN:0000044 ! immunoassay
 created_by: patrick-lloyd-ray
 creation_date: 2022-05-05T22:19:17Z
+
+[Term]
+id: TMN:0000044
+name: immunoassay
+def: "An assay that enables the presence or the concentration of a substance in a material to be measured by exploiting the specific binding between an analyte and the corresponding detection antibody." []
+created_by: http://orcid.org/0000-0002-5260-9315
+creation_date: 2022-06-07T16:53:51Z
+
+[Term]
+id: TMN:0000045
+name: calcium imaging assay
+def: "An imaging assay that is designed to show the calcium (Ca2+) levels of a tissue or medium." [] {http://purl.org/dc/terms/source="ERO:0000634", http://purl.obolibrary.org/obo/IAO_0000119="http://en.wikipedia.org/wiki/Calcium_imaging"}
+synonym: "Ca imaging" EXACT []
+synonym: "Ca imaging assay" EXACT []
+synonym: "Ca2+ imaging" EXACT []
+synonym: "Ca2+ imaging assay" EXACT []
+created_by: http://orcid.org/0000-0002-5260-9315
+creation_date: 2022-06-07T16:56:02Z
+
+[Term]
+id: TMN:0000046
+name: cellular assay
+def: "An assay that generates data about the presence, quantity, structure, function, behavior, or activity of cells, or a process that occurs at a cellular level of anatomical granularity (includes subcellular structures and organelles)." []
+synonym: "cell analysis" BROAD []
+created_by: http://orcid.org/0000-0002-5260-9315
+creation_date: 2022-06-07T16:59:58Z
 
 [Typedef]
 id: curator_notes

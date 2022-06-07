@@ -4,6 +4,36 @@
       "domainRangeAxioms": [],
       "edges": [
         {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000003",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/UBERON_0000000"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000004",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/UBERON_0001062"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CARO_0001010"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CL_0000000"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/COB_0000080"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_23367",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/COB_0000080"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/CHMO_0000087",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/TMN_0000002"
@@ -29,9 +59,44 @@
           "sub": "http://purl.obolibrary.org/obo/TMN_0000023"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/GO_0007610",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/NBO_0000073"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/GO_0007610",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/NBO_0000347"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/GO_0008150",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/GO_0050878"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/GO_0065008",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/GO_0001505"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/GO_0065008",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/GO_0010817"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/GO_0065008",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/GO_0050803"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000100",
           "pred": "http://purl.obolibrary.org/obo/OBI_0000299",
           "sub": "http://purl.obolibrary.org/obo/TMN_0000006"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/APOLLO_SV_00000796"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000070",
@@ -46,12 +111,22 @@
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000070",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/TMN_0000043"
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000044"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000070",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000046"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000185",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/TMN_0000020"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000185",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000045"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000626",
@@ -72,6 +147,11 @@
           "obj": "http://purl.obolibrary.org/obo/OBI_0001271",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/TMN_0000029"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0002119",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHMO_0000087"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0002119",
@@ -164,6 +244,26 @@
           "sub": "http://purl.obolibrary.org/obo/TMN_0000042"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/PATO_0002266",
+          "pred": "http://purl.obolibrary.org/obo/RO_0000053",
+          "sub": "http://purl.obolibrary.org/obo/CARO_0000003"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SO_0000001",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SO_0000167"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SO_0000001",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SO_0000655"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SO_0000655",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SO_0000276"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/TMN_0000001",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/TMN_0000013"
@@ -232,11 +332,39 @@
           "obj": "http://purl.obolibrary.org/obo/TMN_0000040",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/TMN_0000041"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/TMN_0000044",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000043"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/UBERON_0000465",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CARO_0000003"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/UBERON_0001062",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/GO_0110165"
         }
       ],
       "equivalentNodesSets": [],
       "id": "http://purl.obolibrary.org/obo/tmn/tmn-base.json",
-      "logicalDefinitionAxioms": [],
+      "logicalDefinitionAxioms": [
+        {
+          "definedClassId": "http://purl.obolibrary.org/obo/APOLLO_SV_00000796",
+          "genusIds": [
+            "http://purl.obolibrary.org/obo/OBI_0000011"
+          ],
+          "restrictions": [
+            {
+              "fillerId": "http://purl.obolibrary.org/obo/IAO_0000100",
+              "propertyId": "http://purl.obolibrary.org/obo/OBI_0000299"
+            }
+          ]
+        }
+      ],
       "meta": {
         "basicPropertyValues": [
           {
@@ -257,14 +385,175 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-05-05"
+            "val": "2022-06-07"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/tmn/releases/2022-05-05/tmn-base.json",
+        "version": "http://purl.obolibrary.org/obo/tmn/releases/2022-06-07/tmn-base.json",
         "xrefs": []
       },
       "nodes": [
+        {
+          "id": "http://purl.obolibrary.org/obo/SO_0000704",
+          "lbl": "gene",
+          "meta": {
+            "definition": {
+              "val": "A region (or regions) that includes all of the sequence elements necessary to encode a functional transcript. A gene may include regulatory regions, transcribed regions and/or other functional sequence regions.",
+              "xrefs": []
+            }
+          }
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/APOLLO_SV_00000796",
+          "lbl": "dataset creating",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "creating a data set"
+              }
+            ],
+            "definition": {
+              "val": "A planned process that has a data set as its specified output.",
+              "xrefs": []
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "data set creation",
+                "xrefs": []
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "dataset creation",
+                "xrefs": []
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CARO_0000003",
+          "lbl": "connected anatomical structure",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "Note that the definition does not say 'generated exclusively by the co-ordinated expression of the organism's own genome', so this is still valid for cases where normal morphogenesis requires the actions of a facultative symbiont, or some looser dependency such as the a requirement for the presence of gut flora for normal gut development."
+              }
+            ],
+            "definition": {
+              "val": "Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism's own genome.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CARO_0001010",
+          "lbl": "organism or virus or viroid",
+          "meta": {
+            "definition": {
+              "val": "Material anatomical entity that is a member of an individual species or is a viral or viroid particle.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHMO_0000087",
+          "lbl": "fluorescence microscopy",
+          "meta": {
+            "definition": {
+              "val": "Any type of microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with light of specific wavelengths. These specimens are called fluorophores.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/COB_0000080",
+          "lbl": "complex of molecular entities",
+          "meta": {
+            "definition": {
+              "val": "A complex of two or more molecular entities that are not covalently bound.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/NBO_0000073",
+          "lbl": "chewing",
+          "meta": {
+            "definition": {
+              "val": "The act of repeated grinding, tearing, and or crushing with teeth or jaws.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/NBO_0000347",
+          "lbl": "gross motor coordination",
+          "meta": {
+            "definition": {
+              "val": "The coordination of large muscle groups and whole body movement.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SO_0000001",
+          "lbl": "region",
+          "meta": {
+            "definition": {
+              "val": "A sequence_feature with an extent greater than zero. A nucleotide region is composed of bases and a polypeptide region is composed of amino acids.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SO_0000167",
+          "lbl": "promoter",
+          "meta": {
+            "definition": {
+              "val": "A regulatory_region composed of the TSS(s) and binding sites for TF_complexes of the core transcription machinery. A region (DNA) to which RNA polymerase binds, to begin transcription.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SO_0000276",
+          "lbl": "miRNA",
+          "meta": {
+            "definition": {
+              "val": "Small, ~22-nt, RNA molecule that is the endogenous transcript of a miRNA gene (or the product of other non coding RNA genes. Micro RNAs are produced from precursor molecules (SO:0001244) that can form local hairpin structures, which ordinarily are processed (usually via the Dicer pathway) such that a single miRNA molecule accumulates from one arm of a hairpin precursor molecule. Micro RNAs may trigger the cleavage of their target molecules or act as translational repressors.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SO_0000655",
+          "lbl": "ncRNA",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "A ncRNA is a processed_transcript, so it may not contain parts such as transcribed_spacer_regions that are removed in the act of processing. For the corresponding primary_transcripts, please see term SO:0000483 nc_primary_transcript."
+              }
+            ],
+            "definition": {
+              "val": "An RNA transcript that does not encode for a protein rather the RNA molecule is the gene product.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
         {
           "id": "http://purl.obolibrary.org/obo/TMN_0000000",
           "lbl": "droplet-based single-cell RNA sequencing assay",
@@ -645,7 +934,14 @@
             "definition": {
               "val": "An assay wherein a substance is taken up by an axon terminal and transported toward the soma to mark (or trace) some part of a cell.",
               "xrefs": []
-            }
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "retrograde labeling",
+                "xrefs": []
+              }
+            ]
           },
           "type": "CLASS"
         },
@@ -1610,6 +1906,144 @@
               "val": "An immunoassay that uses magnetic beads to measure multiple analytes in a single assay.",
               "xrefs": []
             }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000044",
+          "lbl": "immunoassay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "http://orcid.org/0000-0002-5260-9315"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-06-07T16:53:51Z"
+              }
+            ],
+            "definition": {
+              "val": "An assay that enables the presence or the concentration of a substance in a material to be measured by exploiting the specific binding between an analyte and the corresponding detection antibody.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000045",
+          "lbl": "calcium imaging assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "http://orcid.org/0000-0002-5260-9315"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-06-07T16:56:02Z"
+              }
+            ],
+            "definition": {
+              "val": "An imaging assay that is designed to show the calcium (Ca2+) levels of a tissue or medium.",
+              "xrefs": []
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "Ca imaging",
+                "xrefs": []
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "Ca imaging assay",
+                "xrefs": []
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "Ca2+ imaging",
+                "xrefs": []
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "Ca2+ imaging assay",
+                "xrefs": []
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000046",
+          "lbl": "cellular assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "http://orcid.org/0000-0002-5260-9315"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-06-07T16:59:58Z"
+              }
+            ],
+            "definition": {
+              "val": "An assay that generates data about the presence, quantity, structure, function, behavior, or activity of cells, or a process that occurs at a cellular level of anatomical granularity (includes subcellular structures and organelles).",
+              "xrefs": []
+            },
+            "synonyms": [
+              {
+                "pred": "hasBroadSynonym",
+                "val": "cell analysis",
+                "xrefs": []
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000122",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CARO:0001001"
+              }
+            ]
+          }
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0010000",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CARO_0010000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0000465",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CARO:0000006"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/UBERON_0001062",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CARO_0000000"
+              }
+            ]
           },
           "type": "CLASS"
         }

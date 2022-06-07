@@ -1,111 +1,111 @@
-RO:0000052
-RO:0000053
-RO:0000056
-RO:0000057
-RO:0000058
-RO:0000059
-RO:0000079
-RO:0000080
-RO:0000081
-RO:0000085
-RO:0000086
-RO:0000087
-RO:0000091
-RO:0000092
-RO:0001000
-RO:0001001
-RO:0001015
-RO:0001025
-RO:0001900
-RO:0001901
-RO:0002013
-RO:0002014
-RO:0002015
-RO:0002017
-RO:0002018
-RO:0002022
-RO:0002023
-RO:0002024
-RO:0002025
-RO:0002086
-RO:0002087
-RO:0002090
-RO:0002131
-RO:0002180
-RO:0002211
-RO:0002212
-RO:0002213
-RO:0002215
-RO:0002216
-RO:0002222
-RO:0002233
-RO:0002234
-RO:0002259
-RO:0002263
-RO:0002264
-RO:0002304
-RO:0002305
-RO:0002314
-RO:0002323
-RO:0002327
-RO:0002328
-RO:0002329
-RO:0002331
-RO:0002333
-RO:0002334
-RO:0002335
-RO:0002336
-RO:0002350
-RO:0002351
-RO:0002352
-RO:0002353
-RO:0002404
-RO:0002405
-RO:0002410
-RO:0002411
-RO:0002412
-RO:0002418
-RO:0002427
-RO:0002428
-RO:0002429
-RO:0002430
-RO:0002431
-RO:0002434
-RO:0002436
-RO:0002447
-RO:0002448
-RO:0002449
-RO:0002450
-RO:0002464
-RO:0002481
-RO:0002500
-RO:0002501
-RO:0002502
-RO:0002506
-RO:0002559
-RO:0002563
-RO:0002564
-RO:0002566
-RO:0002575
-RO:0002578
-RO:0002581
-RO:0002582
-RO:0002584
-RO:0002595
-RO:0002596
-RO:0002597
-RO:0002598
-RO:0002608
-RO:0002629
-RO:0002630
-RO:0004031
-RO:0004032
-RO:0004033
-RO:0004034
-RO:0004035
-RO:0004046
-RO:0004047
-RO:0004049
-RO:0004050
-RO:0011002
-RO:0040042
+RO:0000052 ## characteristic of
+RO:0000053 ## bearer_of
+RO:0000056 ## participates_in
+RO:0000057 ## has participant
+RO:0000058 ## is concretized as
+RO:0000059 ## concretizes
+RO:0000079 ## function of
+RO:0000080 ## quality of
+RO:0000081 ## role of
+RO:0000085 ## has function
+RO:0000086 ## has quality
+RO:0000087 ## has role
+RO:0000091 ## has disposition
+RO:0000092 ## disposition of
+RO:0001000 ## derives from
+RO:0001001 ## derives into
+RO:0001015 ## location of
+RO:0001025 ## located in
+RO:0001900 ## temporal interpretation
+RO:0001901 ## derives into
+RO:0002013 ## has regulatory component activity
+RO:0002014 ## has negative regulatory component activity
+RO:0002015 ## has positive regulatory component activity
+RO:0002017 ## has component activity
+RO:0002018 ## has component process
+RO:0002022 ## directly regulated by
+RO:0002023 ## directly negatively regulated by
+RO:0002024 ## directly positively regulated by
+RO:0002025 ## has effector activity
+RO:0002086 ## ends after
+RO:0002087 ## immediately preceded by
+RO:0002090 ## immediately precedes
+RO:0002131 ## overlaps
+RO:0002180 ## has component
+RO:0002211 ## regulates
+RO:0002212 ## negatively regulates
+RO:0002213 ## positively regulates
+RO:0002215 ## capable of
+RO:0002216 ## capable of part of
+RO:0002222 ## temporally related to
+RO:0002233 ## has input
+RO:0002234 ## has output
+RO:0002259 ## defined by inverse
+RO:0002263 ## acts upstream of
+RO:0002264 ## acts upstream of or within
+RO:0002304 ## causally upstream of, positive effect
+RO:0002305 ## causally upstream of, negative effect
+RO:0002314 ## characteristic of part of
+RO:0002323 ## mereotopologically related to
+RO:0002327 ## enables
+RO:0002328 ## functionally related to
+RO:0002329 ## part of structure that is capable of
+RO:0002331 ## involved in
+RO:0002333 ## enabled by
+RO:0002334 ## regulated by
+RO:0002335 ## negatively regulated by
+RO:0002336 ## positively regulated by
+RO:0002350 ## member of
+RO:0002351 ## has member
+RO:0002352 ## input of
+RO:0002353 ## output of
+RO:0002404 ## causally downstream of
+RO:0002405 ## immediately causally downstream of
+RO:0002410 ## causally related to
+RO:0002411 ## causally upstream of
+RO:0002412 ## immediately causally upstream of
+RO:0002418 ## causally upstream of or within
+RO:0002427 ## causally downstream of or within
+RO:0002428 ## involved in regulation of
+RO:0002429 ## involved in positive regulation of
+RO:0002430 ## involved in negative regulation of
+RO:0002431 ## involved in or involved in regulation of
+RO:0002434 ## interacts with
+RO:0002436 ## molecularly interacts with
+RO:0002447 ## phosphorylates
+RO:0002448 ## directly regulates activity of
+RO:0002449 ## directly negatively regulates activity of
+RO:0002450 ## directly positively regulates activity of
+RO:0002464 ## helper property (not for use in curation)
+RO:0002481 ## is kinase activity
+RO:0002500 ## causal agent in process
+RO:0002501 ## causal relation between processes
+RO:0002502 ## depends on
+RO:0002506 ## causal relation between entities
+RO:0002559 ## causally influenced by
+RO:0002563 ## interaction relation helper property
+RO:0002564 ## molecular interaction relation helper property
+RO:0002566 ## causally influences
+RO:0002575 ## is direct form of
+RO:0002578 ## directly regulates
+RO:0002581 ## is a defining property chain axiom
+RO:0002582 ## is a defining property chain axiom where second argument is reflexive
+RO:0002584 ## has part structure that is capable of
+RO:0002595 ## causal relation between material entity and a process
+RO:0002596 ## capable of regulating
+RO:0002597 ## capable of negatively regulating
+RO:0002598 ## capable of positively regulating
+RO:0002608 ## process has causal agent
+RO:0002629 ## directly positively regulates
+RO:0002630 ## directly negatively regulates
+RO:0004031 ## enables subfunction
+RO:0004032 ## acts upstream of or within, positive effect
+RO:0004033 ## acts upstream of or within, negative effect
+RO:0004034 ## acts upstream of, positive effect
+RO:0004035 ## acts upstream of, negative effect
+RO:0004046 ## causally upstream of or within, negative effect
+RO:0004047 ## causally upstream of or within, positive effect
+RO:0004049 ## is positive form of
+RO:0004050 ## is negative form of
+RO:0011002 ## regulates activity of
+RO:0040042 ## is homeomorphic for
