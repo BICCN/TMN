@@ -5,6 +5,8 @@
 This is the developers repository for a techniques and methods ontology to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like.
 ## Versions
 
+[v2022-06-07](releases/tag/v2022-06-07)
+
 [v2022-04-06](releases/tag/v2022-04-06)
 
 [v2021-11-10](releases/tag/v2021-11-10)
