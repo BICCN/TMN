@@ -1,6 +1,6 @@
 Ontology ID,label,alternative term,definition,definition source,editor note,term editor,ontology term requester,term tracker item,logical type,logical note,parent class
 ID,A rdfs:label,An alternative term SPLIT=|,A definition SPLIT=|,A definition source SPLIT=|,A editor note SPLIT=|,A term editor SPLIT=|,A ontology term requester,A term tracker item,CLASS_TYPE,,C % SPLIT=|
-TMN:0000500,experimental approach,,"definition",definiton source,
+TMN:0000500,experimental approach,,"definition",definiton source,,,,,owl:class,,
 ILX:0739411,anatomical approach,anatomy,"Experimental approach focused on the bodily structure of living organisms.",,,,,,owl:class,,
 ILX:0739413,behavioral approach,behavioral,"Experimental approach focused on the mechanical activity or cognitive processes underlying mechanical activity of living organisms often in response to external sensory stimuli.",,,,,,owl:class,,
 ILX:0739394,cell morphological approach,cell morphology,"Experimental approach focused on the shape and structure of individual cells.",,,,,,owl:class,,
