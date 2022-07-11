@@ -39,6 +39,7 @@ http://purl.obolibrary.org/obo/OBI_0002176
 http://purl.obolibrary.org/obo/OBI_0002575
 http://purl.obolibrary.org/obo/OBI_0002631
 http://purl.obolibrary.org/obo/OBI_0002764
+http://purl.obolibrary.org/obo/OBI_0003094
 http://purl.obolibrary.org/obo/OBI_0500000
 http://purl.obolibrary.org/obo/OBI_0600045
 http://purl.obolibrary.org/obo/OBI_0600047
@@ -97,6 +98,8 @@ http://purl.obolibrary.org/obo/TMN_0000043
 http://purl.obolibrary.org/obo/TMN_0000044
 http://purl.obolibrary.org/obo/TMN_0000045
 http://purl.obolibrary.org/obo/TMN_0000046
+http://purl.obolibrary.org/obo/TMN_0000049
+http://purl.obolibrary.org/obo/TMN_0000050
 http://purl.obolibrary.org/obo/UBERON_0000000
 http://purl.obolibrary.org/obo/UBERON_0000122
 http://purl.obolibrary.org/obo/UBERON_0000465

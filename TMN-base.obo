@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: tmn/releases/2022-06-07/tmn-base.owl
+data-version: tmn/releases/2022-07-11/tmn-base.owl
 ontology: tmn/tmn-base
 property_value: http://purl.org/dc/elements/1.1/description "This is an ontology that captures techniques and methods in neuroscience to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Techniques and Methods for Neuroscience Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-06-07" xsd:string
+property_value: owl:versionInfo "2022-07-11" xsd:string
 
 [Term]
 id: APOLLO_SV:00000796
@@ -594,6 +594,23 @@ synonym: "cell analysis" BROAD []
 is_a: OBI:0000070
 created_by: http://orcid.org/0000-0002-5260-9315
 creation_date: 2022-06-07T16:59:58Z
+
+[Term]
+id: TMN:0000049
+name: human brain optimized light sheet microscopy assay
+def: "A light sheet fluorescence microscopy assay that employs high-speed scanning single-objective light sheet imaging with spectral multiplexing and cell-type encoding. Human brain samples are processed using a clearing and immunostaining approach called HuB.Clear which can generate optically clear, 5 mm thick, whole-mount brain slabs. High-field magnetic resonance imaging (MRI) data acquired on the intact, fixed brain prior to sectioning will provide a vital cross-reference for comparison while also facilitating registration of data to a common coordinate frameworks. HOLiS data will be analyzed to extract cell locations and cell type identities, generating databases that can be compared to standard neuroanatomical atlases, while also permitting careful examination of brain-wide patterns and inter-subject differences." [] {http://purl.obolibrary.org/obo/IAO_0000119="https://www.humanbrainmapping.org/files/2022/Annual%20Meeting%20Symposia/1511_Imaging_and_analysis_of_3D%5B1%5D.pdf"}
+is_a: TMN:0000017 ! light sheet fluorescence microscopy assay
+property_value: IAO:0000118 "HOLiS" xsd:string
+created_by: http://orcid.org/0000-0002-5260-9315
+creation_date: 2022-07-11T22:11:00Z
+
+[Term]
+id: TMN:0000050
+name: osmFISH
+def: "A non-barcoded and unamplified cyclic smFISH method (osmFISH) in which the number of targets scales linearly. In osmFISH, each RNA molecule is visualized as a diffraction limited spot after the binding of 20 nt long fluorescently labelled DNA probes. Multiple transcripts are targeted at each round of hybridization, separated by fluorescent color. After image acquisition, the detection probes are removed by formamide melting in preparation for the next round of hybridization." [] {http://purl.obolibrary.org/obo/IAO_0000119="https://doi.org/10.1038/s41592-018-0175-z"}
+is_a: OBI:0003094
+created_by: http://orcid.org/0000-0002-5260-9315
+creation_date: 2022-07-11T22:15:28Z
 
 [Term]
 id: UBERON:0000000

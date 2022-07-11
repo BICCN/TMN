@@ -1,7 +1,6 @@
 {
   "graphs": [
     {
-      "domainRangeAxioms": [],
       "edges": [
         {
           "obj": "http://purl.obolibrary.org/obo/TMN_0000001",
@@ -44,6 +43,11 @@
           "sub": "http://purl.obolibrary.org/obo/TMN_0000032"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/TMN_0000017",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000049"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/TMN_0000019",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/TMN_0000018"
@@ -79,9 +83,7 @@
           "sub": "http://purl.obolibrary.org/obo/TMN_0000043"
         }
       ],
-      "equivalentNodesSets": [],
       "id": "http://purl.obolibrary.org/obo/tmn/tmn-simple.json",
-      "logicalDefinitionAxioms": [],
       "meta": {
         "basicPropertyValues": [
           {
@@ -98,17 +100,15 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-06-07"
+            "val": "2022-07-11"
           }
         ],
-        "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/tmn/releases/2022-06-07/tmn-simple.json",
-        "xrefs": []
+        "version": "http://purl.obolibrary.org/obo/tmn/releases/2022-07-11/tmn-simple.json"
       },
       "nodes": [
         {
           "id": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "lbl": "has part",
+          "lbl": "has_part",
           "meta": {
             "basicPropertyValues": [
               {
@@ -165,8 +165,7 @@
               }
             ],
             "definition": {
-              "val": "a core relation that holds between a whole and its part",
-              "xrefs": []
+              "val": "a core relation that holds between a whole and its part"
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -208,8 +207,7 @@
               }
             ],
             "definition": {
-              "val": "The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)",
-              "xrefs": []
+              "val": "The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)"
             }
           },
           "type": "PROPERTY"
@@ -229,7 +227,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "2012-04-05: \nBarry Smith\n\nThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.\n\nCan you fix to something like:\n\nA statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.\n\nAlan Ruttenberg\n\nYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. \n\nOn the specifics of the proposed definition:\n\nWe don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. \n\nPersonally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. \n\nWe also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with."
+                "val": "2012-04-05: \nBarry Smith\n\nThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.\n\nCan you fix to something like:\n\nA statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.\n\nAlan Ruttenberg\n\nYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. \n\nOn the specifics of the proposed definition:\n\nWe don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. \n\nPersonally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. \n\nWe also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  "
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -245,8 +243,7 @@
               }
             ],
             "definition": {
-              "val": "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.",
-              "xrefs": []
+              "val": "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."
             }
           },
           "type": "PROPERTY"
@@ -290,8 +287,7 @@
               }
             ],
             "definition": {
-              "val": "An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.",
-              "xrefs": []
+              "val": "An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology."
             },
             "xrefs": [
               {
@@ -332,8 +328,7 @@
               }
             ],
             "definition": {
-              "val": "Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people",
-              "xrefs": []
+              "val": "Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people"
             }
           },
           "type": "PROPERTY"
@@ -365,8 +360,7 @@
               }
             ],
             "definition": {
-              "val": "An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)",
-              "xrefs": []
+              "val": "An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)"
             }
           },
           "type": "PROPERTY"
@@ -402,15 +396,14 @@
               }
             ],
             "definition": {
-              "val": "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007",
-              "xrefs": []
+              "val": "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"
             }
           },
           "type": "PROPERTY"
         },
         {
           "id": "http://purl.obolibrary.org/obo/IAO_0000232",
-          "lbl": "curator note",
+          "lbl": "curator notes",
           "meta": {
             "basicPropertyValues": [
               {
@@ -443,8 +436,7 @@
               }
             ],
             "definition": {
-              "val": "An administrative note of use for a curator but of no use for a user",
-              "xrefs": []
+              "val": "An administrative note of use for a curator but of no use for a user"
             },
             "xrefs": [
               {
@@ -493,15 +485,14 @@
               }
             ],
             "definition": {
-              "val": "The inverse property of is_specified_output_of",
-              "xrefs": []
+              "val": "The inverse property of is_specified_output_of"
             }
           },
           "type": "PROPERTY"
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0000053",
-          "lbl": "bearer of",
+          "lbl": "has characteristic",
           "meta": {
             "basicPropertyValues": [
               {
@@ -542,8 +533,7 @@
               }
             ],
             "definition": {
-              "val": "Inverse of characteristic_of",
-              "xrefs": []
+              "val": "Inverse of characteristic_of"
             },
             "xrefs": [
               {
@@ -580,8 +570,7 @@
               }
             ],
             "definition": {
-              "val": "A sequencing assay that analyzes mRNA transcripts from droplets of individual cells. The droplets are compartmentalized via a microfluidic device. After the cells are compartmentalized, cells in droplets are lysed and the released mRNA hybridizes to the oligo(dT) tract of the primer beads. Then the droplets are pooled and broken to release the beads which are then isolated and reverse-transcribed with template switching. The resulting cDNA strands are PCR-amplified and the sequencing adapters are added. The barcoded mRNA samples are then sequenced.",
-              "xrefs": []
+              "val": "A sequencing assay that analyzes mRNA transcripts from droplets of individual cells. The droplets are compartmentalized via a microfluidic device. After the cells are compartmentalized, cells in droplets are lysed and the released mRNA hybridizes to the oligo(dT) tract of the primer beads. Then the droplets are pooled and broken to release the beads which are then isolated and reverse-transcribed with template switching. The resulting cDNA strands are PCR-amplified and the sequencing adapters are added. The barcoded mRNA samples are then sequenced."
             }
           },
           "type": "CLASS"
@@ -613,8 +602,7 @@
               }
             ],
             "definition": {
-              "val": "A sequencing assay that uses fluorescent probes that bind to parts of a nucleic acid sequence that have a high degree of sequence complementarity. Fluorescence microscopy can be used to find out where the fluorescent probes are bound on the chromosomes.",
-              "xrefs": []
+              "val": "A sequencing assay that uses fluorescent probes that bind to parts of a nucleic acid sequence that have a high degree of sequence complementarity. Fluorescence microscopy can be used to find out where the fluorescent probes are bound on the chromosomes."
             }
           },
           "type": "CLASS"
@@ -646,8 +634,7 @@
               }
             ],
             "definition": {
-              "val": "An imaging assay that uses micro-optical sectioning tomography technology combined with fluorescence molecular labeling of neuronal projections.",
-              "xrefs": []
+              "val": "An imaging assay that uses micro-optical sectioning tomography technology combined with fluorescence molecular labeling of neuronal projections."
             }
           },
           "type": "CLASS"
@@ -679,8 +666,7 @@
               }
             ],
             "definition": {
-              "val": "An imaging assay that measures the copy number and spatial distribution of hundreds to thousands of RNA species in single cells.",
-              "xrefs": []
+              "val": "An imaging assay that measures the copy number and spatial distribution of hundreds to thousands of RNA species in single cells."
             }
           },
           "type": "CLASS"
@@ -712,8 +698,7 @@
               }
             ],
             "definition": {
-              "val": "A 3D structure determination assay that determines the morphology of a neuron.",
-              "xrefs": []
+              "val": "A 3D structure determination assay that determines the morphology of a neuron."
             }
           },
           "type": "CLASS"
@@ -741,8 +726,7 @@
               }
             ],
             "definition": {
-              "val": "A neuron morphology assay that enables sparse and stochastic labeling of genetically-defined neurons. MORF-labeled neurons are digitally reconstructed using a program (G-Cut).",
-              "xrefs": []
+              "val": "A neuron morphology assay that enables sparse and stochastic labeling of genetically-defined neurons. MORF-labeled neurons are digitally reconstructed using a program (G-Cut)."
             }
           },
           "type": "CLASS"
@@ -774,8 +758,7 @@
               }
             ],
             "definition": {
-              "val": "A fluorescence microscopy that generates high-throughput flourescence imaging of mouse brains by integrating two-photon microscopy and tissue sectioning. Serial two-photon tomography generates high-resolution datasets.",
-              "xrefs": []
+              "val": "A fluorescence microscopy that generates high-throughput flourescence imaging of mouse brains by integrating two-photon microscopy and tissue sectioning. Serial two-photon tomography generates high-resolution datasets."
             }
           },
           "type": "CLASS"
@@ -803,8 +786,7 @@
               }
             ],
             "definition": {
-              "val": "A serial two photon tomography assay that produces images of mouse brains with sufficient detail to represent axons of individual neurons.",
-              "xrefs": []
+              "val": "A serial two photon tomography assay that produces images of mouse brains with sufficient detail to represent axons of individual neurons."
             }
           },
           "type": "CLASS"
@@ -832,8 +814,7 @@
               }
             ],
             "definition": {
-              "val": "An electrophysiology assay that employs many electrodes to record extracellular field potentials.",
-              "xrefs": []
+              "val": "An electrophysiology assay that employs many electrodes to record extracellular field potentials."
             }
           },
           "type": "CLASS"
@@ -861,8 +842,7 @@
               }
             ],
             "definition": {
-              "val": "A neuron morphology assay where the morphology or structure of a neuron is represented through through another medium. Often, this assay is a combination of different assays (sparse labeling, fluorescent labeling, fMOST).",
-              "xrefs": []
+              "val": "A neuron morphology assay where the morphology or structure of a neuron is represented through through another medium. Often, this assay is a combination of different assays (sparse labeling, fluorescent labeling, fMOST)."
             }
           },
           "type": "CLASS"
@@ -898,8 +878,7 @@
               }
             ],
             "definition": {
-              "val": "A single-cell RNA sequencing assay wherein a patch clamp recording is taken from a neuron and then scRNA sequencing is performed on the cell soma.",
-              "xrefs": []
+              "val": "A single-cell RNA sequencing assay wherein a patch clamp recording is taken from a neuron and then scRNA sequencing is performed on the cell soma."
             }
           },
           "type": "CLASS"
@@ -931,14 +910,12 @@
               }
             ],
             "definition": {
-              "val": "An assay wherein a substance is taken up by an axon terminal and transported toward the soma to mark (or trace) some part of a cell.",
-              "xrefs": []
+              "val": "An assay wherein a substance is taken up by an axon terminal and transported toward the soma to mark (or trace) some part of a cell."
             },
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "retrograde labeling",
-                "xrefs": []
+                "val": "retrograde labeling"
               }
             ]
           },
@@ -967,8 +944,7 @@
               }
             ],
             "definition": {
-              "val": "A retrograde tracing assay that traces the neural connections from a synapse to a soma allowing the mapping of connections between neurons in a structure and a target in the brain.",
-              "xrefs": []
+              "val": "A retrograde tracing assay that traces the neural connections from a synapse to a soma allowing the mapping of connections between neurons in a structure and a target in the brain."
             }
           },
           "type": "CLASS"
@@ -1000,8 +976,7 @@
               }
             ],
             "definition": {
-              "val": "A fluorescence in situ hybridization assay where transcripts are labeled with fluorescent probes in sequential rounds of hybridization to read out the temporal barcode for each transcript. The temporal barcodes can then be decoded to uniquely identify the RNA transcripts present in the sample. RNA can be identified directly in a variety of samples from extracted RNA to tissues.",
-              "xrefs": []
+              "val": "A fluorescence in situ hybridization assay where transcripts are labeled with fluorescent probes in sequential rounds of hybridization to read out the temporal barcode for each transcript. The temporal barcodes can then be decoded to uniquely identify the RNA transcripts present in the sample. RNA can be identified directly in a variety of samples from extracted RNA to tissues."
             }
           },
           "type": "CLASS"
@@ -1041,8 +1016,7 @@
               }
             ],
             "definition": {
-              "val": "A single cell sequencing assay wherein the target cells are lysed, and the RNA is hybridized to an oligo(dT)-containing primer. The first strand of the cDNA is synthesized with the addition of a few untemplated C nucleotides. This poly(C) overhang is added exclusively to full-length transcripts. An oligonucleotide primer is hybridized to the poly(C) overhang and used to synthesize the second strand. Full-length cDNAs are PCR-amplified to obtain nanogram amounts of DNA. The PCR products are purified for sequencing.",
-              "xrefs": []
+              "val": "A single cell sequencing assay wherein the target cells are lysed, and the RNA is hybridized to an oligo(dT)-containing primer. The first strand of the cDNA is synthesized with the addition of a few untemplated C nucleotides. This poly(C) overhang is added exclusively to full-length transcripts. An oligonucleotide primer is hybridized to the poly(C) overhang and used to synthesize the second strand. Full-length cDNAs are PCR-amplified to obtain nanogram amounts of DNA. The PCR products are purified for sequencing."
             }
           },
           "type": "CLASS"
@@ -1078,8 +1052,7 @@
               }
             ],
             "definition": {
-              "val": "A switching mechanism at the 5' end of RNA template sequencing assay that is the fourth version of such an assay.",
-              "xrefs": []
+              "val": "A switching mechanism at the 5' end of RNA template sequencing assay that is the fourth version of such an assay."
             }
           },
           "type": "CLASS"
@@ -1111,8 +1084,7 @@
               }
             ],
             "definition": {
-              "val": "A study design in which complementary viruses are to be injected into brain regions to monosynaptically label inputs to a specific projection neuron population.",
-              "xrefs": []
+              "val": "A study design in which complementary viruses are to be injected into brain regions to monosynaptically label inputs to a specific projection neuron population."
             }
           },
           "type": "CLASS"
@@ -1144,8 +1116,7 @@
               }
             ],
             "definition": {
-              "val": "A fluorescence microscopy assay that uses a laser light-sheet to illuminate a region of a sample that has been treated to excite fluorescently.",
-              "xrefs": []
+              "val": "A fluorescence microscopy assay that uses a laser light-sheet to illuminate a region of a sample that has been treated to excite fluorescently."
             }
           },
           "type": "CLASS"
@@ -1173,8 +1144,7 @@
               }
             ],
             "definition": {
-              "val": "A anterograde tracing assay that uses a Cre recombinase-dependent as a tracer.",
-              "xrefs": []
+              "val": "A anterograde tracing assay that uses a Cre recombinase-dependent as a tracer."
             }
           },
           "type": "CLASS"
@@ -1202,8 +1172,7 @@
               }
             ],
             "definition": {
-              "val": "An assay wherein axon projections are traced from their source (cell body or soma) to their point of termination (synapse).",
-              "xrefs": []
+              "val": "An assay wherein axon projections are traced from their source (cell body or soma) to their point of termination (synapse)."
             }
           },
           "type": "CLASS"
@@ -1239,8 +1208,7 @@
               }
             ],
             "definition": {
-              "val": "An imaging assay that has as an output label-free, cross-sectional imaging of biological tissue microstructure using tissue backscattering properties.",
-              "xrefs": []
+              "val": "An imaging assay that has as an output label-free, cross-sectional imaging of biological tissue microstructure using tissue backscattering properties."
             }
           },
           "type": "CLASS"
@@ -1276,8 +1244,7 @@
               }
             ],
             "definition": {
-              "val": "A light sheet microscopy assay that combines synchronized scanning illumination and oblique imaging over cleared, thick tissue sections in smooth motion that produces a 3D image of a brain.",
-              "xrefs": []
+              "val": "A light sheet microscopy assay that combines synchronized scanning illumination and oblique imaging over cleared, thick tissue sections in smooth motion that produces a 3D image of a brain."
             }
           },
           "type": "CLASS"
@@ -1313,8 +1280,7 @@
               }
             ],
             "definition": {
-              "val": "A single-cell RNA sequencing assay that involves the isolation of single nuclei and open chromatin tagmentation in the isolated nuclei using a transposase. The tagmented nuclei are then encapsulated in a droplet including both an oligo-dT-containing barcoded bead and a splint oligonucleotide, which links the tagmented gDNA fragments to the bead, enabling the bead to capture both mRNAs and open chromatin fragments. After mRNAs and gDNA fragments are released from the bead by heating, RT and PCR amplification are performed to generate a library of cDNA and open chromatin gDNA fragments.",
-              "xrefs": []
+              "val": "A single-cell RNA sequencing assay that involves the isolation of single nuclei and open chromatin tagmentation in the isolated nuclei using a transposase. The tagmented nuclei are then encapsulated in a droplet including both an oligo-dT-containing barcoded bead and a splint oligonucleotide, which links the tagmented gDNA fragments to the bead, enabling the bead to capture both mRNAs and open chromatin fragments. After mRNAs and gDNA fragments are released from the bead by heating, RT and PCR amplification are performed to generate a library of cDNA and open chromatin gDNA fragments."
             }
           },
           "type": "CLASS"
@@ -1346,8 +1312,7 @@
               }
             ],
             "definition": {
-              "val": "A fluorescence microscopy assay wherein fluorescence in situ hybridization is leveraged with multiplexed analysis that uses each channel to measure the composite (sum) abundances of multiple genes in each channel and decompresses and determines individual gene level.",
-              "xrefs": []
+              "val": "A fluorescence microscopy assay wherein fluorescence in situ hybridization is leveraged with multiplexed analysis that uses each channel to measure the composite (sum) abundances of multiple genes in each channel and decompresses and determines individual gene level."
             }
           },
           "type": "CLASS"
@@ -1383,8 +1348,7 @@
               }
             ],
             "definition": {
-              "val": "A switching mechanism at the 5' end of RNA template sequencing assay that allows the generation of full-length cDNA and sequencing libraries by using standard reagents.",
-              "xrefs": []
+              "val": "A switching mechanism at the 5' end of RNA template sequencing assay that allows the generation of full-length cDNA and sequencing libraries by using standard reagents."
             }
           },
           "type": "CLASS"
@@ -1412,8 +1376,7 @@
               }
             ],
             "definition": {
-              "val": "A RNA sequencing assay that involves three levels of indexing.",
-              "xrefs": []
+              "val": "A RNA sequencing assay that involves three levels of indexing."
             }
           },
           "type": "CLASS"
@@ -1441,8 +1404,7 @@
               }
             ],
             "definition": {
-              "val": "An ATAC-seq assay that involves single-cell combinatorial indexing at three levels.",
-              "xrefs": []
+              "val": "An ATAC-seq assay that involves single-cell combinatorial indexing at three levels."
             }
           },
           "type": "CLASS"
@@ -1470,8 +1432,7 @@
               }
             ],
             "definition": {
-              "val": "An ATAC-seq assay that involves use of the 10x sequencing technology assay for transposase-accessible chromatin using sequencing (ATAC-seq).",
-              "xrefs": []
+              "val": "An ATAC-seq assay that involves use of the 10x sequencing technology assay for transposase-accessible chromatin using sequencing (ATAC-seq)."
             }
           },
           "type": "CLASS"
@@ -1511,8 +1472,7 @@
               }
             ],
             "definition": {
-              "val": "A RNA-seq assay for transferring RNA from tissue sections onto a surface covered in DNA-barcoded beads with known positions, allowing the locations of the RNA to be inferred by sequencing.",
-              "xrefs": []
+              "val": "A RNA-seq assay for transferring RNA from tissue sections onto a surface covered in DNA-barcoded beads with known positions, allowing the locations of the RNA to be inferred by sequencing."
             }
           },
           "type": "CLASS"
@@ -1552,8 +1512,7 @@
               }
             ],
             "definition": {
-              "val": "A RNA-seq assay that uses high-throughput ATAC and RNA expression with sequencing to measure chromatin accessibility and gene expression in the same single cell.",
-              "xrefs": []
+              "val": "A RNA-seq assay that uses high-throughput ATAC and RNA expression with sequencing to measure chromatin accessibility and gene expression in the same single cell."
             }
           },
           "type": "CLASS"
@@ -1593,8 +1552,7 @@
               }
             ],
             "definition": {
-              "val": "An ATAC-seq assay that provides information about both transcriptome and epigenome from a single cell.",
-              "xrefs": []
+              "val": "An ATAC-seq assay that provides information about both transcriptome and epigenome from a single cell."
             }
           },
           "type": "CLASS"
@@ -1618,8 +1576,7 @@
               }
             ],
             "definition": {
-              "val": "A single-cell RNA sequencing assay wherein sparse fluorescently labeled single neurons are collected manually from freshly dissociated mouse brain tissue. Then single-labeled neurons with high purity are integrated with an in vitro transcription-based amplification protocol that preserves endogenous transcript ratios. Subsequently a double linear amplification method that uses unique molecule identifiers (UMIs) is used to generate individual mRNA counts. Two rounds of amplification follow.",
-              "xrefs": []
+              "val": "A single-cell RNA sequencing assay wherein sparse fluorescently labeled single neurons are collected manually from freshly dissociated mouse brain tissue. Then single-labeled neurons with high purity are integrated with an in vitro transcription-based amplification protocol that preserves endogenous transcript ratios. Subsequently a double linear amplification method that uses unique molecule identifiers (UMIs) is used to generate individual mRNA counts. Two rounds of amplification follow."
             }
           },
           "type": "CLASS"
@@ -1643,8 +1600,7 @@
               }
             ],
             "definition": {
-              "val": "A light sheet tomography assay wherein the sample is imaged from the top using oblique light sheet fluorescence microscopy illumination and detection strategy and the imaged top portion of the tissue is removed by vibratome sectioning.",
-              "xrefs": []
+              "val": "A light sheet tomography assay wherein the sample is imaged from the top using oblique light sheet fluorescence microscopy illumination and detection strategy and the imaged top portion of the tissue is removed by vibratome sectioning."
             }
           },
           "type": "CLASS"
@@ -1668,8 +1624,7 @@
               }
             ],
             "definition": {
-              "val": "A cyclic single molecule fluorescent in situ hybridization assay used to quantify the expression level of specific transcripts in tissue sections by direct labeling of individual RNA molecules.",
-              "xrefs": []
+              "val": "A cyclic single molecule fluorescent in situ hybridization assay used to quantify the expression level of specific transcripts in tissue sections by direct labeling of individual RNA molecules."
             }
           },
           "type": "CLASS"
@@ -1697,8 +1652,7 @@
               }
             ],
             "definition": {
-              "val": "A single-cell RNA sequencing assay that involves the isolation of single nuclei and open chromatin tagmentation in the isolated nuclei using a transposase. The tagmented nuclei are then encapsulated in a droplet including both an oligo-dT-containing barcoded bead and a splint oligonucleotide, which links the tagmented gDNA fragments to the bead, enabling the bead to capture both mRNAs and open chromatin fragments. After mRNAs and gDNA fragments are released from the bead by heating, RT and PCR amplification are performed to generate a library of cDNA and open chromatin gDNA fragments.\n\nThis is the second version of SNARE-seq.",
-              "xrefs": []
+              "val": "A single-cell RNA sequencing assay that involves the isolation of single nuclei and open chromatin tagmentation in the isolated nuclei using a transposase. The tagmented nuclei are then encapsulated in a droplet including both an oligo-dT-containing barcoded bead and a splint oligonucleotide, which links the tagmented gDNA fragments to the bead, enabling the bead to capture both mRNAs and open chromatin fragments. After mRNAs and gDNA fragments are released from the bead by heating, RT and PCR amplification are performed to generate a library of cDNA and open chromatin gDNA fragments.\n\nThis is the second version of SNARE-seq."
             }
           },
           "type": "CLASS"
@@ -1722,8 +1676,7 @@
               }
             ],
             "definition": {
-              "val": "A SNARE-seq v2 assay that utilizes ATAC-seq as a part.",
-              "xrefs": []
+              "val": "A SNARE-seq v2 assay that utilizes ATAC-seq as a part."
             }
           },
           "type": "CLASS"
@@ -1747,8 +1700,7 @@
               }
             ],
             "definition": {
-              "val": "A SNARE-seq v2 assay that utilizes RNA-seq as a part.",
-              "xrefs": []
+              "val": "A SNARE-seq v2 assay that utilizes RNA-seq as a part."
             }
           },
           "type": "CLASS"
@@ -1768,8 +1720,7 @@
               }
             ],
             "definition": {
-              "val": "A DNA sequencing assay that provides direct, real-time analysis of long DNA or RNA fragments by monitoring changes to an electrical current as nucleic acids are passed through a protein nanopore. The resulting signal is decoded to provide the specific DNA or RNA sequence.",
-              "xrefs": []
+              "val": "A DNA sequencing assay that provides direct, real-time analysis of long DNA or RNA fragments by monitoring changes to an electrical current as nucleic acids are passed through a protein nanopore. The resulting signal is decoded to provide the specific DNA or RNA sequence."
             }
           },
           "type": "CLASS"
@@ -1793,8 +1744,7 @@
               }
             ],
             "definition": {
-              "val": "An isoform sequencing assay that begins with bulk tissue and identifies single-cell types and their full-length RNA isoforms without fluorescence-activated cell sorting.",
-              "xrefs": []
+              "val": "An isoform sequencing assay that begins with bulk tissue and identifies single-cell types and their full-length RNA isoforms without fluorescence-activated cell sorting."
             }
           },
           "type": "CLASS"
@@ -1818,8 +1768,7 @@
               }
             ],
             "definition": {
-              "val": "A single-cell RNA sequencing assay that jointly profiles chromatin conformation and DNA methylation information from the same cell.",
-              "xrefs": []
+              "val": "A single-cell RNA sequencing assay that jointly profiles chromatin conformation and DNA methylation information from the same cell."
             }
           },
           "type": "CLASS"
@@ -1843,8 +1792,7 @@
               }
             ],
             "definition": {
-              "val": "A library preparation method for single-nucleus methylome library preparation that provides significant improvements in read mapping, amount of artifactual reads, throughput, library complexity, and coverage uniformity over snmC-seq.",
-              "xrefs": []
+              "val": "A library preparation method for single-nucleus methylome library preparation that provides significant improvements in read mapping, amount of artifactual reads, throughput, library complexity, and coverage uniformity over snmC-seq."
             }
           },
           "type": "CLASS"
@@ -1881,8 +1829,7 @@
               }
             ],
             "definition": {
-              "val": "The second version of the single-cell combinatorial indexing with WGBS methylation analysis.",
-              "xrefs": []
+              "val": "The second version of the single-cell combinatorial indexing with WGBS methylation analysis."
             }
           },
           "type": "CLASS"
@@ -1902,8 +1849,7 @@
               }
             ],
             "definition": {
-              "val": "An immunoassay that uses magnetic beads to measure multiple analytes in a single assay.",
-              "xrefs": []
+              "val": "An immunoassay that uses magnetic beads to measure multiple analytes in a single assay."
             }
           },
           "type": "CLASS"
@@ -1923,8 +1869,7 @@
               }
             ],
             "definition": {
-              "val": "An assay that enables the presence or the concentration of a substance in a material to be measured by exploiting the specific binding between an analyte and the corresponding detection antibody.",
-              "xrefs": []
+              "val": "An assay that enables the presence or the concentration of a substance in a material to be measured by exploiting the specific binding between an analyte and the corresponding detection antibody."
             }
           },
           "type": "CLASS"
@@ -1944,29 +1889,24 @@
               }
             ],
             "definition": {
-              "val": "An imaging assay that is designed to show the calcium (Ca2+) levels of a tissue or medium.",
-              "xrefs": []
+              "val": "An imaging assay that is designed to show the calcium (Ca2+) levels of a tissue or medium."
             },
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "Ca imaging",
-                "xrefs": []
+                "val": "Ca imaging"
               },
               {
                 "pred": "hasExactSynonym",
-                "val": "Ca imaging assay",
-                "xrefs": []
+                "val": "Ca imaging assay"
               },
               {
                 "pred": "hasExactSynonym",
-                "val": "Ca2+ imaging",
-                "xrefs": []
+                "val": "Ca2+ imaging"
               },
               {
                 "pred": "hasExactSynonym",
-                "val": "Ca2+ imaging assay",
-                "xrefs": []
+                "val": "Ca2+ imaging assay"
               }
             ]
           },
@@ -1987,16 +1927,58 @@
               }
             ],
             "definition": {
-              "val": "An assay that generates data about the presence, quantity, structure, function, behavior, or activity of cells, or a process that occurs at a cellular level of anatomical granularity (includes subcellular structures and organelles).",
-              "xrefs": []
+              "val": "An assay that generates data about the presence, quantity, structure, function, behavior, or activity of cells, or a process that occurs at a cellular level of anatomical granularity (includes subcellular structures and organelles)."
             },
             "synonyms": [
               {
                 "pred": "hasBroadSynonym",
-                "val": "cell analysis",
-                "xrefs": []
+                "val": "cell analysis"
               }
             ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000049",
+          "lbl": "human brain optimized light sheet microscopy assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "HOLiS"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "http://orcid.org/0000-0002-5260-9315"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-07-11T22:11:00Z"
+              }
+            ],
+            "definition": {
+              "val": "A light sheet fluorescence microscopy assay that employs high-speed scanning single-objective light sheet imaging with spectral multiplexing and cell-type encoding. Human brain samples are processed using a clearing and immunostaining approach called HuB.Clear which can generate optically clear, 5 mm thick, whole-mount brain slabs. High-field magnetic resonance imaging (MRI) data acquired on the intact, fixed brain prior to sectioning will provide a vital cross-reference for comparison while also facilitating registration of data to a common coordinate frameworks. HOLiS data will be analyzed to extract cell locations and cell type identities, generating databases that can be compared to standard neuroanatomical atlases, while also permitting careful examination of brain-wide patterns and inter-subject differences."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000050",
+          "lbl": "osmFISH",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "http://orcid.org/0000-0002-5260-9315"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-07-11T22:15:28Z"
+              }
+            ],
+            "definition": {
+              "val": "A non-barcoded and unamplified cyclic smFISH method (osmFISH) in which the number of targets scales linearly. In osmFISH, each RNA molecule is visualized as a diffraction limited spot after the binding of 20 nt long fluorescently labelled DNA probes. Multiple transcripts are targeted at each round of hybridization, separated by fluorescent color. After image acquisition, the detection probes are removed by formamide melting in preparation for the next round of hybridization."
+            }
           },
           "type": "CLASS"
         },
@@ -2093,8 +2075,7 @@
           "lbl": "has_exact_synonym",
           "type": "PROPERTY"
         }
-      ],
-      "propertyChainAxioms": []
+      ]
     }
   ]
 }
