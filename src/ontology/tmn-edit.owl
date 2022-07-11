@@ -1161,6 +1161,43 @@ This is the second version of SNARE-seq.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/TMN_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TMN_0000017"/>
+        <obo:IAO_0000115 xml:lang="en">A light sheet fluorescence microscopy assay that employs high-speed scanning single-objective light sheet imaging with spectral multiplexing and cell-type encoding. Human brain samples are processed using a clearing and immunostaining approach called HuB.Clear which can generate optically clear, 5 mm thick, whole-mount brain slabs. High-field magnetic resonance imaging (MRI) data acquired on the intact, fixed brain prior to sectioning will provide a vital cross-reference for comparison while also facilitating registration of data to a common coordinate frameworks. HOLiS data will be analyzed to extract cell locations and cell type identities, generating databases that can be compared to standard neuroanatomical atlases, while also permitting careful examination of brain-wide patterns and inter-subject differences.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">HOLiS</obo:IAO_0000118>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0002-5260-9315"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-11T22:11:00Z</oboInOwl:creation_date>
+        <rdfs:label>human brain optimized light sheet microscopy assay</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TMN_0000049"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A light sheet fluorescence microscopy assay that employs high-speed scanning single-objective light sheet imaging with spectral multiplexing and cell-type encoding. Human brain samples are processed using a clearing and immunostaining approach called HuB.Clear which can generate optically clear, 5 mm thick, whole-mount brain slabs. High-field magnetic resonance imaging (MRI) data acquired on the intact, fixed brain prior to sectioning will provide a vital cross-reference for comparison while also facilitating registration of data to a common coordinate frameworks. HOLiS data will be analyzed to extract cell locations and cell type identities, generating databases that can be compared to standard neuroanatomical atlases, while also permitting careful examination of brain-wide patterns and inter-subject differences.</owl:annotatedTarget>
+        <obo:IAO_0000119 xml:lang="en">https://www.humanbrainmapping.org/files/2022/Annual%20Meeting%20Symposia/1511_Imaging_and_analysis_of_3D%5B1%5D.pdf</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003094"/>
+        <obo:IAO_0000115 xml:lang="en">A non-barcoded and unamplified cyclic smFISH method (osmFISH) in which the number of targets scales linearly. In osmFISH, each RNA molecule is visualized as a diffraction limited spot after the binding of 20 nt long fluorescently labelled DNA probes. Multiple transcripts are targeted at each round of hybridization, separated by fluorescent color. After image acquisition, the detection probes are removed by formamide melting in preparation for the next round of hybridization.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0002-5260-9315"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-11T22:15:28Z</oboInOwl:creation_date>
+        <rdfs:label>osmFISH</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TMN_0000050"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A non-barcoded and unamplified cyclic smFISH method (osmFISH) in which the number of targets scales linearly. In osmFISH, each RNA molecule is visualized as a diffraction limited spot after the binding of 20 nt long fluorescently labelled DNA probes. Multiple transcripts are targeted at each round of hybridization, separated by fluorescent color. After image acquisition, the detection probes are removed by formamide melting in preparation for the next round of hybridization.</owl:annotatedTarget>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.1038/s41592-018-0175-z</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0000000 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000000">
