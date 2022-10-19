@@ -81,4 +81,116 @@
     <oboInOwl2:hasExactSynonym>mmol</oboInOwl2:hasExactSynonym>
 </owl:Class>
 
+<!-- http://www.ebi.ac.uk/efo/EFO_0001955 -->
+
+<owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001955">
+  <owl:equivalentClass>
+      <owl:Restriction>
+          <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+          <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000948"/>
+      </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004535"/>
+  <rdfs:subClassOf>
+      <owl:Restriction>
+          <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+          <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000948"/>
+      </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<!-- http://www.ebi.ac.uk/efo/EFO_0001986 -->
+
+<owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001986">
+    <owl:equivalentClass>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+        </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
+
+<!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+<owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056">
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+</owl:ObjectProperty>
+
+<!-- http://www.ebi.ac.uk/efo/EFO_0010894 -->
+
+<owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0010894">
+    <owl:equivalentClass>
+        <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+                <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000499"/>
+                <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011189"/>
+                </owl:Restriction>
+            </owl:intersectionOf>
+        </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000499"/>
+    <obo:IAO_0000115>A stromal cell found in the lamina propria of the large intestine.</obo:IAO_0000115>
+    <dc:creator>paola</dc:creator>
+    <oboInOwl:hasDbXref>http://orcid.org/0000-0003-4183-8865</oboInOwl:hasDbXref>
+    <rdfs:label>stromal cell of lamina propria of large intestine</rdfs:label>
+</owl:Class>
+
+<!-- http://www.ebi.ac.uk/efo/EFO_0010895 -->
+
+<owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0010895">
+    <owl:equivalentClass>
+        <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+                <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000499"/>
+                <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001238"/>
+                </owl:Restriction>
+            </owl:intersectionOf>
+        </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000499"/>
+    <obo:IAO_0000115>A stromal cell found in the lamina propria of the small intestine.</obo:IAO_0000115>
+    <dc:creator>paola</dc:creator>
+    <oboInOwl:hasDbXref>http://orcid.org/0000-0003-4183-8865</oboInOwl:hasDbXref>
+    <rdfs:label>stromal cell of lamina propria of small intestine</rdfs:label>
+</owl:Class>
+
+<!-- http://www.ebi.ac.uk/efo/EFO_0010897 -->
+
+<owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0010897">
+    <owl:equivalentClass>
+        <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+                <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000077"/>
+                <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002108"/>
+                </owl:Restriction>
+            </owl:intersectionOf>
+        </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000077"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002563"/>
+    <obo:IAO_0000115>A mesothelial cell that is part of the small intestine.</obo:IAO_0000115>
+    <dc:creator>paola</dc:creator>
+    <oboInOwl:hasDbXref>http://orcid.org/0000-0003-4183-8865</oboInOwl:hasDbXref>
+    <rdfs:label>mesothelial cell of small intestine</rdfs:label>
+</owl:Class>
+
+<!-- http://www.ebi.ac.uk/efo/EFO_0000784 -->
+
+<owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/efo/EFO_0000784">
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+</owl:ObjectProperty>
+
 </rdf:RDF>
