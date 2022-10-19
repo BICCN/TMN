@@ -17,6 +17,7 @@ IMPORT_UNMERGE=$(COMPONENTSDIR)/import_unmerge.owl
 
 #Removing axioms that cause multiple equiv class clashes for now
 #See https://github.com/bio-ontology-research-group/unit-ontology/issues/47 & https://github.com/bio-ontology-research-group/unit-ontology/issues/46
+#See https://github.com/BICCN/TMN/pull/107 for EFO related axiom removal
 
 $(IMPORTDIR)/merged_import.owl: $(MIRRORDIR)/merged.owl $(IMPORTDIR)/merged_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
