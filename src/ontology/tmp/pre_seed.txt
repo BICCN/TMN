@@ -100,6 +100,10 @@ http://purl.obolibrary.org/obo/TMN_0000045
 http://purl.obolibrary.org/obo/TMN_0000046
 http://purl.obolibrary.org/obo/TMN_0000049
 http://purl.obolibrary.org/obo/TMN_0000050
+http://purl.obolibrary.org/obo/TMN_0000051
+http://purl.obolibrary.org/obo/TMN_0000052
+http://purl.obolibrary.org/obo/TMN_0000053
+http://purl.obolibrary.org/obo/TMN_0000054
 http://purl.obolibrary.org/obo/UBERON_0000000
 http://purl.obolibrary.org/obo/UBERON_0000122
 http://purl.obolibrary.org/obo/UBERON_0000465
