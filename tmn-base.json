@@ -58,6 +58,11 @@
           "sub": "http://purl.obolibrary.org/obo/TMN_0000023"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/CHMO_0000087",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000054"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/GO_0007610",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/NBO_0000073"
@@ -133,6 +138,11 @@
           "sub": "http://purl.obolibrary.org/obo/TMN_0000037"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000626",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000053"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/OBI_0001271",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/TMN_0000014"
@@ -146,6 +156,11 @@
           "obj": "http://purl.obolibrary.org/obo/OBI_0001271",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/TMN_0000029"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0001271",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000051"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0002119",
@@ -236,6 +251,11 @@
           "obj": "http://purl.obolibrary.org/obo/OBI_0600045",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/TMN_0000004"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0600045",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/TMN_0000052"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0600047",
@@ -393,10 +413,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-07-11"
+            "val": "2022-12-01"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/tmn/releases/2022-07-11/tmn-base.json"
+        "version": "http://purl.obolibrary.org/obo/tmn/releases/2022-12-01/tmn-base.json"
       },
       "nodes": [
         {
@@ -1981,6 +2001,110 @@
             ],
             "definition": {
               "val": "A non-barcoded and unamplified cyclic smFISH method (osmFISH) in which the number of targets scales linearly. In osmFISH, each RNA molecule is visualized as a diffraction limited spot after the binding of 20 nt long fluorescently labelled DNA probes. Multiple transcripts are targeted at each round of hybridization, separated by fluorescent color. After image acquisition, the detection probes are removed by formamide melting in preparation for the next round of hybridization."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000051",
+          "lbl": "temp-O sequencing assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "temp-O seq"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "templated Oligo sequencing assay"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "http://orcid.org/0000-0002-5260-9315"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-11-29T21:05:47Z"
+              }
+            ],
+            "definition": {
+              "val": "A RNA sequencing assay based on BioSpyder Technologies' Templated Oligo Detection Assay that targets RNAs with detector olives and removes excess probes and enzymatic inhibitors before the first enzymatic step. Correctly hybridized detector olives are ligated, then amplified through primer landing sites that are share among all probes."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000052",
+          "lbl": "x-ray holographic nano-tomography assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "XHN"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "x-ray holographic nano-tomography"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "http://orcid.org/0000-0002-5260-9315"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-11-29T21:08:51Z"
+              }
+            ],
+            "definition": {
+              "val": "A 3D structure determination assay that employs X-ray holographic nano-tomography to determine the three-dimensional structure of an entity."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000053",
+          "lbl": "Pacific Bioscience long-read sequencing assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "Pac-Bio long-read sequencing assay"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "http://orcid.org/0000-0002-5260-9315"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-11-29T21:12:31Z"
+              }
+            ],
+            "definition": {
+              "val": "A DNA sequencing assay wherein a single DNA polymerase enzyme is affixed at the bottom of a zero-mode waveguide (ZMW) with a single molecule of DNA as a template. The Pacific Biotechnologies version is a single-molecule real-time (SMRT) sequencing assay. The ZMW is a structure that creates an illuminated observation volume that is small enough to observe only a single nucleotide of DNA being incorporated by DNA polymerase. Each of the four DNA bases is attached to one of four different fluorescent dyes. When a nucleotide is incorporated by the DNA polymerase, the fluorescent tag is cleaved off and diffuses out of the observation area of the ZMW where its fluorescence is no longer observable. A detector detects the fluorescent signal of the nucleotide incorporation, and the base call is made according to the corresponding fluorescence of the dye."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/TMN_0000054",
+          "lbl": "enhancer virus labelling assay",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "enhancer virus labelling"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "http://orcid.org/0000-0002-5260-9315"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-11-29T21:14:49Z"
+              }
+            ],
+            "definition": {
+              "val": "An imaging assay wherein chromatin accessibility data is collected from cells and enhancers specific to cell types are identified, cloned into recombinant adeno-associated viruses (AAVs) and delivered to the brain, which drive trans gene expression in specific cell types. Then, an image of the marked cell class is generated through fluorescence microscopy."
             }
           },
           "type": "CLASS"

@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: tmn/releases/2022-07-11/tmn-simple.owl
+data-version: tmn/releases/2022-12-01/tmn-simple.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
@@ -7,7 +7,7 @@ ontology: tmn/tmn-simple
 property_value: dc-description "This is an ontology that captures techniques and methods in neuroscience to support work at AIBS and BICCN. The techniques and methods ontology is designed to help scientists communicate about their experiments and results by defining a set of terms for techniques, methods, modalities, assays, devices, tools, and the like." xsd:string
 property_value: dc-title "Techniques and Methods for Neuroscience Ontology" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-07-11" xsd:string
+property_value: owl:versionInfo "2022-12-01" xsd:string
 
 [Term]
 id: TMN:0000000
@@ -480,6 +480,40 @@ name: osmFISH
 def: "A non-barcoded and unamplified cyclic smFISH method (osmFISH) in which the number of targets scales linearly. In osmFISH, each RNA molecule is visualized as a diffraction limited spot after the binding of 20 nt long fluorescently labelled DNA probes. Multiple transcripts are targeted at each round of hybridization, separated by fluorescent color. After image acquisition, the detection probes are removed by formamide melting in preparation for the next round of hybridization." [] {http://purl.obolibrary.org/obo/IAO_0000119="https://doi.org/10.1038/s41592-018-0175-z"}
 created_by: http://orcid.org/0000-0002-5260-9315
 creation_date: 2022-07-11T22:15:28Z
+
+[Term]
+id: TMN:0000051
+name: temp-O sequencing assay
+def: "A RNA sequencing assay based on BioSpyder Technologies' Templated Oligo Detection Assay that targets RNAs with detector olives and removes excess probes and enzymatic inhibitors before the first enzymatic step. Correctly hybridized detector olives are ligated, then amplified through primer landing sites that are share among all probes." []
+property_value: IAO:0000118 "temp-O seq" xsd:string
+property_value: IAO:0000118 "templated Oligo sequencing assay" xsd:string
+created_by: http://orcid.org/0000-0002-5260-9315
+creation_date: 2022-11-29T21:05:47Z
+
+[Term]
+id: TMN:0000052
+name: x-ray holographic nano-tomography assay
+def: "A 3D structure determination assay that employs X-ray holographic nano-tomography to determine the three-dimensional structure of an entity." [] {http://purl.obolibrary.org/obo/IAO_0000119="https://doi.org/10.1038/s41593-020-0704-9"}
+property_value: IAO:0000118 "x-ray holographic nano-tomography" xsd:string
+property_value: IAO:0000118 "XHN" xsd:string
+created_by: http://orcid.org/0000-0002-5260-9315
+creation_date: 2022-11-29T21:08:51Z
+
+[Term]
+id: TMN:0000053
+name: Pacific Bioscience long-read sequencing assay
+def: "A DNA sequencing assay wherein a single DNA polymerase enzyme is affixed at the bottom of a zero-mode waveguide (ZMW) with a single molecule of DNA as a template. The Pacific Biotechnologies version is a single-molecule real-time (SMRT) sequencing assay. The ZMW is a structure that creates an illuminated observation volume that is small enough to observe only a single nucleotide of DNA being incorporated by DNA polymerase. Each of the four DNA bases is attached to one of four different fluorescent dyes. When a nucleotide is incorporated by the DNA polymerase, the fluorescent tag is cleaved off and diffuses out of the observation area of the ZMW where its fluorescence is no longer observable. A detector detects the fluorescent signal of the nucleotide incorporation, and the base call is made according to the corresponding fluorescence of the dye." []
+property_value: IAO:0000118 "Pac-Bio long-read sequencing assay" xsd:string
+created_by: http://orcid.org/0000-0002-5260-9315
+creation_date: 2022-11-29T21:12:31Z
+
+[Term]
+id: TMN:0000054
+name: enhancer virus labelling assay
+def: "An imaging assay wherein chromatin accessibility data is collected from cells and enhancers specific to cell types are identified, cloned into recombinant adeno-associated viruses (AAVs) and delivered to the brain, which drive trans gene expression in specific cell types. Then, an image of the marked cell class is generated through fluorescence microscopy." [] {http://purl.obolibrary.org/obo/IAO_0000119="https://doi.org/10.1016/j.neuron.2021.03.011"}
+property_value: IAO:0000118 "enhancer virus labelling" xsd:string
+created_by: http://orcid.org/0000-0002-5260-9315
+creation_date: 2022-11-29T21:14:49Z
 
 [Typedef]
 id: OBI:0000299
