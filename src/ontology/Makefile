@@ -97,7 +97,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  bfo chebi cl efo go iao ncbitaxon obi pato pr ro uberon uo
+IMPORTS =  bfo chebi cl go iao ncbitaxon obi pato pr ro uberon uo
 
 IMPORT_ROOTS =  $(IMPORTDIR)/merged_import
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -351,14 +351,6 @@ mirror-chebi: | $(TMPDIR)
 mirror-cl: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/cl/cl-base.owl --create-dirs -o $(MIRRORDIR)/cl.owl --retry 4 --max-time 400 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/cl.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
-## ONTOLOGY: efo
-.PHONY: mirror-efo
-.PRECIOUS: $(MIRRORDIR)/efo.owl
-mirror-efo: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://www.ebi.ac.uk/efo/efo-base.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 ## ONTOLOGY: go

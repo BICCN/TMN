@@ -37,10 +37,6 @@ import_group:
       is_large: TRUE
     - id: cl
       use_base: TRUE
-    - id: efo
-      mirror_from: https://www.ebi.ac.uk/efo/efo-base.owl
-      base_iris: 
-      - http://www.ebi.ac.uk/efo/EFO_
     - id: go
       use_base: TRUE
       base_iris:

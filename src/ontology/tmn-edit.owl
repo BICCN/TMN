@@ -4,6 +4,7 @@
      xmlns:cl="http://purl.obolibrary.org/obo/cl#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:go="http://purl.obolibrary.org/obo/go#"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -17,6 +18,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
+     xmlns:mondo="http://purl.obolibrary.org/obo/mondo#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:chebi4="http://purl.obolibrary.org/obo/chebi#2"
@@ -1194,6 +1196,72 @@ This is the second version of SNARE-seq.</obo:IAO_0000115>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">A non-barcoded and unamplified cyclic smFISH method (osmFISH) in which the number of targets scales linearly. In osmFISH, each RNA molecule is visualized as a diffraction limited spot after the binding of 20 nt long fluorescently labelled DNA probes. Multiple transcripts are targeted at each round of hybridization, separated by fluorescent color. After image acquisition, the detection probes are removed by formamide melting in preparation for the next round of hybridization.</owl:annotatedTarget>
         <obo:IAO_0000119 xml:lang="en">https://doi.org/10.1038/s41592-018-0175-z</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001271"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A RNA sequencing assay based on BioSpyder Technologies&apos; Templated Oligo Detection Assay that targets RNAs with detector olives and removes excess probes and enzymatic inhibitors before the first enzymatic step. Correctly hybridized detector olives are ligated, then amplified through primer landing sites that are share among all probes.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temp-O seq</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">templated Oligo sequencing assay</obo:IAO_0000118>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0002-5260-9315"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-11-29T21:05:47Z</oboInOwl:creation_date>
+        <rdfs:label>temp-O sequencing assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600045"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A 3D structure determination assay that employs X-ray holographic nano-tomography to determine the three-dimensional structure of an entity.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XHN</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-ray holographic nano-tomography</obo:IAO_0000118>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0002-5260-9315"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-11-29T21:08:51Z</oboInOwl:creation_date>
+        <rdfs:label>x-ray holographic nano-tomography assay</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TMN_0000052"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A 3D structure determination assay that employs X-ray holographic nano-tomography to determine the three-dimensional structure of an entity.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1038/s41593-020-0704-9</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000626"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DNA sequencing assay wherein a single DNA polymerase enzyme is affixed at the bottom of a zero-mode waveguide (ZMW) with a single molecule of DNA as a template. The Pacific Biotechnologies version is a single-molecule real-time (SMRT) sequencing assay. The ZMW is a structure that creates an illuminated observation volume that is small enough to observe only a single nucleotide of DNA being incorporated by DNA polymerase. Each of the four DNA bases is attached to one of four different fluorescent dyes. When a nucleotide is incorporated by the DNA polymerase, the fluorescent tag is cleaved off and diffuses out of the observation area of the ZMW where its fluorescence is no longer observable. A detector detects the fluorescent signal of the nucleotide incorporation, and the base call is made according to the corresponding fluorescence of the dye.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pac-Bio long-read sequencing assay</obo:IAO_0000118>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0002-5260-9315"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-11-29T21:12:31Z</oboInOwl:creation_date>
+        <rdfs:label>Pacific Bioscience long-read sequencing assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TMN_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMN_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000087"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An imaging assay wherein chromatin accessibility data is collected from cells and enhancers specific to cell types are identified, cloned into recombinant adeno-associated viruses (AAVs) and delivered to the brain, which drive trans gene expression in specific cell types. Then, an image of the marked cell class is generated through fluorescence microscopy.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">enhancer virus labelling</obo:IAO_0000118>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0002-5260-9315"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-11-29T21:14:49Z</oboInOwl:creation_date>
+        <rdfs:label>enhancer virus labelling assay</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TMN_0000054"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An imaging assay wherein chromatin accessibility data is collected from cells and enhancers specific to cell types are identified, cloned into recombinant adeno-associated viruses (AAVs) and delivered to the brain, which drive trans gene expression in specific cell types. Then, an image of the marked cell class is generated through fluorescence microscopy.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1016/j.neuron.2021.03.011</obo:IAO_0000119>
     </owl:Axiom>
     
 
